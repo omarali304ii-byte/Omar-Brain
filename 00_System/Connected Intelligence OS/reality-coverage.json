@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-07-07T20:29:09.965Z",
+  "score": 21.4,
+  "dimensions": {
+    "registered_projects": 7,
+    "verified_repo_runtime_projects": 1,
+    "projects_with_runs": 1,
+    "projects_with_evidence": 1,
+    "runs": 3,
+    "evidence_notes": 9,
+    "events": 12,
+    "edges": 25,
+    "causal_edges": 22,
+    "learning_candidates": 25,
+    "promoted_candidates": 0
+  },
+  "components": {
+    "registered_project_presence": 10,
+    "verified_repo_runtime_identity": 2.9,
+    "project_run_coverage": 2.9,
+    "project_evidence_coverage": 2.9,
+    "causal_completeness": 1.4,
+    "learning_from_runs": 1.4,
+    "promoted_cross_project_learning": 0
+  },
+  "interpretation": "architecture-rich, experience-poor"
+}

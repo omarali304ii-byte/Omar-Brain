@@ -1,0 +1,294 @@
+{
+  "registry_id": "omar-brain-object-registry-v1",
+  "version": "1.0",
+  "updated": "2026-07-07",
+  "objects": [
+    {
+      "object_id": "obj-omar-brain",
+      "object_type": "project",
+      "title": "Omar Brain",
+      "aliases": [
+        "My Brain",
+        "Omar-Brain"
+      ],
+      "ambiguous_aliases": [],
+      "canonical_path": "40_Projects/Manifests/prj-omar-brain.json",
+      "status": "active",
+      "authority": "contextual",
+      "verification_state": "context-import-needs-repo-check",
+      "project_id": "prj-omar-brain",
+      "summary": "Obsidian vault used as AI brain and control plane",
+      "created_at": "2026-07-07T00:00:00+02:00",
+      "updated_at": "2026-07-07T00:00:00+02:00"
+    },
+    {
+      "object_id": "obj-meta-word-of-mouth",
+      "object_type": "project",
+      "title": "Meta Word of Mouth",
+      "aliases": [
+        "Meta-Word-of-mouth",
+        "Meta Word of mouth"
+      ],
+      "ambiguous_aliases": [
+        "OVX Smart Inbox"
+      ],
+      "canonical_path": "40_Projects/Manifests/prj-meta-word-of-mouth.json",
+      "status": "active",
+      "authority": "repo-observed",
+      "verification_state": "verified-repo",
+      "project_id": "prj-meta-word-of-mouth",
+      "summary": "Private multi-tenant Meta conversation CRM with evidence-first AI intelligence, opportunities and follow-up automation; first repo-grounded reference project.",
+      "created_at": "2026-07-07T00:00:00+02:00",
+      "updated_at": "2026-07-07T21:00:00+02:00",
+      "repo_revision": "8c027fabf85fe46fa0395eb459c0289872fef491",
+      "reference_project": true
+    },
+    {
+      "object_id": "obj-whatsapp-intel-hub",
+      "object_type": "project",
+      "title": "WhatsApp Intel Hub",
+      "aliases": [
+        "whatsapp-intel-hub-main"
+      ],
+      "ambiguous_aliases": [
+        "OVX Smart Inbox"
+      ],
+      "canonical_path": "40_Projects/Manifests/prj-whatsapp-intel-hub.json",
+      "status": "active",
+      "authority": "contextual",
+      "verification_state": "context-import-needs-repo-check",
+      "project_id": "prj-whatsapp-intel-hub",
+      "summary": "Backend command npm run backend:dev -> tsx backend/src/server.ts",
+      "created_at": "2026-07-07T00:00:00+02:00",
+      "updated_at": "2026-07-07T00:00:00+02:00"
+    },
+    {
+      "object_id": "obj-sleepywear",
+      "object_type": "project",
+      "title": "Sleepywear",
+      "aliases": [
+        "sleepy-wear",
+        "SleepyWear"
+      ],
+      "ambiguous_aliases": [],
+      "canonical_path": "40_Projects/Manifests/prj-sleepywear.json",
+      "status": "active",
+      "authority": "contextual",
+      "verification_state": "context-import-needs-repo-check",
+      "project_id": "prj-sleepywear",
+      "summary": "Next.js web app",
+      "created_at": "2026-07-07T00:00:00+02:00",
+      "updated_at": "2026-07-07T00:00:00+02:00"
+    },
+    {
+      "object_id": "obj-ovx-shop",
+      "object_type": "project",
+      "title": "OVX Shop",
+      "aliases": [
+        "OVX Local App",
+        "OVX Local Smart Shop System"
+      ],
+      "ambiguous_aliases": [],
+      "canonical_path": "40_Projects/Manifests/prj-ovx-shop.json",
+      "status": "active",
+      "authority": "contextual",
+      "verification_state": "context-import-needs-repo-check",
+      "project_id": "prj-ovx-shop",
+      "summary": "TypeScript domain",
+      "created_at": "2026-07-07T00:00:00+02:00",
+      "updated_at": "2026-07-07T00:00:00+02:00"
+    },
+    {
+      "object_id": "obj-ovx-marketing",
+      "object_type": "project",
+      "title": "OVX Marketing",
+      "aliases": [
+        "OVX Marketing Platform"
+      ],
+      "ambiguous_aliases": [],
+      "canonical_path": "40_Projects/Manifests/prj-ovx-marketing.json",
+      "status": "active",
+      "authority": "contextual",
+      "verification_state": "context-import-needs-repo-check",
+      "project_id": "prj-ovx-marketing",
+      "summary": "Real agency-work learning project",
+      "created_at": "2026-07-07T00:00:00+02:00",
+      "updated_at": "2026-07-07T00:00:00+02:00"
+    },
+    {
+      "object_id": "obj-php-order-receiver-pos",
+      "object_type": "project",
+      "title": "PHP Order Receiver POS Integration",
+      "aliases": [
+        "PHP Order Receiver",
+        "POS Integration",
+        "receive_order.php project"
+      ],
+      "ambiguous_aliases": [],
+      "canonical_path": "40_Projects/Manifests/prj-php-order-receiver-pos.json",
+      "status": "active",
+      "authority": "contextual",
+      "verification_state": "context-import-needs-repo-check",
+      "project_id": "prj-php-order-receiver-pos",
+      "summary": "PHP receive_order.php",
+      "created_at": "2026-07-07T00:00:00+02:00",
+      "updated_at": "2026-07-07T00:00:00+02:00"
+    },
+    {
+      "object_id": "obj-run-mrb1o0ob-731bc079",
+      "object_type": "run",
+      "title": "GitHub repository architecture extraction",
+      "canonical_path": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-github-repository-architecture-extraction-731bc079.md",
+      "status": "completed",
+      "authority": "observed",
+      "verification_state": "observed",
+      "project_id": "prj-meta-word-of-mouth",
+      "summary": "Inspected the private GitHub repository at commit 8c027fabf85fe46fa0395eb459c0289872fef491 and extracted strengths, weaknesses, future path, and bounded transfer candidates without claiming runtime verification.",
+      "created_at": "2026-07-07T19:31:01.357Z",
+      "updated_at": "2026-07-07T19:31:01.357Z"
+    },
+    {
+      "object_id": "obj-evd-mrb1oc73-25062d49",
+      "object_type": "evidence",
+      "title": "GitHub repository revision snapshot",
+      "canonical_path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-github-repository-revision-snapshot-25062d49.md",
+      "status": "validated",
+      "authority": "observed",
+      "verification_state": "observed",
+      "project_id": "prj-meta-word-of-mouth",
+      "summary": "Supports the claim that this assessment is grounded in the repository main-branch state represented by commit 8c027fabf85fe46fa0395eb459c0289872fef491.",
+      "created_at": "2026-07-07T19:31:16.289Z",
+      "updated_at": "2026-07-07T19:31:16.289Z"
+    },
+    {
+      "object_id": "obj-evd-mrb1oc94-40290714",
+      "object_type": "evidence",
+      "title": "Evidence-first AI and worker architecture",
+      "canonical_path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-evidence-first-ai-and-worker-architecture-40290714.md",
+      "status": "validated",
+      "authority": "observed",
+      "verification_state": "observed",
+      "project_id": "prj-meta-word-of-mouth",
+      "summary": "Supports the observed architecture: webhook/request paths avoid direct OpenAI work; intelligence jobs are claimed asynchronously; AI output is schema-validated; derived signals retain source-message evidence; stale locks are recoverable.",
+      "created_at": "2026-07-07T19:31:16.362Z",
+      "updated_at": "2026-07-07T19:31:16.362Z"
+    },
+    {
+      "object_id": "obj-evd-mrb1ocbf-29126148",
+      "object_type": "evidence",
+      "title": "Signed webhook and idempotent ingestion architecture",
+      "canonical_path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-signed-webhook-and-idempotent-ingestion-architecture-29126148.md",
+      "status": "validated",
+      "authority": "observed",
+      "verification_state": "observed",
+      "project_id": "prj-meta-word-of-mouth",
+      "summary": "Supports the observed pattern: verify signature against raw bytes before JSON parse, store provider event identity, use conflict-safe inserts, transaction locking, and serializable retries.",
+      "created_at": "2026-07-07T19:31:16.445Z",
+      "updated_at": "2026-07-07T19:31:16.445Z"
+    },
+    {
+      "object_id": "obj-evd-mrb1ocdf-0f4342d1",
+      "object_type": "evidence",
+      "title": "Privacy permissions and operational gaps snapshot",
+      "canonical_path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-privacy-permissions-and-operational-gaps-snapshot-0f4342d1.md",
+      "status": "validated",
+      "authority": "observed",
+      "verification_state": "observed",
+      "project_id": "prj-meta-word-of-mouth",
+      "summary": "Supports both strengths and bounded gaps: workspace permissions and sensitive-field masking are explicit; Docker Compose contains only the app service; production migration from temporary Supabase adapters remains future work; the inspected latest commit exposed no combined CI statuses.",
+      "created_at": "2026-07-07T19:31:16.517Z",
+      "updated_at": "2026-07-07T19:31:16.517Z"
+    },
+    {
+      "object_id": "obj-run-mrb34rdn-eebbc7fd",
+      "object_type": "run",
+      "title": "Local static verification and safe test boundary",
+      "canonical_path": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-local-static-verification-and-safe-test-boundary-eebbc7fd.md",
+      "status": "completed",
+      "authority": "observed",
+      "verification_state": "observed",
+      "project_id": "prj-meta-word-of-mouth",
+      "summary": "Captured the local clean main checkout at 8c027fabf85fe46fa0395eb459c0289872fef491, ran safe non-mutating verification commands, and intentionally skipped fixture-mutating database tests because DATABASE_URL points to a non-local Supabase pooler.",
+      "created_at": "2026-07-07T20:12:02.077Z",
+      "updated_at": "2026-07-07T20:12:02.077Z"
+    },
+    {
+      "object_id": "obj-evd-mrb351wz-ee53c349",
+      "object_type": "evidence",
+      "title": "Local clean checkout revision snapshot",
+      "canonical_path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-local-clean-checkout-revision-snapshot-ee53c349.md",
+      "status": "validated",
+      "authority": "observed",
+      "verification_state": "observed",
+      "project_id": "prj-meta-word-of-mouth",
+      "summary": "Supports that the local checkout was clean on main tracking origin/main at commit 8c027fabf85fe46fa0395eb459c0289872fef491 during this verification pass.",
+      "created_at": "2026-07-07T20:12:15.732Z",
+      "updated_at": "2026-07-07T20:12:15.732Z"
+    },
+    {
+      "object_id": "obj-evd-mrb351xk-224ef696",
+      "object_type": "evidence",
+      "title": "Safe static verification commands passed",
+      "canonical_path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-safe-static-verification-commands-passed-224ef696.md",
+      "status": "validated",
+      "authority": "observed",
+      "verification_state": "observed",
+      "project_id": "prj-meta-word-of-mouth",
+      "summary": "Supports that Prisma schema validation, pure compatibility/Meta/privacy tests, TypeScript, ESLint, and Next production build passed locally on commit 8c027fabf85fe46fa0395eb459c0289872fef491.",
+      "created_at": "2026-07-07T20:12:15.754Z",
+      "updated_at": "2026-07-07T20:12:15.754Z"
+    },
+    {
+      "object_id": "obj-evd-mrb351xs-27ac41ce",
+      "object_type": "evidence",
+      "title": "Database-backed tests intentionally skipped against remote Supabase URL",
+      "canonical_path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-database-backed-tests-intentionally-skipped-against-remote-supabase-url-27ac41ce.md",
+      "status": "validated",
+      "authority": "observed",
+      "verification_state": "observed",
+      "project_id": "prj-meta-word-of-mouth",
+      "summary": "Supports the boundary that fixture-mutating tests were not run because DATABASE_URL resolved to aws-1-eu-west-2.pooler.supabase.com rather than localhost/127.0.0.1.",
+      "created_at": "2026-07-07T20:12:15.764Z",
+      "updated_at": "2026-07-07T20:12:15.764Z"
+    },
+    {
+      "object_id": "obj-run-mrb3iohg-6d1d9a66",
+      "object_type": "run",
+      "title": "Production gate blocker audit intake and static verification",
+      "canonical_path": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-production-gate-blocker-audit-intake-and-static-verification-6d1d9a66.md",
+      "status": "completed",
+      "authority": "observed",
+      "verification_state": "observed",
+      "project_id": "prj-meta-word-of-mouth",
+      "summary": "Ingested Omar's production-gate audit note and statically checked the high-risk claims against local commit 8c027fabf85fe46fa0395eb459c0289872fef491 without running DB-mutating or provider/runtime tests.",
+      "created_at": "2026-07-07T20:22:51.511Z",
+      "updated_at": "2026-07-07T20:22:51.511Z"
+    },
+    {
+      "object_id": "obj-evd-mrb3iwud-32fdb1ac",
+      "object_type": "evidence",
+      "title": "Production gate audit source note",
+      "canonical_path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-production-gate-audit-source-note-32fdb1ac.md",
+      "status": "validated",
+      "authority": "observed",
+      "verification_state": "observed",
+      "project_id": "prj-meta-word-of-mouth",
+      "summary": "Records Omar's provided production-gate audit note as a bounded source artifact; claims still require repo/runtime verification before becoming project truth.",
+      "created_at": "2026-07-07T20:23:02.369Z",
+      "updated_at": "2026-07-07T20:23:02.369Z"
+    },
+    {
+      "object_id": "obj-evd-mrb3iwud-aba73203",
+      "object_type": "evidence",
+      "title": "Static verification of production gate blockers",
+      "canonical_path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-static-verification-of-production-gate-blockers-aba73203.md",
+      "status": "validated",
+      "authority": "observed",
+      "verification_state": "observed",
+      "project_id": "prj-meta-word-of-mouth",
+      "summary": "Records static repo verification of the expanded Meta Word of Mouth production-gate blockers, including stale recovery wiring, provider-ID privacy gaps, leads evidence permissions, outbound send ambiguity, and CI/test coverage gaps.",
+      "created_at": "2026-07-07T20:23:02.374Z",
+      "updated_at": "2026-07-07T20:23:02.374Z"
+    }
+  ]
+}

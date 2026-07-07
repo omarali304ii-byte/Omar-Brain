@@ -1,0 +1,101 @@
+{
+  "registry_id": "omar-brain-relation-vocabulary-v1",
+  "version": "1.0",
+  "updated": "2026-07-07",
+  "relations": [
+    {
+      "id": "belongs_to",
+      "causal": false
+    },
+    {
+      "id": "depends_on",
+      "causal": false
+    },
+    {
+      "id": "blocks",
+      "causal": false
+    },
+    {
+      "id": "implements",
+      "causal": false
+    },
+    {
+      "id": "verified_by",
+      "causal": true,
+      "target_type": "evidence"
+    },
+    {
+      "id": "produced_by",
+      "causal": true
+    },
+    {
+      "id": "produced_by_run",
+      "causal": true,
+      "target_type": "run"
+    },
+    {
+      "id": "derived_from",
+      "causal": true
+    },
+    {
+      "id": "learned_from",
+      "causal": true
+    },
+    {
+      "id": "failed_because",
+      "causal": true
+    },
+    {
+      "id": "resolved_by",
+      "causal": true
+    },
+    {
+      "id": "supports",
+      "causal": false
+    },
+    {
+      "id": "contradicts",
+      "causal": false
+    },
+    {
+      "id": "supersedes",
+      "causal": false
+    },
+    {
+      "id": "affects",
+      "causal": false
+    },
+    {
+      "id": "applies_to",
+      "causal": false
+    },
+    {
+      "id": "requires_skill",
+      "causal": false
+    },
+    {
+      "id": "supports_goal",
+      "causal": false
+    },
+    {
+      "id": "owned_by",
+      "causal": false
+    },
+    {
+      "id": "uses_tool",
+      "causal": false
+    },
+    {
+      "id": "uses_technology",
+      "causal": false
+    },
+    {
+      "id": "validated_in",
+      "causal": true
+    },
+    {
+      "id": "invalidated_in",
+      "causal": true
+    }
+  ]
+}

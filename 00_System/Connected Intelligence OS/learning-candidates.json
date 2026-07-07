@@ -1,0 +1,482 @@
+{
+  "registry_id": "omar-brain-learning-candidates-v1",
+  "version": "1.0",
+  "updated": "2026-07-07",
+  "candidates": [
+    {
+      "candidate_id": "lc-evidence-first-ai-decisions-persist-exac-5ce17ece",
+      "candidate_key": "5ce17ece5136f3956428bb280ef6cc361b88db5ef9fc64986b79fe48b6dc0f28",
+      "kind": "lesson",
+      "claim": "Evidence-first AI decisions: persist exact source evidence, schema-validate AI output, and separate deterministic business scoring from model confidence.",
+      "status": "proposed",
+      "source_runs": [
+        "run-mrb1o0ob-731bc079"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review."
+    },
+    {
+      "candidate_id": "lc-durable-async-side-effects-commit-enqueu-3593276b",
+      "candidate_key": "3593276b0a82cdf82f887031a857dd41cef5d4cd499361eb738964806112cb8c",
+      "kind": "lesson",
+      "claim": "Durable async side effects: commit/enqueue before expensive AI/provider work; claim idempotently; recover stale leases.",
+      "status": "proposed",
+      "source_runs": [
+        "run-mrb1o0ob-731bc079"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review."
+    },
+    {
+      "candidate_id": "lc-signed-webhook-integrity-verify-exact-ra-88927d4c",
+      "candidate_key": "88927d4cfa5f4005473f1b2cc0ac648ba463c894c78f4ae209d3cac1d5e4f766",
+      "kind": "lesson",
+      "claim": "Signed webhook integrity: verify exact raw bytes before parsing; deduplicate at event/message layers.",
+      "status": "proposed",
+      "source_runs": [
+        "run-mrb1o0ob-731bc079"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review."
+    },
+    {
+      "candidate_id": "lc-permission-scoped-dto-exposure-sensitive-43e47143",
+      "candidate_key": "43e471431fa616117e28b79dadde939a5c0235981903db946c4b5d2a13957a9d",
+      "kind": "lesson",
+      "claim": "Permission-scoped DTO exposure: sensitive fields default hidden/masked and are loaded/exposed only when permission allows.",
+      "status": "proposed",
+      "source_runs": [
+        "run-mrb1o0ob-731bc079"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review."
+    },
+    {
+      "candidate_id": "lc-idempotent-legacy-migration-dry-run-repe-2cba6c81",
+      "candidate_key": "2cba6c81bfdc002b5f5ad25510f91f1b21772f13112d41290cac76678949dabf",
+      "kind": "lesson",
+      "claim": "Idempotent legacy migration: dry-run + repeated safe execution + audit marker + idempotency tests.",
+      "status": "proposed",
+      "source_runs": [
+        "run-mrb1o0ob-731bc079"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review."
+    },
+    {
+      "candidate_id": "lc-separate-ai-confidence-commercial-streng-96e89af4",
+      "candidate_key": "96e89af44adcf9c692450b626e5e5a89e3ec40a203082e3520ab8a1a7f755f03",
+      "kind": "lesson",
+      "claim": "Separate AI confidence, commercial strength and operational urgency as different semantics.",
+      "status": "proposed",
+      "source_runs": [
+        "run-mrb1o0ob-731bc079"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review."
+    },
+    {
+      "candidate_id": "lc-manual-regression-without-visible-ci-gat-e797c243",
+      "candidate_key": "e797c243bcbdea9892e07786b3cb238abff4b505648b6b52055e8ce79288b922",
+      "kind": "failure-signature",
+      "claim": "`MANUAL_REGRESSION_WITHOUT_VISIBLE_CI_GATE` — many local checks exist but latest commit showed no combined statuses in this inspection.",
+      "status": "proposed",
+      "source_runs": [
+        "run-mrb1o0ob-731bc079"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review."
+    },
+    {
+      "candidate_id": "lc-temporary-adapter-production-drift-dev-w-c4828049",
+      "candidate_key": "c4828049f55878bcb6cdfc2684036ba9b0767ab4670e874b03135123d31c741b",
+      "kind": "failure-signature",
+      "claim": "`TEMPORARY_ADAPTER_PRODUCTION_DRIFT` — dev webhook/OAuth adapters differ from intended owned-server production path.",
+      "status": "proposed",
+      "source_runs": [
+        "run-mrb1o0ob-731bc079"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review."
+    },
+    {
+      "candidate_id": "lc-split-dev-infra-reproducibility-gap-app--81ca0ee6",
+      "candidate_key": "81ca0ee674c3c8251c889bd1a275a5211752d5e619d5d8c33233028e1e391ea9",
+      "kind": "failure-signature",
+      "claim": "`SPLIT_DEV_INFRA_REPRODUCIBILITY_GAP` — app Docker service exists while database/public callbacks depend on external services.",
+      "status": "proposed",
+      "source_runs": [
+        "run-mrb1o0ob-731bc079"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review."
+    },
+    {
+      "candidate_id": "lc-weak-commit-provenance-repeated-commit-m-e7ff99ab",
+      "candidate_key": "e7ff99ab0f51d384b3dfd3cfe5c77d1e767e8a4afddb4f85831a02ab1a10cbe4",
+      "kind": "failure-signature",
+      "claim": "`WEAK_COMMIT_PROVENANCE` — repeated `.` commit messages erase intent and reduce future learning value.",
+      "status": "proposed",
+      "source_runs": [
+        "run-mrb1o0ob-731bc079"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review."
+    },
+    {
+      "candidate_id": "lc-legacy-model-lingering-deprecated-model--94737ddf",
+      "candidate_key": "94737ddf0377f7b3162bacec0defb92032a044e128e95141b808ec7d62ad3cc9",
+      "kind": "failure-signature",
+      "claim": "`LEGACY_MODEL_LINGERING` — deprecated model remains alongside replacement concepts.",
+      "status": "proposed",
+      "source_runs": [
+        "run-mrb1o0ob-731bc079"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review."
+    },
+    {
+      "candidate_id": "lc-keep-provider-webhook-tests-split-into-p-4c4a7d77",
+      "candidate_key": "4c4a7d77deb3baf59b4662c06f1ecf366f0b79987c55637b3f16100e326809da",
+      "kind": "lesson",
+      "claim": "Keep provider/webhook tests split into pure crypto/profile checks and DB-backed ingestion checks so agents can safely verify part of the system even when database safety is unknown.",
+      "status": "proposed",
+      "source_runs": [
+        "run-mrb34rdn-eebbc7fd"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review."
+    },
+    {
+      "candidate_id": "lc-before-running-fixture-mutating-scripts--479c017d",
+      "candidate_key": "479c017d866d2317bcbda087098643fa1e03e9355eda6de04e2b8239233c656b",
+      "kind": "lesson",
+      "claim": "Before running fixture-mutating scripts, inspect `DATABASE_URL` host and script cleanup behavior; \"test script\" does not automatically mean safe against a shared database.",
+      "status": "proposed",
+      "source_runs": [
+        "run-mrb34rdn-eebbc7fd"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review."
+    },
+    {
+      "candidate_id": "lc-remote-database-url-blocks-safe-fixture--422ce910",
+      "candidate_key": "422ce910814fe21a61814c0cb5a37b3aa49a2e733610d4935709ab6d39da1f97",
+      "kind": "failure-signature",
+      "claim": "REMOTE_DATABASE_URL_BLOCKS_SAFE_FIXTURE_TESTS",
+      "status": "proposed",
+      "source_runs": [
+        "run-mrb34rdn-eebbc7fd"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review."
+    },
+    {
+      "candidate_id": "lc-connector-only-import-needs-local-verifi-beaeb5f4",
+      "candidate_key": "beaeb5f4a5419a843a3a2f598ec1ae4241e070ada9e85271854946b0a430e54f",
+      "kind": "failure-signature",
+      "claim": "CONNECTOR_ONLY_IMPORT_NEEDS_LOCAL_VERIFICATION",
+      "status": "proposed",
+      "source_runs": [
+        "run-mrb34rdn-eebbc7fd"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review."
+    },
+    {
+      "candidate_id": "lc-treat-successful-external-provider-calls-f6ffe456",
+      "candidate_key": "f6ffe456eaa48868f58064e6778d12a1e8673e9b27c51aeda49217ff417bd988",
+      "kind": "lesson",
+      "claim": "Treat successful external provider calls and successful local persistence as two separate facts; model uncertain outcomes explicitly.",
+      "status": "proposed",
+      "source_runs": [
+        "run-mrb3iohg-6d1d9a66"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review."
+    },
+    {
+      "candidate_id": "lc-privacy-permissions-must-govern-search-f-446540e3",
+      "candidate_key": "446540e3ee2175a14301b73635b96414f46a34d7bf0d623d60ee6de3b9b24d2e",
+      "kind": "lesson",
+      "claim": "Privacy permissions must govern search/filter predicates and related evidence payloads, not only response fields.",
+      "status": "proposed",
+      "source_runs": [
+        "run-mrb3iohg-6d1d9a66"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review."
+    },
+    {
+      "candidate_id": "lc-worker-recovery-functions-are-not-produc-8649f8b6",
+      "candidate_key": "8649f8b663c7584007fe2a95e9e5aece108b9cf27c7ea32947c35c927475c329",
+      "kind": "lesson",
+      "claim": "Worker recovery functions are not production protections until the actual worker loop invokes them.",
+      "status": "proposed",
+      "source_runs": [
+        "run-mrb3iohg-6d1d9a66"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review."
+    },
+    {
+      "candidate_id": "lc-route-level-security-tests-are-stronger--aab86cb2",
+      "candidate_key": "aab86cb2a5eb56ee29549a0e5252996b4639f8280f7bbbb7fa5c4905348fd994",
+      "kind": "lesson",
+      "claim": "Route-level security tests are stronger evidence than helper/DTO tests for authori",
+      "status": "proposed",
+      "source_runs": [
+        "run-mrb3iohg-6d1d9a66"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review."
+    },
+    {
+      "candidate_id": "lc-external-send-succeeded-local-persistenc-f1d297e1",
+      "candidate_key": "f1d297e12721dc987bfc4efd6b7feba8390c0cd3c8942658261cfc424d57494a",
+      "kind": "failure-signature",
+      "claim": "EXTERNAL_SEND_SUCCEEDED_LOCAL_PERSISTENCE_FAILED",
+      "status": "proposed",
+      "source_runs": [
+        "run-mrb3iohg-6d1d9a66"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review."
+    },
+    {
+      "candidate_id": "lc-leads-evidence-bypasses-intelligence-per-2aafb5aa",
+      "candidate_key": "2aafb5aa307fd56147af2e140aa6c288e935f01de7504de92ef630f264086275",
+      "kind": "failure-signature",
+      "claim": "LEADS_EVIDENCE_BYPASSES_INTELLIGENCE_PERMISSION",
+      "status": "proposed",
+      "source_runs": [
+        "run-mrb3iohg-6d1d9a66"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review."
+    },
+    {
+      "candidate_id": "lc-provider-id-search-oracle-4355a070",
+      "candidate_key": "4355a07022fac784de22d8b20ccaaf3c9c582902200844e2831912c0c0a39f27",
+      "kind": "failure-signature",
+      "claim": "PROVIDER_ID_SEARCH_ORACLE",
+      "status": "proposed",
+      "source_runs": [
+        "run-mrb3iohg-6d1d9a66"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review."
+    },
+    {
+      "candidate_id": "lc-stale-recovery-dead-runtime-code-7551f1c1",
+      "candidate_key": "7551f1c1de48b690be609394dc87e3e7a556e444eefea148bdb8f63e7938d104",
+      "kind": "failure-signature",
+      "claim": "STALE_RECOVERY_DEAD_RUNTIME_CODE",
+      "status": "proposed",
+      "source_runs": [
+        "run-mrb3iohg-6d1d9a66"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review."
+    },
+    {
+      "candidate_id": "lc-same-person-ai-snapshot-out-of-order-ove-f8365709",
+      "candidate_key": "f8365709679bd41aafdcaea9a4cb087917274528e64f99c0f7770f15f1f853af",
+      "kind": "failure-signature",
+      "claim": "SAME_PERSON_AI_SNAPSHOT_OUT_OF_ORDER_OVERWRITE",
+      "status": "proposed",
+      "source_runs": [
+        "run-mrb3iohg-6d1d9a66"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review."
+    },
+    {
+      "candidate_id": "lc-test-expectation-drifts-from-privacy-pol-22a677ae",
+      "candidate_key": "22a677ae7d8049f92a59d2bfdb988776a52a163a24f1ce4b3e75dac6bdd432f7",
+      "kind": "failure-signature",
+      "claim": "TEST_EXPECTATION_DRIFTS_FROM_PRIVACY_POLICY",
+      "status": "proposed",
+      "source_runs": [
+        "run-mrb3iohg-6d1d9a66"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review."
+    }
+  ]
+}

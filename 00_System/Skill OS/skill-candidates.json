@@ -1,0 +1,7 @@
+{
+  "candidate_registry_id": "omar-brain-skill-candidates-v1",
+  "version": "1.0",
+  "updated": "2026-07-07",
+  "rule": "candidate does not become active skill until deduplication, provenance, contract review, and at least one sandbox application plan exist",
+  "candidates": []
+}

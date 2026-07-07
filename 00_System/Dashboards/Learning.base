@@ -1,0 +1,34 @@
+filters:
+  or:
+    - 'type == "lesson"'
+    - 'type == "pattern"'
+    - 'type == "anti-pattern"'
+    - 'type == "failure-signature"'
+    - 'type == "standard"'
+properties:
+  type:
+    displayName: Type
+  status:
+    displayName: Status
+  maturity:
+    displayName: Maturity
+  evidence_count:
+    displayName: Evidence
+  success_count:
+    displayName: Successes
+  failure_count:
+    displayName: Failures
+  last_validated:
+    displayName: Validated
+views:
+  - type: table
+    name: Learning Memory
+    order:
+      - file.name
+      - type
+      - status
+      - maturity
+      - evidence_count
+      - success_count
+      - failure_count
+      - last_validated

@@ -1,0 +1,10 @@
+{
+  "version": "3.0-web-expert",
+  "built": "2026-07-07",
+  "files": 252,
+  "markdown": 225,
+  "bases": 14,
+  "web_rules": 276,
+  "web_sources": 34,
+  "sha256_web_rules": "8c2d1c3508d31ed1803983e9defe7e4085f640abceb2a19f8a47f6d68a350711"
+}

@@ -1,0 +1,36 @@
+{
+  "manifest_version": "1.0",
+  "project_id": "prj-php-order-receiver-pos",
+  "title": "PHP Order Receiver POS Integration",
+  "aliases": [
+    "PHP Order Receiver",
+    "POS Integration",
+    "receive_order.php project"
+  ],
+  "ambiguous_aliases": [],
+  "status": "active",
+  "project_class": "software",
+  "project_kind": "integration",
+  "local_path": null,
+  "repo_url": null,
+  "verification_state": "context-import-needs-repo-check",
+  "authority": "contextual",
+  "known_context": [
+    "PHP receive_order.php",
+    "MySQL intake",
+    "Firebird POS integration design",
+    "branch-aware mapping",
+    "failed_orders.json failure capture"
+  ],
+  "exact_next_verification": "Resolve current code location and inspect exact receive_order.php, database mappings and deployed behavior.",
+  "canonical_packet_path": null,
+  "packet_status": "manifest-only",
+  "entrypoints": {},
+  "learning": {
+    "runs": "40_Projects/Experience/prj-php-order-receiver-pos/80_Runs",
+    "evidence": "40_Projects/Experience/prj-php-order-receiver-pos/70_Evidence",
+    "episodes": "85_Episodes"
+  },
+  "source_boundary": "Imported from known user project context. Not verified against current repository/runtime.",
+  "updated": "2026-07-07"
+}

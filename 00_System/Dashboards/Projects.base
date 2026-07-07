@@ -1,0 +1,56 @@
+filters:
+  and:
+    - file.inFolder("40_Projects")
+    - 'type == "project"'
+properties:
+  project_id:
+    displayName: Project ID
+  status:
+    displayName: Status
+  project_class:
+    displayName: Class
+  phase:
+    displayName: Phase
+  health:
+    displayName: Health
+  priority:
+    displayName: Priority
+  next_action:
+    displayName: Next Action
+  company:
+    displayName: Company
+  product:
+    displayName: Product
+  target_date:
+    displayName: Target
+  last_reviewed:
+    displayName: Reviewed
+views:
+  - type: table
+    name: Active Portfolio
+    filters:
+      and:
+        - 'status == "active"'
+    order:
+      - priority
+      - file.name
+      - project_id
+      - phase
+      - health
+      - next_action
+      - company
+      - product
+      - target_date
+      - last_reviewed
+  - type: table
+    name: Waiting and Paused
+    filters:
+      or:
+        - 'status == "waiting"'
+        - 'status == "paused"'
+    order:
+      - file.name
+      - status
+      - health
+      - next_action
+      - last_reviewed

@@ -1,0 +1,477 @@
+{
+  "registry_id": "omar-brain-route-registry-v1",
+  "version": "1.2",
+  "updated": "2026-07-07",
+  "entrypoint": "00_System/Operating Map.md",
+  "fallback": {
+    "unresolved": "01_Inbox/Inbox.md",
+    "rule": "do not invent a destination; keep uncertainty explicit"
+  },
+  "routes": [
+    {
+      "route_id": "route-start",
+      "intent": "start or orient inside Omar Brain",
+      "triggers": [
+        "start",
+        "where do i begin",
+        "use my brain",
+        "navigate brain"
+      ],
+      "entrypoint": "00_System/Operating Map.md",
+      "read_first": [
+        "00_System/Runtime State/brain-state.json",
+        "00_System/Runtime State/HOT.md",
+        "00_System/Runtime State/GAP_REGISTER.md"
+      ],
+      "next_signs": [
+        {
+          "when": "task intent is known",
+          "go_to": "matched route in this registry"
+        }
+      ],
+      "destination": "correct route selected",
+      "arrival_proof": "route_id + resolved canonical target + unresolved uncertainty"
+    },
+    {
+      "route_id": "route-life",
+      "intent": "personal life, routines, goals, health or ongoing responsibility",
+      "triggers": [
+        "life",
+        "routine",
+        "health",
+        "personal goal",
+        "habit"
+      ],
+      "entrypoint": "10_Life/Life HQ.md",
+      "read_first": [
+        "10_Life/Life HQ.md"
+      ],
+      "next_signs": [
+        {
+          "when": "finite multi-step outcome",
+          "go_to": "40_Projects/Projects HQ.md"
+        },
+        {
+          "when": "reflection/review",
+          "go_to": "80_Reviews/Reviews HQ.md"
+        }
+      ],
+      "destination": "relevant life area/goal/routine or project",
+      "arrival_proof": "canonical target and next action"
+    },
+    {
+      "route_id": "route-career",
+      "intent": "career direction, job, CV, portfolio or opportunity",
+      "triggers": [
+        "career",
+        "job",
+        "cv",
+        "resume",
+        "portfolio",
+        "role"
+      ],
+      "entrypoint": "20_Career/Career HQ.md",
+      "read_first": [
+        "20_Career/Career HQ.md"
+      ],
+      "next_signs": [
+        {
+          "when": "capability improvement",
+          "go_to": "50_Skills/Skills HQ.md"
+        },
+        {
+          "when": "finite portfolio build",
+          "go_to": "40_Projects/Projects HQ.md"
+        }
+      ],
+      "destination": "career strategy/opportunity/evidence target",
+      "arrival_proof": "decision, application asset, or project next action"
+    },
+    {
+      "route_id": "route-business",
+      "intent": "company, client, product, offer, strategy or ongoing operations",
+      "triggers": [
+        "business",
+        "client",
+        "company",
+        "product",
+        "offer",
+        "strategy"
+      ],
+      "entrypoint": "30_Business/Business HQ.md",
+      "read_first": [
+        "30_Business/Business HQ.md"
+      ],
+      "next_signs": [
+        {
+          "when": "finite launch/build/migration/campaign/integration",
+          "go_to": "40_Projects/Projects HQ.md"
+        },
+        {
+          "when": "source-heavy market investigation",
+          "go_to": "00_System/Knowledge Graph/Source-Backed Knowledge Protocol.md"
+        }
+      ],
+      "destination": "canonical business entity or linked project",
+      "arrival_proof": "resolved entity + applicable decision/project/action"
+    },
+    {
+      "route_id": "route-project-new",
+      "intent": "create a new finite project",
+      "triggers": [
+        "new project",
+        "create project",
+        "start project",
+        "project idea"
+      ],
+      "entrypoint": "40_Projects/Projects HQ.md",
+      "read_first": [
+        "00_System/Project OS/Universal Project Contract.md",
+        "00_System/Project OS/Project Folder Blueprint v2.md"
+      ],
+      "next_signs": [
+        {
+          "when": "project is software",
+          "go_to": "00_System/Architecture Profiles/software-standard-v1.md"
+        },
+        {
+          "when": "project is web",
+          "go_to": "00_System/Architecture Profiles/web-expert-v1.md"
+        }
+      ],
+      "destination": "canonical project packet",
+      "arrival_proof": "project_id + outcome + done definition + first verified batch"
+    },
+    {
+      "route_id": "route-project-resume",
+      "intent": "continue, finish, fix or inspect an existing project",
+      "triggers": [
+        "continue project",
+        "finish project",
+        "check project",
+        "fix project",
+        "resume project"
+      ],
+      "entrypoint": "40_Projects/Projects HQ.md",
+      "read_first": [
+        "00_System/AI Runtime/Project Resolver Protocol.md",
+        "00_System/AI Runtime/Project Agent Boot Protocol.md",
+        "00_System/AI Runtime/Repo Inspection Protocol.md"
+      ],
+      "next_signs": [
+        {
+          "when": "repository exists",
+          "go_to": "real repository/workspace"
+        },
+        {
+          "when": "completion claim is near",
+          "go_to": "00_System/Quality System/Quality Gate Matrix.md"
+        },
+        {
+          "when": "production readiness is requested",
+          "go_to": "00_System/Production Readiness OS/Production Readiness Operating System.md"
+        }
+      ],
+      "destination": "verified project outcome",
+      "arrival_proof": "acceptance criteria + evidence pack + current-state update"
+    },
+    {
+      "route_id": "route-project-production",
+      "intent": "audit, harden and make a software project production-ready",
+      "triggers": [
+        "ready for production",
+        "production ready",
+        "production level",
+        "harden project",
+        "harden website",
+        "final audit",
+        "before deploy",
+        "make website ready",
+        "check everything missing"
+      ],
+      "entrypoint": "00_System/Production Readiness OS/Production Readiness Operating System.md",
+      "read_first": [
+        "00_System/AI Runtime/Project Resolver Protocol.md",
+        "00_System/AI Runtime/Repo Inspection Protocol.md",
+        "00_System/Production Readiness OS/Universal Production Hardening Matrix.md",
+        "00_System/Production Readiness OS/Production Status State Machine.md",
+        "00_System/Production Readiness OS/Production Evidence Contract.md"
+      ],
+      "next_signs": [
+        {
+          "when": "web project",
+          "go_to": "00_System/AI Runtime/Web Agent Master Protocol.md"
+        },
+        {
+          "when": "blockers found",
+          "go_to": "project 17_PRODUCTION_HARDENING_QUEUE.md"
+        },
+        {
+          "when": "candidate ready",
+          "go_to": "00_System/Quality System/Release Gate.md"
+        },
+        {
+          "when": "completion claim",
+          "go_to": "00_System/Agent OS/Critic Verifier Agent Contract.md"
+        }
+      ],
+      "destination": "PRODUCTION_READY or READY_WITH_ACCEPTED_RISKS",
+      "arrival_proof": "zero open P0/P1 blockers + applicable gates pass + independent critic verdict + release evidence"
+    },
+    {
+      "route_id": "route-research",
+      "intent": "ingest or synthesize source-heavy knowledge",
+      "triggers": [
+        "research",
+        "pdf",
+        "report",
+        "source",
+        "study",
+        "deep research"
+      ],
+      "entrypoint": "00_System/Knowledge Graph/Source-Backed Knowledge Protocol.md",
+      "read_first": [
+        "60_Knowledge/Knowledge HQ.md",
+        "00_System/Source and Trust Policy.md"
+      ],
+      "next_signs": [
+        {
+          "when": "reusable concept found",
+          "go_to": "60_Knowledge/Concepts"
+        },
+        {
+          "when": "project-specific finding",
+          "go_to": "resolved project 50_Research"
+        },
+        {
+          "when": "conflicting evidence",
+          "go_to": "00_System/Governance/No Silent Overwrite Policy.md"
+        }
+      ],
+      "destination": "source-backed answer or graph update",
+      "arrival_proof": "provenance + confidence + contradictions/gaps"
+    },
+    {
+      "route_id": "route-skill",
+      "intent": "learn, practice or improve a capability",
+      "triggers": [
+        "learn",
+        "skill",
+        "practice",
+        "master",
+        "improve capability"
+      ],
+      "entrypoint": "50_Skills/Skills HQ.md",
+      "read_first": [
+        "50_Skills/Skills HQ.md",
+        "00_System/Skill OS/Skill Marketplace Operating System.md",
+        "00_System/Skill OS/skill-registry.json",
+        "00_System/Skill OS/skill-graph.json",
+        "00_System/Skill OS/Skill Composition and Handoff Protocol.md"
+      ],
+      "next_signs": [
+        {
+          "when": "task request contains a known capability trigger",
+          "go_to": "00_System/Automation/skill-route.mjs"
+        },
+        {
+          "when": "real software repository is present",
+          "go_to": "00_System/Automation/skill-stack.mjs"
+        },
+        {
+          "when": "common multi-skill journey matches",
+          "go_to": "00_System/Skill OS/skill-bundles.json"
+        },
+        {
+          "when": "no confident skill exists repeatedly",
+          "go_to": "00_System/Skill OS/Skill Development Lifecycle.md"
+        },
+        {
+          "when": "real project practice exists",
+          "go_to": "00_System/Automation/skill-evidence.mjs"
+        },
+        {
+          "when": "repeated validated method emerges",
+          "go_to": "50_Skills/AI-Work/skill-distillation.md"
+        },
+        {
+          "when": "production outcome is claimed",
+          "go_to": "00_System/Production Readiness OS/Production Readiness Operating System.md"
+        }
+      ],
+      "destination": "one primary skill + justified support graph + evidence-backed capability result",
+      "arrival_proof": "primary skill_id + support justification + gates + evidence/handoff verdict + candidate decision when gap exists"
+    },
+    {
+      "route_id": "route-people",
+      "intent": "relationship or person context",
+      "triggers": [
+        "person",
+        "people",
+        "contact",
+        "relationship",
+        "team member"
+      ],
+      "entrypoint": "70_People/People HQ.md",
+      "read_first": [
+        "70_People/People HQ.md"
+      ],
+      "next_signs": [
+        {
+          "when": "work belongs to project",
+          "go_to": "40_Projects/Projects HQ.md"
+        },
+        {
+          "when": "company context dominates",
+          "go_to": "30_Business/Business HQ.md"
+        }
+      ],
+      "destination": "relevant respectful person context",
+      "arrival_proof": "minimal relevant context, no unnecessary sensitive collection"
+    },
+    {
+      "route_id": "route-review",
+      "intent": "reflect, review, maintain or close loops",
+      "triggers": [
+        "review",
+        "weekly review",
+        "monthly review",
+        "reflect",
+        "maintenance"
+      ],
+      "entrypoint": "80_Reviews/Reviews HQ.md",
+      "read_first": [
+        "80_Reviews/Reviews HQ.md",
+        "00_System/Maintenance and Review System.md"
+      ],
+      "next_signs": [
+        {
+          "when": "stale project found",
+          "go_to": "40_Projects/Projects HQ.md"
+        },
+        {
+          "when": "lesson found",
+          "go_to": "00_System/Learning System/AI Learning Flywheel.md"
+        }
+      ],
+      "destination": "closed loops + next decisions/actions",
+      "arrival_proof": "review outputs linked to affected canonical targets"
+    },
+    {
+      "route_id": "route-memory",
+      "intent": "save, merge, correct or promote durable memory",
+      "triggers": [
+        "remember",
+        "save context",
+        "memory",
+        "merge note",
+        "promote lesson"
+      ],
+      "entrypoint": "00_System/Memory OS/Memory OS.md",
+      "read_first": [
+        "00_System/Memory OS/Memory Single-Writer and Conflict Protocol.md",
+        "00_System/Governance/No Silent Overwrite Policy.md"
+      ],
+      "next_signs": [
+        {
+          "when": "durable write proposed",
+          "go_to": "00_System/Agent OS/Memory Curator Agent Contract.md"
+        },
+        {
+          "when": "conflict found",
+          "go_to": "00_System/Governance/Contradiction and Supersession Policy.md"
+        }
+      ],
+      "destination": "safe memory decision",
+      "arrival_proof": "commit/merge/reject/defer verdict + provenance"
+    },
+    {
+      "route_id": "route-system",
+      "intent": "change, audit or improve Omar Brain itself",
+      "triggers": [
+        "upgrade brain",
+        "brain system",
+        "change architecture",
+        "audit brain"
+      ],
+      "entrypoint": "00_System/Brain Constitution.md",
+      "read_first": [
+        "00_System/System Manifest.md",
+        "00_System/Governance/System Change Control.md",
+        "00_System/Runtime State/brain-state.json",
+        "00_System/Runtime State/GAP_REGISTER.md"
+      ],
+      "next_signs": [
+        {
+          "when": "navigation changed",
+          "go_to": "00_System/Navigation OS/Road Sign Navigation System.md"
+        },
+        {
+          "when": "change implemented",
+          "go_to": "00_System/Automation/brain-cycle.mjs"
+        }
+      ],
+      "destination": "validated governed system change",
+      "arrival_proof": "change record + zero validation errors + eval result"
+    },
+    {
+      "route_id": "route-ingest-information",
+      "intent": "capture new information and route it without orphaning or fake verification",
+      "triggers": [
+        "ingest information",
+        "save this learning",
+        "add this to brain",
+        "new failure",
+        "new evidence"
+      ],
+      "entrypoint": "00_System/Connected Intelligence OS/Universal Ingestion Gateway.md",
+      "read_first": [
+        "00_System/Connected Intelligence OS/Universal Object Contract.md",
+        "00_System/Connected Intelligence OS/No Orphan Information Policy.md"
+      ],
+      "next_signs": [
+        {
+          "when": "project is known",
+          "go_to": "resolved project manifest or packet"
+        },
+        {
+          "when": "project alias is ambiguous",
+          "go_to": "hold for exact resolution"
+        },
+        {
+          "when": "destination remains unknown",
+          "go_to": "01_Inbox/Connected Intelligence"
+        }
+      ],
+      "destination": "identified object, explicit inbox state, or safe rejection",
+      "arrival_proof": "object_id + provenance + project resolution + event or explicit no-write result"
+    },
+    {
+      "route_id": "route-learn-from-project",
+      "intent": "compile reusable learning from real project execution",
+      "triggers": [
+        "learn from project",
+        "experience compiler",
+        "what did we learn",
+        "reuse project lesson"
+      ],
+      "entrypoint": "00_System/Connected Intelligence OS/Experience Compiler.md",
+      "read_first": [
+        "00_System/Connected Intelligence OS/Real Project Learning Contract.md",
+        "00_System/Connected Intelligence OS/Causal Lineage Standard.md"
+      ],
+      "next_signs": [
+        {
+          "when": "real run exists",
+          "go_to": "project 80_Runs"
+        },
+        {
+          "when": "candidate is cross-project",
+          "go_to": "existing learning and memory promotion pipeline"
+        }
+      ],
+      "destination": "evidence-bounded learning candidate or NO_REUSABLE_LEARNING",
+      "arrival_proof": "source run + project + validation state + no automatic promotion"
+    }
+  ]
+}

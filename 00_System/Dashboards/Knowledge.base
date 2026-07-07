@@ -1,0 +1,35 @@
+filters:
+  and:
+    - file.inFolder("60_Knowledge")
+    - not:
+        - 'type == "system"'
+properties:
+  type:
+    displayName: Type
+  status:
+    displayName: Status
+  topics:
+    displayName: Topics
+  source_kind:
+    displayName: Source
+  confidence:
+    displayName: Confidence
+views:
+  - type: table
+    name: All knowledge
+    order:
+      - file.name
+      - type
+      - status
+      - topics
+      - source_kind
+      - confidence
+  - type: table
+    name: Problems solved
+    filters:
+      and:
+        - 'type == "problem-solution"'
+    order:
+      - file.name
+      - topics
+      - confidence

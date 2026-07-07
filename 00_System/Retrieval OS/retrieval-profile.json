@@ -1,0 +1,58 @@
+{
+  "profile_id": "retrieval-hybrid-v1",
+  "version": "1.0",
+  "updated": "2026-07-07",
+  "canonical_source": "Obsidian Markdown",
+  "default_pipeline": [
+    "classify",
+    "scope",
+    "metadata_filter",
+    "lexical",
+    "dense",
+    "fusion",
+    "rerank",
+    "dedupe",
+    "parent_expand",
+    "freshness_authority",
+    "pack"
+  ],
+  "chunking": {
+    "target_tokens_min": 400,
+    "target_tokens_max": 900,
+    "overlap_percent": 12,
+    "structure_first": true
+  },
+  "candidate_defaults": {
+    "lexical_k": 30,
+    "dense_k": 30,
+    "fused_k": 25,
+    "rerank_k": 12,
+    "final_k": 8
+  },
+  "fusion": {
+    "method": "RRF",
+    "configurable": true
+  },
+  "required_metadata": [
+    "doc_id",
+    "chunk_id",
+    "path",
+    "heading_path",
+    "content_hash",
+    "updated",
+    "ai_access"
+  ],
+  "gates": {
+    "exclude_ai_access_denied": true,
+    "penalize_superseded": true,
+    "flag_stale": true
+  },
+  "eval_required_for_changes": [
+    "chunking",
+    "embedding_model",
+    "fusion",
+    "reranker",
+    "graph_expansion",
+    "freshness_weights"
+  ]
+}

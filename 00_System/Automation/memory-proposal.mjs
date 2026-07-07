@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+import fs from 'node:fs'; import path from 'node:path'; import crypto from 'node:crypto';
+const args=process.argv.slice(2); const get=(n,f='')=>{const i=args.indexOf(`--${n}`);return i>=0?args[i+1]:f};
+const vault=path.resolve(get('vault',process.cwd())); const title=get('title'); const cls=get('class','semantic'); const target=get('target',''); const confidence=get('confidence','medium');
+if(!title||!['semantic','procedural'].includes(cls)){console.error('Usage: node memory-proposal.mjs --title "..." --class semantic|procedural [--target "path"]');process.exit(2)}
+const day=new Date().toISOString().slice(0,10); const id='memprop-'+day.replaceAll('-','')+'-'+crypto.randomBytes(4).toString('hex'); const dir=path.join(vault,'01_Inbox','Memory Proposals'); fs.mkdirSync(dir,{recursive:true}); const safe=title.replace(/[<>:"/\\|?*]+/g,'-').slice(0,100); const file=path.join(dir,`MEMPROP - ${id} - ${safe}.md`);
+const body=`---\ntype: memory-proposal\nstatus: proposed\ncreated: ${day}\nupdated: ${day}\nproposal_id: ${id}\ncandidate_memory_class: ${cls}\ntarget_note: ${JSON.stringify(target)}\nbase_content_hash:\nconfidence: ${confidence}\nsources: []\nderived_from: []\ncritic_status: pending\ncurator_status: pending\nai_access: restricted\n---\n# ${title}\n\n## Candidate assertion / procedure change\n\n## Why future agents need this\n\n## Provenance\n\n## Duplicate search\n\n## Contradiction search\n\n## Privacy check\n\n## Proposed target change\n\n## Critic review\n\n## Curator decision\n`;
+fs.writeFileSync(file,body,{flag:'wx'}); console.log(file); console.log(id);

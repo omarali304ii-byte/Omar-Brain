@@ -1,0 +1,3656 @@
+{
+  "schema_version": "1.0",
+  "generated": "2026-07-07",
+  "rule_count": 276,
+  "rules": [
+    {
+      "id": "WEB-ARCH-001",
+      "category": "ARCH",
+      "title": "Single authoritative owner per state",
+      "severity": "blocker",
+      "applies_when": "all",
+      "rule": "Every durable business fact MUST have one authoritative owner. Replicas, caches and read models MUST declare freshness and invalidation semantics.",
+      "evidence": "Source-of-truth matrix + data-flow diagram + tests for write path",
+      "source_ids": [
+        "SRC-12FACTOR"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-ARCH-002",
+      "category": "ARCH",
+      "title": "Explicit trust boundaries",
+      "severity": "critical",
+      "applies_when": "all",
+      "rule": "Document browser, server, database, worker, third-party, admin and tenant trust boundaries before implementing sensitive flows.",
+      "evidence": "Architecture diagram with trust boundaries; threat model links",
+      "source_ids": [
+        "SRC-OWASP-ASVS-5",
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-ARCH-003",
+      "category": "ARCH",
+      "title": "Layered business flow",
+      "severity": "major",
+      "applies_when": "application",
+      "rule": "UI/routes MUST not contain durable business rules or direct persistence writes; use explicit use-case/service boundaries and persistence gateways.",
+      "evidence": "Repo map + dependency inspection + representative tests",
+      "source_ids": [
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-ARCH-004",
+      "category": "ARCH",
+      "title": "No architecture by page",
+      "severity": "major",
+      "applies_when": "application",
+      "rule": "Design modules around business capabilities and invariants, not only screens or routes.",
+      "evidence": "Module map and ownership table",
+      "source_ids": [
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-ARCH-005",
+      "category": "ARCH",
+      "title": "Dependency direction is intentional",
+      "severity": "major",
+      "applies_when": "all",
+      "rule": "Define allowed dependency direction. Cycles across business modules require an architecture decision or refactor.",
+      "evidence": "Dependency graph or static-boundary checks",
+      "source_ids": [
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-ARCH-006",
+      "category": "ARCH",
+      "title": "External systems behind gateways",
+      "severity": "critical",
+      "applies_when": "external-integration",
+      "rule": "Third-party APIs, queues, email, payment, Meta, storage and search MUST be isolated behind gateways/adapters with timeout, retry and error translation policies.",
+      "evidence": "Gateway contract + integration tests",
+      "source_ids": [
+        "SRC-SRE",
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-ARCH-007",
+      "category": "ARCH",
+      "title": "Request lifecycle is traceable",
+      "severity": "major",
+      "applies_when": "application",
+      "rule": "Document request/action flow from input through validation, authorization, business logic, transaction, side effects and response.",
+      "evidence": "Sequence diagram or request-flow note",
+      "source_ids": [
+        "SRC-OTEL",
+        "SRC-OWASP-ASVS-5"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-ARCH-008",
+      "category": "ARCH",
+      "title": "Failure modes designed first",
+      "severity": "critical",
+      "applies_when": "production",
+      "rule": "For every critical flow define timeout, partial failure, duplicate delivery, stale state, dependency outage and recovery behavior.",
+      "evidence": "Failure-mode table + chaos/fault tests where justified",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-ARCH-009",
+      "category": "ARCH",
+      "title": "Stateless compute by default",
+      "severity": "major",
+      "applies_when": "scalable-service",
+      "rule": "Do not rely on process memory for durable cross-request state; persist durable state in explicit backing services.",
+      "evidence": "Architecture review + restart test",
+      "source_ids": [
+        "SRC-12FACTOR"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-ARCH-010",
+      "category": "ARCH",
+      "title": "Background work is explicit",
+      "severity": "major",
+      "applies_when": "async-work",
+      "rule": "Long-running, retryable or scheduled work MUST have explicit job ownership, idempotency, visibility, retry/dead-letter and reconciliation strategy.",
+      "evidence": "Job contract + tests + dashboard/metrics",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-ARCH-011",
+      "category": "ARCH",
+      "title": "Environment config separated from code",
+      "severity": "critical",
+      "applies_when": "all",
+      "rule": "Environment-varying configuration and secrets MUST not be hardcoded in source. Configuration schema, defaults and required variables MUST be explicit.",
+      "evidence": "Config schema + secret scan + startup validation",
+      "source_ids": [
+        "SRC-12FACTOR",
+        "SRC-OWASP-CHEATS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-ARCH-012",
+      "category": "ARCH",
+      "title": "Project-specific architecture decisions recorded",
+      "severity": "major",
+      "applies_when": "all",
+      "rule": "Any deviation from global baseline MUST be captured as a decision with rationale, trade-offs and revisit trigger.",
+      "evidence": "Decision record link",
+      "source_ids": [
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-ARCH-013",
+      "category": "ARCH",
+      "title": "Architecture follows real repository",
+      "severity": "blocker",
+      "applies_when": "existing-project",
+      "rule": "AI and humans MUST inspect the current repo, schema, deployments and tests before proposing major architecture changes.",
+      "evidence": "Repo inspection record + revision hash",
+      "source_ids": [
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-ARCH-014",
+      "category": "ARCH",
+      "title": "Change blast radius identified",
+      "severity": "major",
+      "applies_when": "all",
+      "rule": "Before cross-module changes identify affected APIs, data, permissions, caches, jobs, analytics, tests, docs and operational runbooks.",
+      "evidence": "Impact checklist attached to task/PR",
+      "source_ids": [
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-ARCH-015",
+      "category": "ARCH",
+      "title": "Reversible migration path",
+      "severity": "critical",
+      "applies_when": "production-change",
+      "rule": "Risky architecture changes MUST define rollback, roll-forward or compatibility strategy before deployment.",
+      "evidence": "Migration/release plan + tested rollback where feasible",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-ARCH-016",
+      "category": "ARCH",
+      "title": "Smallest coherent change batch",
+      "severity": "major",
+      "applies_when": "all",
+      "rule": "Implement the smallest batch that can be independently verified; do not mix unrelated refactors with behavior changes without explicit reason.",
+      "evidence": "Task graph + PR/change scope",
+      "source_ids": [
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-ARCH-017",
+      "category": "ARCH",
+      "title": "No hidden critical side effects",
+      "severity": "critical",
+      "applies_when": "all",
+      "rule": "Critical side effects MUST be explicit in service flow and observable; avoid implicit hooks that bypass transaction, authorization or audit rules.",
+      "evidence": "Code review + event/side-effect map",
+      "source_ids": [
+        "SRC-OWASP-ASVS-5",
+        "SRC-OTEL"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-ARCH-018",
+      "category": "ARCH",
+      "title": "Architecture freshness checkpoint",
+      "severity": "major",
+      "applies_when": "long-lived",
+      "rule": "Active projects MUST periodically verify architecture docs against code and runtime reality.",
+      "evidence": "Last-reviewed date + drift report",
+      "source_ids": [
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-FE-001",
+      "category": "FE",
+      "title": "Semantic HTML first",
+      "severity": "major",
+      "applies_when": "user-interface",
+      "rule": "Use native semantic HTML elements for their intended meaning before adding ARIA or generic div/span interaction patterns.",
+      "evidence": "DOM inspection + accessibility checks",
+      "source_ids": [
+        "SRC-WHATWG-HTML",
+        "SRC-WCAG-22"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-FE-002",
+      "category": "FE",
+      "title": "Native controls before custom widgets",
+      "severity": "major",
+      "applies_when": "interactive-ui",
+      "rule": "Prefer native button, link, input, select, dialog and form behavior unless a custom widget has a documented need and complete keyboard/AT behavior.",
+      "evidence": "Manual keyboard test + role/name/state inspection",
+      "source_ids": [
+        "SRC-WHATWG-HTML",
+        "SRC-WCAG-22"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-FE-003",
+      "category": "FE",
+      "title": "Explicit button types",
+      "severity": "major",
+      "applies_when": "forms",
+      "rule": "Buttons inside forms MUST declare intended type when accidental submit behavior is possible.",
+      "evidence": "Static review/test",
+      "source_ids": [
+        "SRC-WHATWG-HTML"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-FE-004",
+      "category": "FE",
+      "title": "One source of truth for UI state",
+      "severity": "major",
+      "applies_when": "stateful-ui",
+      "rule": "Do not duplicate the same authoritative state across URL, global store, local component and server cache without synchronization rules.",
+      "evidence": "State ownership map + tests",
+      "source_ids": [
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-FE-005",
+      "category": "FE",
+      "title": "Server state distinguished from client state",
+      "severity": "major",
+      "applies_when": "application",
+      "rule": "Remote/server state, URL state, ephemeral interaction state and persisted client state MUST have separate ownership semantics.",
+      "evidence": "State inventory + cache invalidation tests",
+      "source_ids": [
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-FE-006",
+      "category": "FE",
+      "title": "URL represents shareable navigation state",
+      "severity": "major",
+      "applies_when": "navigable-app",
+      "rule": "Filters, pagination, selected resources and deep-linkable views SHOULD use stable URLs when users need refresh/share/back-forward behavior.",
+      "evidence": "Navigation tests",
+      "source_ids": [
+        "SRC-HTTP-9110"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-FE-007",
+      "category": "FE",
+      "title": "All async states designed",
+      "severity": "major",
+      "applies_when": "all",
+      "rule": "Every async user journey MUST define loading, success, empty, partial, error, retry, offline where relevant and permission-denied states.",
+      "evidence": "UI state matrix + component/E2E tests",
+      "source_ids": [
+        "SRC-WCAG-22"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-FE-008",
+      "category": "FE",
+      "title": "No false success",
+      "severity": "blocker",
+      "applies_when": "mutating-ui",
+      "rule": "UI MUST not display durable success before the trusted write boundary confirms success; optimistic UI requires explicit rollback/reconciliation.",
+      "evidence": "Mutation tests including server failure",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-FE-009",
+      "category": "FE",
+      "title": "Forms preserve user work",
+      "severity": "critical",
+      "applies_when": "important-forms",
+      "rule": "Validation/server errors SHOULD preserve non-sensitive user input; destructive navigation with unsaved work requires deliberate handling.",
+      "evidence": "E2E failure-path test",
+      "source_ids": [
+        "SRC-WCAG-22"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-FE-010",
+      "category": "FE",
+      "title": "Errors actionable and associated",
+      "severity": "major",
+      "applies_when": "forms",
+      "rule": "Validation errors MUST identify the problem, associate with affected controls and provide recovery guidance without relying only on color.",
+      "evidence": "Keyboard/screen-reader/manual test",
+      "source_ids": [
+        "SRC-WCAG-22"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-FE-011",
+      "category": "FE",
+      "title": "Responsive by content not device names",
+      "severity": "major",
+      "applies_when": "all",
+      "rule": "Design layouts for content constraints and tested viewport ranges; do not assume fixed device classes.",
+      "evidence": "Responsive matrix screenshots/tests",
+      "source_ids": [
+        "SRC-WCAG-22"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-FE-012",
+      "category": "FE",
+      "title": "Touch targets and focus visibility",
+      "severity": "critical",
+      "applies_when": "interactive-ui",
+      "rule": "Interactive targets and focus indicators MUST satisfy the project accessibility target; never remove focus outline without an accessible replacement.",
+      "evidence": "WCAG audit + keyboard test",
+      "source_ids": [
+        "SRC-WCAG-22"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-FE-013",
+      "category": "FE",
+      "title": "Stable layout dimensions",
+      "severity": "major",
+      "applies_when": "media-ui",
+      "rule": "Reserve space for images, embeds, ads and async content when dimensions can be known to prevent layout shifts.",
+      "evidence": "CLS measurement + DOM/CSS review",
+      "source_ids": [
+        "SRC-WEB-VITALS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-FE-014",
+      "category": "FE",
+      "title": "Component API over copy-paste",
+      "severity": "major",
+      "applies_when": "componentized-ui",
+      "rule": "Repeated stable UI behavior SHOULD become shared primitives; domain-specific behavior stays near the feature.",
+      "evidence": "Duplication review + component contracts",
+      "source_ids": [
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-FE-015",
+      "category": "FE",
+      "title": "No giant god components",
+      "severity": "major",
+      "applies_when": "componentized-ui",
+      "rule": "Split components when they combine unrelated data fetching, business decisions, rendering, mutation and orchestration.",
+      "evidence": "File/cohesion review; >600 lines triggers review",
+      "source_ids": [
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-FE-016",
+      "category": "FE",
+      "title": "Client boundary minimized",
+      "severity": "major",
+      "applies_when": "hybrid-rendering",
+      "rule": "Do not move code to the browser merely for convenience; keep secrets and privileged logic server-side and minimize shipped JavaScript.",
+      "evidence": "Bundle analysis + boundary review",
+      "source_ids": [
+        "SRC-WEB-VITALS",
+        "SRC-OWASP-ASVS-5"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-FE-017",
+      "category": "FE",
+      "title": "Third-party scripts governed",
+      "severity": "critical",
+      "applies_when": "third-party-script",
+      "rule": "Every third-party script MUST have owner, purpose, data impact, performance impact, failure behavior and removal path.",
+      "evidence": "Third-party inventory + CSP/consent/perf evidence",
+      "source_ids": [
+        "SRC-CSP3",
+        "SRC-W3C-PRIVACY-PRINCIPLES"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-FE-018",
+      "category": "FE",
+      "title": "Progressive enhancement for critical flows",
+      "severity": "major",
+      "applies_when": "public-or-critical-flow",
+      "rule": "Critical content/actions SHOULD remain understandable and recoverable under slow JS, failed chunks or partial hydration where architecture permits.",
+      "evidence": "Throttled/JS-failure tests",
+      "source_ids": [
+        "SRC-WHATWG-HTML",
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-BE-001",
+      "category": "BE",
+      "title": "Validate at trusted boundary",
+      "severity": "blocker",
+      "applies_when": "all",
+      "rule": "Treat all client and external-provider input as untrusted; validate shape, type, ranges, ownership context and business invariants server-side.",
+      "evidence": "Schema validation + negative tests",
+      "source_ids": [
+        "SRC-OWASP-ASVS-5",
+        "SRC-JSONSCHEMA-202012"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-BE-002",
+      "category": "BE",
+      "title": "Authorization on every protected action",
+      "severity": "blocker",
+      "applies_when": "protected-resource",
+      "rule": "Enforce authorization at trusted server boundaries for each action/resource; hidden UI is never authorization.",
+      "evidence": "Permission tests for allow/deny/cross-tenant cases",
+      "source_ids": [
+        "SRC-OWASP-ASVS-5"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-BE-003",
+      "category": "BE",
+      "title": "Business invariants in services/domain",
+      "severity": "critical",
+      "applies_when": "application",
+      "rule": "Durable business rules MUST live in reusable server-side use-case/domain boundaries, not only route handlers or UI.",
+      "evidence": "Unit/integration tests around invariants",
+      "source_ids": [
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-BE-004",
+      "category": "BE",
+      "title": "Transactions match invariants",
+      "severity": "critical",
+      "applies_when": "multi-write",
+      "rule": "Operations that must succeed/fail together MUST share an explicit transaction boundary; external side effects require outbox/saga/reconciliation where atomicity is impossible.",
+      "evidence": "Transaction tests including injected failure",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-BE-005",
+      "category": "BE",
+      "title": "Idempotency for retryable commands",
+      "severity": "critical",
+      "applies_when": "retryable-write",
+      "rule": "Commands exposed to network retry, webhook redelivery, jobs or payment/order creation MUST define idempotency semantics and key scope.",
+      "evidence": "Duplicate-delivery tests",
+      "source_ids": [
+        "SRC-HTTP-9110",
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-BE-006",
+      "category": "BE",
+      "title": "Concurrency conflicts deliberate",
+      "severity": "critical",
+      "applies_when": "concurrent-write",
+      "rule": "For contested state define locking, version checks, uniqueness constraints, atomic updates or conflict responses; never assume requests serialize.",
+      "evidence": "Concurrent test + DB constraint evidence",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-BE-007",
+      "category": "BE",
+      "title": "Timeout every remote call",
+      "severity": "critical",
+      "applies_when": "external-integration",
+      "rule": "Remote calls MUST have finite timeouts appropriate to user/job budget; defaults are not accepted blindly.",
+      "evidence": "Config + failure test",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-BE-008",
+      "category": "BE",
+      "title": "Retries bounded and selective",
+      "severity": "critical",
+      "applies_when": "external-integration",
+      "rule": "Retry only failures likely to be transient; use bounded attempts, backoff/jitter where appropriate and avoid retrying non-idempotent work without protection.",
+      "evidence": "Retry policy + tests",
+      "source_ids": [
+        "SRC-SRE",
+        "SRC-HTTP-9110"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-BE-009",
+      "category": "BE",
+      "title": "Errors translated by boundary",
+      "severity": "major",
+      "applies_when": "all",
+      "rule": "Infrastructure/provider errors MUST be translated into stable domain/application errors without leaking secrets or vendor internals.",
+      "evidence": "Error contract tests",
+      "source_ids": [
+        "SRC-HTTP-9457",
+        "SRC-OWASP-ASVS-5"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-BE-010",
+      "category": "BE",
+      "title": "No swallowed failures",
+      "severity": "critical",
+      "applies_when": "all",
+      "rule": "Do not catch and ignore failures that change correctness; handled failures require explicit fallback, metric/log and user/job outcome.",
+      "evidence": "Code review + fault injection",
+      "source_ids": [
+        "SRC-OTEL",
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-BE-011",
+      "category": "BE",
+      "title": "Jobs observable and reconcilable",
+      "severity": "critical",
+      "applies_when": "async-work",
+      "rule": "Jobs MUST expose status, attempts, age, terminal failure and reconciliation path for important work.",
+      "evidence": "Job metrics/dashboard + recovery runbook",
+      "source_ids": [
+        "SRC-OTEL",
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-BE-012",
+      "category": "BE",
+      "title": "Schedulers safe under multiple instances",
+      "severity": "critical",
+      "applies_when": "scheduled-work",
+      "rule": "Scheduled tasks MUST define leader/lease/unique job semantics so scale-out does not duplicate unsafe work.",
+      "evidence": "Multi-instance test/design evidence",
+      "source_ids": [
+        "SRC-12FACTOR",
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-BE-013",
+      "category": "BE",
+      "title": "Graceful shutdown",
+      "severity": "major",
+      "applies_when": "service",
+      "rule": "Services/workers SHOULD stop accepting new work, finish or safely checkpoint in-flight work and close resources within deployment timeout.",
+      "evidence": "Shutdown integration test",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-BE-014",
+      "category": "BE",
+      "title": "Startup validates dependencies/config",
+      "severity": "major",
+      "applies_when": "service",
+      "rule": "Fail fast on invalid required configuration; distinguish optional dependency degradation from impossible startup.",
+      "evidence": "Startup tests + health semantics",
+      "source_ids": [
+        "SRC-12FACTOR",
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-BE-015",
+      "category": "BE",
+      "title": "Structured audit for high-impact actions",
+      "severity": "critical",
+      "applies_when": "sensitive-action",
+      "rule": "High-impact business/admin/security actions MUST emit durable audit evidence with actor, action, target, time and outcome while avoiding secret leakage.",
+      "evidence": "Audit event tests and retention policy",
+      "source_ids": [
+        "SRC-OWASP-ASVS-5",
+        "SRC-OWASP-CHEATS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-API-001",
+      "category": "API",
+      "title": "HTTP method semantics respected",
+      "severity": "critical",
+      "applies_when": "http-api",
+      "rule": "Use HTTP methods according to safety/idempotency semantics; do not hide state-changing behavior behind GET.",
+      "evidence": "Contract review + integration tests",
+      "source_ids": [
+        "SRC-HTTP-9110",
+        "SRC-HTTP-9205"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-API-002",
+      "category": "API",
+      "title": "Status codes represent outcome",
+      "severity": "major",
+      "applies_when": "http-api",
+      "rule": "Choose status codes by protocol outcome, not frontend convenience; document async, conflict, validation, auth and not-found behavior.",
+      "evidence": "OpenAPI/contract tests",
+      "source_ids": [
+        "SRC-HTTP-9110"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-API-003",
+      "category": "API",
+      "title": "Machine-readable error contract",
+      "severity": "critical",
+      "applies_when": "http-api",
+      "rule": "Use one stable error shape. Prefer RFC 9457 problem details where suitable and include machine-readable type/code without leaking sensitive internals.",
+      "evidence": "Contract tests",
+      "source_ids": [
+        "SRC-HTTP-9457"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-API-004",
+      "category": "API",
+      "title": "API contract version pinned",
+      "severity": "major",
+      "applies_when": "http-api",
+      "rule": "Maintain an explicit OpenAPI contract for externally consumed or multi-client APIs; pin version and validate in CI.",
+      "evidence": "OpenAPI artifact + lint/contract check",
+      "source_ids": [
+        "SRC-OPENAPI-311"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-API-005",
+      "category": "API",
+      "title": "Request/response schemas explicit",
+      "severity": "critical",
+      "applies_when": "http-api",
+      "rule": "Define schemas for payloads and validate at boundaries; distinguish absent, null and empty semantics.",
+      "evidence": "Schema tests",
+      "source_ids": [
+        "SRC-JSONSCHEMA-202012",
+        "SRC-OPENAPI-311"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-API-006",
+      "category": "API",
+      "title": "Compatibility policy explicit",
+      "severity": "critical",
+      "applies_when": "multi-client-api",
+      "rule": "Define what is breaking, deprecation window and migration process before independent clients depend on the API.",
+      "evidence": "Versioning policy + consumer tests",
+      "source_ids": [
+        "SRC-OPENAPI-311"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-API-007",
+      "category": "API",
+      "title": "Pagination bounded",
+      "severity": "critical",
+      "applies_when": "collection-api",
+      "rule": "Large collections MUST use bounded pagination; define stable order and cursor/offset trade-offs. Never return unbounded datasets by default.",
+      "evidence": "Load/contract tests",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-API-008",
+      "category": "API",
+      "title": "Filtering and sorting allowlisted",
+      "severity": "critical",
+      "applies_when": "query-api",
+      "rule": "Expose only supported filter/sort fields and operators; prevent arbitrary query construction from untrusted input.",
+      "evidence": "Negative tests/security review",
+      "source_ids": [
+        "SRC-OWASP-ASVS-5"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-API-009",
+      "category": "API",
+      "title": "Resource identifiers opaque enough",
+      "severity": "major",
+      "applies_when": "public-api",
+      "rule": "Do not rely on guess-resistant IDs for authorization; choose identifier shape deliberately and always enforce ownership.",
+      "evidence": "Authorization tests",
+      "source_ids": [
+        "SRC-OWASP-ASVS-5"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-API-010",
+      "category": "API",
+      "title": "Conditional requests used when valuable",
+      "severity": "major",
+      "applies_when": "cacheable-api",
+      "rule": "For expensive/cacheable resources consider validators such as ETag/Last-Modified and correct conditional semantics.",
+      "evidence": "HTTP tests",
+      "source_ids": [
+        "SRC-HTTP-9110",
+        "SRC-HTTP-9111"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-API-011",
+      "category": "API",
+      "title": "Cacheability explicit",
+      "severity": "critical",
+      "applies_when": "http-api",
+      "rule": "Sensitive and mutable responses MUST have deliberate cache semantics; shared caching requires explicit review.",
+      "evidence": "Header tests",
+      "source_ids": [
+        "SRC-HTTP-9111"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-API-012",
+      "category": "API",
+      "title": "Idempotency contract documented",
+      "severity": "critical",
+      "applies_when": "retryable-write",
+      "rule": "If an endpoint supports idempotency keys, define key generation, scope, expiration, replay response and conflicting-payload behavior.",
+      "evidence": "Duplicate/replay tests",
+      "source_ids": [
+        "SRC-HTTP-9110"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-API-013",
+      "category": "API",
+      "title": "Rate-limit behavior explicit",
+      "severity": "major",
+      "applies_when": "public-api",
+      "rule": "Define abuse/resource protection limits and client-visible behavior when limits apply; avoid silently relying on infrastructure defaults.",
+      "evidence": "Load/limit tests + docs",
+      "source_ids": [
+        "SRC-OWASP-ASVS-5",
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-API-014",
+      "category": "API",
+      "title": "Correlation IDs propagate",
+      "severity": "major",
+      "applies_when": "distributed-request",
+      "rule": "Generate/accept safe correlation context and propagate across services/jobs without treating client-provided IDs as trusted identity.",
+      "evidence": "Trace/log evidence",
+      "source_ids": [
+        "SRC-OTEL"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-API-015",
+      "category": "API",
+      "title": "Webhooks verify authenticity before parsing trust",
+      "severity": "blocker",
+      "applies_when": "webhook",
+      "rule": "Verify provider-defined signature/authenticity using the exact required raw representation and replay protections before treating payload as trusted.",
+      "evidence": "Real signed fixture tests including modified payload",
+      "source_ids": [
+        "SRC-OWASP-ASVS-5"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-API-016",
+      "category": "API",
+      "title": "Webhooks acknowledge and process deliberately",
+      "severity": "critical",
+      "applies_when": "webhook",
+      "rule": "Separate receipt from long processing when needed; define deduplication, ordering assumptions, retries, dead-letter and reconciliation.",
+      "evidence": "Redelivery/out-of-order tests",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-API-017",
+      "category": "API",
+      "title": "Outbound webhooks safe",
+      "severity": "critical",
+      "applies_when": "outbound-webhook",
+      "rule": "Sign outbound events where appropriate, document retries and event IDs, prevent secret leakage and allow consumers to deduplicate.",
+      "evidence": "Contract + retry tests",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-API-018",
+      "category": "API",
+      "title": "OAuth follows current BCP",
+      "severity": "blocker",
+      "applies_when": "oauth",
+      "rule": "OAuth integrations MUST be reviewed against RFC 9700; deprecated/insecure modes are not allowed by convenience.",
+      "evidence": "Flow diagram + security tests",
+      "source_ids": [
+        "SRC-OAUTH-9700"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-API-019",
+      "category": "API",
+      "title": "CORS is allowlist not auth",
+      "severity": "critical",
+      "applies_when": "cross-origin-api",
+      "rule": "CORS configuration MUST be minimal and explicit; never treat CORS as authorization. Credentials with broad origins are prohibited.",
+      "evidence": "Header/security tests",
+      "source_ids": [
+        "SRC-OWASP-ASVS-5"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-API-020",
+      "category": "API",
+      "title": "API secrets never in URLs",
+      "severity": "blocker",
+      "applies_when": "all",
+      "rule": "Do not place credentials, bearer tokens or sensitive personal data in URLs/query strings when avoidable because URLs leak to logs/history/referrers.",
+      "evidence": "Static review + log test",
+      "source_ids": [
+        "SRC-OWASP-ASVS-5",
+        "SRC-REFERRER-POLICY"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-API-021",
+      "category": "API",
+      "title": "File transfer contracts bounded",
+      "severity": "critical",
+      "applies_when": "upload-download",
+      "rule": "Define allowed size, type verification, storage, scanning/quarantine where needed, authorization and content disposition for files.",
+      "evidence": "Upload/download negative tests",
+      "source_ids": [
+        "SRC-OWASP-CHEATS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-API-022",
+      "category": "API",
+      "title": "Realtime authentication lifecycle",
+      "severity": "critical",
+      "applies_when": "websocket-or-sse",
+      "rule": "Long-lived connections MUST define origin/auth checks, expiry, revocation, authorization per subscription/action and backpressure.",
+      "evidence": "Connection expiry/permission tests",
+      "source_ids": [
+        "SRC-OWASP-CHEATS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-API-023",
+      "category": "API",
+      "title": "No undocumented magic fields",
+      "severity": "major",
+      "applies_when": "http-api",
+      "rule": "Fields with sentinel values, implicit units, polymorphism or special strings MUST be documented and validated.",
+      "evidence": "Contract review/tests",
+      "source_ids": [
+        "SRC-OPENAPI-311"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-API-024",
+      "category": "API",
+      "title": "Time and timezone semantics explicit",
+      "severity": "critical",
+      "applies_when": "time-data",
+      "rule": "API timestamps MUST define format, timezone/offset semantics and business-local-date behavior. Store instants and local calendar facts deliberately.",
+      "evidence": "Schema + timezone tests",
+      "source_ids": [
+        "SRC-JSONSCHEMA-202012"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-API-025",
+      "category": "API",
+      "title": "Partial update semantics explicit",
+      "severity": "major",
+      "applies_when": "patch-api",
+      "rule": "PATCH/update endpoints MUST define omitted vs null vs clear behavior and concurrency strategy.",
+      "evidence": "Contract tests",
+      "source_ids": [
+        "SRC-HTTP-9110"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-DATA-001",
+      "category": "DATA",
+      "title": "Database constraints protect invariants",
+      "severity": "blocker",
+      "applies_when": "database",
+      "rule": "Use NOT NULL, UNIQUE, FK, CHECK or equivalent constraints for invariants the database can enforce; application validation alone is insufficient.",
+      "evidence": "Schema inspection + negative DB tests",
+      "source_ids": [
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-DATA-002",
+      "category": "DATA",
+      "title": "Schema changes via migrations",
+      "severity": "critical",
+      "applies_when": "database",
+      "rule": "Production schema changes MUST be versioned, reviewable and repeatable; no undocumented manual drift.",
+      "evidence": "Migration history + clean-db test",
+      "source_ids": [
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-DATA-003",
+      "category": "DATA",
+      "title": "Migrations designed for live traffic",
+      "severity": "critical",
+      "applies_when": "production-database",
+      "rule": "Assess locks, table rewrites, backfills, dual-read/write compatibility and rollback/roll-forward before large changes.",
+      "evidence": "Migration plan + staging/prod-like timing evidence",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-DATA-004",
+      "category": "DATA",
+      "title": "Backfills resumable",
+      "severity": "critical",
+      "applies_when": "data-migration",
+      "rule": "Large data migrations SHOULD be chunked, idempotent/resumable and observable with progress and failure recovery.",
+      "evidence": "Restart test + metrics",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-DATA-005",
+      "category": "DATA",
+      "title": "Deletion semantics explicit",
+      "severity": "critical",
+      "applies_when": "all",
+      "rule": "Define hard delete, soft delete, retention, restore and referential consequences; never accumulate undeletable personal data by accident.",
+      "evidence": "Data lifecycle policy + tests",
+      "source_ids": [
+        "SRC-NIST-PRIVACY-10"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-DATA-006",
+      "category": "DATA",
+      "title": "Tenant key on tenant-owned data",
+      "severity": "blocker",
+      "applies_when": "multi-tenant",
+      "rule": "Tenant ownership MUST be explicit in schema and enforced in trusted query/policy boundaries; cross-tenant access tests are mandatory.",
+      "evidence": "Schema + allow/deny integration tests",
+      "source_ids": [
+        "SRC-OWASP-ASVS-5"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-DATA-007",
+      "category": "DATA",
+      "title": "Money uses exact representation",
+      "severity": "blocker",
+      "applies_when": "money",
+      "rule": "Represent money using exact decimal/minor-unit semantics with explicit currency; binary floating point is not authoritative for monetary totals.",
+      "evidence": "Schema + rounding tests",
+      "source_ids": [
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-DATA-008",
+      "category": "DATA",
+      "title": "Quantities and units explicit",
+      "severity": "critical",
+      "applies_when": "quantity-data",
+      "rule": "Store units and precision deliberately; conversions must be centralized and tested.",
+      "evidence": "Schema/unit tests",
+      "source_ids": [
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-DATA-009",
+      "category": "DATA",
+      "title": "Immutable business history where required",
+      "severity": "critical",
+      "applies_when": "ledger-or-audit",
+      "rule": "For stock movements, payments, audit and ledgers prefer append-only event/movement records with compensating corrections over silent mutation.",
+      "evidence": "Data model + reconciliation tests",
+      "source_ids": [
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-DATA-010",
+      "category": "DATA",
+      "title": "Derived values declare recomputation",
+      "severity": "major",
+      "applies_when": "derived-data",
+      "rule": "For denormalized/derived fields document source, freshness and rebuild path.",
+      "evidence": "Source-of-truth map + rebuild test",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-DATA-011",
+      "category": "DATA",
+      "title": "Cache never becomes accidental truth",
+      "severity": "critical",
+      "applies_when": "cache",
+      "rule": "Caches MUST have explicit key, scope, TTL/invalidation and failure behavior; correctness cannot depend on an unowned stale cache.",
+      "evidence": "Cache miss/stale tests",
+      "source_ids": [
+        "SRC-HTTP-9111",
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-DATA-012",
+      "category": "DATA",
+      "title": "Indexes justified by query patterns",
+      "severity": "major",
+      "applies_when": "database",
+      "rule": "Create indexes from measured/query-plan needs and consider write/storage cost; remove redundant indexes deliberately.",
+      "evidence": "Query plan/perf evidence",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-DATA-013",
+      "category": "DATA",
+      "title": "Backups are restored in tests",
+      "severity": "blocker",
+      "applies_when": "production-database",
+      "rule": "A backup without a tested restore is not accepted as recovery evidence. Define RPO/RTO and regularly perform restore verification.",
+      "evidence": "Restore evidence + timestamp",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-DATA-014",
+      "category": "DATA",
+      "title": "Sensitive fields classified",
+      "severity": "critical",
+      "applies_when": "personal-or-secret-data",
+      "rule": "Classify personal, secret, financial and operationally sensitive fields; define encryption, access, logging and retention behavior.",
+      "evidence": "Data inventory + privacy/security review",
+      "source_ids": [
+        "SRC-NIST-PRIVACY-10",
+        "SRC-OWASP-ASVS-5"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-DATA-015",
+      "category": "DATA",
+      "title": "Data export/import validated",
+      "severity": "critical",
+      "applies_when": "import-export",
+      "rule": "Imports MUST validate format, size, authorization and partial-failure semantics; exports MUST enforce scope and avoid formula/content injection risks where relevant.",
+      "evidence": "Negative tests + sample evidence",
+      "source_ids": [
+        "SRC-OWASP-ASVS-5"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-001",
+      "category": "SEC",
+      "title": "ASVS target declared",
+      "severity": "blocker",
+      "applies_when": "production-web",
+      "rule": "Every production web project MUST declare an ASVS verification target. Default is Level 2 for most applications; Level 3 for high-value/high-assurance/high-safety systems.",
+      "evidence": "Security plan with target and applicability",
+      "source_ids": [
+        "SRC-OWASP-ASVS-5"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-002",
+      "category": "SEC",
+      "title": "Threat model before sensitive architecture",
+      "severity": "critical",
+      "applies_when": "sensitive-flow",
+      "rule": "Identify assets, actors, entry points, trust boundaries, abuse cases and mitigations before implementing high-risk flows.",
+      "evidence": "Threat model linked to requirements/tests",
+      "source_ids": [
+        "SRC-OWASP-ASVS-5",
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-003",
+      "category": "SEC",
+      "title": "HTTPS only in production",
+      "severity": "blocker",
+      "applies_when": "production-web",
+      "rule": "Serve authenticated or sensitive production traffic only over secure transport; redirect/disable insecure access deliberately.",
+      "evidence": "TLS scan/config evidence",
+      "source_ids": [
+        "SRC-TLS-9325"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-004",
+      "category": "SEC",
+      "title": "HSTS reviewed",
+      "severity": "critical",
+      "applies_when": "https-public-site",
+      "rule": "Use HSTS after confirming HTTPS readiness, subdomain implications and preload decisions.",
+      "evidence": "Header test + rollout decision",
+      "source_ids": [
+        "SRC-HSTS-6797"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-005",
+      "category": "SEC",
+      "title": "Secure cookies",
+      "severity": "blocker",
+      "applies_when": "cookie-session",
+      "rule": "Session/security cookies MUST use Secure, HttpOnly where script access is unnecessary, deliberate SameSite, narrow Path/Domain and rotation semantics.",
+      "evidence": "Cookie header tests",
+      "source_ids": [
+        "SRC-OWASP-CHEATS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-006",
+      "category": "SEC",
+      "title": "Session identifiers unpredictable",
+      "severity": "blocker",
+      "applies_when": "session-auth",
+      "rule": "Session IDs MUST be generated with secure entropy and never contain sensitive meaning; server-side state/validation must support revocation.",
+      "evidence": "Session tests/design evidence",
+      "source_ids": [
+        "SRC-OWASP-CHEATS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-007",
+      "category": "SEC",
+      "title": "Session fixation prevented",
+      "severity": "blocker",
+      "applies_when": "session-auth",
+      "rule": "Rotate session identifiers on authentication and relevant privilege changes.",
+      "evidence": "E2E auth test",
+      "source_ids": [
+        "SRC-OWASP-CHEATS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-008",
+      "category": "SEC",
+      "title": "Logout invalidates trusted session",
+      "severity": "critical",
+      "applies_when": "session-auth",
+      "rule": "Logout MUST invalidate/revoke server-side session or token capability as designed, not only remove UI state.",
+      "evidence": "Logout/replay test",
+      "source_ids": [
+        "SRC-OWASP-CHEATS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-009",
+      "category": "SEC",
+      "title": "Reauthentication for high-risk actions",
+      "severity": "critical",
+      "applies_when": "high-risk-action",
+      "rule": "Require recent/strong authentication for sensitive account, payment, credential or administrative changes according to risk.",
+      "evidence": "E2E negative/positive tests",
+      "source_ids": [
+        "SRC-OWASP-CHEATS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-010",
+      "category": "SEC",
+      "title": "Passwords stored with approved adaptive hashing",
+      "severity": "blocker",
+      "applies_when": "password-auth",
+      "rule": "Never encrypt or fast-hash passwords as storage. Use current OWASP-recommended password storage approach and parameters, reviewed for platform.",
+      "evidence": "Config/code review + migration policy",
+      "source_ids": [
+        "SRC-OWASP-CHEATS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-011",
+      "category": "SEC",
+      "title": "MFA risk policy explicit",
+      "severity": "critical",
+      "applies_when": "sensitive-auth",
+      "rule": "Define where MFA is required, recovery behavior and bypass protections; admin/high-value accounts receive stronger treatment.",
+      "evidence": "Auth policy + tests",
+      "source_ids": [
+        "SRC-OWASP-CHEATS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-012",
+      "category": "SEC",
+      "title": "Authorization deny by default",
+      "severity": "blocker",
+      "applies_when": "protected-resource",
+      "rule": "New protected actions/resources MUST be inaccessible until explicit policy allows them.",
+      "evidence": "Permission matrix + tests",
+      "source_ids": [
+        "SRC-OWASP-ASVS-5"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-013",
+      "category": "SEC",
+      "title": "Object-level authorization",
+      "severity": "blocker",
+      "applies_when": "resource-api",
+      "rule": "Check access to each referenced object on the server; possession of an ID is never authority.",
+      "evidence": "IDOR/BOLA tests",
+      "source_ids": [
+        "SRC-OWASP-ASVS-5"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-014",
+      "category": "SEC",
+      "title": "Function-level authorization",
+      "severity": "blocker",
+      "applies_when": "role-based-action",
+      "rule": "Check action capability/role server-side for admin and privileged operations.",
+      "evidence": "Privilege escalation tests",
+      "source_ids": [
+        "SRC-OWASP-ASVS-5"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-015",
+      "category": "SEC",
+      "title": "Cross-tenant isolation",
+      "severity": "blocker",
+      "applies_when": "multi-tenant",
+      "rule": "Test read, write, search, export, files, jobs, caches and realtime paths for tenant isolation.",
+      "evidence": "Dedicated cross-tenant test suite",
+      "source_ids": [
+        "SRC-OWASP-ASVS-5"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-016",
+      "category": "SEC",
+      "title": "Output encoding by context",
+      "severity": "blocker",
+      "applies_when": "html-output",
+      "rule": "Untrusted data rendered into HTML, attributes, URLs, JS, CSS or templates MUST use context-appropriate safe APIs/encoding.",
+      "evidence": "XSS tests/static review",
+      "source_ids": [
+        "SRC-OWASP-ASVS-5",
+        "SRC-OWASP-CHEATS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-017",
+      "category": "SEC",
+      "title": "No dangerous HTML without sanitizer policy",
+      "severity": "blocker",
+      "applies_when": "rich-html",
+      "rule": "Rendering user-controlled HTML requires an allowlist sanitizer, reviewed configuration and tests; bypassing framework escaping is prohibited by default.",
+      "evidence": "Sanitizer tests",
+      "source_ids": [
+        "SRC-OWASP-CHEATS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-018",
+      "category": "SEC",
+      "title": "Parameterized database access",
+      "severity": "blocker",
+      "applies_when": "database",
+      "rule": "Use parameterized queries or safe ORM binding; never concatenate untrusted input into SQL/NoSQL query code.",
+      "evidence": "SAST/review + injection tests",
+      "source_ids": [
+        "SRC-OWASP-ASVS-5"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-019",
+      "category": "SEC",
+      "title": "Command execution isolated",
+      "severity": "blocker",
+      "applies_when": "os-command",
+      "rule": "Avoid shell execution with untrusted input. If unavoidable, use fixed executables, argument separation, allowlists and least privilege.",
+      "evidence": "Negative tests + review",
+      "source_ids": [
+        "SRC-OWASP-ASVS-5"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-020",
+      "category": "SEC",
+      "title": "SSRF controls on server fetches",
+      "severity": "blocker",
+      "applies_when": "server-side-url-fetch",
+      "rule": "Validate destination scheme/host, block internal/link-local/metadata ranges as applicable, control redirects and DNS rebinding risk.",
+      "evidence": "SSRF tests",
+      "source_ids": [
+        "SRC-OWASP-CHEATS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-021",
+      "category": "SEC",
+      "title": "CSRF protection matches auth model",
+      "severity": "blocker",
+      "applies_when": "cookie-auth-mutating",
+      "rule": "State-changing cookie-authenticated requests MUST use an appropriate CSRF defense plus SameSite as defense-in-depth; SameSite alone is not universal proof.",
+      "evidence": "Cross-site request tests",
+      "source_ids": [
+        "SRC-OWASP-CHEATS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-022",
+      "category": "SEC",
+      "title": "CSP planned and tested",
+      "severity": "critical",
+      "applies_when": "browser-app",
+      "rule": "Deploy a restrictive CSP appropriate to architecture; prefer nonce/hash-based designs over broad unsafe-inline/eval. Roll out with reporting when needed.",
+      "evidence": "Header + violation report + E2E evidence",
+      "source_ids": [
+        "SRC-CSP3",
+        "SRC-OWASP-ASVS-5"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-023",
+      "category": "SEC",
+      "title": "Clickjacking defense",
+      "severity": "critical",
+      "applies_when": "browser-app",
+      "rule": "Control framing via CSP frame-ancestors and/or compatible policy; embedded use cases must be explicit.",
+      "evidence": "Header/browser test",
+      "source_ids": [
+        "SRC-CSP3",
+        "SRC-OWASP-ASVS-5"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-024",
+      "category": "SEC",
+      "title": "Referrer leakage controlled",
+      "severity": "major",
+      "applies_when": "browser-app",
+      "rule": "Set a deliberate referrer policy and avoid sensitive data in URLs.",
+      "evidence": "Header test",
+      "source_ids": [
+        "SRC-REFERRER-POLICY"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-025",
+      "category": "SEC",
+      "title": "Browser capabilities minimized",
+      "severity": "major",
+      "applies_when": "browser-app",
+      "rule": "Use Permissions Policy to disable unneeded powerful features when supported and relevant.",
+      "evidence": "Header review + compatibility evidence",
+      "source_ids": [
+        "SRC-PERMISSIONS-POLICY"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-026",
+      "category": "SEC",
+      "title": "Secrets never committed",
+      "severity": "blocker",
+      "applies_when": "all",
+      "rule": "Secrets, private keys and live tokens MUST not be committed to source or Brain notes. Use managed secret channels and rotation after exposure.",
+      "evidence": "Secret scan + incident evidence if exposed",
+      "source_ids": [
+        "SRC-OWASP-CHEATS",
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-027",
+      "category": "SEC",
+      "title": "Least privilege credentials",
+      "severity": "blocker",
+      "applies_when": "all",
+      "rule": "Database, cloud, CI and provider credentials MUST have minimum necessary scope, environment separation and ownership.",
+      "evidence": "Permission inventory",
+      "source_ids": [
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-028",
+      "category": "SEC",
+      "title": "Secret rotation/revocation exists",
+      "severity": "critical",
+      "applies_when": "secret-bearing-system",
+      "rule": "Define rotation and emergency revocation for critical secrets; test without full system rebuild where feasible.",
+      "evidence": "Runbook + exercise evidence",
+      "source_ids": [
+        "SRC-OWASP-CHEATS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-029",
+      "category": "SEC",
+      "title": "Sensitive data excluded from logs",
+      "severity": "blocker",
+      "applies_when": "all",
+      "rule": "Do not log passwords, session IDs, bearer tokens, private keys or unnecessary personal data; redact at structured boundaries.",
+      "evidence": "Log sample scan/tests",
+      "source_ids": [
+        "SRC-OWASP-CHEATS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-030",
+      "category": "SEC",
+      "title": "Security logs tamper-aware",
+      "severity": "critical",
+      "applies_when": "production",
+      "rule": "Protect security/audit logs from unauthorized modification/deletion and record sufficient context for investigation.",
+      "evidence": "Access policy + ingestion evidence",
+      "source_ids": [
+        "SRC-OWASP-CHEATS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-031",
+      "category": "SEC",
+      "title": "File uploads treated as hostile",
+      "severity": "blocker",
+      "applies_when": "file-upload",
+      "rule": "Enforce authorization, size limits, generated storage names, content/type validation, non-executable storage, scanning/quarantine based on risk and safe serving.",
+      "evidence": "Malicious fixture tests",
+      "source_ids": [
+        "SRC-OWASP-CHEATS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-032",
+      "category": "SEC",
+      "title": "Path traversal prevented",
+      "severity": "blocker",
+      "applies_when": "file-access",
+      "rule": "Never resolve user-controlled paths directly; canonicalize/allowlist and enforce storage root boundaries.",
+      "evidence": "Traversal tests",
+      "source_ids": [
+        "SRC-OWASP-ASVS-5"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-033",
+      "category": "SEC",
+      "title": "Open redirect prevented",
+      "severity": "critical",
+      "applies_when": "redirect-input",
+      "rule": "Redirect destinations MUST be fixed or allowlisted/validated; never forward arbitrary attacker-controlled URLs.",
+      "evidence": "Negative tests",
+      "source_ids": [
+        "SRC-OWASP-ASVS-5"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-034",
+      "category": "SEC",
+      "title": "Error responses do not leak internals",
+      "severity": "critical",
+      "applies_when": "production",
+      "rule": "Do not expose stack traces, SQL, filesystem paths, secrets or internal topology to untrusted clients.",
+      "evidence": "Production-mode tests",
+      "source_ids": [
+        "SRC-OWASP-ASVS-5",
+        "SRC-HTTP-9457"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-035",
+      "category": "SEC",
+      "title": "Admin surfaces separately protected",
+      "severity": "blocker",
+      "applies_when": "admin",
+      "rule": "Administrative actions require explicit strong authorization, audit, safer session policy and minimized exposure.",
+      "evidence": "Admin privilege tests",
+      "source_ids": [
+        "SRC-OWASP-ASVS-5"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-036",
+      "category": "SEC",
+      "title": "Dependency vulnerabilities managed",
+      "severity": "critical",
+      "applies_when": "all",
+      "rule": "Continuously inventory dependencies, review vulnerabilities, remove unused packages and patch based on exploitability/risk.",
+      "evidence": "SCA report + ownership",
+      "source_ids": [
+        "SRC-NIST-SSDF-11",
+        "SRC-SLSA-12"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-037",
+      "category": "SEC",
+      "title": "Lockfile and reproducible install policy",
+      "severity": "critical",
+      "applies_when": "package-managed",
+      "rule": "Commit the appropriate lockfile and use deterministic CI install commands; avoid unreviewed floating dependencies.",
+      "evidence": "CI config + lockfile evidence",
+      "source_ids": [
+        "SRC-SLSA-12"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-038",
+      "category": "SEC",
+      "title": "Build provenance target declared",
+      "severity": "major",
+      "applies_when": "released-artifact",
+      "rule": "For important production artifacts declare a supply-chain assurance target and preserve provenance where platform supports it.",
+      "evidence": "SLSA mapping/provenance artifact",
+      "source_ids": [
+        "SRC-SLSA-12"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-039",
+      "category": "SEC",
+      "title": "Untrusted PR secrets isolated",
+      "severity": "blocker",
+      "applies_when": "ci",
+      "rule": "CI for untrusted contributions MUST not expose production secrets or privileged tokens.",
+      "evidence": "CI permission review/tests",
+      "source_ids": [
+        "SRC-NIST-SSDF-11",
+        "SRC-SLSA-12"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-040",
+      "category": "SEC",
+      "title": "Security headers tested not assumed",
+      "severity": "critical",
+      "applies_when": "browser-app",
+      "rule": "Security headers must be verified in deployed responses, including CDN/proxy behavior, not only app config.",
+      "evidence": "Runtime header capture",
+      "source_ids": [
+        "SRC-CSP3",
+        "SRC-HSTS-6797"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-041",
+      "category": "SEC",
+      "title": "OAuth tokens scoped and protected",
+      "severity": "blocker",
+      "applies_when": "oauth",
+      "rule": "Use least privilege scopes/audience, secure redirect URI handling and token storage appropriate to client type; follow RFC 9700.",
+      "evidence": "OAuth test matrix",
+      "source_ids": [
+        "SRC-OAUTH-9700"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-042",
+      "category": "SEC",
+      "title": "Webhook replay protections",
+      "severity": "critical",
+      "applies_when": "webhook",
+      "rule": "Where provider supports timestamp/nonce/event IDs, enforce replay window/dedup semantics after signature verification.",
+      "evidence": "Replay tests",
+      "source_ids": [
+        "SRC-OWASP-ASVS-5"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-043",
+      "category": "SEC",
+      "title": "Security tests tied to abuse cases",
+      "severity": "major",
+      "applies_when": "all",
+      "rule": "Every critical threat/abuse case must map to a preventive control and verification evidence.",
+      "evidence": "Threat-to-test matrix",
+      "source_ids": [
+        "SRC-OWASP-WSTG",
+        "SRC-OWASP-ASVS-5"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-044",
+      "category": "SEC",
+      "title": "Pentest scope follows attack surface",
+      "severity": "major",
+      "applies_when": "high-risk-production",
+      "rule": "High-risk releases require a documented security test scope covering identity, auth, session, input, business logic, client, API and configuration as applicable.",
+      "evidence": "WSTG-based test report",
+      "source_ids": [
+        "SRC-OWASP-WSTG"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEC-045",
+      "category": "SEC",
+      "title": "Vulnerability recurrence creates learning",
+      "severity": "major",
+      "applies_when": "all",
+      "rule": "Verified security failures MUST create a failure signature/root-cause lesson and regression test before closure.",
+      "evidence": "Brain lesson + regression evidence",
+      "source_ids": [
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-A11Y-001",
+      "category": "A11Y",
+      "title": "Accessibility target declared",
+      "severity": "blocker",
+      "applies_when": "user-facing",
+      "rule": "Declare target. Default for user-facing web is WCAG 2.2 AA unless legal/product requirements demand otherwise.",
+      "evidence": "Accessibility plan",
+      "source_ids": [
+        "SRC-WCAG-22"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-A11Y-002",
+      "category": "A11Y",
+      "title": "Keyboard complete",
+      "severity": "blocker",
+      "applies_when": "interactive-ui",
+      "rule": "All functionality MUST be operable by keyboard without keyboard trap; interaction order must be logical.",
+      "evidence": "Manual keyboard journey evidence",
+      "source_ids": [
+        "SRC-WCAG-22"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-A11Y-003",
+      "category": "A11Y",
+      "title": "Visible focus",
+      "severity": "blocker",
+      "applies_when": "interactive-ui",
+      "rule": "Keyboard focus MUST be visible and not obscured by sticky content; custom focus styling must meet target.",
+      "evidence": "Manual + screenshot evidence",
+      "source_ids": [
+        "SRC-WCAG-22"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-A11Y-004",
+      "category": "A11Y",
+      "title": "Accessible names",
+      "severity": "blocker",
+      "applies_when": "controls",
+      "rule": "Interactive controls and form inputs MUST have programmatically determinable accessible names.",
+      "evidence": "Automated + accessibility tree test",
+      "source_ids": [
+        "SRC-WCAG-22",
+        "SRC-W3C-ACT-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-A11Y-005",
+      "category": "A11Y",
+      "title": "Labels and instructions",
+      "severity": "critical",
+      "applies_when": "forms",
+      "rule": "Provide labels/instructions for required formats and constraints; placeholders are not the only label.",
+      "evidence": "Manual/automated test",
+      "source_ids": [
+        "SRC-WCAG-22"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-A11Y-006",
+      "category": "A11Y",
+      "title": "Error identification and recovery",
+      "severity": "critical",
+      "applies_when": "forms",
+      "rule": "Identify errors in text, associate them with controls, focus/announce appropriately and preserve valid input.",
+      "evidence": "Screen reader/keyboard E2E",
+      "source_ids": [
+        "SRC-WCAG-22"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-A11Y-007",
+      "category": "A11Y",
+      "title": "Color not sole signal",
+      "severity": "critical",
+      "applies_when": "all",
+      "rule": "Do not rely only on color to communicate status, errors, selection or meaning.",
+      "evidence": "Visual/manual test",
+      "source_ids": [
+        "SRC-WCAG-22"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-A11Y-008",
+      "category": "A11Y",
+      "title": "Contrast verified",
+      "severity": "critical",
+      "applies_when": "all",
+      "rule": "Text, UI components and focus indicators MUST meet applicable WCAG contrast criteria.",
+      "evidence": "Automated + manual edge-case check",
+      "source_ids": [
+        "SRC-WCAG-22"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-A11Y-009",
+      "category": "A11Y",
+      "title": "Heading hierarchy meaningful",
+      "severity": "major",
+      "applies_when": "content",
+      "rule": "Use headings for document structure; do not choose heading levels only for visual size.",
+      "evidence": "DOM outline review",
+      "source_ids": [
+        "SRC-WHATWG-HTML",
+        "SRC-WCAG-22"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-A11Y-010",
+      "category": "A11Y",
+      "title": "Landmarks meaningful",
+      "severity": "major",
+      "applies_when": "application",
+      "rule": "Use semantic landmarks and avoid redundant/unnamed landmark clutter.",
+      "evidence": "Accessibility tree review",
+      "source_ids": [
+        "SRC-WHATWG-HTML",
+        "SRC-WCAG-22"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-A11Y-011",
+      "category": "A11Y",
+      "title": "Images have correct alternatives",
+      "severity": "critical",
+      "applies_when": "images",
+      "rule": "Informative images need meaningful alternatives; decorative images must be ignorable; complex images need equivalent explanation.",
+      "evidence": "Content review + automated checks",
+      "source_ids": [
+        "SRC-WCAG-22"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-A11Y-012",
+      "category": "A11Y",
+      "title": "Media alternatives",
+      "severity": "critical",
+      "applies_when": "audio-video",
+      "rule": "Provide captions/transcripts/audio description as required by content and conformance target.",
+      "evidence": "Manual evidence",
+      "source_ids": [
+        "SRC-WCAG-22"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-A11Y-013",
+      "category": "A11Y",
+      "title": "Zoom and reflow",
+      "severity": "critical",
+      "applies_when": "responsive-ui",
+      "rule": "Content must remain usable at required zoom/reflow conditions without loss of content/functionality except valid exceptions.",
+      "evidence": "Manual viewport/zoom matrix",
+      "source_ids": [
+        "SRC-WCAG-22"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-A11Y-014",
+      "category": "A11Y",
+      "title": "Target size reviewed",
+      "severity": "critical",
+      "applies_when": "touch-ui",
+      "rule": "Interactive target size and spacing MUST meet applicable WCAG 2.2 target-size criteria or documented exceptions.",
+      "evidence": "Mobile manual test",
+      "source_ids": [
+        "SRC-WCAG-22"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-A11Y-015",
+      "category": "A11Y",
+      "title": "Drag has alternative",
+      "severity": "critical",
+      "applies_when": "drag-interaction",
+      "rule": "Functionality requiring dragging MUST provide a non-drag alternative where WCAG target applies.",
+      "evidence": "Keyboard/touch test",
+      "source_ids": [
+        "SRC-WCAG-22"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-A11Y-016",
+      "category": "A11Y",
+      "title": "Authentication not cognitive puzzle only",
+      "severity": "critical",
+      "applies_when": "auth-ui",
+      "rule": "Authentication must not rely solely on cognitive function tests where WCAG criteria apply; support password managers/paste and alternatives.",
+      "evidence": "Auth accessibility test",
+      "source_ids": [
+        "SRC-WCAG-22"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-A11Y-017",
+      "category": "A11Y",
+      "title": "Dynamic updates announced intentionally",
+      "severity": "critical",
+      "applies_when": "dynamic-ui",
+      "rule": "Important async status changes must be perceivable to assistive technology without creating noisy live-region spam.",
+      "evidence": "Screen-reader test",
+      "source_ids": [
+        "SRC-WCAG-22"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-A11Y-018",
+      "category": "A11Y",
+      "title": "Automated checks never equal conformance",
+      "severity": "blocker",
+      "applies_when": "all",
+      "rule": "Automated accessibility scans are required where practical but MUST be supplemented by manual keyboard and representative assistive-technology review for critical flows.",
+      "evidence": "Combined report",
+      "source_ids": [
+        "SRC-W3C-ACT-11",
+        "SRC-WCAG-22"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PERF-001",
+      "category": "PERF",
+      "title": "Field performance target",
+      "severity": "blocker",
+      "applies_when": "public-user-facing",
+      "rule": "Track real-user Core Web Vitals where traffic allows. Default good targets: p75 LCP <=2.5s, INP <=200ms, CLS <=0.1, segmented mobile/desktop.",
+      "evidence": "RUM/CrUX dashboard or documented pre-traffic proxy plan",
+      "source_ids": [
+        "SRC-WEB-VITALS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PERF-002",
+      "category": "PERF",
+      "title": "Performance budget declared",
+      "severity": "critical",
+      "applies_when": "user-facing",
+      "rule": "Set budgets for JS/CSS, images, fonts, third-party scripts and critical route timings before growth makes them accidental.",
+      "evidence": "Budget file + CI/report",
+      "source_ids": [
+        "SRC-WEB-VITALS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PERF-003",
+      "category": "PERF",
+      "title": "Measure before optimize",
+      "severity": "major",
+      "applies_when": "all",
+      "rule": "Use field and lab evidence to identify bottlenecks; avoid speculative micro-optimization that adds complexity.",
+      "evidence": "Before/after trace",
+      "source_ids": [
+        "SRC-WEB-VITALS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PERF-004",
+      "category": "PERF",
+      "title": "LCP resource discoverable",
+      "severity": "critical",
+      "applies_when": "content-pages",
+      "rule": "Critical LCP content SHOULD be discoverable early; avoid lazy-loading likely LCP images and prioritize appropriately.",
+      "evidence": "Trace/Lighthouse evidence",
+      "source_ids": [
+        "SRC-WEB-VITALS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PERF-005",
+      "category": "PERF",
+      "title": "Images dimensioned and responsive",
+      "severity": "critical",
+      "applies_when": "images",
+      "rule": "Provide intrinsic dimensions/aspect ratio, appropriate formats and responsive sources; avoid serving desktop-sized media to small viewports.",
+      "evidence": "Network + CLS evidence",
+      "source_ids": [
+        "SRC-WEB-VITALS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PERF-006",
+      "category": "PERF",
+      "title": "Below-fold lazy loading deliberate",
+      "severity": "major",
+      "applies_when": "media",
+      "rule": "Lazy-load offscreen heavy media where beneficial, but never blindly lazy-load critical above-fold/LCP content.",
+      "evidence": "Trace evidence",
+      "source_ids": [
+        "SRC-WEB-VITALS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PERF-007",
+      "category": "PERF",
+      "title": "JavaScript cost controlled",
+      "severity": "critical",
+      "applies_when": "client-js",
+      "rule": "Minimize shipped/executed JS; split by real boundaries, remove unused dependencies and avoid hydration/client rendering when unnecessary.",
+      "evidence": "Bundle + CPU profile",
+      "source_ids": [
+        "SRC-WEB-VITALS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PERF-008",
+      "category": "PERF",
+      "title": "Long tasks reduced",
+      "severity": "critical",
+      "applies_when": "interactive-ui",
+      "rule": "Break or move expensive main-thread work; measure interactions causing poor INP.",
+      "evidence": "Performance trace + INP diagnostics",
+      "source_ids": [
+        "SRC-WEB-VITALS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PERF-009",
+      "category": "PERF",
+      "title": "Event handlers bounded",
+      "severity": "major",
+      "applies_when": "interactive-ui",
+      "rule": "Avoid expensive global listeners and repeated synchronous work on high-frequency events; debounce/throttle only with UX-correct semantics.",
+      "evidence": "Profile evidence",
+      "source_ids": [
+        "SRC-WEB-VITALS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PERF-010",
+      "category": "PERF",
+      "title": "Layout thrash avoided",
+      "severity": "major",
+      "applies_when": "dynamic-ui",
+      "rule": "Avoid forced synchronous layout loops; batch DOM reads/writes where relevant.",
+      "evidence": "Performance trace",
+      "source_ids": [
+        "SRC-WEB-VITALS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PERF-011",
+      "category": "PERF",
+      "title": "Fonts budgeted",
+      "severity": "major",
+      "applies_when": "custom-fonts",
+      "rule": "Limit font families/weights, preload only proven critical fonts and define fallback behavior to reduce blocking and layout shift.",
+      "evidence": "Network/CLS evidence",
+      "source_ids": [
+        "SRC-WEB-VITALS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PERF-012",
+      "category": "PERF",
+      "title": "Caching based on immutability",
+      "severity": "critical",
+      "applies_when": "static-assets",
+      "rule": "Fingerprint immutable assets and cache long; HTML/data cache policy must reflect freshness and invalidation.",
+      "evidence": "Response header tests",
+      "source_ids": [
+        "SRC-HTTP-9111"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PERF-013",
+      "category": "PERF",
+      "title": "Compression verified",
+      "severity": "major",
+      "applies_when": "text-assets",
+      "rule": "Use appropriate transfer compression for compressible text responses and verify CDN/proxy behavior.",
+      "evidence": "Runtime header/size evidence",
+      "source_ids": [
+        "SRC-WEB-VITALS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PERF-014",
+      "category": "PERF",
+      "title": "Third-party cost budget",
+      "severity": "critical",
+      "applies_when": "third-party-script",
+      "rule": "Third-party scripts must justify CPU, network, privacy and failure cost; load strategy should protect critical path.",
+      "evidence": "Third-party waterfall + owner",
+      "source_ids": [
+        "SRC-WEB-VITALS",
+        "SRC-W3C-PRIVACY-PRINCIPLES"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PERF-015",
+      "category": "PERF",
+      "title": "API fan-out controlled",
+      "severity": "critical",
+      "applies_when": "data-heavy-page",
+      "rule": "Avoid unbounded N+1 browser/server fan-out; aggregate, batch or parallelize only within dependency budgets.",
+      "evidence": "Trace/query count evidence",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PERF-016",
+      "category": "PERF",
+      "title": "Database performance measured",
+      "severity": "critical",
+      "applies_when": "database",
+      "rule": "Critical queries require representative plans/latency evidence; protect against N+1 and missing-index regressions.",
+      "evidence": "Query plan + load test",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PERF-017",
+      "category": "PERF",
+      "title": "Performance regression gate",
+      "severity": "major",
+      "applies_when": "user-facing",
+      "rule": "Critical routes MUST have repeatable performance checks and investigate material regression before release.",
+      "evidence": "CI/lab delta + field alert",
+      "source_ids": [
+        "SRC-WEB-VITALS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PERF-018",
+      "category": "PERF",
+      "title": "Mobile and constrained conditions tested",
+      "severity": "critical",
+      "applies_when": "public-user-facing",
+      "rule": "Test representative low-end/mobile CPU and network conditions; desktop localhost is not sufficient evidence.",
+      "evidence": "Throttled lab + real device evidence",
+      "source_ids": [
+        "SRC-WEB-VITALS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEO-001",
+      "category": "SEO",
+      "title": "SEO applicability explicit",
+      "severity": "major",
+      "applies_when": "public-content",
+      "rule": "Declare whether pages are intended for public indexing. Auth/private/admin pages should not accidentally enter index.",
+      "evidence": "SEO scope map",
+      "source_ids": [
+        "SRC-GOOGLE-SEO"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEO-002",
+      "category": "SEO",
+      "title": "Crawlability intentional",
+      "severity": "critical",
+      "applies_when": "indexable",
+      "rule": "Ensure intended pages are accessible to crawlers and unintended areas are controlled appropriately; robots.txt is not access control.",
+      "evidence": "URL inspection/crawl test",
+      "source_ids": [
+        "SRC-GOOGLE-SEO"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEO-003",
+      "category": "SEO",
+      "title": "Indexable pages return useful success content",
+      "severity": "critical",
+      "applies_when": "indexable",
+      "rule": "Intended indexable pages should return correct success status and meaningful indexable content; avoid soft-error pages.",
+      "evidence": "HTTP/crawl evidence",
+      "source_ids": [
+        "SRC-GOOGLE-SEO"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEO-004",
+      "category": "SEO",
+      "title": "Canonical URLs deliberate",
+      "severity": "major",
+      "applies_when": "duplicate-content",
+      "rule": "Define canonicalization for parameters, variants, trailing slash, host and duplicate paths without masking genuinely distinct pages.",
+      "evidence": "Canonical test matrix",
+      "source_ids": [
+        "SRC-GOOGLE-SEO"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEO-005",
+      "category": "SEO",
+      "title": "Titles unique and descriptive",
+      "severity": "major",
+      "applies_when": "indexable",
+      "rule": "Provide useful, page-specific titles aligned with visible content.",
+      "evidence": "Crawl report",
+      "source_ids": [
+        "SRC-GOOGLE-SEO"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEO-006",
+      "category": "SEO",
+      "title": "Meta descriptions intentional",
+      "severity": "major",
+      "applies_when": "indexable",
+      "rule": "Provide useful descriptions where valuable; do not mass-duplicate misleading snippets.",
+      "evidence": "Crawl report",
+      "source_ids": [
+        "SRC-GOOGLE-SEO"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEO-007",
+      "category": "SEO",
+      "title": "Structured data matches visible truth",
+      "severity": "critical",
+      "applies_when": "structured-data",
+      "rule": "Structured data MUST represent visible page content and follow feature guidelines; never mark up hidden/misleading facts.",
+      "evidence": "Rich Results test + content review",
+      "source_ids": [
+        "SRC-GOOGLE-SEO"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEO-008",
+      "category": "SEO",
+      "title": "JSON-LD preferred when suitable",
+      "severity": "major",
+      "applies_when": "structured-data",
+      "rule": "Use a supported structured data format; Google generally recommends JSON-LD when it fits the integration.",
+      "evidence": "Validation evidence",
+      "source_ids": [
+        "SRC-GOOGLE-SEO"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEO-009",
+      "category": "SEO",
+      "title": "Sitemaps generated from canonical inventory",
+      "severity": "major",
+      "applies_when": "large-public-site",
+      "rule": "Sitemaps should contain canonical indexable URLs and update predictably; do not treat sitemap inclusion as authorization/index guarantee.",
+      "evidence": "Sitemap validation",
+      "source_ids": [
+        "SRC-GOOGLE-SEO"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEO-010",
+      "category": "SEO",
+      "title": "Internal links crawlable",
+      "severity": "major",
+      "applies_when": "public-site",
+      "rule": "Important pages need discoverable links with meaningful anchor context; critical navigation should not depend on opaque script-only behavior.",
+      "evidence": "Crawler test",
+      "source_ids": [
+        "SRC-GOOGLE-SEO",
+        "SRC-WHATWG-HTML"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEO-011",
+      "category": "SEO",
+      "title": "Redirect chains minimized",
+      "severity": "major",
+      "applies_when": "public-site",
+      "rule": "Use permanent/temporary redirects according to intent and avoid unnecessary chains/loops.",
+      "evidence": "Crawler/HTTP tests",
+      "source_ids": [
+        "SRC-HTTP-9110",
+        "SRC-GOOGLE-SEO"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SEO-012",
+      "category": "SEO",
+      "title": "SEO changes monitored after release",
+      "severity": "major",
+      "applies_when": "important-seo",
+      "rule": "Monitor coverage, crawl errors, structured data and traffic after significant URL/rendering changes.",
+      "evidence": "Post-release Search Console checklist",
+      "source_ids": [
+        "SRC-GOOGLE-SEO"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-TEST-001",
+      "category": "TEST",
+      "title": "Risk-based test strategy",
+      "severity": "blocker",
+      "applies_when": "all",
+      "rule": "Map business/security/reliability risks to test layers. Do not chase arbitrary coverage percentage as the only quality signal.",
+      "evidence": "Risk-to-test matrix",
+      "source_ids": [
+        "SRC-NIST-SSDF-11",
+        "SRC-OWASP-WSTG"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-TEST-002",
+      "category": "TEST",
+      "title": "Acceptance criteria executable or inspectable",
+      "severity": "critical",
+      "applies_when": "all",
+      "rule": "Each task/feature acceptance criterion must map to a deterministic test, command, inspection or runtime evidence.",
+      "evidence": "Task/evidence links",
+      "source_ids": [
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-TEST-003",
+      "category": "TEST",
+      "title": "Unit tests for dense invariants",
+      "severity": "major",
+      "applies_when": "business-logic",
+      "rule": "Use unit tests for deterministic domain rules, transformations and edge cases; avoid testing framework internals.",
+      "evidence": "Unit suite",
+      "source_ids": [
+        "SRC-TESTING-LIBRARY"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-TEST-004",
+      "category": "TEST",
+      "title": "Integration tests for real boundaries",
+      "severity": "critical",
+      "applies_when": "database-or-provider",
+      "rule": "Test real persistence/serialization/contracts at boundaries; mocks alone do not prove migrations, SQL or provider adapters.",
+      "evidence": "Integration suite",
+      "source_ids": [
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-TEST-005",
+      "category": "TEST",
+      "title": "E2E tests for critical journeys",
+      "severity": "critical",
+      "applies_when": "user-facing",
+      "rule": "Critical user journeys require browser-level verification across trusted boundaries.",
+      "evidence": "E2E suite/report",
+      "source_ids": [
+        "SRC-PLAYWRIGHT"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-TEST-006",
+      "category": "TEST",
+      "title": "Tests resemble user behavior",
+      "severity": "major",
+      "applies_when": "ui-tests",
+      "rule": "Prefer user-visible roles, labels and behavior over implementation-detail selectors where chosen tooling supports it.",
+      "evidence": "Test review",
+      "source_ids": [
+        "SRC-PLAYWRIGHT",
+        "SRC-TESTING-LIBRARY"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-TEST-007",
+      "category": "TEST",
+      "title": "Test isolation",
+      "severity": "critical",
+      "applies_when": "all",
+      "rule": "Tests must not depend on execution order or leaked state; fixtures own setup/cleanup.",
+      "evidence": "Randomized/repeated run evidence",
+      "source_ids": [
+        "SRC-PLAYWRIGHT"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-TEST-008",
+      "category": "TEST",
+      "title": "Deterministic time control",
+      "severity": "major",
+      "applies_when": "time-dependent",
+      "rule": "Time-dependent logic needs explicit clock control or stable boundary strategy; do not rely on wall-clock sleeps.",
+      "evidence": "Tests with fake/injected clock where appropriate",
+      "source_ids": [
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-TEST-009",
+      "category": "TEST",
+      "title": "No arbitrary sleeps in reliable E2E",
+      "severity": "major",
+      "applies_when": "e2e",
+      "rule": "Wait on observable conditions/events, not fixed delays, except deliberately testing time behavior.",
+      "evidence": "Test review",
+      "source_ids": [
+        "SRC-PLAYWRIGHT"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-TEST-010",
+      "category": "TEST",
+      "title": "Failure-path tests mandatory",
+      "severity": "critical",
+      "applies_when": "all",
+      "rule": "Test permission denial, validation failure, dependency failure, timeout, duplicate/retry and partial failure where applicable.",
+      "evidence": "Negative test matrix",
+      "source_ids": [
+        "SRC-SRE",
+        "SRC-OWASP-WSTG"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-TEST-011",
+      "category": "TEST",
+      "title": "Concurrency tests where contested",
+      "severity": "critical",
+      "applies_when": "concurrent-write",
+      "rule": "Run real concurrent operations against contested invariants.",
+      "evidence": "Concurrent integration test",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-TEST-012",
+      "category": "TEST",
+      "title": "Migration tests from supported state",
+      "severity": "critical",
+      "applies_when": "database",
+      "rule": "Verify migrations on representative prior schema/data, not only empty database.",
+      "evidence": "Migration CI evidence",
+      "source_ids": [
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-TEST-013",
+      "category": "TEST",
+      "title": "Contract tests prevent drift",
+      "severity": "critical",
+      "applies_when": "multi-client-or-provider",
+      "rule": "Validate API/provider contracts in CI and test backward compatibility for supported consumers.",
+      "evidence": "Contract report",
+      "source_ids": [
+        "SRC-OPENAPI-311"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-TEST-014",
+      "category": "TEST",
+      "title": "Accessibility automated plus manual",
+      "severity": "blocker",
+      "applies_when": "user-facing",
+      "rule": "Combine automated checks with manual keyboard and representative assistive-tech checks for critical journeys.",
+      "evidence": "Accessibility evidence pack",
+      "source_ids": [
+        "SRC-W3C-ACT-11",
+        "SRC-WCAG-22"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-TEST-015",
+      "category": "TEST",
+      "title": "Security test scope explicit",
+      "severity": "critical",
+      "applies_when": "production",
+      "rule": "Use ASVS/WSTG applicability to plan security verification; scanners alone are insufficient.",
+      "evidence": "Security test report",
+      "source_ids": [
+        "SRC-OWASP-ASVS-5",
+        "SRC-OWASP-WSTG"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-TEST-016",
+      "category": "TEST",
+      "title": "Cross-browser matrix declared",
+      "severity": "major",
+      "applies_when": "user-facing",
+      "rule": "Declare supported browsers/devices and run critical journeys accordingly; do not promise untested compatibility.",
+      "evidence": "Browser matrix + CI report",
+      "source_ids": [
+        "SRC-PLAYWRIGHT"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-TEST-017",
+      "category": "TEST",
+      "title": "Visual regression selective",
+      "severity": "major",
+      "applies_when": "visual-critical",
+      "rule": "Use visual regression for stable high-value surfaces, not as a substitute for semantic assertions.",
+      "evidence": "Baseline/review process",
+      "source_ids": [
+        "SRC-PLAYWRIGHT"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-TEST-018",
+      "category": "TEST",
+      "title": "Flaky tests treated as defects",
+      "severity": "critical",
+      "applies_when": "all",
+      "rule": "Quarantine only with owner and deadline; repeated reruns must not normalize nondeterminism.",
+      "evidence": "Flake tracking",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-OBS-001",
+      "category": "OBS",
+      "title": "Telemetry purpose declared",
+      "severity": "major",
+      "applies_when": "production",
+      "rule": "Instrument to answer user-impact and debugging questions, not to collect everything blindly.",
+      "evidence": "Observability plan",
+      "source_ids": [
+        "SRC-OTEL",
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-OBS-002",
+      "category": "OBS",
+      "title": "Traces metrics logs correlated",
+      "severity": "critical",
+      "applies_when": "distributed-or-critical",
+      "rule": "Use consistent service/resource identity and correlation so traces, metrics and logs can be joined where architecture needs it.",
+      "evidence": "Telemetry sample",
+      "source_ids": [
+        "SRC-OTEL"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-OBS-003",
+      "category": "OBS",
+      "title": "Structured logs",
+      "severity": "major",
+      "applies_when": "production",
+      "rule": "Emit structured logs with stable fields and severity; avoid multiline free-text as the only machine signal.",
+      "evidence": "Log sample/schema",
+      "source_ids": [
+        "SRC-OTEL"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-OBS-004",
+      "category": "OBS",
+      "title": "PII and secrets scrubbed",
+      "severity": "blocker",
+      "applies_when": "production",
+      "rule": "Telemetry must apply data classification/redaction and never leak credentials or unnecessary personal data.",
+      "evidence": "Telemetry scan",
+      "source_ids": [
+        "SRC-OWASP-CHEATS",
+        "SRC-NIST-PRIVACY-10"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-OBS-005",
+      "category": "OBS",
+      "title": "Golden signals or equivalent",
+      "severity": "critical",
+      "applies_when": "service",
+      "rule": "Monitor user-relevant latency, traffic, errors and saturation or a justified equivalent.",
+      "evidence": "Dashboard links",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-OBS-006",
+      "category": "OBS",
+      "title": "Business outcomes observable",
+      "severity": "critical",
+      "applies_when": "business-critical",
+      "rule": "Track critical business events/outcomes separately from technical logs: orders created, payments failed, webhook lag, jobs stuck, etc.",
+      "evidence": "Metrics/events dashboard",
+      "source_ids": [
+        "SRC-SRE",
+        "SRC-OTEL"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-OBS-007",
+      "category": "OBS",
+      "title": "Trace critical external dependencies",
+      "severity": "major",
+      "applies_when": "external-integration",
+      "rule": "Measure dependency latency/error and propagate context safely when supported.",
+      "evidence": "Trace evidence",
+      "source_ids": [
+        "SRC-OTEL"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-OBS-008",
+      "category": "OBS",
+      "title": "Health endpoints meaningful",
+      "severity": "critical",
+      "applies_when": "service",
+      "rule": "Separate liveness/readiness/startup semantics as platform needs; do not report healthy when required dependencies make service unable to serve.",
+      "evidence": "Failure tests",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-OBS-009",
+      "category": "OBS",
+      "title": "Alert on actionability",
+      "severity": "critical",
+      "applies_when": "production",
+      "rule": "Pages/urgent alerts should correspond to user impact or imminent SLO threat and have an owner/runbook.",
+      "evidence": "Alert review",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-OBS-010",
+      "category": "OBS",
+      "title": "No alert without owner",
+      "severity": "major",
+      "applies_when": "production",
+      "rule": "Every production alert has owner, severity, expected action and escalation behavior.",
+      "evidence": "Alert registry",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-OBS-011",
+      "category": "OBS",
+      "title": "Deploy markers correlated",
+      "severity": "major",
+      "applies_when": "production",
+      "rule": "Record deployment/revision markers so regressions can be correlated with change.",
+      "evidence": "Dashboard evidence",
+      "source_ids": [
+        "SRC-OTEL",
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-OBS-012",
+      "category": "OBS",
+      "title": "Observability tested",
+      "severity": "major",
+      "applies_when": "production",
+      "rule": "Verify critical telemetry during pre-release/fault tests; logging code existing is not evidence it reaches the backend.",
+      "evidence": "Captured trace/metric/log evidence",
+      "source_ids": [
+        "SRC-OTEL"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-REL-001",
+      "category": "REL",
+      "title": "SLIs/SLOs for critical services",
+      "severity": "critical",
+      "applies_when": "important-production",
+      "rule": "Define user-centered indicators and objectives for critical availability/latency/correctness journeys.",
+      "evidence": "SLO document/dashboard",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-REL-002",
+      "category": "REL",
+      "title": "Error budget influences release risk",
+      "severity": "major",
+      "applies_when": "slo-managed",
+      "rule": "When reliability is materially below objective, prioritize reliability work according to agreed policy.",
+      "evidence": "Review record",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-REL-003",
+      "category": "REL",
+      "title": "Dependency budgets",
+      "severity": "critical",
+      "applies_when": "distributed",
+      "rule": "Define timeout/retry/latency budget per downstream call so total request budget is coherent.",
+      "evidence": "Sequence budget + tests",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-REL-004",
+      "category": "REL",
+      "title": "Circuit/bulkhead only with evidence",
+      "severity": "major",
+      "applies_when": "unstable-dependency",
+      "rule": "Use resilience patterns where failure mode justifies them; avoid decorative complexity.",
+      "evidence": "Failure test + rationale",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-REL-005",
+      "category": "REL",
+      "title": "Load shedding deliberate",
+      "severity": "critical",
+      "applies_when": "capacity-risk",
+      "rule": "Define behavior under overload; protect critical work and fail fast rather than collapse unpredictably.",
+      "evidence": "Load test",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-REL-006",
+      "category": "REL",
+      "title": "Capacity assumptions documented",
+      "severity": "major",
+      "applies_when": "production",
+      "rule": "Record expected traffic, concurrency, data size and growth assumptions; validate before major launch.",
+      "evidence": "Capacity plan + load evidence",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-REL-007",
+      "category": "REL",
+      "title": "Graceful degradation",
+      "severity": "major",
+      "applies_when": "optional-dependency",
+      "rule": "Optional dependency failures should degrade explicitly rather than corrupt core flow.",
+      "evidence": "Fault test",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-REL-008",
+      "category": "REL",
+      "title": "Disaster recovery tested",
+      "severity": "blocker",
+      "applies_when": "critical-production",
+      "rule": "Recovery plans for critical data/services require exercises, not documents only.",
+      "evidence": "DR exercise evidence",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-REL-009",
+      "category": "REL",
+      "title": "Incident roles and communication",
+      "severity": "major",
+      "applies_when": "critical-production",
+      "rule": "Define incident command, communication and escalation for serious production events.",
+      "evidence": "Incident runbook",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-REL-010",
+      "category": "REL",
+      "title": "Blameless root-cause learning",
+      "severity": "major",
+      "applies_when": "incident",
+      "rule": "Postmortems focus on contributing system conditions, corrective actions and recurrence prevention.",
+      "evidence": "Postmortem + tracked actions",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-REL-011",
+      "category": "REL",
+      "title": "Release canary/gradual rollout where risk warrants",
+      "severity": "major",
+      "applies_when": "high-risk-release",
+      "rule": "Use staged exposure/feature flags/canary when blast radius justifies it and define success/rollback signals.",
+      "evidence": "Rollout plan + metrics",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-REL-012",
+      "category": "REL",
+      "title": "Reconciliation for eventual consistency",
+      "severity": "critical",
+      "applies_when": "eventual-consistency",
+      "rule": "Systems with asynchronous/partial state MUST have reconciliation to detect and repair divergence.",
+      "evidence": "Reconciliation job/test/dashboard",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-DEL-001",
+      "category": "DEL",
+      "title": "One codebase and revision identity",
+      "severity": "critical",
+      "applies_when": "all",
+      "rule": "Every deployable app MUST be traceable to source revision and environment; deployments are instances of a versioned codebase.",
+      "evidence": "Revision/deploy metadata",
+      "source_ids": [
+        "SRC-12FACTOR",
+        "SRC-SLSA-12"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-DEL-002",
+      "category": "DEL",
+      "title": "CI is repeatable",
+      "severity": "critical",
+      "applies_when": "all",
+      "rule": "Build, lint, test and package steps MUST be scriptable and repeatable outside one developer machine.",
+      "evidence": "CI config + local commands",
+      "source_ids": [
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-DEL-003",
+      "category": "DEL",
+      "title": "Clean dependency install in CI",
+      "severity": "critical",
+      "applies_when": "package-managed",
+      "rule": "CI MUST use lockfile-respecting clean install and fail on unexpected dependency drift.",
+      "evidence": "CI log/config",
+      "source_ids": [
+        "SRC-SLSA-12"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-DEL-004",
+      "category": "DEL",
+      "title": "Build artifact immutable",
+      "severity": "critical",
+      "applies_when": "artifact-deploy",
+      "rule": "Promote the same built artifact between stages when architecture permits; do not rebuild differently for production without traceability.",
+      "evidence": "Artifact digest/provenance",
+      "source_ids": [
+        "SRC-SLSA-12"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-DEL-005",
+      "category": "DEL",
+      "title": "Environment parity managed",
+      "severity": "major",
+      "applies_when": "multi-env",
+      "rule": "Minimize accidental dev/staging/prod divergence; document unavoidable differences.",
+      "evidence": "Environment matrix",
+      "source_ids": [
+        "SRC-12FACTOR"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-DEL-006",
+      "category": "DEL",
+      "title": "Configuration validated at deploy/startup",
+      "severity": "critical",
+      "applies_when": "all",
+      "rule": "Required configuration MUST be schema-validated and environment-specific missing values must fail safely.",
+      "evidence": "Validation command/test",
+      "source_ids": [
+        "SRC-12FACTOR"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-DEL-007",
+      "category": "DEL",
+      "title": "Database migration gate",
+      "severity": "blocker",
+      "applies_when": "database-release",
+      "rule": "Release plan MUST order schema/app changes compatibly and verify migration status before dependent code.",
+      "evidence": "Release evidence",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-DEL-008",
+      "category": "DEL",
+      "title": "Rollback not assumed",
+      "severity": "critical",
+      "applies_when": "production-release",
+      "rule": "For each release classify rollback safety. Data migrations and external side effects may require roll-forward; document exact recovery path.",
+      "evidence": "Release plan",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-DEL-009",
+      "category": "DEL",
+      "title": "Feature flags have lifecycle",
+      "severity": "major",
+      "applies_when": "feature-flag",
+      "rule": "Flags require owner, default, exposure, kill behavior and removal date/condition; stale flags are debt.",
+      "evidence": "Flag registry",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-DEL-010",
+      "category": "DEL",
+      "title": "Pre-release smoke on deployed artifact",
+      "severity": "blocker",
+      "applies_when": "production-release",
+      "rule": "Run critical smoke journeys against the actual deployed candidate/environment, not only local tests.",
+      "evidence": "Smoke report",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-DEL-011",
+      "category": "DEL",
+      "title": "Post-release verification",
+      "severity": "critical",
+      "applies_when": "production-release",
+      "rule": "Verify health, critical journeys, errors, latency and business signals immediately after release.",
+      "evidence": "Release evidence pack",
+      "source_ids": [
+        "SRC-SRE",
+        "SRC-OTEL"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-DEL-012",
+      "category": "DEL",
+      "title": "Automatic rollback signals explicit",
+      "severity": "major",
+      "applies_when": "automated-rollout",
+      "rule": "If automation can rollback, define trusted signals and safeguards against flapping or data corruption.",
+      "evidence": "Rollout policy/tests",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-DEL-013",
+      "category": "DEL",
+      "title": "Operational runbook updated",
+      "severity": "major",
+      "applies_when": "production-change",
+      "rule": "Changes to deployment, dependencies, recovery, jobs or configuration MUST update runbook in same batch.",
+      "evidence": "Docs diff",
+      "source_ids": [
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-DEL-014",
+      "category": "DEL",
+      "title": "Release evidence retained",
+      "severity": "major",
+      "applies_when": "production-release",
+      "rule": "Record revision, migrations, commands, tests, known risks, approver/agent and post-release status.",
+      "evidence": "Evidence pack",
+      "source_ids": [
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SUP-001",
+      "category": "SUP",
+      "title": "Dependency inventory",
+      "severity": "critical",
+      "applies_when": "all",
+      "rule": "Maintain machine-readable dependency inventory through lockfiles and platform tooling; know direct and transitive exposure.",
+      "evidence": "Lockfile/SBOM where required",
+      "source_ids": [
+        "SRC-SLSA-12",
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SUP-002",
+      "category": "SUP",
+      "title": "New dependency review",
+      "severity": "major",
+      "applies_when": "all",
+      "rule": "Before adding a dependency assess necessity, maintenance, license, security posture, size, permissions and alternatives.",
+      "evidence": "Dependency decision record for material packages",
+      "source_ids": [
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SUP-003",
+      "category": "SUP",
+      "title": "Unused dependency removal",
+      "severity": "major",
+      "applies_when": "all",
+      "rule": "Remove dependencies and tools no longer needed to reduce attack and maintenance surface.",
+      "evidence": "Periodic audit",
+      "source_ids": [
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SUP-004",
+      "category": "SUP",
+      "title": "Package source trusted",
+      "severity": "blocker",
+      "applies_when": "package-managed",
+      "rule": "Use approved registries/sources; protect against typosquatting and namespace confusion.",
+      "evidence": "Registry config review",
+      "source_ids": [
+        "SRC-SLSA-12"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SUP-005",
+      "category": "SUP",
+      "title": "CI token least privilege",
+      "severity": "blocker",
+      "applies_when": "ci",
+      "rule": "CI/CD tokens MUST have minimum scopes and short-lived credentials where platform supports them.",
+      "evidence": "Permission capture",
+      "source_ids": [
+        "SRC-SLSA-12"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SUP-006",
+      "category": "SUP",
+      "title": "Protected release path",
+      "severity": "critical",
+      "applies_when": "production-release",
+      "rule": "Production release workflows require protected identity/branch/environment controls appropriate to risk.",
+      "evidence": "SCM/CI settings evidence",
+      "source_ids": [
+        "SRC-SLSA-12"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SUP-007",
+      "category": "SUP",
+      "title": "Artifact provenance preserved",
+      "severity": "major",
+      "applies_when": "artifact-release",
+      "rule": "Preserve provenance/attestation for important artifacts when platform supports it; verify before promotion for higher-assurance systems.",
+      "evidence": "Provenance evidence",
+      "source_ids": [
+        "SRC-SLSA-12"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SUP-008",
+      "category": "SUP",
+      "title": "Build isolation target",
+      "severity": "major",
+      "applies_when": "high-assurance",
+      "rule": "For higher-risk systems define desired SLSA build level and use hosted/hardened builders accordingly.",
+      "evidence": "SLSA mapping",
+      "source_ids": [
+        "SRC-SLSA-12"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SUP-009",
+      "category": "SUP",
+      "title": "Secret scanning and rotation response",
+      "severity": "critical",
+      "applies_when": "all",
+      "rule": "Scan source/history where feasible and treat committed secrets as compromised until revoked/rotated.",
+      "evidence": "Scan report + incident record",
+      "source_ids": [
+        "SRC-NIST-SSDF-11",
+        "SRC-OWASP-CHEATS"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-SUP-010",
+      "category": "SUP",
+      "title": "Dependency update cadence",
+      "severity": "major",
+      "applies_when": "production",
+      "rule": "Define routine and emergency dependency update paths; avoid permanent pinning to known vulnerable versions.",
+      "evidence": "Maintenance policy",
+      "source_ids": [
+        "SRC-NIST-SSDF-11"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PRIV-001",
+      "category": "PRIV",
+      "title": "Data processing inventory",
+      "severity": "blocker",
+      "applies_when": "personal-data",
+      "rule": "Inventory personal/sensitive data, purpose, source, storage, sharing, retention and owner.",
+      "evidence": "Data processing map",
+      "source_ids": [
+        "SRC-NIST-PRIVACY-10"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PRIV-002",
+      "category": "PRIV",
+      "title": "Data minimization",
+      "severity": "critical",
+      "applies_when": "personal-data",
+      "rule": "Collect and retain only data necessary for explicit product/legal purpose; convenience is not enough.",
+      "evidence": "Field-by-field justification",
+      "source_ids": [
+        "SRC-NIST-PRIVACY-10",
+        "SRC-W3C-PRIVACY-PRINCIPLES"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PRIV-003",
+      "category": "PRIV",
+      "title": "Purpose limitation",
+      "severity": "critical",
+      "applies_when": "personal-data",
+      "rule": "New use of collected data requires explicit review against original purpose and user expectations.",
+      "evidence": "Privacy decision record",
+      "source_ids": [
+        "SRC-NIST-PRIVACY-10"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PRIV-004",
+      "category": "PRIV",
+      "title": "Retention and deletion",
+      "severity": "critical",
+      "applies_when": "personal-data",
+      "rule": "Define retention periods/triggers and verifiable deletion/anonymization behavior across primary stores, replicas and vendors.",
+      "evidence": "Lifecycle tests/runbook",
+      "source_ids": [
+        "SRC-NIST-PRIVACY-10"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PRIV-005",
+      "category": "PRIV",
+      "title": "Third-party data sharing inventory",
+      "severity": "critical",
+      "applies_when": "third-party-data",
+      "rule": "Document which vendors receive data, why, fields, region/contract controls and failure/removal path.",
+      "evidence": "Vendor data map",
+      "source_ids": [
+        "SRC-NIST-PRIVACY-10"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PRIV-006",
+      "category": "PRIV",
+      "title": "Consent/preferences not dark patterns",
+      "severity": "critical",
+      "applies_when": "tracking-or-consent",
+      "rule": "Where consent/preferences apply, choices must be meaningful, reversible and not deceptively designed.",
+      "evidence": "UX/privacy review",
+      "source_ids": [
+        "SRC-W3C-PRIVACY-PRINCIPLES"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PRIV-007",
+      "category": "PRIV",
+      "title": "Client storage classified",
+      "severity": "critical",
+      "applies_when": "browser-storage",
+      "rule": "Do not put secrets or unnecessary personal data in localStorage/IndexedDB/caches; define logout and shared-device behavior.",
+      "evidence": "Storage inspection/test",
+      "source_ids": [
+        "SRC-OWASP-ASVS-5",
+        "SRC-NIST-PRIVACY-10"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PRIV-008",
+      "category": "PRIV",
+      "title": "Analytics scope minimized",
+      "severity": "major",
+      "applies_when": "analytics",
+      "rule": "Collect analytics events/properties with explicit purpose and avoid leaking free-text or identifiers unnecessarily.",
+      "evidence": "Analytics schema review",
+      "source_ids": [
+        "SRC-NIST-PRIVACY-10"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PRIV-009",
+      "category": "PRIV",
+      "title": "Privacy impact for new sensitive features",
+      "severity": "critical",
+      "applies_when": "sensitive-feature",
+      "rule": "Before shipping new sensitive processing, assess users, harms, data flows, mitigations and residual risk.",
+      "evidence": "Privacy review",
+      "source_ids": [
+        "SRC-NIST-PRIVACY-10",
+        "SRC-W3C-PRIVACY-PRINCIPLES"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PRIV-010",
+      "category": "PRIV",
+      "title": "User data requests operationalized",
+      "severity": "major",
+      "applies_when": "personal-data",
+      "rule": "Where product/legal requirements include access/export/correction/deletion, define identity verification and end-to-end fulfillment.",
+      "evidence": "Runbook + test case",
+      "source_ids": [
+        "SRC-NIST-PRIVACY-10"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-I18N-001",
+      "category": "I18N",
+      "title": "Document language declared",
+      "severity": "critical",
+      "applies_when": "all",
+      "rule": "Set correct document/content language metadata so browsers and assistive technologies can process pronunciation and rules.",
+      "evidence": "DOM test",
+      "source_ids": [
+        "SRC-WHATWG-HTML",
+        "SRC-W3C-I18N"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-I18N-002",
+      "category": "I18N",
+      "title": "Direction explicit for RTL",
+      "severity": "critical",
+      "applies_when": "rtl",
+      "rule": "Use correct dir semantics at document/component boundaries; do not reverse layouts through ad-hoc CSS only.",
+      "evidence": "Arabic/RTL manual test",
+      "source_ids": [
+        "SRC-W3C-I18N"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-I18N-003",
+      "category": "I18N",
+      "title": "Strings externalized when localized",
+      "severity": "major",
+      "applies_when": "localized",
+      "rule": "User-facing strings requiring localization MUST be separated from code and support interpolation/pluralization safely.",
+      "evidence": "I18n catalog review",
+      "source_ids": [
+        "SRC-W3C-I18N"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-I18N-004",
+      "category": "I18N",
+      "title": "Locale-aware formatting",
+      "severity": "critical",
+      "applies_when": "localized",
+      "rule": "Format dates, numbers, currencies and units using explicit locale/timezone rules; never assume US/English defaults.",
+      "evidence": "Locale matrix tests",
+      "source_ids": [
+        "SRC-W3C-I18N"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-I18N-005",
+      "category": "I18N",
+      "title": "Identifiers separate from labels",
+      "severity": "major",
+      "applies_when": "localized",
+      "rule": "Persist stable language-neutral IDs/codes; localized labels are presentation, not authoritative identifiers.",
+      "evidence": "Schema review",
+      "source_ids": [
+        "SRC-W3C-I18N"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-I18N-006",
+      "category": "I18N",
+      "title": "BiDi mixed-content tested",
+      "severity": "critical",
+      "applies_when": "rtl",
+      "rule": "Test Arabic/RTL mixed with Latin text, phone numbers, URLs, SKU/code and user input for bidirectional rendering errors.",
+      "evidence": "RTL fixture screenshots/manual test",
+      "source_ids": [
+        "SRC-W3C-I18N"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-I18N-007",
+      "category": "I18N",
+      "title": "Layout tolerates expansion",
+      "severity": "major",
+      "applies_when": "localized",
+      "rule": "UI must tolerate longer translations and different scripts without clipping or hidden controls.",
+      "evidence": "Pseudo/localization viewport test",
+      "source_ids": [
+        "SRC-W3C-I18N"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-I18N-008",
+      "category": "I18N",
+      "title": "Search/collation semantics deliberate",
+      "severity": "major",
+      "applies_when": "localized-search",
+      "rule": "Define normalization, case/accent/script handling and locale-specific collation where search/sort correctness matters.",
+      "evidence": "Search fixtures",
+      "source_ids": [
+        "SRC-W3C-I18N"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PWA-001",
+      "category": "PWA",
+      "title": "PWA applicability explicit",
+      "severity": "major",
+      "applies_when": "pwa",
+      "rule": "Do not add service worker/manifest complexity unless installability, offline, push or caching outcomes justify it.",
+      "evidence": "PWA decision record",
+      "source_ids": [
+        "SRC-W3C-APP-MANIFEST"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PWA-002",
+      "category": "PWA",
+      "title": "Manifest validated",
+      "severity": "major",
+      "applies_when": "pwa",
+      "rule": "Manifest metadata, icons, start URL and scope must match intended app behavior and be tested on target platforms.",
+      "evidence": "Manifest test/install evidence",
+      "source_ids": [
+        "SRC-W3C-APP-MANIFEST"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PWA-003",
+      "category": "PWA",
+      "title": "Service worker update strategy",
+      "severity": "critical",
+      "applies_when": "service-worker",
+      "rule": "Define activation/update behavior so users do not stay indefinitely on incompatible mixed versions.",
+      "evidence": "Update E2E test",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PWA-004",
+      "category": "PWA",
+      "title": "Offline state explicit",
+      "severity": "critical",
+      "applies_when": "offline-capable",
+      "rule": "Define which routes/actions work offline, how stale data is labeled and how queued mutations reconcile.",
+      "evidence": "Offline matrix + tests",
+      "source_ids": [
+        "SRC-SRE"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PWA-005",
+      "category": "PWA",
+      "title": "Cache namespaces/versioning",
+      "severity": "critical",
+      "applies_when": "service-worker",
+      "rule": "Service-worker caches require explicit versioning, eviction and cleanup; never cache sensitive responses by wildcard.",
+      "evidence": "Cache inspection/tests",
+      "source_ids": [
+        "SRC-HTTP-9111",
+        "SRC-OWASP-ASVS-5"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PWA-006",
+      "category": "PWA",
+      "title": "Push permission contextual",
+      "severity": "critical",
+      "applies_when": "push",
+      "rule": "Request notification permission only with clear user context/value; define unsubscribe and token lifecycle.",
+      "evidence": "UX + revocation test",
+      "source_ids": [
+        "SRC-W3C-PRIVACY-PRINCIPLES"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PWA-007",
+      "category": "PWA",
+      "title": "Push payload privacy",
+      "severity": "critical",
+      "applies_when": "push",
+      "rule": "Do not place unnecessary sensitive content in notification payloads or lock-screen text.",
+      "evidence": "Payload review",
+      "source_ids": [
+        "SRC-NIST-PRIVACY-10"
+      ],
+      "test": "review"
+    },
+    {
+      "id": "WEB-PWA-008",
+      "category": "PWA",
+      "title": "Install/offline tested on real target",
+      "severity": "major",
+      "applies_when": "pwa",
+      "rule": "At least one real target-device test is required for installability, launch, update and offline behavior.",
+      "evidence": "Device evidence",
+      "source_ids": [
+        "SRC-W3C-APP-MANIFEST"
+      ],
+      "test": "review"
+    }
+  ]
+}

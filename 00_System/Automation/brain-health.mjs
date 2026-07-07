@@ -1,0 +1,20 @@
+#!/usr/bin/env node
+import fs from 'node:fs'; import path from 'node:path';
+import {walk,parseFrontmatter,ciPaths,readJson,readJsonl,loadProjectManifests} from './ci-lib.mjs';
+const vault=path.resolve(process.argv[2]||process.cwd()), p=ciPaths(vault); const md=walk(vault).filter(f=>f.endsWith('.md')); let missing=0,stale=0,projectsNoNext=0,proposals=0,episodes=0;
+for(const f of md){const rel=path.relative(vault,f).replaceAll('\\','/');if(path.basename(f).startsWith('_Index')||rel.startsWith('00_System/Templates/'))continue;const {data}=parseFrontmatter(fs.readFileSync(f,'utf8'));if(!data.type||!data.status||!data.ai_access)missing++;if(data.type==='project'){if(data.status==='active'&&!data.next_action)projectsNoNext++;if(data.last_reviewed&&/^\d{4}-\d{2}-\d{2}$/.test(data.last_reviewed)){const age=(Date.now()-new Date(data.last_reviewed+'T00:00:00Z'))/86400000;if(age>14)stale++;}}if(data.type==='memory-proposal'&&!['committed','rejected'].includes(data.status))proposals++;if(data.type==='episode')episodes++;}
+const manifests=loadProjectManifests(vault);const packetProjects=manifests.filter(m=>m.canonical_packet_path&&m.packet_status&&m.packet_status!=='manifest-only').length;const coverage=readJson(p.coverage,{score:0,dimensions:{}});const evalReport=readJson(path.join(vault,'00_System','Evaluation','last-retrieval-eval.json'),{hit_at_k:0});const edges=readJsonl(p.edges),events=readJsonl(p.events);const vocab=readJson(p.vocabulary,{relations:[]});const causal=new Set((vocab.relations||[]).filter(r=>r.causal).map(r=>r.id));const causalEdges=edges.filter(e=>causal.has(e.relation)).length;const runs=coverage.dimensions?.runs||0,evidence=coverage.dimensions?.evidence_notes||0;const n=manifests.length||1;
+const structure=Math.max(0,5-Math.min(5,missing*0.5+projectsNoNext));
+const reality=20*Math.min(1,(coverage.score||0)/100);
+const projectRunBreadth=Math.min(1,(coverage.dimensions?.projects_with_runs||0)/n);
+const causalDensity=runs?Math.min(1,causalEdges/Math.max(1,runs*2)):0;
+const causalCompleteness=15*causalDensity*projectRunBreadth;
+const verifiedProjectCount=coverage.dimensions?.verified_repo_runtime_projects||0;const projectTruth=15*(verifiedProjectCount/n)*Math.max(0,1-Math.min(1,stale/Math.max(1,verifiedProjectCount)));
+const retrieval=10*Math.max(0,Math.min(1,evalReport.hit_at_k||0));
+const routing=10*(manifests.length?1:0);
+const learningDensity=runs?Math.min(1,(coverage.dimensions?.learning_candidates||0)/Math.max(1,runs)):0;
+const learning=10*learningDensity*projectRunBreadth;
+const evidenceCoverage=10*Math.min(1,(coverage.dimensions?.projects_with_evidence||0)/n);
+const freshness=5*((runs>0||evidence>0)&&stale===0?Math.max(projectRunBreadth,Math.min(1,verifiedProjectCount/n)):0);
+const components={reality_coverage:reality,causal_completeness:causalCompleteness,project_truth_freshness:projectTruth,retrieval_quality:retrieval,routing_correctness:routing,learning_effectiveness:learning,evidence_coverage:evidenceCoverage,contradiction_freshness_health:freshness,structural_integrity:structure};const score=Object.values(components).reduce((a,b)=>a+b,0);
+const out={generated_at:new Date().toISOString(),score:Number(score.toFixed(1)),interpretation:(runs===0&&evidence===0)?'connected architecture; real experience not yet captured':score<30?'organized architecture with little verified experience':score<55?'connected brain accumulating real experience':score<80?'strong evidence-connected intelligence':'highly experienced and well-connected brain',components:Object.fromEntries(Object.entries(components).map(([k,v])=>[k,Number(v.toFixed(1))])),dimensions:{registered_project_manifests:manifests.length,full_project_packets:packetProjects,real_runs:runs,evidence_notes:evidence,causal_edges:causalEdges,events:events.length,episodes,pending_memory_proposals:proposals,missing_required_metadata:missing,stale_active_projects:stale,retrieval_hit_at_k:evalReport.hit_at_k||0,reality_coverage_score:coverage.score||0}};fs.writeFileSync(path.join(vault,'00_System','Runtime State','last-brain-health.json'),JSON.stringify(out,null,2)+'\n','utf8');console.log(JSON.stringify(out,null,2));

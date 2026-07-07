@@ -1,0 +1,14 @@
+filters:
+  and:
+    - file.inFolder("00_System/Web Development Expert System")
+views:
+  - type: table
+    name: Web Expert System
+    order:
+      - file.name
+      - type
+      - status
+      - updated
+    sort:
+      - property: file.name
+        direction: ASC

@@ -1,0 +1,19 @@
+filters:
+  and:
+    - file.inFolder("70_People")
+    - 'type == "person"'
+properties:
+  status:
+    displayName: Status
+  company:
+    displayName: Company
+  last_reviewed:
+    displayName: Reviewed
+views:
+  - type: table
+    name: People
+    order:
+      - file.name
+      - status
+      - company
+      - last_reviewed

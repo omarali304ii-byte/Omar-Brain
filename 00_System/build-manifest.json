@@ -1,0 +1,57 @@
+{
+  "name": "Omar Brain",
+  "version": "2.0.0-hardened",
+  "built_at": "2026-07-07",
+  "architecture": "memory + project-os + ai-runtime + learning-flywheel",
+  "top_level": [
+    "00_System",
+    "01_Inbox",
+    "10_Life",
+    "15_Ideas",
+    "20_Career",
+    "30_Business",
+    "40_Projects",
+    "50_Skills",
+    "60_Knowledge",
+    "70_People",
+    "80_Reviews",
+    "90_Archive",
+    "99_Assets"
+  ],
+  "core_principles": [
+    "one canonical home",
+    "search before create",
+    "resolve project before execution",
+    "boot before implementation",
+    "current truth separate from history",
+    "completion requires evidence",
+    "continue until valid exit condition",
+    "failures become searchable memory",
+    "lessons promote by evidence",
+    "AI cannot silently rewrite global law"
+  ],
+  "counts": {
+    "files": 204,
+    "markdown": 182,
+    "bases": 13
+  },
+  "validation": {
+    "frontmatter_yaml": "passed",
+    "bases_yaml": "passed",
+    "brain_validator": "passed",
+    "project_scaffold_tests": [
+      "software",
+      "business",
+      "research",
+      "personal",
+      "learning"
+    ]
+  },
+  "brain_version": "4.0",
+  "dynamic_brain": true,
+  "memory_os": true,
+  "retrieval_os": true,
+  "agent_os": true,
+  "evaluation_os": true,
+  "updated": "2026-07-07"
+}

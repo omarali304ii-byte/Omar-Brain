@@ -1,0 +1,42 @@
+{
+  "brain": "Omar Brain",
+  "version": "4.0",
+  "updated": "2026-07-07",
+  "base_version": "v3-web-expert",
+  "preserved_v3_files": 252,
+  "missing_v3_files": 0,
+  "file_count_before_manifest": 335,
+  "markdown_count": 290,
+  "bases_count": 18,
+  "json_count_before_manifest": 16,
+  "automation_scripts": 10,
+  "retrieval": {
+    "documents": 290,
+    "chunks": 1840,
+    "smoke_hit_at_5": 1.0,
+    "initial_smoke_hit_at_5": 0.25
+  },
+  "validation": {
+    "brain_errors": 0,
+    "brain_warnings": 0,
+    "yaml_errors": 0,
+    "json_errors": 0,
+    "node_syntax": "passed",
+    "brain_health": 100
+  },
+  "smoke": {
+    "project_classes": [
+      "software-web",
+      "business",
+      "research",
+      "personal",
+      "learning"
+    ],
+    "episode": true,
+    "memory_proposal": true,
+    "errors": 0,
+    "warnings": 0,
+    "retrieval_hit_at_5": 1.0,
+    "health": 99.5
+  }
+}

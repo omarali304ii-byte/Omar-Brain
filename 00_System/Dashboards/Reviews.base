@@ -1,0 +1,17 @@
+filters:
+  and:
+    - file.inFolder("80_Reviews")
+    - not:
+        - 'type == "system"'
+properties:
+  type:
+    displayName: Review type
+  created:
+    displayName: Date
+views:
+  - type: table
+    name: Reviews
+    order:
+      - file.name
+      - type
+      - created

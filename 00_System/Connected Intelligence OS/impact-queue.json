@@ -1,0 +1,191 @@
+{
+  "queue_id": "omar-brain-impact-queue-v1",
+  "version": "1.0",
+  "updated": "2026-07-07",
+  "items": [
+    {
+      "impact_id": "imp-mrb1o0og-5cd5ceaa",
+      "status": "pending",
+      "created_at": "2026-07-07T19:31:01.360Z",
+      "source_object": "obj-run-mrb1o0ob-731bc079",
+      "project_id": "prj-meta-word-of-mouth",
+      "reason": "run completion requires project truth and learning review",
+      "affected_objects": [
+        "obj-meta-word-of-mouth"
+      ],
+      "actions": [
+        "review-current-state",
+        "review-execution-queue",
+        "compile-experience"
+      ]
+    },
+    {
+      "impact_id": "imp-mrb1oc78-0ad4ea7c",
+      "status": "pending",
+      "created_at": "2026-07-07T19:31:16.292Z",
+      "source_object": "obj-evd-mrb1oc73-25062d49",
+      "project_id": "prj-meta-word-of-mouth",
+      "reason": "new evidence may change project truth, run confidence or learning validation",
+      "affected_objects": [
+        "obj-meta-word-of-mouth",
+        "obj-run-mrb1o0ob-731bc079"
+      ],
+      "actions": [
+        "review-supported-claims",
+        "review-project-truth",
+        "review-learning-candidates"
+      ]
+    },
+    {
+      "impact_id": "imp-mrb1oc9f-af0ccdc2",
+      "status": "pending",
+      "created_at": "2026-07-07T19:31:16.371Z",
+      "source_object": "obj-evd-mrb1oc94-40290714",
+      "project_id": "prj-meta-word-of-mouth",
+      "reason": "new evidence may change project truth, run confidence or learning validation",
+      "affected_objects": [
+        "obj-meta-word-of-mouth",
+        "obj-run-mrb1o0ob-731bc079"
+      ],
+      "actions": [
+        "review-supported-claims",
+        "review-project-truth",
+        "review-learning-candidates"
+      ]
+    },
+    {
+      "impact_id": "imp-mrb1ocbk-7183bd08",
+      "status": "pending",
+      "created_at": "2026-07-07T19:31:16.449Z",
+      "source_object": "obj-evd-mrb1ocbf-29126148",
+      "project_id": "prj-meta-word-of-mouth",
+      "reason": "new evidence may change project truth, run confidence or learning validation",
+      "affected_objects": [
+        "obj-meta-word-of-mouth",
+        "obj-run-mrb1o0ob-731bc079"
+      ],
+      "actions": [
+        "review-supported-claims",
+        "review-project-truth",
+        "review-learning-candidates"
+      ]
+    },
+    {
+      "impact_id": "imp-mrb1ocdk-18a16bd1",
+      "status": "pending",
+      "created_at": "2026-07-07T19:31:16.520Z",
+      "source_object": "obj-evd-mrb1ocdf-0f4342d1",
+      "project_id": "prj-meta-word-of-mouth",
+      "reason": "new evidence may change project truth, run confidence or learning validation",
+      "affected_objects": [
+        "obj-meta-word-of-mouth",
+        "obj-run-mrb1o0ob-731bc079"
+      ],
+      "actions": [
+        "review-supported-claims",
+        "review-project-truth",
+        "review-learning-candidates"
+      ]
+    },
+    {
+      "impact_id": "imp-mrb34rdu-d391116c",
+      "status": "pending",
+      "created_at": "2026-07-07T20:12:02.082Z",
+      "source_object": "obj-run-mrb34rdn-eebbc7fd",
+      "project_id": "prj-meta-word-of-mouth",
+      "reason": "run completion requires project truth and learning review",
+      "affected_objects": [
+        "obj-meta-word-of-mouth"
+      ],
+      "actions": [
+        "review-current-state",
+        "review-execution-queue",
+        "compile-experience"
+      ]
+    },
+    {
+      "impact_id": "imp-mrb351xd-08acc5a4",
+      "status": "pending",
+      "created_at": "2026-07-07T20:12:15.745Z",
+      "source_object": "obj-evd-mrb351wz-ee53c349",
+      "project_id": "prj-meta-word-of-mouth",
+      "reason": "new evidence may change project truth, run confidence or learning validation",
+      "affected_objects": [
+        "obj-meta-word-of-mouth",
+        "obj-run-mrb34rdn-eebbc7fd"
+      ],
+      "actions": [
+        "review-supported-claims",
+        "review-project-truth",
+        "review-learning-candidates"
+      ]
+    },
+    {
+      "impact_id": "imp-mrb351xz-7ba7b141",
+      "status": "pending",
+      "created_at": "2026-07-07T20:12:15.767Z",
+      "source_object": "obj-evd-mrb351xk-224ef696",
+      "project_id": "prj-meta-word-of-mouth",
+      "reason": "new evidence may change project truth, run confidence or learning validation",
+      "affected_objects": [
+        "obj-meta-word-of-mouth",
+        "obj-run-mrb34rdn-eebbc7fd"
+      ],
+      "actions": [
+        "review-supported-claims",
+        "review-project-truth",
+        "review-learning-candidates"
+      ]
+    },
+    {
+      "impact_id": "imp-mrb351y7-154e8899",
+      "status": "pending",
+      "created_at": "2026-07-07T20:12:15.775Z",
+      "source_object": "obj-evd-mrb351xs-27ac41ce",
+      "project_id": "prj-meta-word-of-mouth",
+      "reason": "new evidence may change project truth, run confidence or learning validation",
+      "affected_objects": [
+        "obj-meta-word-of-mouth",
+        "obj-run-mrb34rdn-eebbc7fd"
+      ],
+      "actions": [
+        "review-supported-claims",
+        "review-project-truth",
+        "review-learning-candidates"
+      ]
+    },
+    {
+      "impact_id": "imp-mrb3iohl-82171bf8",
+      "status": "pending",
+      "created_at": "2026-07-07T20:22:51.513Z",
+      "source_object": "obj-run-mrb3iohg-6d1d9a66",
+      "project_id": "prj-meta-word-of-mouth",
+      "reason": "run completion requires project truth and learning review",
+      "affected_objects": [
+        "obj-meta-word-of-mouth"
+      ],
+      "actions": [
+        "review-current-state",
+        "review-execution-queue",
+        "compile-experience"
+      ]
+    },
+    {
+      "impact_id": "imp-mrb3iwwi-c7a64fda",
+      "status": "pending",
+      "created_at": "2026-07-07T20:23:02.418Z",
+      "source_object": "obj-evd-mrb3iwud-aba73203",
+      "project_id": "prj-meta-word-of-mouth",
+      "reason": "new evidence may change project truth, run confidence or learning validation",
+      "affected_objects": [
+        "obj-meta-word-of-mouth",
+        "obj-run-mrb3iohg-6d1d9a66"
+      ],
+      "actions": [
+        "review-supported-claims",
+        "review-project-truth",
+        "review-learning-candidates"
+      ]
+    }
+  ]
+}

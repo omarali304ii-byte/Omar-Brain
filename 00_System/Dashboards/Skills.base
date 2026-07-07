@@ -1,0 +1,31 @@
+filters:
+  and:
+    - file.inFolder("50_Skills")
+    - 'type == "skill"'
+properties:
+  status:
+    displayName: Status
+  current_level:
+    displayName: Current level
+  target_level:
+    displayName: Target level
+  last_reviewed:
+    displayName: Reviewed
+views:
+  - type: table
+    name: Active
+    filters:
+      and:
+        - 'status == "active"'
+    order:
+      - file.name
+      - current_level
+      - target_level
+      - last_reviewed
+  - type: table
+    name: All skills
+    order:
+      - file.name
+      - status
+      - current_level
+      - target_level

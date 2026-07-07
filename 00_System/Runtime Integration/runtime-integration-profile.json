@@ -1,0 +1,20 @@
+{
+  "profile_id": "runtime-integration-v1",
+  "version": "1.0",
+  "updated": "2026-07-07",
+  "canonical_store": "obsidian-markdown",
+  "preferred_orchestrator_candidate": "langgraph",
+  "orchestrator_adapter_required": true,
+  "tool_interop": "mcp-compatible",
+  "preferred_vector_candidate": "qdrant",
+  "vector_alternative": "postgres-pgvector-fts",
+  "trace_store": "external-with-vault-episode-links",
+  "model_strategy": "provider-adapter-with-local-optional",
+  "security": [
+    "least-privilege",
+    "ai-access-gate",
+    "sandbox-execution",
+    "authenticated-bridges",
+    "no-secrets-in-index"
+  ]
+}

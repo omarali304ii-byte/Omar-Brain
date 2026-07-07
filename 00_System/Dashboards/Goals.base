@@ -1,0 +1,33 @@
+filters:
+  and:
+    - 'type == "goal"'
+properties:
+  status:
+    displayName: Status
+  domains:
+    displayName: Domains
+  target_date:
+    displayName: Target
+  last_reviewed:
+    displayName: Reviewed
+views:
+  - type: table
+    name: Open
+    filters:
+      or:
+        - 'status == "active"'
+        - 'status == "waiting"'
+        - 'status == "paused"'
+    order:
+      - file.name
+      - status
+      - domains
+      - target_date
+      - last_reviewed
+  - type: table
+    name: All goals
+    order:
+      - file.name
+      - status
+      - domains
+      - target_date

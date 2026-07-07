@@ -1,0 +1,313 @@
+{
+  "dataset_id": "brain-retrieval-smoke-v5",
+  "version": "5.0",
+  "updated": "2026-07-07",
+  "cases": [
+    {
+      "eval_id": "ret-001",
+      "query": "What is the Brain rule for durable memory writes?",
+      "query_class": "procedural-how-to",
+      "expected_paths": [
+        "00_System/Memory OS/Memory Single-Writer and Conflict Protocol.md"
+      ],
+      "expected_terms": [
+        "Memory Curator"
+      ],
+      "k": 5
+    },
+    {
+      "eval_id": "ret-002",
+      "query": "How should the brain search exact error strings and semantic meaning together?",
+      "query_class": "exact-technical",
+      "expected_paths": [
+        "00_System/Retrieval OS/Hybrid Retrieval and Fusion.md"
+      ],
+      "expected_terms": [
+        "lexical",
+        "dense"
+      ],
+      "k": 5
+    },
+    {
+      "eval_id": "ret-003",
+      "query": "Which agent is allowed to commit semantic memory?",
+      "query_class": "lookup",
+      "expected_paths": [
+        "00_System/Agent OS/Memory Curator Agent Contract.md"
+      ],
+      "expected_terms": [
+        "only"
+      ],
+      "k": 5
+    },
+    {
+      "eval_id": "ret-004",
+      "query": "How does an interrupted project agent resume work?",
+      "query_class": "procedural-how-to",
+      "expected_paths": [
+        "00_System/AI Runtime/Interruption and Resume Protocol.md",
+        "00_System/AI Runtime/Persistent Agent Run State Contract.md"
+      ],
+      "expected_terms": [
+        "checkpoint"
+      ],
+      "k": 5
+    },
+    {
+      "eval_id": "ret-005",
+      "query": "What web performance targets are used?",
+      "query_class": "lookup",
+      "expected_paths": [
+        "00_System/Web Development Expert System/08_Performance/Core Web Vitals and Performance Budget Standard.md"
+      ],
+      "expected_terms": [
+        "LCP",
+        "INP",
+        "CLS"
+      ],
+      "k": 5
+    },
+    {
+      "eval_id": "ret-006",
+      "query": "How should a new capability be loaded without bloating every prompt?",
+      "query_class": "procedural-how-to",
+      "expected_paths": [
+        "00_System/Agent OS/Agent Capability Loading Protocol.md",
+        "00_System/Dynamic Brain/Capability Discovery and Skill Loading.md"
+      ],
+      "expected_terms": [
+        "Load only"
+      ],
+      "k": 5
+    },
+    {
+      "eval_id": "ret-007",
+      "query": "How do we know the brain is getting smarter rather than just bigger?",
+      "query_class": "synthesis",
+      "expected_paths": [
+        "00_System/Dynamic Brain/Brain Health Score.md",
+        "00_System/Evaluation/Evaluation Operating System.md"
+      ],
+      "expected_terms": [
+        "measure"
+      ],
+      "k": 5
+    },
+    {
+      "eval_id": "ret-008",
+      "query": "What happens when memory facts become stale?",
+      "query_class": "lookup",
+      "expected_paths": [
+        "00_System/Memory OS/Memory Revalidation Decay and Retention.md"
+      ],
+      "expected_terms": [
+        "review_by"
+      ],
+      "k": 5
+    },
+    {
+      "eval_id": "ret-009",
+      "query": "Where must an AI start before using Omar Brain for project or business work?",
+      "query_class": "lookup",
+      "expected_paths": [
+        "00_System/Operating Map.md"
+      ],
+      "expected_terms": [
+        "startup protocol"
+      ],
+      "k": 5
+    },
+    {
+      "eval_id": "ret-010",
+      "query": "What should happen when a newer source conflicts with an existing durable note?",
+      "query_class": "procedural-how-to",
+      "expected_paths": [
+        "00_System/Governance/No Silent Overwrite Policy.md"
+      ],
+      "expected_terms": [
+        "conflict"
+      ],
+      "k": 5
+    },
+    {
+      "eval_id": "ret-011",
+      "query": "How should a large research source be ingested without creating one giant summary?",
+      "query_class": "procedural-how-to",
+      "expected_paths": [
+        "00_System/Knowledge Graph/Source-Backed Knowledge Protocol.md"
+      ],
+      "expected_terms": [
+        "atomic claims"
+      ],
+      "k": 5
+    },
+    {
+      "eval_id": "ret-012",
+      "query": "How does the brain prevent readiness state from disagreeing with open blockers?",
+      "query_class": "procedural-how-to",
+      "expected_paths": [
+        "00_System/Runtime State/GAP_REGISTER.md",
+        "00_System/Automation/check-runtime-consistency.mjs"
+      ],
+      "expected_terms": [
+        "match"
+      ],
+      "k": 5
+    },
+    {
+      "eval_id": "ret-013",
+      "query": "After I finish a website, how should the brain make it truly ready for production instead of just checking the build?",
+      "query_class": "procedural-how-to",
+      "expected_paths": [
+        "00_System/Production Readiness OS/Production Readiness Operating System.md"
+      ],
+      "expected_terms": [
+        "Feature complete is not production ready"
+      ],
+      "k": 5
+    },
+    {
+      "eval_id": "ret-014",
+      "query": "How does AI follow road signs through the brain and know where to go next?",
+      "query_class": "procedural-how-to",
+      "expected_paths": [
+        "00_System/Navigation OS/Road Sign Navigation System.md"
+      ],
+      "expected_terms": [
+        "next_signs"
+      ],
+      "k": 5
+    },
+    {
+      "eval_id": "ret-015",
+      "query": "What universal areas must a production hardening audit check?",
+      "query_class": "lookup",
+      "expected_paths": [
+        "00_System/Production Readiness OS/Universal Production Hardening Matrix.md"
+      ],
+      "expected_terms": [
+        "Authorization",
+        "Backup/restore",
+        "Observability"
+      ],
+      "k": 5
+    },
+    {
+      "query": "I have a complex multi-step task with many tool calls and need to resume after context loss",
+      "expected_paths": [
+        "50_Skills/AI-Work/planning-with-files.md"
+      ],
+      "k": 5,
+      "eval_id": "skill-planning-files",
+      "query_class": "skill-routing"
+    },
+    {
+      "query": "Audit authentication authorization file uploads secrets and rate limiting before release",
+      "expected_paths": [
+        "50_Skills/Technical/security-and-hardening.md"
+      ],
+      "k": 5,
+      "eval_id": "skill-security-hardening",
+      "query_class": "skill-routing"
+    },
+    {
+      "query": "Create a product requirements document for a new feature with objectives scope assumptions and release plan",
+      "expected_paths": [
+        "50_Skills/Execution/create-prd.md"
+      ],
+      "k": 5,
+      "eval_id": "skill-create-prd",
+      "query_class": "skill-routing"
+    },
+    {
+      "query": "Analyze customer interviews reviews and support tickets to find pains triggers JTBD and exact voice of customer",
+      "expected_paths": [
+        "50_Skills/Research/customer-research.md"
+      ],
+      "k": 5,
+      "eval_id": "skill-customer-research",
+      "query_class": "skill-routing"
+    },
+    {
+      "query": "Plan a zero downtime PostgreSQL schema migration with backfill and rollback safety",
+      "expected_paths": [
+        "50_Skills/Technical/database-migrations.md"
+      ],
+      "k": 5,
+      "eval_id": "skill-database-migration",
+      "query_class": "skill-routing"
+    },
+    {
+      "eval_id": "skill-copywriting",
+      "query": "Write persuasive homepage copy with a clear headline customer benefits proof and CTA",
+      "query_class": "skill-routing",
+      "expected_paths": [
+        "50_Skills/Marketing/copywriting.md"
+      ],
+      "k": 5
+    },
+    {
+      "eval_id": "skill-launch",
+      "query": "Plan a staged beta and full product launch using owned rented and borrowed channels",
+      "query_class": "skill-routing",
+      "expected_paths": [
+        "50_Skills/Marketing/launch-strategy.md"
+      ],
+      "k": 5
+    },
+    {
+      "eval_id": "skill-market-sizing",
+      "query": "Estimate TAM SAM and SOM with top down and bottom up assumptions",
+      "query_class": "skill-routing",
+      "expected_paths": [
+        "50_Skills/Research/market-sizing.md"
+      ],
+      "k": 5
+    },
+    {
+      "eval_id": "skill-premortem",
+      "query": "Before launch assume the product failed and identify Tigers Paper Tigers and Elephants",
+      "query_class": "skill-routing",
+      "expected_paths": [
+        "50_Skills/Execution/pre-mortem.md"
+      ],
+      "k": 5
+    },
+    {
+      "eval_id": "skill-seo-audit",
+      "query": "Audit crawl indexation canonical technical SEO content intent and structured data",
+      "query_class": "skill-routing",
+      "expected_paths": [
+        "50_Skills/SEO/seo-audit.md"
+      ],
+      "k": 5
+    },
+    {
+      "eval_id": "skill-ab-setup",
+      "query": "Design an A B experiment with primary metric guardrails exposure and stopping rule",
+      "query_class": "skill-routing",
+      "expected_paths": [
+        "50_Skills/Analytics/ab-test-setup.md"
+      ],
+      "k": 5
+    },
+    {
+      "eval_id": "skill-dev-lifecycle",
+      "query": "How should the brain discover and develop a missing skill without creating duplicate markdown junk",
+      "query_class": "skill-routing",
+      "expected_paths": [
+        "00_System/Skill OS/Skill Development Lifecycle.md"
+      ],
+      "k": 5
+    },
+    {
+      "eval_id": "skill-composition",
+      "query": "How does AI combine skills without loading the whole marketplace into context",
+      "query_class": "skill-routing",
+      "expected_paths": [
+        "00_System/Skill OS/Skill Composition and Handoff Protocol.md"
+      ],
+      "k": 5
+    }
+  ]
+}

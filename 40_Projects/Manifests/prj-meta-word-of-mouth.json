@@ -1,0 +1,57 @@
+{
+  "manifest_version": "1.0",
+  "project_id": "prj-meta-word-of-mouth",
+  "title": "Meta Word of Mouth",
+  "aliases": [
+    "Meta-Word-of-mouth",
+    "Meta Word of mouth"
+  ],
+  "ambiguous_aliases": [
+    "OVX Smart Inbox"
+  ],
+  "status": "active",
+  "project_class": "software",
+  "project_kind": "web",
+  "local_path": "D:\\Marketing 777\\Meta Dev Project\\Meta Word of mouth",
+  "repo_url": "https://github.com/omarali304ii-byte/Meta-Word-of-mouth.git",
+  "verification_state": "verified-repo",
+  "authority": "repo-observed",
+  "known_context": [
+    "Next.js 16 App Router and React 19",
+    "PostgreSQL through Prisma 7.8",
+    "Multi-tenant workspace model",
+    "Meta Instagram/Facebook/WhatsApp integration",
+    "Evidence-first asynchronous AI intelligence",
+    "Opportunity and follow-up engines",
+    "Temporary Supabase development adapters for public webhook/OAuth endpoints"
+  ],
+  "exact_next_verification": "Implement and prove the expanded P0 production gate: Meta-send uncertainty, Leads view_intelligence enforcement, stale recovery wiring, provider privacy closure, AI feedback-after-send, and same-person intelligence concurrency; then run DB-backed and runtime checks on disposable/local infrastructure.",
+  "canonical_packet_path": "40_Projects/Active/Meta Word of Mouth",
+  "packet_status": "repo-grounded-reference-packet",
+  "entrypoints": {
+    "home": "40_Projects/Active/Meta Word of Mouth/00_PROJECT_HOME.md",
+    "architecture": "40_Projects/Active/Meta Word of Mouth/02_ARCHITECTURE.md",
+    "strengths": "40_Projects/Active/Meta Word of Mouth/03_GOOD_POINTS.md",
+    "risks": "40_Projects/Active/Meta Word of Mouth/04_BAD_POINTS_AND_RISKS.md",
+    "future_path": "40_Projects/Active/Meta Word of Mouth/05_FUTURE_PATH.md",
+    "transfer_candidates": "40_Projects/Active/Meta Word of Mouth/06_TRANSFER_CANDIDATES.md",
+    "current_state": "40_Projects/Active/Meta Word of Mouth/07_CURRENT_STATE.md",
+    "queue": "40_Projects/Active/Meta Word of Mouth/08_EXECUTION_QUEUE.md",
+    "repo_map": "40_Projects/Active/Meta Word of Mouth/09_REPO_MAP.md",
+    "evidence": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
+    "scorecard": "40_Projects/Active/Meta Word of Mouth/11_REFERENCE_SCORECARD.md"
+  },
+  "learning": {
+    "runs": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs",
+    "evidence": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence",
+    "episodes": "85_Episodes"
+  },
+  "source_boundary": "Repo-verified through GitHub connector and local clean checkout at 8c027fabf85fe46fa0395eb459c0289872fef491. Local schema validation, compatibility, Meta architecture, intelligence permissions, typecheck, lint, and build passed. A later static production-gate audit confirmed P0 blockers around send uncertainty, intelligence/privacy exposure, stale recovery wiring, AI feedback timing, and concurrency. Fixture-mutating database tests, live provider calls, workers, deployment and browser runtime remain unverified.",
+  "updated": "2026-07-07",
+  "repo_revision": "8c027fabf85fe46fa0395eb459c0289872fef491",
+  "repo_default_branch": "main",
+  "repo_verified_at": "2026-07-07T21:00:00+02:00",
+  "repo_verification_scope": "GitHub connector inspection, local safe static/test commands, and static production-gate blocker verification; no fixture-mutating DB tests or live runtime/provider execution",
+  "reference_project": true,
+  "reference_role": "first-repo-grounded-transfer-source"
+}

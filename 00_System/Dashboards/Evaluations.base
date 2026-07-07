@@ -1,0 +1,26 @@
+filters:
+  or:
+    - 'type == "eval-case"'
+    - 'type == "eval-result"'
+properties:
+  status:
+    displayName: Status
+  eval_id:
+    displayName: Eval
+  eval_kind:
+    displayName: Kind
+  score:
+    displayName: Score
+  updated:
+    displayName: Updated
+views:
+  - type: table
+    name: Evaluations
+    order:
+      - file.name
+      - type
+      - status
+      - eval_id
+      - eval_kind
+      - score
+      - updated

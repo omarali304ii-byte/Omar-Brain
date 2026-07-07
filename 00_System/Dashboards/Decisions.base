@@ -1,0 +1,24 @@
+filters:
+  and:
+    - 'type == "decision"'
+properties:
+  decision_date:
+    displayName: Date
+  project:
+    displayName: Project
+  company:
+    displayName: Company
+  product:
+    displayName: Product
+  confidence:
+    displayName: Confidence
+views:
+  - type: table
+    name: All decisions
+    order:
+      - file.name
+      - decision_date
+      - project
+      - company
+      - product
+      - confidence

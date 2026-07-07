@@ -1,0 +1,26 @@
+name: brain-nightly
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 2 * * *"
+
+jobs:
+  validate-index-eval:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate Brain
+        run: node "00_System/Automation/brain-validator.mjs" .
+      - name: Build retrieval manifest
+        run: node "00_System/Automation/build-retrieval-manifest.mjs" .
+      - name: Run retrieval evals
+        run: node "00_System/Automation/eval-retrieval.mjs" .
+      - name: Brain health
+        run: node "00_System/Automation/brain-health.mjs" . > brain-health.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: brain-health
+          path: brain-health.json

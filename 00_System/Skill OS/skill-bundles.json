@@ -1,0 +1,266 @@
+{
+  "bundle_registry_id": "omar-brain-skill-bundles-v1",
+  "version": "1.0",
+  "updated": "2026-07-07",
+  "activation_rule": "bundles are route presets, not permission to load all skills; load core in order and optional only when evidence/stack requires",
+  "bundles": [
+    {
+      "bundle_id": "bundle-ai-long-task",
+      "name": "Long AI Task",
+      "triggers": [
+        "complex task",
+        "many tool calls",
+        "resume after context loss",
+        "long implementation"
+      ],
+      "routes": [
+        "route-project-resume",
+        "route-research"
+      ],
+      "core_skills": [
+        "skill-planning-with-files",
+        "skill-context-engineering"
+      ],
+      "optional_skills": [
+        "skill-skill-distillation"
+      ],
+      "arrival_proof": "persistent plan + findings/progress + validated completion"
+    },
+    {
+      "bundle_id": "bundle-product-discovery",
+      "name": "Product Discovery",
+      "triggers": [
+        "discover product opportunity",
+        "validate product idea",
+        "new product research"
+      ],
+      "routes": [
+        "route-research",
+        "route-project-new",
+        "route-business"
+      ],
+      "core_skills": [
+        "skill-customer-research",
+        "skill-market-sizing",
+        "skill-competitor-analysis"
+      ],
+      "optional_skills": [
+        "skill-opportunity-solution-tree",
+        "skill-prioritize-assumptions",
+        "skill-product-strategy"
+      ],
+      "arrival_proof": "evidence-backed opportunity + assumptions + next test"
+    },
+    {
+      "bundle_id": "bundle-feature-delivery",
+      "name": "Feature Delivery",
+      "triggers": [
+        "build feature end to end",
+        "implement new feature",
+        "feature delivery"
+      ],
+      "routes": [
+        "route-project-new",
+        "route-project-resume"
+      ],
+      "core_skills": [
+        "skill-context-engineering",
+        "skill-create-prd",
+        "skill-user-stories"
+      ],
+      "optional_skills": [
+        "skill-test-scenarios",
+        "skill-pre-mortem"
+      ],
+      "arrival_proof": "requirements + repo-aware implementation context + tests"
+    },
+    {
+      "bundle_id": "bundle-production-web",
+      "name": "Web Production Hardening",
+      "triggers": [
+        "make website production ready",
+        "production hardening",
+        "release readiness"
+      ],
+      "routes": [
+        "route-project-production"
+      ],
+      "core_skills": [
+        "skill-security-and-hardening",
+        "skill-performance-optimization",
+        "skill-test-scenarios"
+      ],
+      "optional_skills": [
+        "skill-nextjs-best-practices",
+        "skill-docker-patterns",
+        "skill-database-migrations",
+        "skill-seo-audit"
+      ],
+      "arrival_proof": "Production Readiness OS gates + independent critic"
+    },
+    {
+      "bundle_id": "bundle-launch",
+      "name": "Product Launch",
+      "triggers": [
+        "launch product",
+        "beta launch",
+        "feature announcement",
+        "go to market launch"
+      ],
+      "routes": [
+        "route-business",
+        "route-project-production"
+      ],
+      "core_skills": [
+        "skill-launch-strategy",
+        "skill-product-marketing-context",
+        "skill-copywriting"
+      ],
+      "optional_skills": [
+        "skill-email-sequence",
+        "skill-social-content",
+        "skill-analytics-tracking",
+        "skill-pre-mortem"
+      ],
+      "arrival_proof": "phased launch plan + assets + measurement + post-launch loop"
+    },
+    {
+      "bundle_id": "bundle-growth-experiment",
+      "name": "Growth Experiment",
+      "triggers": [
+        "growth experiment",
+        "improve conversion with experiment",
+        "test conversion hypothesis"
+      ],
+      "routes": [
+        "route-business",
+        "route-project-resume"
+      ],
+      "core_skills": [
+        "skill-analytics-tracking",
+        "skill-ab-test-setup",
+        "skill-page-cro"
+      ],
+      "optional_skills": [
+        "skill-marketing-psychology",
+        "skill-ab-test-analysis"
+      ],
+      "arrival_proof": "instrumented hypothesis + preregistered decision rule + result analysis"
+    },
+    {
+      "bundle_id": "bundle-customer-voice",
+      "name": "Customer Voice",
+      "triggers": [
+        "voice of customer",
+        "analyze interviews and reviews",
+        "customer insight synthesis"
+      ],
+      "routes": [
+        "route-research",
+        "route-business"
+      ],
+      "core_skills": [
+        "skill-customer-research",
+        "skill-sentiment-analysis",
+        "skill-user-personas"
+      ],
+      "optional_skills": [
+        "skill-summarize-interview",
+        "skill-value-proposition"
+      ],
+      "arrival_proof": "source-backed themes + confidence + decision implications"
+    },
+    {
+      "bundle_id": "bundle-seo-system",
+      "name": "SEO System",
+      "triggers": [
+        "full seo system",
+        "technical seo and content architecture",
+        "seo overhaul"
+      ],
+      "routes": [
+        "route-project-resume",
+        "route-business"
+      ],
+      "core_skills": [
+        "skill-seo-audit",
+        "skill-site-architecture",
+        "skill-schema-markup"
+      ],
+      "optional_skills": [
+        "skill-programmatic-seo",
+        "skill-seo-article-writing",
+        "skill-performance-optimization"
+      ],
+      "arrival_proof": "prioritized findings + architecture + validated implementation plan"
+    },
+    {
+      "bundle_id": "bundle-wordpress-vps",
+      "name": "WordPress VPS Operations",
+      "triggers": [
+        "audit wordpress vps",
+        "cyberpanel wordpress production",
+        "wordpress server hardening"
+      ],
+      "routes": [
+        "route-project-production",
+        "route-project-resume"
+      ],
+      "core_skills": [
+        "skill-vps-audit-checklist",
+        "skill-wordpress-troubleshooting",
+        "skill-cyberpanel-diagnostics"
+      ],
+      "optional_skills": [
+        "skill-linux-security-hardening",
+        "skill-wordpress-server-optimization"
+      ],
+      "arrival_proof": "server evidence + root cause/findings + verified safe changes"
+    },
+    {
+      "bundle_id": "bundle-retention",
+      "name": "Retention and Churn",
+      "triggers": [
+        "reduce churn",
+        "improve retention",
+        "customers cancelling"
+      ],
+      "routes": [
+        "route-business"
+      ],
+      "core_skills": [
+        "skill-churn-prevention",
+        "skill-customer-research",
+        "skill-analytics-tracking"
+      ],
+      "optional_skills": [
+        "skill-onboarding-cro",
+        "skill-email-sequence",
+        "skill-ab-test-setup"
+      ],
+      "arrival_proof": "segmented churn causes + targeted intervention + measurement"
+    },
+    {
+      "bundle_id": "bundle-revops",
+      "name": "Revenue Operations",
+      "triggers": [
+        "fix sales marketing handoff",
+        "revops system",
+        "crm lifecycle"
+      ],
+      "routes": [
+        "route-business"
+      ],
+      "core_skills": [
+        "skill-revops",
+        "skill-sales-enablement",
+        "skill-analytics-tracking"
+      ],
+      "optional_skills": [
+        "skill-customer-research",
+        "skill-cold-email"
+      ],
+      "arrival_proof": "lifecycle criteria + owners/SLAs + data quality + actionable metrics"
+    }
+  ]
+}

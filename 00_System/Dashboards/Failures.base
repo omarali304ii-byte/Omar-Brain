@@ -1,0 +1,27 @@
+filters:
+  and:
+    - 'type == "failure-signature"'
+properties:
+  status:
+    displayName: Status
+  confidence:
+    displayName: Confidence
+  evidence_count:
+    displayName: Evidence
+  success_count:
+    displayName: Verified Fixes
+  failure_count:
+    displayName: Failures
+  last_validated:
+    displayName: Validated
+views:
+  - type: table
+    name: Failure Memory
+    order:
+      - file.name
+      - status
+      - confidence
+      - evidence_count
+      - success_count
+      - failure_count
+      - last_validated

@@ -1,0 +1,271 @@
+{
+  "registry_id": "agent-registry-v3",
+  "version": "3.0",
+  "updated": "2026-07-07",
+  "default_orchestration": "supervisor-led",
+  "selection_rule": "activate the fewest agents necessary; every extra agent must justify specialization, parallelism, risk isolation, or independent verification",
+  "single_durable_writer": "memory-curator",
+  "handoff_standard": "00_System/Agent OS/Handoff Envelope Standard.md",
+  "roles": [
+    {
+      "id": "supervisor",
+      "required": true,
+      "activation_when": [
+        "every non-trivial multi-step run",
+        "task requires routing or checkpointing"
+      ],
+      "required_inputs": [
+        "user objective",
+        "acceptance criteria or inferred testable outcome",
+        "current runtime state",
+        "applicable P0/P1 gaps"
+      ],
+      "outputs": [
+        "task graph",
+        "selected agents with reasons",
+        "checkpoint state",
+        "continue/stop decision"
+      ],
+      "memory_access": "read; propose only",
+      "may_commit_memory": false,
+      "human_approval": [
+        "outward side effects",
+        "destructive actions",
+        "protected policy changes"
+      ],
+      "stop_condition": "objective exit condition met or structured blocker recorded",
+      "capabilities": [
+        "routing",
+        "task-graph",
+        "checkpointing",
+        "approvals"
+      ]
+    },
+    {
+      "id": "librarian",
+      "required": false,
+      "activation_when": [
+        "ambiguous project/entity",
+        "retrieval spans multiple domains",
+        "duplicate/canonical resolution needed",
+        "source-heavy context pack needed"
+      ],
+      "required_inputs": [
+        "query",
+        "route",
+        "known identifiers",
+        "token budget"
+      ],
+      "outputs": [
+        "resolved canonical targets",
+        "ranked context pack",
+        "duplicate/conflict warnings"
+      ],
+      "memory_access": "read all allowed; propose only",
+      "may_commit_memory": false,
+      "human_approval": [],
+      "stop_condition": "smallest sufficient context pack assembled with unresolved uncertainty stated",
+      "capabilities": [
+        "hybrid-retrieval",
+        "dedupe",
+        "entity-resolution",
+        "context-pack"
+      ]
+    },
+    {
+      "id": "researcher",
+      "required": false,
+      "activation_when": [
+        "evidence synthesis required",
+        "current or niche facts required",
+        "competing sources",
+        "open investigation"
+      ],
+      "required_inputs": [
+        "research question",
+        "scope",
+        "source policy",
+        "known evidence"
+      ],
+      "outputs": [
+        "source-backed findings",
+        "contradictions",
+        "confidence",
+        "open gaps"
+      ],
+      "memory_access": "read; propose source/concept/analysis updates",
+      "may_commit_memory": false,
+      "human_approval": [
+        "paid sources or APIs",
+        "external publication"
+      ],
+      "stop_condition": "question answered to evidence threshold or missing evidence explicitly identified",
+      "capabilities": [
+        "synthesis",
+        "comparison",
+        "research"
+      ]
+    },
+    {
+      "id": "toolsmith",
+      "required": false,
+      "activation_when": [
+        "repo inspection",
+        "code or file execution",
+        "automation",
+        "implementation or testing"
+      ],
+      "required_inputs": [
+        "resolved project/workspace",
+        "objective",
+        "acceptance criteria",
+        "architecture constraints",
+        "current repo revision when available"
+      ],
+      "outputs": [
+        "changes",
+        "commands/tests run",
+        "evidence",
+        "failure signatures",
+        "exact next action"
+      ],
+      "memory_access": "read; write operational project evidence only; propose durable memory",
+      "may_commit_memory": false,
+      "human_approval": [
+        "destructive action",
+        "credential use",
+        "deploy/send/external POST",
+        "paid action"
+      ],
+      "stop_condition": "verification passes or structured blocker with attempted alternatives is recorded",
+      "capabilities": [
+        "repo-inspection",
+        "code-execution",
+        "implementation",
+        "testing"
+      ]
+    },
+    {
+      "id": "production-hardener",
+      "required": false,
+      "activation_when": [
+        "production readiness requested",
+        "final pre-deploy audit",
+        "hardening required",
+        "critic rejects readiness claim"
+      ],
+      "required_inputs": [
+        "resolved project",
+        "actual repo/workspace",
+        "intended release scope",
+        "deployment target",
+        "current production status",
+        "known risks"
+      ],
+      "outputs": [
+        "production audit",
+        "hardening queue",
+        "changes",
+        "verification evidence",
+        "remaining risk register",
+        "candidate status",
+        "critic handoff"
+      ],
+      "memory_access": "read; write operational project evidence only; propose durable memory",
+      "may_commit_memory": false,
+      "human_approval": [
+        "deploy/release",
+        "destructive data action",
+        "credential use",
+        "risk acceptance reserved to owner"
+      ],
+      "stop_condition": "PRODUCTION_READY, READY_WITH_ACCEPTED_RISKS, or structured blocker with evidence",
+      "capabilities": [
+        "production-audit",
+        "hardening",
+        "release-gates",
+        "risk-register",
+        "runtime-verification"
+      ]
+    },
+    {
+      "id": "critic",
+      "required": false,
+      "activation_when": [
+        "completion claim",
+        "high-risk change",
+        "architecture decision",
+        "release gate",
+        "memory promotion",
+        "conflicting evidence"
+      ],
+      "required_inputs": [
+        "claim or artifact",
+        "acceptance criteria",
+        "evidence pack",
+        "known risks"
+      ],
+      "outputs": [
+        "verdict",
+        "failed gates",
+        "counterexamples",
+        "required repairs"
+      ],
+      "memory_access": "read; no durable writes",
+      "may_commit_memory": false,
+      "human_approval": [],
+      "stop_condition": "independent verdict issued with evidence and failed gates named",
+      "capabilities": [
+        "verification",
+        "contradiction-check",
+        "evidence-review"
+      ]
+    },
+    {
+      "id": "memory-curator",
+      "required": false,
+      "activation_when": [
+        "durable semantic/procedural write proposed",
+        "merge/supersession needed",
+        "lesson/pattern promotion candidate"
+      ],
+      "required_inputs": [
+        "memory proposal",
+        "provenance",
+        "duplicate search",
+        "contradiction state",
+        "critic verdict when required"
+      ],
+      "outputs": [
+        "commit/merge/reject/defer decision",
+        "canonical path",
+        "links",
+        "reindex trigger"
+      ],
+      "memory_access": "read/write allowed by policy; single default durable writer",
+      "may_commit_memory": true,
+      "human_approval": [
+        "constitution/global standard change",
+        "sensitive transmission",
+        "protected policy change"
+      ],
+      "stop_condition": "proposal committed safely or rejected/deferred with reason",
+      "capabilities": [
+        "memory-promotion",
+        "merge",
+        "supersession",
+        "reindex-trigger"
+      ]
+    }
+  ],
+  "durable_write_flow": [
+    "proposal",
+    "provenance-check",
+    "duplicate-check",
+    "contradiction-check",
+    "critic-review-when-required",
+    "curator-commit",
+    "reindex",
+    "evaluation"
+  ]
+}

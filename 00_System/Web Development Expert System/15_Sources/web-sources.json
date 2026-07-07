@@ -1,0 +1,311 @@
+{
+  "generated": "2026-07-07",
+  "sources": [
+    {
+      "id": "SRC-OWASP-ASVS-5",
+      "title": "OWASP Application Security Verification Standard 5.0.x",
+      "authority": "OWASP",
+      "status": "released",
+      "checked": "2026-07-07",
+      "url": "https://owasp.org/www-project-application-security-verification-standard/",
+      "use": "Primary web application security verification baseline. Default production target: ASVS Level 2 for most applications; Level 3 for high-value/high-assurance systems."
+    },
+    {
+      "id": "SRC-OWASP-TOP10-2025",
+      "title": "OWASP Top 10:2025",
+      "authority": "OWASP",
+      "status": "released",
+      "checked": "2026-07-07",
+      "url": "https://owasp.org/Top10/2025/",
+      "use": "Awareness and threat-prioritization input. Never use as a complete security verification standard."
+    },
+    {
+      "id": "SRC-OWASP-WSTG",
+      "title": "OWASP Web Security Testing Guide",
+      "authority": "OWASP",
+      "status": "stable-v4.2-plus-latest-track",
+      "checked": "2026-07-07",
+      "url": "https://owasp.org/www-project-web-security-testing-guide/",
+      "use": "Security test planning and manual/automated verification methodology."
+    },
+    {
+      "id": "SRC-OWASP-CHEATS",
+      "title": "OWASP Cheat Sheet Series",
+      "authority": "OWASP",
+      "status": "living",
+      "checked": "2026-07-07",
+      "url": "https://cheatsheetseries.owasp.org/",
+      "use": "Implementation guidance for authentication, sessions, CSRF, secrets, logging, SSRF, uploads, XSS and related controls."
+    },
+    {
+      "id": "SRC-WCAG-22",
+      "title": "Web Content Accessibility Guidelines 2.2",
+      "authority": "W3C WAI",
+      "status": "W3C-Recommendation",
+      "checked": "2026-07-07",
+      "url": "https://www.w3.org/TR/WCAG22/",
+      "use": "Accessibility conformance baseline. Default target for user-facing web: WCAG 2.2 AA unless a stricter legal/product target applies."
+    },
+    {
+      "id": "SRC-W3C-ACT-11",
+      "title": "Accessibility Conformance Testing Rules Format 1.1",
+      "authority": "W3C WAI",
+      "status": "W3C-Recommendation",
+      "checked": "2026-07-07",
+      "url": "https://www.w3.org/TR/act-rules-format/",
+      "use": "Structure transparent automated, semi-automated and manual accessibility test rules."
+    },
+    {
+      "id": "SRC-WHATWG-HTML",
+      "title": "HTML Living Standard",
+      "authority": "WHATWG",
+      "status": "living-standard",
+      "checked": "2026-07-07",
+      "url": "https://html.spec.whatwg.org/",
+      "use": "Semantic HTML, forms, document structure and web platform behavior."
+    },
+    {
+      "id": "SRC-W3C-I18N",
+      "title": "W3C Internationalization Resources",
+      "authority": "W3C",
+      "status": "living",
+      "checked": "2026-07-07",
+      "url": "https://www.w3.org/International/",
+      "use": "Language, script, locale, bidirectional text and internationalized web design."
+    },
+    {
+      "id": "SRC-WEB-VITALS",
+      "title": "Core Web Vitals",
+      "authority": "Google web.dev",
+      "status": "living",
+      "checked": "2026-07-07",
+      "url": "https://web.dev/articles/vitals",
+      "use": "Performance UX targets: LCP <=2.5s, INP <=200ms, CLS <=0.1 at the 75th percentile, segmented by mobile/desktop."
+    },
+    {
+      "id": "SRC-HTTP-9110",
+      "title": "RFC 9110 HTTP Semantics",
+      "authority": "IETF/RFC Editor",
+      "status": "Internet-Standard-family",
+      "checked": "2026-07-07",
+      "url": "https://www.rfc-editor.org/info/rfc9110/",
+      "use": "HTTP methods, status semantics, safety, idempotency, representations, validators and protocol behavior."
+    },
+    {
+      "id": "SRC-HTTP-9111",
+      "title": "RFC 9111 HTTP Caching",
+      "authority": "IETF/RFC Editor",
+      "status": "Internet-Standard-family",
+      "checked": "2026-07-07",
+      "url": "https://www.rfc-editor.org/info/rfc9111/",
+      "use": "HTTP cache behavior, freshness, revalidation and cache controls."
+    },
+    {
+      "id": "SRC-HTTP-9205",
+      "title": "RFC 9205 Building Protocols with HTTP",
+      "authority": "IETF/RFC Editor",
+      "status": "Best-Current-Practice-style-guidance",
+      "checked": "2026-07-07",
+      "url": "https://www.rfc-editor.org/info/rfc9205/",
+      "use": "Design discipline for HTTP-based APIs and application protocols."
+    },
+    {
+      "id": "SRC-HTTP-9457",
+      "title": "RFC 9457 Problem Details for HTTP APIs",
+      "authority": "IETF/RFC Editor",
+      "status": "Proposed-Standard",
+      "checked": "2026-07-07",
+      "url": "https://www.rfc-editor.org/info/rfc9457/",
+      "use": "Standard machine-readable HTTP error responses; obsoletes RFC 7807."
+    },
+    {
+      "id": "SRC-OAUTH-9700",
+      "title": "RFC 9700 Best Current Practice for OAuth 2.0 Security",
+      "authority": "IETF/RFC Editor",
+      "status": "Best-Current-Practice",
+      "checked": "2026-07-07",
+      "url": "https://www.rfc-editor.org/info/rfc9700/",
+      "use": "Current OAuth 2.0 security practices and deprecations."
+    },
+    {
+      "id": "SRC-TLS-9325",
+      "title": "RFC 9325 Recommendations for Secure Use of TLS and DTLS",
+      "authority": "IETF/RFC Editor",
+      "status": "Best-Current-Practice",
+      "checked": "2026-07-07",
+      "url": "https://www.rfc-editor.org/info/rfc9325/",
+      "use": "Transport security baseline."
+    },
+    {
+      "id": "SRC-HSTS-6797",
+      "title": "RFC 6797 HTTP Strict Transport Security",
+      "authority": "IETF/RFC Editor",
+      "status": "Proposed-Standard",
+      "checked": "2026-07-07",
+      "url": "https://www.rfc-editor.org/info/rfc6797/",
+      "use": "HTTPS-only enforcement via HSTS."
+    },
+    {
+      "id": "SRC-CSP3",
+      "title": "Content Security Policy Level 3",
+      "authority": "W3C",
+      "status": "Working-Draft",
+      "checked": "2026-07-07",
+      "url": "https://www.w3.org/TR/CSP3/",
+      "use": "CSP design and implementation. Treat exact spec status as draft; verify browser support before relying on newer directives."
+    },
+    {
+      "id": "SRC-PERMISSIONS-POLICY",
+      "title": "Permissions Policy",
+      "authority": "W3C",
+      "status": "Working-Draft",
+      "checked": "2026-07-07",
+      "url": "https://www.w3.org/TR/permissions-policy/",
+      "use": "Restrict browser features/APIs for first- and third-party contexts. Verify compatibility."
+    },
+    {
+      "id": "SRC-REFERRER-POLICY",
+      "title": "Referrer Policy",
+      "authority": "W3C",
+      "status": "Candidate-Recommendation-snapshot",
+      "checked": "2026-07-07",
+      "url": "https://www.w3.org/TR/referrer-policy/",
+      "use": "Control referrer information leakage."
+    },
+    {
+      "id": "SRC-OPENAPI-311",
+      "title": "OpenAPI Specification 3.1.1",
+      "authority": "OpenAPI Initiative",
+      "status": "released",
+      "checked": "2026-07-07",
+      "url": "https://spec.openapis.org/oas/v3.1.1.html",
+      "use": "Language-agnostic HTTP API contracts. A project may pin a newer supported OAS version after explicit review."
+    },
+    {
+      "id": "SRC-JSONSCHEMA-202012",
+      "title": "JSON Schema 2020-12",
+      "authority": "JSON Schema Project",
+      "status": "current-released-dialect",
+      "checked": "2026-07-07",
+      "url": "https://json-schema.org/specification",
+      "use": "JSON structure and validation contracts."
+    },
+    {
+      "id": "SRC-NIST-SSDF-11",
+      "title": "NIST SP 800-218 SSDF 1.1",
+      "authority": "NIST",
+      "status": "final",
+      "checked": "2026-07-07",
+      "url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+      "use": "Secure software development lifecycle baseline."
+    },
+    {
+      "id": "SRC-NIST-SSDF-12-DRAFT",
+      "title": "NIST SSDF 1.2 / SP 800-218 Rev.1",
+      "authority": "NIST",
+      "status": "initial-public-draft",
+      "checked": "2026-07-07",
+      "url": "https://csrc.nist.gov/pubs/sp/800/218/r1/ipd",
+      "use": "Track emerging changes only. Do not silently treat draft requirements as final."
+    },
+    {
+      "id": "SRC-SLSA-12",
+      "title": "SLSA Specification 1.2",
+      "authority": "SLSA / Linux Foundation community specification",
+      "status": "approved",
+      "checked": "2026-07-07",
+      "url": "https://slsa.dev/spec/v1.2/",
+      "use": "Software supply-chain integrity, source and build track controls, provenance."
+    },
+    {
+      "id": "SRC-OTEL",
+      "title": "OpenTelemetry",
+      "authority": "OpenTelemetry / CNCF",
+      "status": "living-specification",
+      "checked": "2026-07-07",
+      "url": "https://opentelemetry.io/docs/",
+      "use": "Vendor-neutral traces, metrics and logs; correlation and instrumentation."
+    },
+    {
+      "id": "SRC-SRE",
+      "title": "Google Site Reliability Engineering Books",
+      "authority": "Google",
+      "status": "published-living-site",
+      "checked": "2026-07-07",
+      "url": "https://sre.google/books/",
+      "use": "SLIs, SLOs, error budgets, monitoring, incident response, postmortems and release reliability."
+    },
+    {
+      "id": "SRC-12FACTOR",
+      "title": "The Twelve-Factor App",
+      "authority": "12factor.net",
+      "status": "methodology",
+      "checked": "2026-07-07",
+      "url": "https://12factor.net/",
+      "use": "Configuration, processes, backing services, deploy parity and operational portability. Apply as guidance, not dogma."
+    },
+    {
+      "id": "SRC-GOOGLE-SEO",
+      "title": "Google Search Central Developer Documentation",
+      "authority": "Google Search",
+      "status": "living",
+      "checked": "2026-07-07",
+      "url": "https://developers.google.com/search/docs",
+      "use": "Crawlability, indexability, structured data and technical SEO for Google Search."
+    },
+    {
+      "id": "SRC-NIST-PRIVACY-10",
+      "title": "NIST Privacy Framework 1.0",
+      "authority": "NIST",
+      "status": "final",
+      "checked": "2026-07-07",
+      "url": "https://www.nist.gov/privacy-framework",
+      "use": "Privacy risk management, data processing inventory, lifecycle and minimization."
+    },
+    {
+      "id": "SRC-NIST-PRIVACY-11-DRAFT",
+      "title": "NIST Privacy Framework 1.1",
+      "authority": "NIST",
+      "status": "initial-public-draft",
+      "checked": "2026-07-07",
+      "url": "https://www.nist.gov/privacy-framework",
+      "use": "Track emerging changes only; do not silently treat draft as final."
+    },
+    {
+      "id": "SRC-W3C-PRIVACY-PRINCIPLES",
+      "title": "W3C Privacy Principles",
+      "authority": "W3C",
+      "status": "Group-Note",
+      "checked": "2026-07-07",
+      "url": "https://www.w3.org/TR/privacy-principles/",
+      "use": "Privacy principles for trustworthy web design."
+    },
+    {
+      "id": "SRC-PLAYWRIGHT",
+      "title": "Playwright Test Documentation",
+      "authority": "Microsoft Playwright Project",
+      "status": "living",
+      "checked": "2026-07-07",
+      "url": "https://playwright.dev/docs/best-practices",
+      "use": "Resilient browser E2E testing when Playwright is selected."
+    },
+    {
+      "id": "SRC-TESTING-LIBRARY",
+      "title": "Testing Library Guiding Principles",
+      "authority": "Testing Library Project",
+      "status": "living",
+      "checked": "2026-07-07",
+      "url": "https://testing-library.com/docs/guiding-principles/",
+      "use": "User-centered UI test behavior when Testing Library is selected."
+    },
+    {
+      "id": "SRC-W3C-APP-MANIFEST",
+      "title": "Web Application Manifest",
+      "authority": "W3C",
+      "status": "Working-Draft",
+      "checked": "2026-07-07",
+      "url": "https://www.w3.org/TR/appmanifest/",
+      "use": "Installable web app metadata. Verify platform support; draft status."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+filters:
+  or:
+    - file.inFolder("01_Inbox")
+    - 'status == "inbox"'
+properties:
+  type:
+    displayName: Type
+  status:
+    displayName: Status
+  created:
+    displayName: Created
+  topics:
+    displayName: Topics
+views:
+  - type: table
+    name: Inbox
+    order:
+      - file.name
+      - type
+      - status
+      - created
+      - topics

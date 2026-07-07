@@ -1,0 +1,1325 @@
+{
+  "graph_id": "omar-brain-skill-graph-v1",
+  "version": "1.0",
+  "updated": "2026-07-07",
+  "relationship_types": [
+    "related",
+    "handoff",
+    "requires_context",
+    "bundle_member"
+  ],
+  "nodes": [
+    {
+      "skill_id": "skill-context-engineering",
+      "path": "50_Skills/AI-Work/context-engineering.md",
+      "category": "AI-Work",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-planning-with-files",
+        "skill-create-prd",
+        "skill-test-scenarios",
+        "skill-skill-distillation"
+      ],
+      "handoff_to": [
+        "skill-create-prd",
+        "skill-test-scenarios"
+      ],
+      "routes": [
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-planning-with-files",
+      "path": "50_Skills/AI-Work/planning-with-files.md",
+      "category": "AI-Work",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-context-engineering",
+        "skill-skill-distillation"
+      ],
+      "handoff_to": [
+        "skill-context-engineering"
+      ],
+      "routes": [
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-skill-distillation",
+      "path": "50_Skills/AI-Work/skill-distillation.md",
+      "category": "AI-Work",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-planning-with-files",
+        "skill-context-engineering"
+      ],
+      "handoff_to": [],
+      "routes": [
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-ab-test-analysis",
+      "path": "50_Skills/Analytics/ab-test-analysis.md",
+      "category": "Analytics",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-ab-test-setup",
+        "skill-analytics-tracking",
+        "skill-sql-queries"
+      ],
+      "handoff_to": [
+        "skill-product-strategy",
+        "skill-page-cro"
+      ],
+      "routes": [
+        "route-business",
+        "route-project-resume",
+        "route-skill"
+      ],
+      "context_cost": "high",
+      "risk_level": "high"
+    },
+    {
+      "skill_id": "skill-ab-test-setup",
+      "path": "50_Skills/Analytics/ab-test-setup.md",
+      "category": "Analytics",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-analytics-tracking",
+        "skill-ab-test-analysis",
+        "skill-page-cro",
+        "skill-marketing-psychology"
+      ],
+      "handoff_to": [
+        "skill-ab-test-analysis"
+      ],
+      "routes": [
+        "route-project-resume",
+        "route-business",
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "high"
+    },
+    {
+      "skill_id": "skill-analytics-tracking",
+      "path": "50_Skills/Analytics/analytics-tracking.md",
+      "category": "Analytics",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-ab-test-setup",
+        "skill-ab-test-analysis",
+        "skill-page-cro",
+        "skill-onboarding-cro"
+      ],
+      "handoff_to": [
+        "skill-ab-test-setup",
+        "skill-sql-queries"
+      ],
+      "routes": [
+        "route-project-resume",
+        "route-business",
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "high"
+    },
+    {
+      "skill_id": "skill-sql-queries",
+      "path": "50_Skills/Analytics/sql-queries.md",
+      "category": "Analytics",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-analytics-tracking",
+        "skill-ab-test-analysis",
+        "skill-backend-patterns",
+        "skill-database-migrations"
+      ],
+      "handoff_to": [
+        "skill-performance-optimization"
+      ],
+      "routes": [
+        "route-research",
+        "route-project-resume",
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "high"
+    },
+    {
+      "skill_id": "skill-create-prd",
+      "path": "50_Skills/Execution/create-prd.md",
+      "category": "Execution",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-product-strategy",
+        "skill-user-stories",
+        "skill-stakeholder-map",
+        "skill-test-scenarios"
+      ],
+      "handoff_to": [
+        "skill-user-stories",
+        "skill-test-scenarios"
+      ],
+      "routes": [
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-pre-mortem",
+      "path": "50_Skills/Execution/pre-mortem.md",
+      "category": "Execution",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-launch-strategy",
+        "skill-product-strategy",
+        "skill-create-prd",
+        "skill-security-and-hardening"
+      ],
+      "handoff_to": [
+        "skill-launch-strategy",
+        "skill-security-and-hardening"
+      ],
+      "routes": [
+        "route-project-production",
+        "route-project-resume",
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "high"
+    },
+    {
+      "skill_id": "skill-prioritization-frameworks",
+      "path": "50_Skills/Execution/prioritization-frameworks.md",
+      "category": "Execution",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-product-strategy",
+        "skill-prioritize-assumptions",
+        "skill-sprint-plan"
+      ],
+      "handoff_to": [
+        "skill-sprint-plan",
+        "skill-create-prd"
+      ],
+      "routes": [
+        "route-project-new",
+        "route-project-resume",
+        "route-business",
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-release-notes",
+      "path": "50_Skills/Execution/release-notes.md",
+      "category": "Execution",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-launch-strategy",
+        "skill-copy-editing",
+        "skill-test-scenarios"
+      ],
+      "handoff_to": [
+        "skill-launch-strategy",
+        "skill-copy-editing"
+      ],
+      "routes": [
+        "route-project-resume",
+        "route-project-production",
+        "route-skill"
+      ],
+      "context_cost": "low",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-sprint-plan",
+      "path": "50_Skills/Execution/sprint-plan.md",
+      "category": "Execution",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-user-stories",
+        "skill-prioritization-frameworks",
+        "skill-pre-mortem"
+      ],
+      "handoff_to": [
+        "skill-test-scenarios"
+      ],
+      "routes": [
+        "route-project-resume",
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-stakeholder-map",
+      "path": "50_Skills/Execution/stakeholder-map.md",
+      "category": "Execution",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-create-prd",
+        "skill-pre-mortem",
+        "skill-sprint-plan"
+      ],
+      "handoff_to": [
+        "skill-create-prd",
+        "skill-pre-mortem"
+      ],
+      "routes": [
+        "route-project-new",
+        "route-project-resume",
+        "route-business",
+        "route-skill"
+      ],
+      "context_cost": "low",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-test-scenarios",
+      "path": "50_Skills/Execution/test-scenarios.md",
+      "category": "Execution",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-user-stories",
+        "skill-create-prd",
+        "skill-security-and-hardening"
+      ],
+      "handoff_to": [],
+      "routes": [
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-user-stories",
+      "path": "50_Skills/Execution/user-stories.md",
+      "category": "Execution",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-create-prd",
+        "skill-test-scenarios",
+        "skill-sprint-plan"
+      ],
+      "handoff_to": [
+        "skill-test-scenarios",
+        "skill-sprint-plan"
+      ],
+      "routes": [
+        "route-project-new",
+        "route-project-resume",
+        "route-skill"
+      ],
+      "context_cost": "low",
+      "risk_level": "low"
+    },
+    {
+      "skill_id": "skill-churn-prevention",
+      "path": "50_Skills/Growth/churn-prevention.md",
+      "category": "Growth",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-customer-research",
+        "skill-sentiment-analysis",
+        "skill-onboarding-cro",
+        "skill-email-sequence",
+        "skill-analytics-tracking"
+      ],
+      "handoff_to": [
+        "skill-ab-test-setup",
+        "skill-email-sequence"
+      ],
+      "routes": [
+        "route-business",
+        "route-skill"
+      ],
+      "context_cost": "high",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-free-tool-strategy",
+      "path": "50_Skills/Growth/free-tool-strategy.md",
+      "category": "Growth",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-customer-research",
+        "skill-market-sizing",
+        "skill-launch-strategy",
+        "skill-analytics-tracking"
+      ],
+      "handoff_to": [
+        "skill-create-prd",
+        "skill-launch-strategy"
+      ],
+      "routes": [
+        "route-business",
+        "route-project-new",
+        "route-skill"
+      ],
+      "context_cost": "high",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-referral-program",
+      "path": "50_Skills/Growth/referral-program.md",
+      "category": "Growth",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-churn-prevention",
+        "skill-analytics-tracking",
+        "skill-ab-test-setup",
+        "skill-email-sequence"
+      ],
+      "handoff_to": [
+        "skill-ab-test-setup",
+        "skill-analytics-tracking"
+      ],
+      "routes": [
+        "route-business",
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-revops",
+      "path": "50_Skills/Growth/revops.md",
+      "category": "Growth",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-sales-enablement",
+        "skill-analytics-tracking",
+        "skill-customer-research",
+        "skill-churn-prevention"
+      ],
+      "handoff_to": [
+        "skill-sales-enablement",
+        "skill-analytics-tracking"
+      ],
+      "routes": [
+        "route-business",
+        "route-skill"
+      ],
+      "context_cost": "high",
+      "risk_level": "high"
+    },
+    {
+      "skill_id": "skill-sales-enablement",
+      "path": "50_Skills/Growth/sales-enablement.md",
+      "category": "Growth",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-customer-research",
+        "skill-competitor-analysis",
+        "skill-value-proposition",
+        "skill-revops",
+        "skill-cold-email"
+      ],
+      "handoff_to": [
+        "skill-copywriting",
+        "skill-revops"
+      ],
+      "routes": [
+        "route-business",
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-cold-email",
+      "path": "50_Skills/Marketing/cold-email.md",
+      "category": "Marketing",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-customer-research",
+        "skill-value-proposition",
+        "skill-copywriting",
+        "skill-sales-enablement"
+      ],
+      "handoff_to": [
+        "skill-email-sequence",
+        "skill-sales-enablement"
+      ],
+      "routes": [
+        "route-business",
+        "route-skill"
+      ],
+      "context_cost": "low",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-copy-editing",
+      "path": "50_Skills/Marketing/copy-editing.md",
+      "category": "Marketing",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-copywriting",
+        "skill-page-cro",
+        "skill-product-marketing-context"
+      ],
+      "handoff_to": [
+        "skill-copywriting",
+        "skill-page-cro"
+      ],
+      "routes": [
+        "route-business",
+        "route-project-resume",
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-copywriting",
+      "path": "50_Skills/Marketing/copywriting.md",
+      "category": "Marketing",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-copy-editing",
+        "skill-page-cro",
+        "skill-customer-research",
+        "skill-value-proposition"
+      ],
+      "handoff_to": [
+        "skill-copy-editing",
+        "skill-page-cro",
+        "skill-ab-test-setup"
+      ],
+      "routes": [
+        "route-business",
+        "route-project-resume",
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-email-sequence",
+      "path": "50_Skills/Marketing/email-sequence.md",
+      "category": "Marketing",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-copywriting",
+        "skill-analytics-tracking",
+        "skill-onboarding-cro",
+        "skill-churn-prevention"
+      ],
+      "handoff_to": [
+        "skill-copy-editing",
+        "skill-analytics-tracking",
+        "skill-ab-test-setup"
+      ],
+      "routes": [
+        "route-business",
+        "route-project-resume",
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-launch-strategy",
+      "path": "50_Skills/Marketing/launch-strategy.md",
+      "category": "Marketing",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-product-marketing-context",
+        "skill-copywriting",
+        "skill-email-sequence",
+        "skill-social-content",
+        "skill-analytics-tracking"
+      ],
+      "handoff_to": [
+        "skill-pre-mortem",
+        "skill-analytics-tracking",
+        "skill-churn-prevention"
+      ],
+      "routes": [
+        "route-business",
+        "route-project-production",
+        "route-skill"
+      ],
+      "context_cost": "high",
+      "risk_level": "high"
+    },
+    {
+      "skill_id": "skill-marketing-psychology",
+      "path": "50_Skills/Marketing/marketing-psychology.md",
+      "category": "Marketing",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-page-cro",
+        "skill-copywriting",
+        "skill-pricing-strategy",
+        "skill-ab-test-setup"
+      ],
+      "handoff_to": [
+        "skill-ab-test-setup",
+        "skill-page-cro"
+      ],
+      "routes": [
+        "route-business",
+        "route-skill"
+      ],
+      "context_cost": "low",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-onboarding-cro",
+      "path": "50_Skills/Marketing/onboarding-cro.md",
+      "category": "Marketing",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-signup-flow-cro",
+        "skill-email-sequence",
+        "skill-analytics-tracking",
+        "skill-churn-prevention"
+      ],
+      "handoff_to": [
+        "skill-email-sequence",
+        "skill-ab-test-setup",
+        "skill-churn-prevention"
+      ],
+      "routes": [
+        "route-project-resume",
+        "route-business",
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-page-cro",
+      "path": "50_Skills/Marketing/page-cro.md",
+      "category": "Marketing",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-copywriting",
+        "skill-copy-editing",
+        "skill-analytics-tracking",
+        "skill-ab-test-setup",
+        "skill-marketing-psychology"
+      ],
+      "handoff_to": [
+        "skill-copywriting",
+        "skill-ab-test-setup"
+      ],
+      "routes": [
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-product-marketing-context",
+      "path": "50_Skills/Marketing/product-marketing-context.md",
+      "category": "Marketing",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-customer-research",
+        "skill-value-proposition",
+        "skill-product-strategy",
+        "skill-copywriting"
+      ],
+      "handoff_to": [
+        "skill-copywriting",
+        "skill-page-cro",
+        "skill-launch-strategy",
+        "skill-email-sequence"
+      ],
+      "routes": [
+        "route-business",
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-seo-article-writing",
+      "path": "50_Skills/Marketing/seo-article-writing.md",
+      "category": "Marketing",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-seo-audit",
+        "skill-copywriting",
+        "skill-site-architecture"
+      ],
+      "handoff_to": [
+        "skill-copy-editing"
+      ],
+      "routes": [
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-signup-flow-cro",
+      "path": "50_Skills/Marketing/signup-flow-cro.md",
+      "category": "Marketing",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-page-cro",
+        "skill-analytics-tracking",
+        "skill-ab-test-setup",
+        "skill-onboarding-cro"
+      ],
+      "handoff_to": [
+        "skill-onboarding-cro",
+        "skill-ab-test-setup"
+      ],
+      "routes": [
+        "route-project-resume",
+        "route-business",
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-social-content",
+      "path": "50_Skills/Marketing/social-content.md",
+      "category": "Marketing",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-product-marketing-context",
+        "skill-copywriting",
+        "skill-launch-strategy",
+        "skill-analytics-tracking"
+      ],
+      "handoff_to": [
+        "skill-copy-editing",
+        "skill-ab-test-setup"
+      ],
+      "routes": [
+        "route-business",
+        "route-skill"
+      ],
+      "context_cost": "low",
+      "risk_level": "low"
+    },
+    {
+      "skill_id": "skill-competitor-analysis",
+      "path": "50_Skills/Research/competitor-analysis.md",
+      "category": "Research",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-customer-research",
+        "skill-market-sizing",
+        "skill-product-strategy",
+        "skill-sales-enablement"
+      ],
+      "handoff_to": [
+        "skill-product-strategy"
+      ],
+      "routes": [
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-customer-research",
+      "path": "50_Skills/Research/customer-research.md",
+      "category": "Research",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-user-personas",
+        "skill-interview-script",
+        "skill-sentiment-analysis",
+        "skill-product-marketing-context"
+      ],
+      "handoff_to": [
+        "skill-value-proposition",
+        "skill-product-strategy"
+      ],
+      "routes": [
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-user-personas",
+      "path": "50_Skills/Research/user-personas.md",
+      "category": "Research",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-customer-research",
+        "skill-sentiment-analysis",
+        "skill-product-marketing-context",
+        "skill-value-proposition"
+      ],
+      "handoff_to": [
+        "skill-value-proposition",
+        "skill-product-strategy"
+      ],
+      "routes": [
+        "route-research",
+        "route-business",
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-interview-script",
+      "path": "50_Skills/Research/interview-script.md",
+      "category": "Research",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-customer-research",
+        "skill-summarize-interview",
+        "skill-prioritize-assumptions"
+      ],
+      "handoff_to": [
+        "skill-summarize-interview",
+        "skill-customer-research"
+      ],
+      "routes": [
+        "route-research",
+        "route-skill"
+      ],
+      "context_cost": "low",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-market-sizing",
+      "path": "50_Skills/Research/market-sizing.md",
+      "category": "Research",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-customer-research",
+        "skill-competitor-analysis",
+        "skill-product-strategy",
+        "skill-pricing-strategy"
+      ],
+      "handoff_to": [
+        "skill-product-strategy",
+        "skill-prioritize-assumptions"
+      ],
+      "routes": [
+        "route-research",
+        "route-business",
+        "route-skill"
+      ],
+      "context_cost": "high",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-opportunity-solution-tree",
+      "path": "50_Skills/Research/opportunity-solution-tree.md",
+      "category": "Research",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-customer-research",
+        "skill-prioritize-assumptions",
+        "skill-product-strategy",
+        "skill-create-prd"
+      ],
+      "handoff_to": [
+        "skill-prioritize-assumptions",
+        "skill-create-prd"
+      ],
+      "routes": [
+        "route-research",
+        "route-project-new",
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-prioritize-assumptions",
+      "path": "50_Skills/Research/prioritize-assumptions.md",
+      "category": "Research",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-product-strategy",
+        "skill-opportunity-solution-tree",
+        "skill-market-sizing",
+        "skill-pre-mortem"
+      ],
+      "handoff_to": [
+        "skill-ab-test-setup",
+        "skill-customer-research"
+      ],
+      "routes": [
+        "route-research",
+        "route-project-new",
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-sentiment-analysis",
+      "path": "50_Skills/Research/sentiment-analysis.md",
+      "category": "Research",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-customer-research",
+        "skill-user-personas",
+        "skill-competitor-analysis"
+      ],
+      "handoff_to": [
+        "skill-customer-research",
+        "skill-churn-prevention"
+      ],
+      "routes": [
+        "route-research",
+        "route-business",
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-source-backed-client-discovery",
+      "path": "50_Skills/Research/source-backed-client-discovery.md",
+      "category": "Research",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-customer-research",
+        "skill-product-marketing-context"
+      ],
+      "handoff_to": [],
+      "routes": [
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-summarize-interview",
+      "path": "50_Skills/Research/summarize-interview.md",
+      "category": "Research",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-interview-script",
+        "skill-customer-research",
+        "skill-user-personas"
+      ],
+      "handoff_to": [
+        "skill-customer-research"
+      ],
+      "routes": [
+        "route-research",
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-programmatic-seo",
+      "path": "50_Skills/SEO/programmatic-seo.md",
+      "category": "SEO",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-site-architecture",
+        "skill-seo-audit",
+        "skill-schema-markup",
+        "skill-backend-patterns"
+      ],
+      "handoff_to": [
+        "skill-site-architecture",
+        "skill-seo-audit"
+      ],
+      "routes": [
+        "route-project-new",
+        "route-project-resume",
+        "route-skill"
+      ],
+      "context_cost": "high",
+      "risk_level": "high"
+    },
+    {
+      "skill_id": "skill-schema-markup",
+      "path": "50_Skills/SEO/schema-markup.md",
+      "category": "SEO",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-seo-audit",
+        "skill-site-architecture",
+        "skill-nextjs-best-practices"
+      ],
+      "handoff_to": [
+        "skill-seo-audit"
+      ],
+      "routes": [
+        "route-project-resume",
+        "route-skill"
+      ],
+      "context_cost": "low",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-seo-audit",
+      "path": "50_Skills/SEO/seo-audit.md",
+      "category": "SEO",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-site-architecture",
+        "skill-schema-markup",
+        "skill-programmatic-seo",
+        "skill-performance-optimization",
+        "skill-seo-article-writing"
+      ],
+      "handoff_to": [
+        "skill-site-architecture",
+        "skill-schema-markup",
+        "skill-programmatic-seo"
+      ],
+      "routes": [
+        "route-project-resume",
+        "route-business",
+        "route-skill"
+      ],
+      "context_cost": "high",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-site-architecture",
+      "path": "50_Skills/SEO/site-architecture.md",
+      "category": "SEO",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-seo-audit",
+        "skill-programmatic-seo",
+        "skill-schema-markup"
+      ],
+      "handoff_to": [
+        "skill-programmatic-seo",
+        "skill-schema-markup"
+      ],
+      "routes": [
+        "route-project-new",
+        "route-project-resume",
+        "route-skill"
+      ],
+      "context_cost": "high",
+      "risk_level": "high"
+    },
+    {
+      "skill_id": "skill-pricing-strategy",
+      "path": "50_Skills/Strategy/pricing-strategy.md",
+      "category": "Strategy",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-market-sizing",
+        "skill-value-proposition",
+        "skill-marketing-psychology",
+        "skill-ab-test-setup"
+      ],
+      "handoff_to": [
+        "skill-ab-test-setup"
+      ],
+      "routes": [
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-product-strategy",
+      "path": "50_Skills/Strategy/product-strategy.md",
+      "category": "Strategy",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-market-sizing",
+        "skill-customer-research",
+        "skill-value-proposition",
+        "skill-prioritize-assumptions"
+      ],
+      "handoff_to": [
+        "skill-create-prd"
+      ],
+      "routes": [
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-value-proposition",
+      "path": "50_Skills/Strategy/value-proposition.md",
+      "category": "Strategy",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-customer-research",
+        "skill-product-strategy",
+        "skill-copywriting",
+        "skill-sales-enablement"
+      ],
+      "handoff_to": [
+        "skill-copywriting"
+      ],
+      "routes": [
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-backend-patterns",
+      "path": "50_Skills/Technical/backend-patterns.md",
+      "category": "Technical",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-security-and-hardening",
+        "skill-database-migrations",
+        "skill-docker-patterns",
+        "skill-sql-queries"
+      ],
+      "handoff_to": [
+        "skill-security-and-hardening",
+        "skill-database-migrations"
+      ],
+      "routes": [
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-cyberpanel-diagnostics",
+      "path": "50_Skills/Technical/cyberpanel-diagnostics.md",
+      "category": "Technical",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-vps-audit-checklist",
+        "skill-linux-security-hardening",
+        "skill-wordpress-troubleshooting"
+      ],
+      "handoff_to": [
+        "skill-vps-audit-checklist",
+        "skill-linux-security-hardening"
+      ],
+      "routes": [
+        "route-project-resume",
+        "route-project-production",
+        "route-skill"
+      ],
+      "context_cost": "high",
+      "risk_level": "high"
+    },
+    {
+      "skill_id": "skill-database-migrations",
+      "path": "50_Skills/Technical/database-migrations.md",
+      "category": "Technical",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-backend-patterns",
+        "skill-sql-queries",
+        "skill-security-and-hardening"
+      ],
+      "handoff_to": [
+        "skill-pre-mortem"
+      ],
+      "routes": [
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-docker-patterns",
+      "path": "50_Skills/Technical/docker-patterns.md",
+      "category": "Technical",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-backend-patterns",
+        "skill-security-and-hardening",
+        "skill-vps-audit-checklist"
+      ],
+      "handoff_to": [
+        "skill-security-and-hardening"
+      ],
+      "routes": [
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-frontend-patterns",
+      "path": "50_Skills/Technical/frontend-patterns.md",
+      "category": "Technical",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-nextjs-best-practices",
+        "skill-page-cro",
+        "skill-performance-optimization",
+        "skill-test-scenarios"
+      ],
+      "handoff_to": [
+        "skill-performance-optimization",
+        "skill-test-scenarios"
+      ],
+      "routes": [
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-linux-security-hardening",
+      "path": "50_Skills/Technical/linux-security-hardening.md",
+      "category": "Technical",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-vps-audit-checklist",
+        "skill-security-and-hardening",
+        "skill-cyberpanel-diagnostics"
+      ],
+      "handoff_to": [
+        "skill-vps-audit-checklist"
+      ],
+      "routes": [
+        "route-project-production",
+        "route-skill"
+      ],
+      "context_cost": "high",
+      "risk_level": "high"
+    },
+    {
+      "skill_id": "skill-nextjs-best-practices",
+      "path": "50_Skills/Technical/nextjs-best-practices.md",
+      "category": "Technical",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-frontend-patterns",
+        "skill-security-and-hardening",
+        "skill-performance-optimization",
+        "skill-schema-markup"
+      ],
+      "handoff_to": [
+        "skill-security-and-hardening",
+        "skill-performance-optimization"
+      ],
+      "routes": [
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-performance-optimization",
+      "path": "50_Skills/Technical/performance-optimization.md",
+      "category": "Technical",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-frontend-patterns",
+        "skill-backend-patterns",
+        "skill-wordpress-server-optimization",
+        "skill-analytics-tracking"
+      ],
+      "handoff_to": [
+        "skill-ab-test-setup"
+      ],
+      "routes": [
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-security-and-hardening",
+      "path": "50_Skills/Technical/security-and-hardening.md",
+      "category": "Technical",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-backend-patterns",
+        "skill-nextjs-best-practices",
+        "skill-linux-security-hardening",
+        "skill-pre-mortem"
+      ],
+      "handoff_to": [
+        "skill-pre-mortem"
+      ],
+      "routes": [
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    },
+    {
+      "skill_id": "skill-vps-audit-checklist",
+      "path": "50_Skills/Technical/vps-audit-checklist.md",
+      "category": "Technical",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-cyberpanel-diagnostics",
+        "skill-linux-security-hardening",
+        "skill-wordpress-server-optimization",
+        "skill-security-and-hardening"
+      ],
+      "handoff_to": [
+        "skill-cyberpanel-diagnostics",
+        "skill-linux-security-hardening"
+      ],
+      "routes": [
+        "route-project-production",
+        "route-project-resume",
+        "route-skill"
+      ],
+      "context_cost": "high",
+      "risk_level": "high"
+    },
+    {
+      "skill_id": "skill-wordpress-server-optimization",
+      "path": "50_Skills/Technical/wordpress-server-optimization.md",
+      "category": "Technical",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-wordpress-troubleshooting",
+        "skill-performance-optimization",
+        "skill-vps-audit-checklist",
+        "skill-cyberpanel-diagnostics"
+      ],
+      "handoff_to": [
+        "skill-performance-optimization",
+        "skill-vps-audit-checklist"
+      ],
+      "routes": [
+        "route-project-production",
+        "route-project-resume",
+        "route-skill"
+      ],
+      "context_cost": "high",
+      "risk_level": "high"
+    },
+    {
+      "skill_id": "skill-wordpress-troubleshooting",
+      "path": "50_Skills/Technical/wordpress-troubleshooting.md",
+      "category": "Technical",
+      "maturity": "S1_IMPORTED",
+      "related": [
+        "skill-wordpress-server-optimization",
+        "skill-vps-audit-checklist",
+        "skill-cyberpanel-diagnostics"
+      ],
+      "handoff_to": [
+        "skill-wordpress-server-optimization",
+        "skill-vps-audit-checklist"
+      ],
+      "routes": [
+        "route-skill"
+      ],
+      "context_cost": "medium",
+      "risk_level": "medium"
+    }
+  ]
+}

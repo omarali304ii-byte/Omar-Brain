@@ -1,0 +1,34 @@
+{
+  "manifest_version": "1.0",
+  "project_id": "prj-sleepywear",
+  "title": "Sleepywear",
+  "aliases": [
+    "sleepy-wear",
+    "SleepyWear"
+  ],
+  "ambiguous_aliases": [],
+  "status": "active",
+  "project_class": "software",
+  "project_kind": "web",
+  "local_path": "D:\\Marketing 777\\Job\\sleepywear",
+  "repo_url": null,
+  "verification_state": "context-import-needs-repo-check",
+  "authority": "contextual",
+  "known_context": [
+    "Next.js web app",
+    "NestJS API",
+    "PostgreSQL and Prisma",
+    "PWA/admin push work exists in prior project context"
+  ],
+  "exact_next_verification": "Inspect real repo, current remote, container/database state, API port and generated Prisma client.",
+  "canonical_packet_path": null,
+  "packet_status": "manifest-only",
+  "entrypoints": {},
+  "learning": {
+    "runs": "40_Projects/Experience/prj-sleepywear/80_Runs",
+    "evidence": "40_Projects/Experience/prj-sleepywear/70_Evidence",
+    "episodes": "85_Episodes"
+  },
+  "source_boundary": "Imported from known user project context. Not verified against current repository/runtime.",
+  "updated": "2026-07-07"
+}

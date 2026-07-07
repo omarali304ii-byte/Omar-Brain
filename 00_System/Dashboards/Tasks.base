@@ -1,0 +1,40 @@
+filters:
+  and:
+    - file.inFolder("40_Projects")
+    - 'type == "task"'
+properties:
+  status:
+    displayName: Status
+  project:
+    displayName: Project
+  task_id:
+    displayName: Task ID
+  feature_id:
+    displayName: Feature
+  blocked_by:
+    displayName: Blocked By
+views:
+  - type: table
+    name: Ready and Active
+    filters:
+      or:
+        - 'status == "ready"'
+        - 'status == "in-progress"'
+        - 'status == "verifying"'
+    order:
+      - file.name
+      - status
+      - project
+      - task_id
+      - feature_id
+      - blocked_by
+  - type: table
+    name: Blocked
+    filters:
+      and:
+        - 'status == "blocked"'
+    order:
+      - file.name
+      - project
+      - task_id
+      - blocked_by

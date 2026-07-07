@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+import fs from 'node:fs'; import path from 'node:path';
+import {ciPaths,loadRegistry,readJsonl} from './ci-lib.mjs';
+const vault=path.resolve(process.argv[2]||process.cwd()), p=ciPaths(vault), registry=loadRegistry(vault), provenance=readJsonl(p.provenance), provObjects=new Set(provenance.map(x=>x.object_id).filter(Boolean)), ids=new Set((registry.objects||[]).map(o=>o.object_id)), errors=[],warnings=[];
+for(const o of registry.objects||[]){if(!o.object_id||!o.object_type||!o.status||!o.authority||!o.verification_state)errors.push(`object missing required identity/control fields: ${o.object_id||'(no id)'}`);if(o.canonical_path){const abs=path.join(vault,...o.canonical_path.split('/'));if(!fs.existsSync(abs))errors.push(`object ${o.object_id} canonical_path missing: ${o.canonical_path}`)}else if(o.status!=='inbox')warnings.push(`ledger-only object without canonical_path: ${o.object_id}`);if(!provObjects.has(o.object_id)&&o.authority!=='canonical')errors.push(`object has no provenance: ${o.object_id}`);if(o.project_id&&!String(o.project_id).startsWith('prj-'))warnings.push(`object ${o.object_id} has suspicious project_id ${o.project_id}`)}
+console.log(JSON.stringify({objects:(registry.objects||[]).length,errors,warnings},null,2));process.exit(errors.length?1:0);

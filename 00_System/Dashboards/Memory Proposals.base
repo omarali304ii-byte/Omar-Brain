@@ -1,0 +1,24 @@
+filters:
+  and:
+    - 'type == "memory-proposal"'
+properties:
+  status:
+    displayName: Status
+  proposal_id:
+    displayName: Proposal
+  candidate_memory_class:
+    displayName: Memory Class
+  target_note:
+    displayName: Target
+  confidence:
+    displayName: Confidence
+views:
+  - type: table
+    name: Memory Proposals
+    order:
+      - file.name
+      - status
+      - proposal_id
+      - candidate_memory_class
+      - target_note
+      - confidence

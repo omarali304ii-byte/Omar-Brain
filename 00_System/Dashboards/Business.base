@@ -1,0 +1,23 @@
+filters:
+  and:
+    - file.inFolder("30_Business")
+    - not:
+        - 'type == "system"'
+properties:
+  type:
+    displayName: Type
+  status:
+    displayName: Status
+  company:
+    displayName: Company
+  last_reviewed:
+    displayName: Reviewed
+views:
+  - type: table
+    name: Business entities
+    order:
+      - file.name
+      - type
+      - status
+      - company
+      - last_reviewed

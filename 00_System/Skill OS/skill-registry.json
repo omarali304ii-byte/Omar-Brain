@@ -1,0 +1,2597 @@
+{
+  "registry_id": "omar-brain-skill-registry-v2",
+  "version": "2.0",
+  "updated": "2026-07-07",
+  "maturity_standard": "00_System/Skill OS/Skill Maturity Ladder.md",
+  "selection_rule": "resolve route -> choose one primary skill -> add support skills only by explicit graph handoff or validated bundle; default active context max 3",
+  "skills": [
+    {
+      "skill_id": "skill-context-engineering",
+      "name": "Context Engineering",
+      "category": "AI-Work",
+      "path": "50_Skills/AI-Work/context-engineering.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "triggers": [
+        "context engineering",
+        "prp",
+        "product requirements prompt",
+        "ai coding context",
+        "feature request",
+        "generate prp",
+        "execute prp"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Context-Engineering/context-engineering.md",
+      "provenance_mode": "imported-adapted",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-planning-with-files",
+        "skill-create-prd",
+        "skill-test-scenarios",
+        "skill-skill-distillation"
+      ],
+      "handoff_to": [
+        "skill-create-prd",
+        "skill-test-scenarios"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output",
+        "verification result"
+      ]
+    },
+    {
+      "skill_id": "skill-planning-with-files",
+      "name": "Planning with Files",
+      "category": "AI-Work",
+      "path": "50_Skills/AI-Work/planning-with-files.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "triggers": [
+        "complex task",
+        "many tool calls",
+        "multi step project",
+        "long research",
+        "task plan",
+        "findings file",
+        "progress file",
+        "resume after context loss"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Planning/planning-with-files.md",
+      "provenance_mode": "imported-adapted",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-context-engineering",
+        "skill-skill-distillation"
+      ],
+      "handoff_to": [
+        "skill-context-engineering"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output",
+        "verification result"
+      ]
+    },
+    {
+      "skill_id": "skill-skill-distillation",
+      "name": "Skill Distillation",
+      "category": "AI-Work",
+      "path": "50_Skills/AI-Work/skill-distillation.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "triggers": [
+        "turn workflow into skill",
+        "repeated task",
+        "distill skill",
+        "create reusable skill",
+        "learn from project"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/WOM-Custom/agency/skill-distillation.md",
+      "provenance_mode": "imported-adapted",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-planning-with-files",
+        "skill-context-engineering"
+      ],
+      "handoff_to": [],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output",
+        "verification result"
+      ]
+    },
+    {
+      "skill_id": "skill-ab-test-analysis",
+      "name": "A/B Test Analysis",
+      "category": "Analytics",
+      "path": "50_Skills/Analytics/ab-test-analysis.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "analyze ab test",
+        "experiment results",
+        "a/b results",
+        "statistical significance",
+        "split test analysis"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Analytics/ab-test-analysis.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "high",
+      "risk_level": "high",
+      "compatible_routes": [
+        "route-business",
+        "route-project-resume",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-ab-test-setup",
+        "skill-analytics-tracking",
+        "skill-sql-queries"
+      ],
+      "handoff_to": [
+        "skill-product-strategy",
+        "skill-page-cro"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-ab-test-setup",
+      "name": "A/B Test Setup",
+      "category": "Analytics",
+      "path": "50_Skills/Analytics/ab-test-setup.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "ab test setup",
+        "a/b test",
+        "experiment design",
+        "split test",
+        "test hypothesis"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Analytics/ab-test-setup.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "medium",
+      "risk_level": "high",
+      "compatible_routes": [
+        "route-project-resume",
+        "route-business",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-analytics-tracking",
+        "skill-ab-test-analysis",
+        "skill-page-cro",
+        "skill-marketing-psychology"
+      ],
+      "handoff_to": [
+        "skill-ab-test-analysis"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-analytics-tracking",
+      "name": "Analytics Tracking",
+      "category": "Analytics",
+      "path": "50_Skills/Analytics/analytics-tracking.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "analytics tracking",
+        "event tracking",
+        "tracking plan",
+        "ga4 events",
+        "product analytics",
+        "conversion tracking"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Analytics/analytics-tracking.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "medium",
+      "risk_level": "high",
+      "compatible_routes": [
+        "route-project-resume",
+        "route-business",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-ab-test-setup",
+        "skill-ab-test-analysis",
+        "skill-page-cro",
+        "skill-onboarding-cro"
+      ],
+      "handoff_to": [
+        "skill-ab-test-setup",
+        "skill-sql-queries"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-sql-queries",
+      "name": "SQL Queries",
+      "category": "Analytics",
+      "path": "50_Skills/Analytics/sql-queries.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "sql query",
+        "write sql",
+        "postgres query",
+        "analytics sql",
+        "cohort query",
+        "database analysis"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Analytics/sql-queries.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "medium",
+      "risk_level": "high",
+      "compatible_routes": [
+        "route-research",
+        "route-project-resume",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-analytics-tracking",
+        "skill-ab-test-analysis",
+        "skill-backend-patterns",
+        "skill-database-migrations"
+      ],
+      "handoff_to": [
+        "skill-performance-optimization"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-create-prd",
+      "name": "Create PRD",
+      "category": "Execution",
+      "path": "50_Skills/Execution/create-prd.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "triggers": [
+        "create prd",
+        "product requirements document",
+        "feature spec",
+        "requirements document",
+        "product spec"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Execution/create-prd.md",
+      "provenance_mode": "imported-adapted",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-product-strategy",
+        "skill-user-stories",
+        "skill-stakeholder-map",
+        "skill-test-scenarios"
+      ],
+      "handoff_to": [
+        "skill-user-stories",
+        "skill-test-scenarios"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output",
+        "verification result"
+      ]
+    },
+    {
+      "skill_id": "skill-pre-mortem",
+      "name": "Pre-Mortem",
+      "category": "Execution",
+      "path": "50_Skills/Execution/pre-mortem.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "pre mortem",
+        "premortem",
+        "what could go wrong",
+        "launch risk analysis",
+        "stress test plan"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Execution/pre-mortem.md",
+      "provenance_mode": "imported-adapted",
+      "context_cost": "medium",
+      "risk_level": "high",
+      "compatible_routes": [
+        "route-project-production",
+        "route-project-resume",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-launch-strategy",
+        "skill-product-strategy",
+        "skill-create-prd",
+        "skill-security-and-hardening"
+      ],
+      "handoff_to": [
+        "skill-launch-strategy",
+        "skill-security-and-hardening"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-prioritization-frameworks",
+      "name": "Prioritization Frameworks",
+      "category": "Execution",
+      "path": "50_Skills/Execution/prioritization-frameworks.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "prioritize features",
+        "prioritization framework",
+        "rice score",
+        "moscow",
+        "what should we build first",
+        "rank backlog"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Execution/prioritization-frameworks.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-project-new",
+        "route-project-resume",
+        "route-business",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-product-strategy",
+        "skill-prioritize-assumptions",
+        "skill-sprint-plan"
+      ],
+      "handoff_to": [
+        "skill-sprint-plan",
+        "skill-create-prd"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-release-notes",
+      "name": "Release Notes",
+      "category": "Execution",
+      "path": "50_Skills/Execution/release-notes.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "release notes",
+        "changelog",
+        "what shipped",
+        "version notes"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Execution/release-notes.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "low",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-project-resume",
+        "route-project-production",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-launch-strategy",
+        "skill-copy-editing",
+        "skill-test-scenarios"
+      ],
+      "handoff_to": [
+        "skill-launch-strategy",
+        "skill-copy-editing"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-sprint-plan",
+      "name": "Sprint Plan",
+      "category": "Execution",
+      "path": "50_Skills/Execution/sprint-plan.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "sprint plan",
+        "plan sprint",
+        "iteration planning",
+        "sprint backlog"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Execution/sprint-plan.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-project-resume",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-user-stories",
+        "skill-prioritization-frameworks",
+        "skill-pre-mortem"
+      ],
+      "handoff_to": [
+        "skill-test-scenarios"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-stakeholder-map",
+      "name": "Stakeholder Map",
+      "category": "Execution",
+      "path": "50_Skills/Execution/stakeholder-map.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "stakeholder map",
+        "map stakeholders",
+        "decision maker",
+        "project stakeholders",
+        "raci"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Execution/stakeholder-map.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "low",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-project-new",
+        "route-project-resume",
+        "route-business",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-create-prd",
+        "skill-pre-mortem",
+        "skill-sprint-plan"
+      ],
+      "handoff_to": [
+        "skill-create-prd",
+        "skill-pre-mortem"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-test-scenarios",
+      "name": "Test Scenarios",
+      "category": "Execution",
+      "path": "50_Skills/Execution/test-scenarios.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "triggers": [
+        "test scenarios",
+        "qa test cases",
+        "acceptance test",
+        "test plan",
+        "edge cases",
+        "validation scenarios"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Execution/test-scenarios.md",
+      "provenance_mode": "imported-adapted",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-user-stories",
+        "skill-create-prd",
+        "skill-security-and-hardening"
+      ],
+      "handoff_to": [],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output",
+        "verification result"
+      ]
+    },
+    {
+      "skill_id": "skill-user-stories",
+      "name": "User Stories",
+      "category": "Execution",
+      "path": "50_Skills/Execution/user-stories.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "user stories",
+        "write user story",
+        "acceptance criteria",
+        "feature stories"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Execution/user-stories.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "low",
+      "risk_level": "low",
+      "compatible_routes": [
+        "route-project-new",
+        "route-project-resume",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-create-prd",
+        "skill-test-scenarios",
+        "skill-sprint-plan"
+      ],
+      "handoff_to": [
+        "skill-test-scenarios",
+        "skill-sprint-plan"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-churn-prevention",
+      "name": "Churn Prevention",
+      "category": "Growth",
+      "path": "50_Skills/Growth/churn-prevention.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "churn prevention",
+        "reduce churn",
+        "retention",
+        "customers cancelling",
+        "save offer",
+        "win back"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Growth/churn-prevention.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "high",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-business",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-customer-research",
+        "skill-sentiment-analysis",
+        "skill-onboarding-cro",
+        "skill-email-sequence",
+        "skill-analytics-tracking"
+      ],
+      "handoff_to": [
+        "skill-ab-test-setup",
+        "skill-email-sequence"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-free-tool-strategy",
+      "name": "Free Tool Strategy",
+      "category": "Growth",
+      "path": "50_Skills/Growth/free-tool-strategy.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "free tool strategy",
+        "lead magnet tool",
+        "free calculator",
+        "free generator",
+        "engineering as marketing"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Growth/free-tool-strategy.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "high",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-business",
+        "route-project-new",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-customer-research",
+        "skill-market-sizing",
+        "skill-launch-strategy",
+        "skill-analytics-tracking"
+      ],
+      "handoff_to": [
+        "skill-create-prd",
+        "skill-launch-strategy"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-referral-program",
+      "name": "Referral Program",
+      "category": "Growth",
+      "path": "50_Skills/Growth/referral-program.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "referral program",
+        "refer a friend",
+        "affiliate referral",
+        "word of mouth loop",
+        "customer referral"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Growth/referral-program.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-business",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-churn-prevention",
+        "skill-analytics-tracking",
+        "skill-ab-test-setup",
+        "skill-email-sequence"
+      ],
+      "handoff_to": [
+        "skill-ab-test-setup",
+        "skill-analytics-tracking"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-revops",
+      "name": "Revenue Operations",
+      "category": "Growth",
+      "path": "50_Skills/Growth/revops.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "revops",
+        "revenue operations",
+        "lead lifecycle",
+        "sales pipeline process",
+        "marketing sales handoff",
+        "crm process"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Growth/revops.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "high",
+      "risk_level": "high",
+      "compatible_routes": [
+        "route-business",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-sales-enablement",
+        "skill-analytics-tracking",
+        "skill-customer-research",
+        "skill-churn-prevention"
+      ],
+      "handoff_to": [
+        "skill-sales-enablement",
+        "skill-analytics-tracking"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-sales-enablement",
+      "name": "Sales Enablement",
+      "category": "Growth",
+      "path": "50_Skills/Growth/sales-enablement.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "sales enablement",
+        "sales playbook",
+        "objection handling",
+        "battlecard",
+        "sales deck",
+        "qualify leads"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Growth/sales-enablement.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-business",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-customer-research",
+        "skill-competitor-analysis",
+        "skill-value-proposition",
+        "skill-revops",
+        "skill-cold-email"
+      ],
+      "handoff_to": [
+        "skill-copywriting",
+        "skill-revops"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-cold-email",
+      "name": "Cold Email",
+      "category": "Marketing",
+      "path": "50_Skills/Marketing/cold-email.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "cold email",
+        "outbound email",
+        "sales outreach",
+        "prospecting email",
+        "cold outreach",
+        "email prospect"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Marketing/cold-email.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "low",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-business",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-customer-research",
+        "skill-value-proposition",
+        "skill-copywriting",
+        "skill-sales-enablement"
+      ],
+      "handoff_to": [
+        "skill-email-sequence",
+        "skill-sales-enablement"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-copy-editing",
+      "name": "Copy Editing",
+      "category": "Marketing",
+      "path": "50_Skills/Marketing/copy-editing.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "edit this copy",
+        "review my copy",
+        "proofread marketing copy",
+        "polish this",
+        "too wordy",
+        "tighten copy",
+        "content audit",
+        "refresh this page"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Marketing/copy-editing.md",
+      "provenance_mode": "imported-adapted",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-business",
+        "route-project-resume",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-copywriting",
+        "skill-page-cro",
+        "skill-product-marketing-context"
+      ],
+      "handoff_to": [
+        "skill-copywriting",
+        "skill-page-cro"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-copywriting",
+      "name": "Copywriting",
+      "category": "Marketing",
+      "path": "50_Skills/Marketing/copywriting.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "write website copy",
+        "marketing copy",
+        "homepage copy",
+        "landing page copy",
+        "headline",
+        "cta copy",
+        "hero section",
+        "product page copy",
+        "rewrite page copy"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Marketing/copywriting.md",
+      "provenance_mode": "imported-adapted",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-business",
+        "route-project-resume",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-copy-editing",
+        "skill-page-cro",
+        "skill-customer-research",
+        "skill-value-proposition"
+      ],
+      "handoff_to": [
+        "skill-copy-editing",
+        "skill-page-cro",
+        "skill-ab-test-setup"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-email-sequence",
+      "name": "Email Sequence",
+      "category": "Marketing",
+      "path": "50_Skills/Marketing/email-sequence.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "email sequence",
+        "drip campaign",
+        "welcome sequence",
+        "nurture sequence",
+        "onboarding emails",
+        "re-engagement emails",
+        "lifecycle email",
+        "email automation"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Marketing/email-sequence.md",
+      "provenance_mode": "imported-adapted",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-business",
+        "route-project-resume",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-copywriting",
+        "skill-analytics-tracking",
+        "skill-onboarding-cro",
+        "skill-churn-prevention"
+      ],
+      "handoff_to": [
+        "skill-copy-editing",
+        "skill-analytics-tracking",
+        "skill-ab-test-setup"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-launch-strategy",
+      "name": "Launch Strategy",
+      "category": "Marketing",
+      "path": "50_Skills/Marketing/launch-strategy.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "launch strategy",
+        "product launch",
+        "feature launch",
+        "beta launch",
+        "early access",
+        "waitlist",
+        "product hunt",
+        "gtm launch",
+        "release announcement"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Marketing/launch-strategy.md",
+      "provenance_mode": "imported-adapted",
+      "context_cost": "high",
+      "risk_level": "high",
+      "compatible_routes": [
+        "route-business",
+        "route-project-production",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-product-marketing-context",
+        "skill-copywriting",
+        "skill-email-sequence",
+        "skill-social-content",
+        "skill-analytics-tracking"
+      ],
+      "handoff_to": [
+        "skill-pre-mortem",
+        "skill-analytics-tracking",
+        "skill-churn-prevention"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-marketing-psychology",
+      "name": "Marketing Psychology",
+      "category": "Marketing",
+      "path": "50_Skills/Marketing/marketing-psychology.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "marketing psychology",
+        "behavioral psychology",
+        "persuasion",
+        "cognitive bias",
+        "social proof",
+        "scarcity",
+        "framing"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Marketing/marketing-psychology.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "low",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-business",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-page-cro",
+        "skill-copywriting",
+        "skill-pricing-strategy",
+        "skill-ab-test-setup"
+      ],
+      "handoff_to": [
+        "skill-ab-test-setup",
+        "skill-page-cro"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-onboarding-cro",
+      "name": "Onboarding CRO",
+      "category": "Marketing",
+      "path": "50_Skills/Marketing/onboarding-cro.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "onboarding cro",
+        "user activation",
+        "product onboarding",
+        "aha moment",
+        "activation rate",
+        "new user flow"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Marketing/onboarding-cro.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-project-resume",
+        "route-business",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-signup-flow-cro",
+        "skill-email-sequence",
+        "skill-analytics-tracking",
+        "skill-churn-prevention"
+      ],
+      "handoff_to": [
+        "skill-email-sequence",
+        "skill-ab-test-setup",
+        "skill-churn-prevention"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-page-cro",
+      "name": "Page CRO",
+      "category": "Marketing",
+      "path": "50_Skills/Marketing/page-cro.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "triggers": [
+        "cro",
+        "conversion rate optimization",
+        "landing page not converting",
+        "improve conversions",
+        "bounce rate",
+        "homepage feedback",
+        "pricing page conversion"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Marketing/page-cro.md",
+      "provenance_mode": "imported-adapted",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-copywriting",
+        "skill-copy-editing",
+        "skill-analytics-tracking",
+        "skill-ab-test-setup",
+        "skill-marketing-psychology"
+      ],
+      "handoff_to": [
+        "skill-copywriting",
+        "skill-ab-test-setup"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output",
+        "verification result"
+      ]
+    },
+    {
+      "skill_id": "skill-product-marketing-context",
+      "name": "Product Marketing Context",
+      "category": "Marketing",
+      "path": "50_Skills/Marketing/product-marketing-context.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "product marketing context",
+        "marketing context",
+        "positioning context",
+        "brand context",
+        "shared marketing context"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Marketing/product-marketing-context.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-business",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-customer-research",
+        "skill-value-proposition",
+        "skill-product-strategy",
+        "skill-copywriting"
+      ],
+      "handoff_to": [
+        "skill-copywriting",
+        "skill-page-cro",
+        "skill-launch-strategy",
+        "skill-email-sequence"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-seo-article-writing",
+      "name": "SEO Article Writing",
+      "category": "Marketing",
+      "path": "50_Skills/Marketing/seo-article-writing.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "triggers": [
+        "seo article",
+        "yoast ready article",
+        "long form seo",
+        "write article for keyword",
+        "seo content"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/WOM-Custom/agency/seo-article-writing.md",
+      "provenance_mode": "imported-adapted",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-seo-audit",
+        "skill-copywriting",
+        "skill-site-architecture"
+      ],
+      "handoff_to": [
+        "skill-copy-editing"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output",
+        "verification result"
+      ]
+    },
+    {
+      "skill_id": "skill-signup-flow-cro",
+      "name": "Signup Flow CRO",
+      "category": "Marketing",
+      "path": "50_Skills/Marketing/signup-flow-cro.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "signup cro",
+        "registration flow",
+        "signup conversion",
+        "registration friction",
+        "account creation flow"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Marketing/signup-flow-cro.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-project-resume",
+        "route-business",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-page-cro",
+        "skill-analytics-tracking",
+        "skill-ab-test-setup",
+        "skill-onboarding-cro"
+      ],
+      "handoff_to": [
+        "skill-onboarding-cro",
+        "skill-ab-test-setup"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-social-content",
+      "name": "Social Content",
+      "category": "Marketing",
+      "path": "50_Skills/Marketing/social-content.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "social content",
+        "social media post",
+        "linkedin post",
+        "instagram content",
+        "content calendar",
+        "social strategy",
+        "social post"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Marketing/social-content.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "low",
+      "risk_level": "low",
+      "compatible_routes": [
+        "route-business",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-product-marketing-context",
+        "skill-copywriting",
+        "skill-launch-strategy",
+        "skill-analytics-tracking"
+      ],
+      "handoff_to": [
+        "skill-copy-editing",
+        "skill-ab-test-setup"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-competitor-analysis",
+      "name": "Competitor Analysis",
+      "category": "Research",
+      "path": "50_Skills/Research/competitor-analysis.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "triggers": [
+        "competitor analysis",
+        "competitive landscape",
+        "competitive research",
+        "differentiation opportunity",
+        "battlecard",
+        "compare competitors"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Research/competitor-analysis.md",
+      "provenance_mode": "imported-adapted",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-customer-research",
+        "skill-market-sizing",
+        "skill-product-strategy",
+        "skill-sales-enablement"
+      ],
+      "handoff_to": [
+        "skill-product-strategy"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output",
+        "verification result"
+      ]
+    },
+    {
+      "skill_id": "skill-customer-research",
+      "name": "Customer Research",
+      "category": "Research",
+      "path": "50_Skills/Research/customer-research.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "triggers": [
+        "customer research",
+        "voice of customer",
+        "voc",
+        "customer interview",
+        "survey analysis",
+        "review mining",
+        "reddit research",
+        "jtbd",
+        "why customers churn",
+        "persona research"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Research/customer-research.md",
+      "provenance_mode": "imported-adapted",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-user-personas",
+        "skill-interview-script",
+        "skill-sentiment-analysis",
+        "skill-product-marketing-context"
+      ],
+      "handoff_to": [
+        "skill-value-proposition",
+        "skill-product-strategy"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output",
+        "verification result"
+      ]
+    },
+    {
+      "skill_id": "skill-user-personas",
+      "name": "Evidence-Based User Personas",
+      "category": "Research",
+      "path": "50_Skills/Research/user-personas.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "user persona",
+        "customer persona",
+        "buyer persona",
+        "persona research",
+        "build personas"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Research/user-personas.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-research",
+        "route-business",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-customer-research",
+        "skill-sentiment-analysis",
+        "skill-product-marketing-context",
+        "skill-value-proposition"
+      ],
+      "handoff_to": [
+        "skill-value-proposition",
+        "skill-product-strategy"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-interview-script",
+      "name": "Interview Script",
+      "category": "Research",
+      "path": "50_Skills/Research/interview-script.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "interview script",
+        "customer interview questions",
+        "user interview",
+        "research interview"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Research/interview-script.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "low",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-research",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-customer-research",
+        "skill-summarize-interview",
+        "skill-prioritize-assumptions"
+      ],
+      "handoff_to": [
+        "skill-summarize-interview",
+        "skill-customer-research"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-market-sizing",
+      "name": "Market Sizing",
+      "category": "Research",
+      "path": "50_Skills/Research/market-sizing.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "market sizing",
+        "tam sam som",
+        "addressable market",
+        "market opportunity",
+        "size this market"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Research/market-sizing.md",
+      "provenance_mode": "imported-adapted",
+      "context_cost": "high",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-research",
+        "route-business",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-customer-research",
+        "skill-competitor-analysis",
+        "skill-product-strategy",
+        "skill-pricing-strategy"
+      ],
+      "handoff_to": [
+        "skill-product-strategy",
+        "skill-prioritize-assumptions"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-opportunity-solution-tree",
+      "name": "Opportunity Solution Tree",
+      "category": "Research",
+      "path": "50_Skills/Research/opportunity-solution-tree.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "opportunity solution tree",
+        "opportunity tree",
+        "product discovery tree",
+        "map opportunities"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Research/opportunity-solution-tree.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-research",
+        "route-project-new",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-customer-research",
+        "skill-prioritize-assumptions",
+        "skill-product-strategy",
+        "skill-create-prd"
+      ],
+      "handoff_to": [
+        "skill-prioritize-assumptions",
+        "skill-create-prd"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-prioritize-assumptions",
+      "name": "Prioritize Assumptions",
+      "category": "Research",
+      "path": "50_Skills/Research/prioritize-assumptions.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "prioritize assumptions",
+        "assumption mapping",
+        "riskiest assumption",
+        "test assumptions",
+        "hypothesis risk"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Research/prioritize-assumptions.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-research",
+        "route-project-new",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-product-strategy",
+        "skill-opportunity-solution-tree",
+        "skill-market-sizing",
+        "skill-pre-mortem"
+      ],
+      "handoff_to": [
+        "skill-ab-test-setup",
+        "skill-customer-research"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-sentiment-analysis",
+      "name": "Sentiment Analysis",
+      "category": "Research",
+      "path": "50_Skills/Research/sentiment-analysis.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "sentiment analysis",
+        "analyze reviews",
+        "customer sentiment",
+        "feedback sentiment",
+        "comment sentiment"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Research/sentiment-analysis.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-research",
+        "route-business",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-customer-research",
+        "skill-user-personas",
+        "skill-competitor-analysis"
+      ],
+      "handoff_to": [
+        "skill-customer-research",
+        "skill-churn-prevention"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-source-backed-client-discovery",
+      "name": "Source-Backed Client Discovery",
+      "category": "Research",
+      "path": "50_Skills/Research/source-backed-client-discovery.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "triggers": [
+        "discover clients from files",
+        "extract client names",
+        "import folders",
+        "client discovery",
+        "chat export extraction",
+        "source backed extraction"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/WOM-Custom/agency/source-backed-client-discovery.md",
+      "provenance_mode": "imported-adapted",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-customer-research",
+        "skill-product-marketing-context"
+      ],
+      "handoff_to": [],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output",
+        "verification result"
+      ]
+    },
+    {
+      "skill_id": "skill-summarize-interview",
+      "name": "Summarize Interview",
+      "category": "Research",
+      "path": "50_Skills/Research/summarize-interview.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "summarize interview",
+        "analyze interview transcript",
+        "customer interview summary",
+        "user interview synthesis"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Research/summarize-interview.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-research",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-interview-script",
+        "skill-customer-research",
+        "skill-user-personas"
+      ],
+      "handoff_to": [
+        "skill-customer-research"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-programmatic-seo",
+      "name": "Programmatic SEO",
+      "category": "SEO",
+      "path": "50_Skills/SEO/programmatic-seo.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "programmatic seo",
+        "seo at scale",
+        "template pages",
+        "location pages",
+        "directory seo",
+        "generate seo pages"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/SEO/programmatic-seo.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "high",
+      "risk_level": "high",
+      "compatible_routes": [
+        "route-project-new",
+        "route-project-resume",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-site-architecture",
+        "skill-seo-audit",
+        "skill-schema-markup",
+        "skill-backend-patterns"
+      ],
+      "handoff_to": [
+        "skill-site-architecture",
+        "skill-seo-audit"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-schema-markup",
+      "name": "Schema Markup",
+      "category": "SEO",
+      "path": "50_Skills/SEO/schema-markup.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "schema markup",
+        "structured data",
+        "json ld",
+        "rich results",
+        "schema.org"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/SEO/schema-markup.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "low",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-project-resume",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-seo-audit",
+        "skill-site-architecture",
+        "skill-nextjs-best-practices"
+      ],
+      "handoff_to": [
+        "skill-seo-audit"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-seo-audit",
+      "name": "SEO Audit",
+      "category": "SEO",
+      "path": "50_Skills/SEO/seo-audit.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "seo audit",
+        "technical seo",
+        "site seo check",
+        "search visibility audit",
+        "why not ranking"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/SEO/seo-audit.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "high",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-project-resume",
+        "route-business",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-site-architecture",
+        "skill-schema-markup",
+        "skill-programmatic-seo",
+        "skill-performance-optimization",
+        "skill-seo-article-writing"
+      ],
+      "handoff_to": [
+        "skill-site-architecture",
+        "skill-schema-markup",
+        "skill-programmatic-seo"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-site-architecture",
+      "name": "SEO Site Architecture",
+      "category": "SEO",
+      "path": "50_Skills/SEO/site-architecture.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "site architecture",
+        "seo architecture",
+        "url structure",
+        "information architecture",
+        "internal linking strategy"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/SEO/site-architecture.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "high",
+      "risk_level": "high",
+      "compatible_routes": [
+        "route-project-new",
+        "route-project-resume",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-seo-audit",
+        "skill-programmatic-seo",
+        "skill-schema-markup"
+      ],
+      "handoff_to": [
+        "skill-programmatic-seo",
+        "skill-schema-markup"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-pricing-strategy",
+      "name": "Pricing Strategy",
+      "category": "Strategy",
+      "path": "50_Skills/Strategy/pricing-strategy.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "triggers": [
+        "pricing",
+        "pricing tiers",
+        "freemium",
+        "free trial",
+        "packaging",
+        "price increase",
+        "value metric",
+        "willingness to pay",
+        "monetization",
+        "how much should i charge"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Marketing/pricing-strategy.md",
+      "provenance_mode": "imported-adapted",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-market-sizing",
+        "skill-value-proposition",
+        "skill-marketing-psychology",
+        "skill-ab-test-setup"
+      ],
+      "handoff_to": [
+        "skill-ab-test-setup"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output",
+        "verification result"
+      ]
+    },
+    {
+      "skill_id": "skill-product-strategy",
+      "name": "Product Strategy",
+      "category": "Strategy",
+      "path": "50_Skills/Strategy/product-strategy.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "triggers": [
+        "product strategy",
+        "strategy canvas",
+        "product direction",
+        "strategic plan",
+        "north star metric",
+        "defensibility"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Strategy/product-strategy.md",
+      "provenance_mode": "imported-adapted",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-market-sizing",
+        "skill-customer-research",
+        "skill-value-proposition",
+        "skill-prioritize-assumptions"
+      ],
+      "handoff_to": [
+        "skill-create-prd"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output",
+        "verification result"
+      ]
+    },
+    {
+      "skill_id": "skill-value-proposition",
+      "name": "Value Proposition",
+      "category": "Strategy",
+      "path": "50_Skills/Strategy/value-proposition.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "triggers": [
+        "value proposition",
+        "value prop",
+        "customer value",
+        "jtbd value",
+        "why choose us",
+        "positioning statement"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Strategy/value-proposition.md",
+      "provenance_mode": "imported-adapted",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-customer-research",
+        "skill-product-strategy",
+        "skill-copywriting",
+        "skill-sales-enablement"
+      ],
+      "handoff_to": [
+        "skill-copywriting"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output",
+        "verification result"
+      ]
+    },
+    {
+      "skill_id": "skill-backend-patterns",
+      "name": "Backend Patterns",
+      "category": "Technical",
+      "path": "50_Skills/Technical/backend-patterns.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "triggers": [
+        "backend architecture",
+        "api design",
+        "repository pattern",
+        "service layer",
+        "middleware",
+        "n+1",
+        "caching",
+        "background job",
+        "rest api"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Backend-Patterns/SKILL.md",
+      "provenance_mode": "imported-adapted",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-security-and-hardening",
+        "skill-database-migrations",
+        "skill-docker-patterns",
+        "skill-sql-queries"
+      ],
+      "handoff_to": [
+        "skill-security-and-hardening",
+        "skill-database-migrations"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output",
+        "verification result"
+      ]
+    },
+    {
+      "skill_id": "skill-cyberpanel-diagnostics",
+      "name": "CyberPanel Diagnostics",
+      "category": "Technical",
+      "path": "50_Skills/Technical/cyberpanel-diagnostics.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "cyberpanel problem",
+        "cyberpanel diagnostics",
+        "openlitespeed issue",
+        "website down cyberpanel",
+        "cyberpanel ssl"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/WOM-Custom/agency/cyberpanel-diagnostics.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "high",
+      "risk_level": "high",
+      "compatible_routes": [
+        "route-project-resume",
+        "route-project-production",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-vps-audit-checklist",
+        "skill-linux-security-hardening",
+        "skill-wordpress-troubleshooting"
+      ],
+      "handoff_to": [
+        "skill-vps-audit-checklist",
+        "skill-linux-security-hardening"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-database-migrations",
+      "name": "Database Migrations",
+      "category": "Technical",
+      "path": "50_Skills/Technical/database-migrations.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "triggers": [
+        "database migration",
+        "schema change",
+        "prisma migrate",
+        "drizzle migrate",
+        "zero downtime migration",
+        "backfill",
+        "add column"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Database-Migrations/SKILL.md",
+      "provenance_mode": "imported-adapted",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-backend-patterns",
+        "skill-sql-queries",
+        "skill-security-and-hardening"
+      ],
+      "handoff_to": [
+        "skill-pre-mortem"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output",
+        "verification result"
+      ]
+    },
+    {
+      "skill_id": "skill-docker-patterns",
+      "name": "Docker Patterns",
+      "category": "Technical",
+      "path": "50_Skills/Technical/docker-patterns.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "triggers": [
+        "docker",
+        "docker compose",
+        "dockerfile",
+        "container networking",
+        "volume",
+        "multi stage build",
+        "containerize"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Docker-Patterns/SKILL.md",
+      "provenance_mode": "imported-adapted",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-backend-patterns",
+        "skill-security-and-hardening",
+        "skill-vps-audit-checklist"
+      ],
+      "handoff_to": [
+        "skill-security-and-hardening"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output",
+        "verification result"
+      ]
+    },
+    {
+      "skill_id": "skill-frontend-patterns",
+      "name": "Frontend Patterns",
+      "category": "Technical",
+      "path": "50_Skills/Technical/frontend-patterns.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "triggers": [
+        "react component",
+        "frontend architecture",
+        "state management",
+        "custom hook",
+        "responsive ui",
+        "form validation",
+        "component composition",
+        "react performance"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Frontend-Patterns/SKILL.md",
+      "provenance_mode": "imported-adapted",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-nextjs-best-practices",
+        "skill-page-cro",
+        "skill-performance-optimization",
+        "skill-test-scenarios"
+      ],
+      "handoff_to": [
+        "skill-performance-optimization",
+        "skill-test-scenarios"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output",
+        "verification result"
+      ]
+    },
+    {
+      "skill_id": "skill-linux-security-hardening",
+      "name": "Linux Security Hardening",
+      "category": "Technical",
+      "path": "50_Skills/Technical/linux-security-hardening.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "linux hardening",
+        "server security",
+        "ssh hardening",
+        "firewall hardening",
+        "fail2ban",
+        "secure vps"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/WOM-Custom/agency/linux-security-hardening.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "high",
+      "risk_level": "high",
+      "compatible_routes": [
+        "route-project-production",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-vps-audit-checklist",
+        "skill-security-and-hardening",
+        "skill-cyberpanel-diagnostics"
+      ],
+      "handoff_to": [
+        "skill-vps-audit-checklist"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-nextjs-best-practices",
+      "name": "Next.js Best Practices",
+      "category": "Technical",
+      "path": "50_Skills/Technical/nextjs-best-practices.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "triggers": [
+        "next.js",
+        "nextjs",
+        "app router",
+        "server component",
+        "rsc",
+        "route handler",
+        "hydration",
+        "suspense",
+        "metadata",
+        "self hosting next"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/NextJS-Best-Practices/SKILL.md",
+      "provenance_mode": "imported-adapted",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-frontend-patterns",
+        "skill-security-and-hardening",
+        "skill-performance-optimization",
+        "skill-schema-markup"
+      ],
+      "handoff_to": [
+        "skill-security-and-hardening",
+        "skill-performance-optimization"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output",
+        "verification result"
+      ]
+    },
+    {
+      "skill_id": "skill-performance-optimization",
+      "name": "Performance Optimization",
+      "category": "Technical",
+      "path": "50_Skills/Technical/performance-optimization.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "triggers": [
+        "performance",
+        "slow app",
+        "core web vitals",
+        "lcp",
+        "inp",
+        "cls",
+        "bundle size",
+        "n+1",
+        "latency",
+        "profiling"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Performance-Optimization/SKILL.md",
+      "provenance_mode": "imported-adapted",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-frontend-patterns",
+        "skill-backend-patterns",
+        "skill-wordpress-server-optimization",
+        "skill-analytics-tracking"
+      ],
+      "handoff_to": [
+        "skill-ab-test-setup"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output",
+        "verification result"
+      ]
+    },
+    {
+      "skill_id": "skill-security-and-hardening",
+      "name": "Security and Hardening",
+      "category": "Technical",
+      "path": "50_Skills/Technical/security-and-hardening.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "triggers": [
+        "security",
+        "hardening",
+        "authentication",
+        "authorization",
+        "input validation",
+        "file upload",
+        "webhook",
+        "pii",
+        "secret",
+        "rate limit",
+        "owasp"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/Security-And-Hardening/SKILL.md",
+      "provenance_mode": "imported-adapted",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-backend-patterns",
+        "skill-nextjs-best-practices",
+        "skill-linux-security-hardening",
+        "skill-pre-mortem"
+      ],
+      "handoff_to": [
+        "skill-pre-mortem"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output",
+        "verification result"
+      ]
+    },
+    {
+      "skill_id": "skill-vps-audit-checklist",
+      "name": "VPS Audit Checklist",
+      "category": "Technical",
+      "path": "50_Skills/Technical/vps-audit-checklist.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "vps audit",
+        "server audit",
+        "cyberpanel vps audit",
+        "openlitespeed server check",
+        "server health audit"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/WOM-Custom/agency/vps-audit-checklist.md",
+      "provenance_mode": "imported-adapted",
+      "context_cost": "high",
+      "risk_level": "high",
+      "compatible_routes": [
+        "route-project-production",
+        "route-project-resume",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-cyberpanel-diagnostics",
+        "skill-linux-security-hardening",
+        "skill-wordpress-server-optimization",
+        "skill-security-and-hardening"
+      ],
+      "handoff_to": [
+        "skill-cyberpanel-diagnostics",
+        "skill-linux-security-hardening"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-wordpress-server-optimization",
+      "name": "WordPress Server Optimization",
+      "category": "Technical",
+      "path": "50_Skills/Technical/wordpress-server-optimization.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "triggers": [
+        "wordpress server optimization",
+        "slow wordpress server",
+        "optimize wordpress hosting",
+        "openlitespeed wordpress performance",
+        "php workers wordpress"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/WOM-Custom/agency/wordpress-server-optimization.md",
+      "provenance_mode": "catalog-derived-adapted",
+      "context_cost": "high",
+      "risk_level": "high",
+      "compatible_routes": [
+        "route-project-production",
+        "route-project-resume",
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-wordpress-troubleshooting",
+        "skill-performance-optimization",
+        "skill-vps-audit-checklist",
+        "skill-cyberpanel-diagnostics"
+      ],
+      "handoff_to": [
+        "skill-performance-optimization",
+        "skill-vps-audit-checklist"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output matching skill purpose",
+        "quality-gate result",
+        "failure/limitation notes when present"
+      ]
+    },
+    {
+      "skill_id": "skill-wordpress-troubleshooting",
+      "name": "WordPress Troubleshooting",
+      "category": "Technical",
+      "path": "50_Skills/Technical/wordpress-troubleshooting.md",
+      "maturity": "S1_IMPORTED",
+      "status": "active",
+      "triggers": [
+        "wordpress problem",
+        "woocommerce problem",
+        "elementor problem",
+        "plugin conflict",
+        "theme conflict",
+        "wordpress hosting",
+        "wp error"
+      ],
+      "source_repo": "omarali304ii-byte/My-Brain",
+      "source_path": "WOM/11 Skills/WOM-Custom/agency/wordpress-troubleshooting.md",
+      "provenance_mode": "imported-adapted",
+      "version": "1.0.0",
+      "last_reviewed": "2026-07-07",
+      "context_cost": "medium",
+      "risk_level": "medium",
+      "compatible_routes": [
+        "route-skill"
+      ],
+      "related_skills": [
+        "skill-wordpress-server-optimization",
+        "skill-vps-audit-checklist",
+        "skill-cyberpanel-diagnostics"
+      ],
+      "handoff_to": [
+        "skill-wordpress-server-optimization",
+        "skill-vps-audit-checklist"
+      ],
+      "evidence_requirements": [
+        "linked project or episode",
+        "observable output",
+        "verification result"
+      ]
+    }
+  ],
+  "development_rule": "new skills enter candidate queue first; active registry insertion requires deduplication, provenance, contract, and review",
+  "graph_standard": "00_System/Skill OS/Skill Graph Standard.md",
+  "bundle_registry": "00_System/Skill OS/skill-bundles.json",
+  "candidate_registry": "00_System/Skill OS/skill-candidates.json"
+}

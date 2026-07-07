@@ -1,0 +1,26 @@
+filters:
+  and:
+    - 'type == "idea"'
+properties:
+  status:
+    displayName: Status
+  domains:
+    displayName: Domains
+  topics:
+    displayName: Topics
+  last_reviewed:
+    displayName: Reviewed
+views:
+  - type: table
+    name: Incubator
+    filters:
+      or:
+        - 'status == "candidate"'
+        - 'status == "validating"'
+        - 'status == "validated"'
+    order:
+      - file.name
+      - status
+      - domains
+      - topics
+      - last_reviewed

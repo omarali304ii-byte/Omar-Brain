@@ -1,0 +1,71 @@
+{
+  "runtime_id": "omar-brain-runtime-v2",
+  "version": "2.0",
+  "updated": "2026-07-07",
+  "canonical_store": "obsidian-vault",
+  "derived_stores": [
+    "document-manifest",
+    "lexical-index",
+    "vector-index",
+    "entity-graph",
+    "trace-store"
+  ],
+  "memory_classes": [
+    "semantic",
+    "episodic",
+    "procedural"
+  ],
+  "orchestration": {
+    "default": "supervisor-led",
+    "fewest_agents": true,
+    "single_durable_writer": "memory-curator"
+  },
+  "run_state": {
+    "checkpoint_required": true,
+    "resume_supported": true,
+    "append_only_episode": true
+  },
+  "retrieval_profile": "retrieval-hybrid-v1",
+  "write_pipeline": [
+    "ingest",
+    "identity-resolution",
+    "project-resolution",
+    "authority",
+    "dedupe",
+    "contradiction",
+    "transaction",
+    "provenance",
+    "event",
+    "impact",
+    "experience-review",
+    "reindex",
+    "evaluate"
+  ],
+  "dynamic_events": [
+    "information.duplicate_detected",
+    "information.ingested",
+    "memory.committed",
+    "memory.proposed",
+    "retrieval.eval.failed",
+    "run.completed",
+    "run.failed",
+    "transaction.committed",
+    "vault.note.changed"
+  ],
+  "protected_policies": [
+    "Brain Constitution",
+    "Memory Single-Writer and Conflict Protocol",
+    "Memory Privacy and Local-First Policy",
+    "Agent Risk and Approval Matrix"
+  ],
+  "connected_intelligence": {
+    "object_identity": "00_System/Connected Intelligence OS/object-registry.json",
+    "typed_edges": "00_System/Connected Intelligence OS/edge-ledger.jsonl",
+    "events": "00_System/Connected Intelligence OS/event-ledger.jsonl",
+    "provenance": "00_System/Connected Intelligence OS/provenance-ledger.jsonl",
+    "transactions": "00_System/Connected Intelligence OS/transaction-ledger.jsonl",
+    "impact_queue": "00_System/Connected Intelligence OS/impact-queue.json",
+    "learning_candidates": "00_System/Connected Intelligence OS/learning-candidates.json",
+    "project_manifests": "40_Projects/Manifests"
+  }
+}
