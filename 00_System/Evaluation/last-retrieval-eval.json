@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-07T20:27:28.254Z",
+  "generated_at": "2026-07-07T21:23:04.147Z",
   "dataset_id": "brain-retrieval-smoke-v5",
-  "cases": 28,
+  "cases": 30,
   "hit_at_k": 1,
   "results": [
     {
@@ -108,8 +108,8 @@
         "00_System/Dynamic Brain/Brain Health Score.md",
         "00_System/Evaluation/Evaluation Operating System.md",
         "00_System/Dynamic Brain/Omar Brain v8 Skill Graph Upgrade Report.md",
-        "START HERE.md",
-        "00_System/Dynamic Brain/Omar Brain v7 Skills Validation Report.md"
+        "00_System/Dynamic Brain/Omar Brain v7 Skills Validation Report.md",
+        "START HERE.md"
       ]
     },
     {
@@ -136,9 +136,9 @@
       ],
       "retrieved": [
         "00_System/Operating Map.md",
-        "00_System/Brain Constitution.md",
+        "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
         "00_System/Dynamic Brain/Omar Brain v5 Upgrade Report.md",
-        "START HERE.md",
+        "00_System/Brain Constitution.md",
         "00_System/Dynamic Brain/Omar Brain v6 Validation Report.md"
       ]
     },
@@ -153,8 +153,8 @@
         "00_System/Governance/No Silent Overwrite Policy.md",
         "00_System/Memory OS/Memory Single-Writer and Conflict Protocol.md",
         "00_System/Governance/Truth Hierarchy and Conflict Policy.md",
-        "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-production-gate-audit-source-note-32fdb1ac.md",
-        "00_System/Source and Trust Policy.md"
+        "30_Business/Organizations/OVX Smart Connected AI Source 2026-07-07.md",
+        "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-production-gate-audit-source-note-32fdb1ac.md"
       ]
     },
     {
@@ -168,8 +168,8 @@
         "00_System/Knowledge Graph/Source-Backed Knowledge Protocol.md",
         "60_Knowledge/Research/Obsidian Multi-Agent Persistent AI Brain - Deep Research.md",
         "START HERE.md",
-        "00_System/Source and Trust Policy.md",
-        "00_System/Web Development Expert System/Web Rule Registry.md"
+        "30_Business/Organizations/OVX Smart Connected AI Source 2026-07-07.md",
+        "00_System/Source and Trust Policy.md"
       ]
     },
     {
@@ -378,8 +378,8 @@
       "retrieved": [
         "50_Skills/SEO/seo-audit.md",
         "00_System/Web Development Expert System/09_SEO/Technical SEO Standard.md",
-        "00_System/Web Development Expert System/Web Rule Registry.md",
         "50_Skills/SEO/site-architecture.md",
+        "00_System/Web Development Expert System/Web Rule Registry.md",
         "50_Skills/SEO/programmatic-seo.md"
       ]
     },
@@ -425,7 +425,38 @@
         "00_System/Skill OS/Skill Marketplace Operating System.md",
         "00_System/Dynamic Brain/Capability Discovery and Skill Loading.md",
         "50_Skills/Skills HQ.md",
-        "00_System/AI Runtime/Context Packing Policy.md"
+        "00_System/Skill OS/Skill Graph Standard.md"
+      ]
+    },
+    {
+      "eval_id": "ovx-company-vision",
+      "pass": true,
+      "query": "What is the OVX Smart Connected AI vision?",
+      "expected_paths": [
+        "30_Business/Organizations/OVX Smart Connected AI.md",
+        "00_System/Project OS/OVX Smart Connected AI Project Standard.md"
+      ],
+      "retrieved": [
+        "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+        "30_Business/Organizations/OVX Smart Connected AI.md",
+        "30_Business/Organizations/OVX Smart Connected AI Source 2026-07-07.md",
+        "10_Life/Vision/_Index.md",
+        "00_System/Connected Intelligence OS/Connected Intelligence Operating System.md"
+      ]
+    },
+    {
+      "eval_id": "ovx-project-standard",
+      "pass": true,
+      "query": "Which standard should future OVX projects follow?",
+      "expected_paths": [
+        "00_System/Project OS/OVX Smart Connected AI Project Standard.md"
+      ],
+      "retrieved": [
+        "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+        "00_System/Connected Intelligence OS/Project Experience Operating Standard.md",
+        "00_System/Project OS/Universal Project Contract.md",
+        "30_Business/Organizations/OVX Smart Connected AI.md",
+        "30_Business/Organizations/OVX Smart Connected AI Source 2026-07-07.md"
       ]
     }
   ]

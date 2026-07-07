@@ -65,6 +65,8 @@ This is the mandatory first map for AI work that depends on Omar's memory, proje
 3. relevant project links
 4. relevant skills, playbooks, decisions, and evidence
 
+**OVX rule:** if the work concerns OVX, the OVX software house, or an OVX-aligned project, read [[30_Business/Organizations/OVX Smart Connected AI]] and [[00_System/Project OS/OVX Smart Connected AI Project Standard]] before architecture or strategy decisions.
+
 ### Research or source-heavy work
 1. [[00_System/Knowledge Graph/Source-Backed Knowledge Protocol]]
 2. [[60_Knowledge/Knowledge HQ]]

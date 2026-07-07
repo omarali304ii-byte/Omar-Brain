@@ -111,3 +111,27 @@ Append-only history of meaningful brain operations. Do not rewrite old entries; 
 - Boundary: no fixture-mutating DB tests, provider calls, worker runtime, deployment checks, or browser runtime tests were executed in this pass.
 - Validation: PASS - validator 0/0, runtime consistency 0/0, orphan check 0/0, causal integrity 0/0, retrieval 28/28 Hit@K 1.00, reality eval 8/8.
 - Reality coverage: 21.4; brain health: 37.1; runs=3, evidence_notes=9, events=12, edges=25, causal_edges=22, indexed_documents=430, indexed_chunks=3148.
+
+## 2026-07-07 - v9.1 project experience graph upgrade
+- Operation: upgraded Meta Word of Mouth from a project packet plus run/evidence records into the first reusable project-experience intelligence graph.
+- Baseline confirmed: validator, runtime consistency, causal integrity, and orphan checks were clean before the upgrade; impact queue had 11 pending items; learning candidates included one truncated active claim.
+- Added standard and automation: `Project Experience Operating Standard.md`, `learning-objectify.mjs`, `impact-process.mjs`, `check-learning-quality.mjs`, `check-impact-queue.mjs`, `check-experience-graph.mjs`, `project-experience-plan.mjs`, `project-revision-check.mjs`, `eval-project-experience.mjs`, and `project-experience-eval-cases.json`.
+- First-class learning objects: 6 canonical patterns and 8 failure signatures created for Meta-derived experience, with source runs, source evidence, skill links, domains, provenance, and graph edges.
+- Graph change: connected objects increased from 19 to 45; edges from 25 to 133; causal edges from 22 to 62; events from 12 to 49.
+- Impact processing: 11 pending impacts processed, 0 blocked, 0 remaining pending. Each processed item now records processor, timestamp, attempted actions, affected objects, outcome, event, transaction, and retry count.
+- Candidate quality: active candidates now require source runs and source evidence; malformed duplicate/truncated rows are rejected with reasons. Current candidates: 41 total, 24 active, 17 rejected.
+- Retrieval: existing Brain retrieval remains 28/28 Hit@K 1.00. New Meta project-experience retrieval suite is 20/20 with pass rate 1.00.
+- Transfer planner: `project-experience-plan.mjs` returns relevant patterns, failure signatures, runs, evidence, skills, anti-copy warnings, `why_included`, and boundaries for future project queries.
+- Freshness: `project-revision-check.mjs --all` reports Meta Word of Mouth fresh at `8c027fabf85fe46fa0395eb459c0289872fef491`; dry-run simulated drift correctly plans `project.truth.stale`, impact queueing, and stale manifest marking.
+- Validation: PASS - runtime consistency 0/0, navigation 0/0, skill registry/connectivity 0/0, brain validator 0/0, causal integrity 0/0, learning quality 0 warnings/errors, impact queue 0 warnings/errors, experience graph 0 errors, old retrieval 28/28, project-experience retrieval 20/20, reality eval 8/8.
+- Honest boundary: Brain Health remains 37.1 and Reality Coverage 21.4 because this upgrade improves graph circulation, retrieval, transfer, and governance, but does not add runtime/provider/database/deployment/browser evidence or independent cross-project validation.
+
+## 2026-07-07 - v9.2 OVX company doctrine integrated
+- Operation: converted Omar's OVX Smart Connected AI company vision from an attachment into canonical Brain doctrine, source provenance, project architecture standard, router guidance, and connected-intelligence graph identity.
+- Added business notes: `30_Business/Organizations/OVX Smart Connected AI.md` and `30_Business/Organizations/OVX Smart Connected AI Source 2026-07-07.md`.
+- Added project standard: `00_System/Project OS/OVX Smart Connected AI Project Standard.md` so OVX-aligned projects inherit One Reality, Shared Memory, Compounding Intelligence before architecture approval.
+- Updated routing: Business HQ, Organizations index, Operating Map, Universal Project Contract, and route registry now point OVX/company/software-house work to the company doctrine and project standard.
+- Graph change: registered 5 new objects (`obj-ovx-smart-connected-ai`, source, standard, doctrine concept, and proposed OVX Core), 12 new edges, 3 new events, and source provenance through transaction `btx-20260707-ovx-smart-connected-ai-vision`.
+- Existing OVX project manifests remain contextual, not repo-verified; the standard is linked to `obj-ovx-shop` and `obj-ovx-marketing` as a company-direction inheritance, not as proof those repos already implement it.
+- Validation: PASS - runtime consistency 0/0, navigation 0/0, skill registry/connectivity 0/0, brain validator 0/0, orphan check 0/0, causal integrity 0/0, learning quality 0 warnings/errors, impact queue 0 warnings/errors, experience graph 0 errors, old retrieval 30/30, project-experience retrieval 20/20, reality eval 8/8.
+- Honest boundary: Brain Health remains 37.1 and Reality Coverage 21.4 because this adds strategic doctrine and graph connectivity, not new runtime/provider/database/deployment/browser/client evidence.

@@ -1,0 +1,169 @@
+{
+  "dataset_id": "meta-project-experience-v1",
+  "version": "1.0",
+  "updated": "2026-07-07",
+  "purpose": "Prove that Omar Brain can retrieve real Meta Word of Mouth experience, bounded evidence, proposed lessons, anti-copy warnings, and production blockers.",
+  "cases": [
+    {
+      "eval_id": "meta-exp-001",
+      "query": "Have we seen an external provider call succeed while local persistence failed?",
+      "k": 20,
+      "expected_object_ids": ["obj-failure-external-send-local-persistence"],
+      "expected_candidate_ids": ["lc-treat-successful-external-provider-calls-f6ffe456"],
+      "expected_paths": ["40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-production-gate-blocker-audit-intake-and-static-verification-6d1d9a66.md"],
+      "explanation": "Should retrieve the Meta production-gate failure, run, and candidate that separate external side effects from local persistence."
+    },
+    {
+      "eval_id": "meta-exp-002",
+      "query": "What project taught us that stale worker recovery code is useless if the worker loop never calls it?",
+      "k": 20,
+      "expected_object_ids": ["obj-failure-stale-recovery-dead-runtime-code", "obj-pattern-durable-async-side-effects"],
+      "expected_candidate_ids": ["lc-worker-recovery-functions-are-not-produc-8649f8b6"],
+      "explanation": "Should retrieve the failure signature and async side-effect pattern."
+    },
+    {
+      "eval_id": "meta-exp-003",
+      "query": "How should a new AI CRM preserve evidence behind AI-derived business state?",
+      "k": 20,
+      "expected_object_ids": ["obj-pattern-evidence-first-ai"],
+      "expected_candidate_ids": ["lc-evidence-first-ai-decisions-persist-exac-5ce17ece"],
+      "expected_paths": ["40_Projects/Active/Meta Word of Mouth/03_GOOD_POINTS.md"],
+      "explanation": "Should retrieve evidence-first AI as a proposed reference pattern, not a universal law."
+    },
+    {
+      "eval_id": "meta-exp-004",
+      "query": "What should a new webhook project learn from Meta Word of Mouth?",
+      "k": 20,
+      "expected_object_ids": ["obj-pattern-signed-webhook-integrity"],
+      "expected_candidate_ids": ["lc-signed-webhook-integrity-verify-exact-ra-88927d4c"],
+      "expected_paths": ["40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-signed-webhook-and-idempotent-ingestion-architecture-29126148.md"],
+      "explanation": "Should retrieve signed webhook integrity and idempotent provider-event handling."
+    },
+    {
+      "eval_id": "meta-exp-005",
+      "query": "Why should provider-ID permission affect search predicates, not only output DTOs?",
+      "k": 20,
+      "expected_object_ids": ["obj-failure-provider-id-search-oracle", "obj-pattern-permission-scoped-sensitive-exposure"],
+      "expected_candidate_ids": ["lc-privacy-permissions-must-govern-search-f-446540e3"],
+      "explanation": "Should retrieve the search-oracle failure and the broader permission-scoped exposure pattern."
+    },
+    {
+      "eval_id": "meta-exp-006",
+      "query": "What project taught us to separate AI confidence, opportunity strength, and urgency?",
+      "k": 20,
+      "expected_object_ids": ["obj-pattern-score-semantic-separation"],
+      "expected_candidate_ids": ["lc-separate-ai-confidence-commercial-streng-96e89af4"],
+      "explanation": "Should retrieve score semantic separation from Meta Word of Mouth."
+    },
+    {
+      "eval_id": "meta-exp-007",
+      "query": "What should future projects not copy from Meta Word of Mouth?",
+      "k": 20,
+      "expected_object_ids": ["obj-failure-temporary-adapter-production-drift", "obj-failure-weak-commit-provenance"],
+      "expected_paths": ["40_Projects/Active/Meta Word of Mouth/06_TRANSFER_CANDIDATES.md"],
+      "explanation": "Should retrieve anti-copy warnings and bounded transfer candidates."
+    },
+    {
+      "eval_id": "meta-exp-008",
+      "query": "Have we previously found a risk where AI suggestion usage was recorded before send success?",
+      "k": 20,
+      "expected_paths": ["40_Projects/Active/Meta Word of Mouth/04_BAD_POINTS_AND_RISKS.md"],
+      "expected_object_ids": ["obj-failure-external-send-local-persistence"],
+      "explanation": "Should route to the production-gate risk cluster around send success and local effects."
+    },
+    {
+      "eval_id": "meta-exp-009",
+      "query": "What production blockers remain in Meta Word of Mouth?",
+      "k": 20,
+      "expected_paths": ["40_Projects/Active/Meta Word of Mouth/08_EXECUTION_QUEUE.md"],
+      "expected_object_ids": ["obj-failure-leads-intelligence-permission-bypass", "obj-failure-stale-recovery-dead-runtime-code"],
+      "explanation": "Should retrieve the current execution queue and canonical blockers."
+    },
+    {
+      "eval_id": "meta-exp-010",
+      "query": "What evidence proves the Brain believes raw-byte signature verification matters?",
+      "k": 20,
+      "expected_object_ids": ["obj-pattern-signed-webhook-integrity"],
+      "expected_paths": ["40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-signed-webhook-and-idempotent-ingestion-architecture-29126148.md"],
+      "explanation": "Should retrieve the signed webhook evidence object."
+    },
+    {
+      "eval_id": "meta-exp-011",
+      "query": "Which Meta lessons are proposed but not independently validated?",
+      "k": 20,
+      "expected_object_ids": ["obj-pattern-evidence-first-ai"],
+      "expected_candidate_ids": ["lc-evidence-first-ai-decisions-persist-exac-5ce17ece"],
+      "explanation": "Should retrieve proposed candidates and preserve the one-project boundary."
+    },
+    {
+      "eval_id": "meta-exp-012",
+      "query": "What project experience is relevant to building another multi-tenant AI inbox?",
+      "k": 20,
+      "expected_object_ids": ["obj-pattern-evidence-first-ai", "obj-pattern-permission-scoped-sensitive-exposure", "obj-failure-provider-id-search-oracle"],
+      "explanation": "Should retrieve CRM/inbox patterns plus privacy failure warnings."
+    },
+    {
+      "eval_id": "meta-exp-013",
+      "query": "Have we seen same-entity AI memory updates race and overwrite newer state?",
+      "k": 20,
+      "expected_object_ids": ["obj-failure-same-person-ai-snapshot-race"],
+      "expected_candidate_ids": ["lc-same-person-ai-snapshot-out-of-order-ove-f8365709"],
+      "explanation": "Should retrieve the same-person AI snapshot race failure signature."
+    },
+    {
+      "eval_id": "meta-exp-014",
+      "query": "What does Omar Brain know about search oracles caused by hidden identifiers?",
+      "k": 20,
+      "expected_object_ids": ["obj-failure-provider-id-search-oracle"],
+      "expected_candidate_ids": ["lc-provider-id-search-oracle-4355a070"],
+      "explanation": "Should retrieve the hidden provider-ID search oracle failure."
+    },
+    {
+      "eval_id": "meta-exp-015",
+      "query": "Which previous project can guide an idempotent migration from a legacy model?",
+      "k": 20,
+      "expected_object_ids": ["obj-pattern-idempotent-legacy-migration"],
+      "expected_candidate_ids": ["lc-idempotent-legacy-migration-dry-run-repe-2cba6c81"],
+      "explanation": "Should retrieve idempotent legacy migration as a Meta-derived candidate pattern."
+    },
+    {
+      "eval_id": "meta-exp-016",
+      "query": "Why is Meta Word of Mouth a reference source but not a universal template?",
+      "k": 20,
+      "expected_paths": ["40_Projects/Active/Meta Word of Mouth/11_REFERENCE_SCORECARD.md"],
+      "expected_object_ids": ["obj-meta-word-of-mouth"],
+      "explanation": "Should retrieve reference scorecard and project identity boundaries."
+    },
+    {
+      "eval_id": "meta-exp-017",
+      "query": "What is the difference between repository-verified and runtime-verified knowledge for this project?",
+      "k": 20,
+      "expected_paths": ["40_Projects/Active/Meta Word of Mouth/07_CURRENT_STATE.md"],
+      "expected_object_ids": ["obj-meta-word-of-mouth"],
+      "explanation": "Should retrieve current truth boundaries and avoid runtime claims."
+    },
+    {
+      "eval_id": "meta-exp-018",
+      "query": "Which tests were intentionally skipped because the configured database was remote?",
+      "k": 20,
+      "expected_paths": ["40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-database-backed-tests-intentionally-skipped-against-remote-supabase-url-27ac41ce.md"],
+      "expected_candidate_ids": ["lc-remote-database-url-blocks-safe-fixture--422ce910"],
+      "explanation": "Should retrieve the remote DB boundary and skipped DB-backed test evidence."
+    },
+    {
+      "eval_id": "meta-exp-019",
+      "query": "What future project types should investigate evidence-first AI?",
+      "k": 20,
+      "expected_object_ids": ["obj-pattern-evidence-first-ai", "obj-domain-ai-crm"],
+      "explanation": "Should retrieve the pattern and applicability domain."
+    },
+    {
+      "eval_id": "meta-exp-020",
+      "query": "What anti-copy warnings exist for temporary Supabase adapters?",
+      "k": 20,
+      "expected_object_ids": ["obj-failure-temporary-adapter-production-drift"],
+      "expected_candidate_ids": ["lc-temporary-adapter-production-drift-dev-w-c4828049"],
+      "explanation": "Should retrieve temporary adapter production drift."
+    }
+  ]
+}

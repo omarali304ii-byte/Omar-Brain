@@ -96,7 +96,10 @@
         "company",
         "product",
         "offer",
-        "strategy"
+        "strategy",
+        "ovx",
+        "software house",
+        "company vision"
       ],
       "entrypoint": "30_Business/Business HQ.md",
       "read_first": [
@@ -110,6 +113,10 @@
         {
           "when": "source-heavy market investigation",
           "go_to": "00_System/Knowledge Graph/Source-Backed Knowledge Protocol.md"
+        },
+        {
+          "when": "business entity is OVX or the work concerns the OVX software house vision",
+          "go_to": "30_Business/Organizations/OVX Smart Connected AI.md"
         }
       ],
       "destination": "canonical business entity or linked project",
@@ -137,6 +144,10 @@
         {
           "when": "project is web",
           "go_to": "00_System/Architecture Profiles/web-expert-v1.md"
+        },
+        {
+          "when": "project belongs to OVX or should follow the OVX Smart Connected AI philosophy",
+          "go_to": "00_System/Project OS/OVX Smart Connected AI Project Standard.md"
         }
       ],
       "destination": "canonical project packet",

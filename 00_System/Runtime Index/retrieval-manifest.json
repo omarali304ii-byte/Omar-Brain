@@ -1,9 +1,9 @@
 {
   "manifest_version": "1.0",
-  "generated_at": "2026-07-07T20:27:27.287Z",
+  "generated_at": "2026-07-07T21:23:03.128Z",
   "vault": "Omar Brain",
-  "doc_count": 430,
-  "chunk_count": 3148,
+  "doc_count": 434,
+  "chunk_count": 3220,
   "documents": [
     {
       "doc_id": "note://00_System/Agent OS/Agent Capability Loading Protocol",
@@ -449,7 +449,7 @@
     {
       "doc_id": "note://00_System/Automation/README",
       "path": "00_System/Automation/README.md",
-      "content_hash": "4855a9d47d906bac8e42b22b5a914a1de77b31d53a293c506c4d8891abdd288a",
+      "content_hash": "6df7637179ada2b4ee4c5b45fa9517933d7baa885e2e56bd1a52a0590f3360fa",
       "updated": "2026-07-07",
       "type": "system",
       "status": "active",
@@ -533,6 +533,15 @@
       "content_hash": "6596a3df6b90e8bed1e95fcd94472ebec93656da498a96ea35fee98efb1d21d3",
       "updated": "2026-07-07",
       "type": "system",
+      "status": "active",
+      "ai_access": "allowed"
+    },
+    {
+      "doc_id": "note://00_System/Connected Intelligence OS/Project Experience Operating Standard",
+      "path": "00_System/Connected Intelligence OS/Project Experience Operating Standard.md",
+      "content_hash": "bd0ddcf6615fae52ca910b14e0d9f49bc87044edcab5c835318748be8b166658",
+      "updated": "2026-07-07",
+      "type": "standard",
       "status": "active",
       "ai_access": "allowed"
     },
@@ -1088,7 +1097,7 @@
     {
       "doc_id": "note://00_System/Operating Map",
       "path": "00_System/Operating Map.md",
-      "content_hash": "5e7da37f34431f4fc6d20d3923ad20ce4261549c8bed8a5fea005c6112bf0bc3",
+      "content_hash": "bfd7edffebacd4e72e2a2ee4f24d3c8540466180bfbb9d310be3d4906a01b814",
       "updated": "2026-07-07",
       "type": "system",
       "status": "active",
@@ -1167,6 +1176,15 @@
       "ai_access": "allowed"
     },
     {
+      "doc_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard",
+      "path": "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+      "content_hash": "d4aab1f0abb6566f7eba3a8e786918df18c582853faadf3ec29700cd7ec982c8",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed"
+    },
+    {
       "doc_id": "note://00_System/Project OS/Project Folder Blueprint v2",
       "path": "00_System/Project OS/Project Folder Blueprint v2.md",
       "content_hash": "985f9fcd629142711526b548a2fbfb22d5a6ea8ac8a9e32877d164c81a907269",
@@ -1223,7 +1241,7 @@
     {
       "doc_id": "note://00_System/Project OS/Universal Project Contract",
       "path": "00_System/Project OS/Universal Project Contract.md",
-      "content_hash": "5c3a0ba165ee0a4fb9415214fd9e68642637d8bfc4db604053be8332e6c8886b",
+      "content_hash": "9d88f8585ae25acbb7e465bdcce13661e5302eb3b2c24d3543888566eb128a24",
       "updated": "2026-07-07",
       "type": "system",
       "status": "active",
@@ -1502,7 +1520,7 @@
     {
       "doc_id": "note://00_System/Runtime State/OPERATION_LOG",
       "path": "00_System/Runtime State/OPERATION_LOG.md",
-      "content_hash": "a02db822592a264b020baa9047d2f93aa392600243d94431e568299ea8b8c9bc",
+      "content_hash": "53171ac39695487d259a22f3571c96b9f67f902869a15b5f3df250617d92c2dc",
       "updated": "2026-07-07",
       "type": "system",
       "status": "active",
@@ -2573,7 +2591,7 @@
     {
       "doc_id": "note://30_Business/Business HQ",
       "path": "30_Business/Business HQ.md",
-      "content_hash": "918668edc0922e55c16617fd746a7b61f439b41ad2950a4115f1a111a33b871e",
+      "content_hash": "23c4b18cc0836b7b0faec2b9b2e8c6ac77de510c74b4ade7a6f364fe7db37c10",
       "updated": "2026-07-07",
       "type": "area",
       "status": "active",
@@ -2607,9 +2625,27 @@
       "ai_access": "restricted"
     },
     {
+      "doc_id": "note://30_Business/Organizations/OVX Smart Connected AI Source 2026-07-07",
+      "path": "30_Business/Organizations/OVX Smart Connected AI Source 2026-07-07.md",
+      "content_hash": "f1fdd503c1c28eafebf0911cd270bd1ca9c6bdc3c766bf0e0247586603898b7d",
+      "updated": "2026-07-07",
+      "type": "source",
+      "status": "active",
+      "ai_access": "restricted"
+    },
+    {
+      "doc_id": "note://30_Business/Organizations/OVX Smart Connected AI",
+      "path": "30_Business/Organizations/OVX Smart Connected AI.md",
+      "content_hash": "a46f31791ff92e3512fd9f1f843d8ce9b05b1652723baafbcee108a00a9eaa08",
+      "updated": "2026-07-07",
+      "type": "organization",
+      "status": "active",
+      "ai_access": "restricted"
+    },
+    {
       "doc_id": "note://30_Business/Organizations/_Index",
       "path": "30_Business/Organizations/_Index.md",
-      "content_hash": "20a763983e8ea3a60b197e8a01561c57f7561f9e9d683d8e44e0733f6a2f9ce0",
+      "content_hash": "ed705a09b32056c1a8e6b4f5951053c289397779ab15f4077a4126a9f186448b",
       "updated": "2026-07-07",
       "type": "system",
       "status": "active",
@@ -8482,15 +8518,100 @@
       "project_id": null
     },
     {
-      "chunk_id": "note://00_System/Automation/README#honest-reality-and-integrity-checks:0026",
+      "chunk_id": "note://00_System/Automation/README#promote-durable-project-experience-into-first-class-pattern-failure-objects-and-graph-edges:0026",
+      "doc_id": "note://00_System/Automation/README",
+      "path": "00_System/Automation/README.md",
+      "heading_path": [
+        "Promote durable project experience into first-class pattern/failure objects and graph edges"
+      ],
+      "chunk_index": 26,
+      "text": "# Promote durable project experience into first-class pattern/failure objects and graph edges\nnode .\\00_System\\Automation\\learning-objectify.mjs .",
+      "content_hash": "a876ae1dd1d08052f3fc1a491839d1a8ea85dac9c50af0584cde34fd36106615",
+      "updated": "2026-07-07",
+      "type": "system",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Automation/README#process-impact-queue-items-with-auditable-processed-blocked-outcomes:0027",
+      "doc_id": "note://00_System/Automation/README",
+      "path": "00_System/Automation/README.md",
+      "heading_path": [
+        "Process impact queue items with auditable processed/blocked outcomes"
+      ],
+      "chunk_index": 27,
+      "text": "# Process impact queue items with auditable processed/blocked outcomes\nnode .\\00_System\\Automation\\impact-process.mjs .",
+      "content_hash": "8b95e3f726602ffdc67a39b1d8ec2a140d9e8e3c509b6f2af5dcf91d273cf4c9",
+      "updated": "2026-07-07",
+      "type": "system",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Automation/README#plan-future-project-transfer-from-graph-backed-experience:0028",
+      "doc_id": "note://00_System/Automation/README",
+      "path": "00_System/Automation/README.md",
+      "heading_path": [
+        "Plan future-project transfer from graph-backed experience"
+      ],
+      "chunk_index": 28,
+      "text": "# Plan future-project transfer from graph-backed experience\nnode .\\00_System\\Automation\\project-experience-plan.mjs . --project \"Meta Word of Mouth\" --query \"I am building a new AI CRM\"",
+      "content_hash": "0e07397680285600661e1c3ef39550de5e16c31cf3ee7fd9721afb529ba82464",
+      "updated": "2026-07-07",
+      "type": "system",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Automation/README#detect-repository-revision-drift-for-repo-grounded-projects:0029",
+      "doc_id": "note://00_System/Automation/README",
+      "path": "00_System/Automation/README.md",
+      "heading_path": [
+        "Detect repository revision drift for repo-grounded projects"
+      ],
+      "chunk_index": 29,
+      "text": "# Detect repository revision drift for repo-grounded projects\nnode .\\00_System\\Automation\\project-revision-check.mjs . --all",
+      "content_hash": "b54a21c6aa909d3c1e64124c022a59a3fed6f6218279fe75cc0e96cd9203ae4c",
+      "updated": "2026-07-07",
+      "type": "system",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Automation/README#honest-reality-and-integrity-checks:0030",
       "doc_id": "note://00_System/Automation/README",
       "path": "00_System/Automation/README.md",
       "heading_path": [
         "Honest reality and integrity checks"
       ],
-      "chunk_index": 26,
-      "text": "# Honest reality and integrity checks\nnode .\\00_System\\Automation\\reality-coverage.mjs .\nnode .\\00_System\\Automation\\check-orphan-information.mjs .\nnode .\\00_System\\Automation\\check-causal-integrity.mjs .\n```\n\nImportant: imported project manifests are navigation bootstrap only and use `context-import-needs-repo-check`. They do not count as verified evidence.",
-      "content_hash": "7523407369a15fe59e57f726b76f41505bd8482ddc1a0ac9800b544ff06228f5",
+      "chunk_index": 30,
+      "text": "# Honest reality and integrity checks\nnode .\\00_System\\Automation\\reality-coverage.mjs .\nnode .\\00_System\\Automation\\check-orphan-information.mjs .\nnode .\\00_System\\Automation\\check-causal-integrity.mjs .\nnode .\\00_System\\Automation\\check-learning-quality.mjs .\nnode .\\00_System\\Automation\\check-impact-queue.mjs .\nnode .\\00_System\\Automation\\check-experience-graph.mjs .",
+      "content_hash": "f706ec191bd5166becde7e8c51c7bda3ba3935a960ef36e5d31ca716df222997",
+      "updated": "2026-07-07",
+      "type": "system",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Automation/README#dedicated-real-project-experience-retrieval-eval:0031",
+      "doc_id": "note://00_System/Automation/README",
+      "path": "00_System/Automation/README.md",
+      "heading_path": [
+        "Dedicated real-project experience retrieval eval"
+      ],
+      "chunk_index": 31,
+      "text": "# Dedicated real-project experience retrieval eval\nnode .\\00_System\\Automation\\eval-project-experience.mjs .\n```\n\nImportant: imported project manifests are navigation bootstrap only and use `context-import-needs-repo-check`. They do not count as verified evidence.",
+      "content_hash": "153599b8b2e8dc0be9f30984268847cf9cdf1048c770f09a73192f7befcdac68",
       "updated": "2026-07-07",
       "type": "system",
       "status": "active",
@@ -9960,6 +10081,257 @@
       "content_hash": "d17b18ca770409275d4c397b4f464888e2b87e85d49d77a62d5ff462fbd334e0",
       "updated": "2026-07-07",
       "type": "system",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Connected Intelligence OS/Project Experience Operating Standard#project-experience-operating-standard:0000",
+      "doc_id": "note://00_System/Connected Intelligence OS/Project Experience Operating Standard",
+      "path": "00_System/Connected Intelligence OS/Project Experience Operating Standard.md",
+      "heading_path": [
+        "Project Experience Operating Standard"
+      ],
+      "chunk_index": 0,
+      "text": "# Project Experience Operating Standard",
+      "content_hash": "b87a2337b129f2c19768e082938e783d2437048062d06122f5142a1752d36904",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Connected Intelligence OS/Project Experience Operating Standard#purpose:0001",
+      "doc_id": "note://00_System/Connected Intelligence OS/Project Experience Operating Standard",
+      "path": "00_System/Connected Intelligence OS/Project Experience Operating Standard.md",
+      "heading_path": [
+        "Project Experience Operating Standard",
+        "Purpose"
+      ],
+      "chunk_index": 1,
+      "text": "## Purpose\nEvery real project should make Omar Brain more experienced, not merely larger. Project experience becomes reusable only when identity, repository truth, evidence, causal graph links, learning candidates, applicability limits, retrieval proof, and validation all move together.",
+      "content_hash": "aa2294a7594691e53e57770cf8052bce165b3d2dca7d1c4f877ba53438c731e8",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Connected Intelligence OS/Project Experience Operating Standard#admission:0002",
+      "doc_id": "note://00_System/Connected Intelligence OS/Project Experience Operating Standard",
+      "path": "00_System/Connected Intelligence OS/Project Experience Operating Standard.md",
+      "heading_path": [
+        "Project Experience Operating Standard",
+        "Admission"
+      ],
+      "chunk_index": 2,
+      "text": "## Admission\nWhen a project enters the Brain:\n1. Resolve existing identity and ambiguous aliases.\n2. Create or reuse a stable `project_id` and canonical project object.\n3. Capture local path, repo URL, default branch, exact revision when available, and verification state.\n4. Create/update the manifest and canonical packet without inventing unverified truth.\n5. Mark imported context as `contextual` until repo/runtime evidence exists.",
+      "content_hash": "ce8013c9343e5dee0b67eaccbf4efd95750ea19a46e80f28365bd9d85c4eea6b",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Connected Intelligence OS/Project Experience Operating Standard#repository-study:0003",
+      "doc_id": "note://00_System/Connected Intelligence OS/Project Experience Operating Standard",
+      "path": "00_System/Connected Intelligence OS/Project Experience Operating Standard.md",
+      "heading_path": [
+        "Project Experience Operating Standard",
+        "Repository Study"
+      ],
+      "chunk_index": 3,
+      "text": "## Repository Study\nRepository study must inspect the relevant profile, not a fixed note count. For software projects, inspect identity, architecture, domain model, data flow, API surfaces, UI surfaces, auth, authorization, integrations, workers, jobs, migrations, tests, CI, deployment, observability, Docker/local environment, security, privacy, technical debt, and Git evolution.",
+      "content_hash": "a27ec1608533cf52d1aa7b5f02ac3206c4e3834c4f2725512310b0e9cce2a6c8",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Connected Intelligence OS/Project Experience Operating Standard#truth-levels:0004",
+      "doc_id": "note://00_System/Connected Intelligence OS/Project Experience Operating Standard",
+      "path": "00_System/Connected Intelligence OS/Project Experience Operating Standard.md",
+      "heading_path": [
+        "Project Experience Operating Standard",
+        "Truth Levels"
+      ],
+      "chunk_index": 4,
+      "text": "## Truth Levels\nDo not collapse these:\n- `contextual`\n- `repo-observed`\n- `test-verified`\n- `runtime-verified`\n- `deployment-verified`\n- `inferred`\n- `stale`\n- `invalidated`\n- `superseded`",
+      "content_hash": "0a77086224703bb264aba31b6871ebcafd609af05f1bcaa34b4dd488bc816695",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Connected Intelligence OS/Project Experience Operating Standard#run-contract:0005",
+      "doc_id": "note://00_System/Connected Intelligence OS/Project Experience Operating Standard",
+      "path": "00_System/Connected Intelligence OS/Project Experience Operating Standard.md",
+      "heading_path": [
+        "Project Experience Operating Standard",
+        "Run Contract"
+      ],
+      "chunk_index": 5,
+      "text": "## Run Contract\nEvery meaningful operation should create or update a run with objective, starting state, exact repo revision, work performed, files changed, commands executed, failures, repairs, evidence, result, uncertainty, next action, learning review, and cross-project implications.",
+      "content_hash": "2bc3863238699e9345b5bc4abb9e5a3d1dab260cf378b6d2ff0e0564a8fcfb7a",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Connected Intelligence OS/Project Experience Operating Standard#evidence-contract:0006",
+      "doc_id": "note://00_System/Connected Intelligence OS/Project Experience Operating Standard",
+      "path": "00_System/Connected Intelligence OS/Project Experience Operating Standard.md",
+      "heading_path": [
+        "Project Experience Operating Standard",
+        "Evidence Contract"
+      ],
+      "chunk_index": 6,
+      "text": "## Evidence Contract\nEvery evidence object must state evidence ID, project ID, source run, kind, exact reference, what it proves, what it does not prove, authority, verification state, timestamp, revision when relevant, confidence, and supersession state.",
+      "content_hash": "37caf034c3d1702908c86deee6a9465997a8d213f0173ee829dd9f9f36ce8f02",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Connected Intelligence OS/Project Experience Operating Standard#learning-candidate-contract:0007",
+      "doc_id": "note://00_System/Connected Intelligence OS/Project Experience Operating Standard",
+      "path": "00_System/Connected Intelligence OS/Project Experience Operating Standard.md",
+      "heading_path": [
+        "Project Experience Operating Standard",
+        "Learning Candidate Contract"
+      ],
+      "chunk_index": 7,
+      "text": "## Learning Candidate Contract\nEvery active candidate must have candidate ID, kind, claim, source runs, source evidence, source projects, validation count, independent project count, applicability conditions, non-applicability conditions, transfer mode, confidence, status, promotion rule, and rejection/supersession fields when applicable. A candidate may point to a canonical pattern or failure object, but it is not promoted truth by itself.",
+      "content_hash": "d5f3fd649766f8c306feecb2c6433c293721d063539b192b091658d42b0fb51b",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Connected Intelligence OS/Project Experience Operating Standard#pattern-contract:0008",
+      "doc_id": "note://00_System/Connected Intelligence OS/Project Experience Operating Standard",
+      "path": "00_System/Connected Intelligence OS/Project Experience Operating Standard.md",
+      "heading_path": [
+        "Project Experience Operating Standard",
+        "Pattern Contract"
+      ],
+      "chunk_index": 8,
+      "text": "## Pattern Contract\nReusable pattern objects should define stable object ID, title, problem solved, mechanism, invariants, tradeoffs, applicability, non-applicability, source projects, source evidence, supporting runs, required skills, conflicting patterns when known, validation state, and promotion state.",
+      "content_hash": "5b149fbcd7e73ca068fb077b6c842ff0158468b3d41c3262af4141c9c03f31b8",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Connected Intelligence OS/Project Experience Operating Standard#failure-signature-contract:0009",
+      "doc_id": "note://00_System/Connected Intelligence OS/Project Experience Operating Standard",
+      "path": "00_System/Connected Intelligence OS/Project Experience Operating Standard.md",
+      "heading_path": [
+        "Project Experience Operating Standard",
+        "Failure Signature Contract"
+      ],
+      "chunk_index": 9,
+      "text": "## Failure Signature Contract\nFailure signature objects should define stable object ID, canonical name, symptom, detection clues, likely root causes, observed project, source runs, source evidence, failed approaches when known, repair/prevention, applicability boundary, status, and independent validations.",
+      "content_hash": "f95013440ee604e0bef79a6e8b9cabb5f91a233f930a45f149aa718a7e19d0a3",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Connected Intelligence OS/Project Experience Operating Standard#canonical-concept-identity:0010",
+      "doc_id": "note://00_System/Connected Intelligence OS/Project Experience Operating Standard",
+      "path": "00_System/Connected Intelligence OS/Project Experience Operating Standard.md",
+      "heading_path": [
+        "Project Experience Operating Standard",
+        "Canonical Concept Identity"
+      ],
+      "chunk_index": 10,
+      "text": "## Canonical Concept Identity\nDurable concepts need one canonical object. Project notes, transfer candidates, learning candidates, runs, and evidence may explain the same concept for different audiences, but they must reference the canonical object instead of silently becoming competing truth sources.",
+      "content_hash": "e4b6a949c038c8626716d956ae9742b7350411fbdf3b1fab807dcc88145c5f0d",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Connected Intelligence OS/Project Experience Operating Standard#impact-processing:0011",
+      "doc_id": "note://00_System/Connected Intelligence OS/Project Experience Operating Standard",
+      "path": "00_System/Connected Intelligence OS/Project Experience Operating Standard.md",
+      "heading_path": [
+        "Project Experience Operating Standard",
+        "Impact Processing"
+      ],
+      "chunk_index": 11,
+      "text": "## Impact Processing\nImpact states are `pending`, `processing`, `processed`, `blocked`, `rejected`, and `superseded`. A processed impact must record processor, timestamp, source object, actions attempted, affected objects, changes made or no-change reason, resulting events, resulting transactions, errors, retry count, and blocker when applicable.",
+      "content_hash": "01dcb51a7208780587faf5c19a88bc3f62782dd90b44ff4009dcbc7455e1a506",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Connected Intelligence OS/Project Experience Operating Standard#revision-freshness:0012",
+      "doc_id": "note://00_System/Connected Intelligence OS/Project Experience Operating Standard",
+      "path": "00_System/Connected Intelligence OS/Project Experience Operating Standard.md",
+      "heading_path": [
+        "Project Experience Operating Standard",
+        "Revision Freshness"
+      ],
+      "chunk_index": 12,
+      "text": "## Revision Freshness\nFor repo-grounded projects:\n```text\nrecorded revision != current revision\n  -> project.truth.stale event\n  -> impact queued\n  -> changed-file impact analysis\n  -> targeted reinspection\n```\nDo not require a full re-study after every commit; use changed files and affected claims to decide scope.",
+      "content_hash": "37730428c68a6a5636d4ee2ae342f362007a461582eb4edafb33c71daf9a1b5b",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Connected Intelligence OS/Project Experience Operating Standard#future-project-transfer:0013",
+      "doc_id": "note://00_System/Connected Intelligence OS/Project Experience Operating Standard",
+      "path": "00_System/Connected Intelligence OS/Project Experience Operating Standard.md",
+      "heading_path": [
+        "Project Experience Operating Standard",
+        "Future Project Transfer"
+      ],
+      "chunk_index": 13,
+      "text": "## Future Project Transfer\nTransfer planning must answer:\n- What patterns might apply?\n- What failure signatures resemble this architecture?\n- What skills are relevant?\n- What anti-copy warnings matter?\n- What evidence supports these suggestions?\n- What remains only one-project experience?\n\nEvery included item must carry `why_included` and a boundary. No silent context injection.",
+      "content_hash": "a5d3546547012f6e8dfd052f585bb0e3677b5750ec298eebcc063a1e97de28fe",
+      "updated": "2026-07-07",
+      "type": "standard",
       "status": "active",
       "ai_access": "allowed",
       "memory_class": null,
@@ -16468,8 +16840,8 @@
         "Business or client work"
       ],
       "chunk_index": 6,
-      "text": "### Business or client work\n1. [[30_Business/Business HQ]]\n2. relevant organization/product/client canonical note\n3. relevant project links\n4. relevant skills, playbooks, decisions, and evidence",
-      "content_hash": "a10d42f2b26cd1ef72393afadc0a07b1aa492dba926389c3703607fcf282b6d8",
+      "text": "### Business or client work\n1. [[30_Business/Business HQ]]\n2. relevant organization/product/client canonical note\n3. relevant project links\n4. relevant skills, playbooks, decisions, and evidence\n\n**OVX rule:** if the work concerns OVX, the OVX software house, or an OVX-aligned project, read [[30_Business/Organizations/OVX Smart Connected AI]] and [[00_System/Project OS/OVX Smart Connected AI Project Standard]] before architecture or strategy decisions.",
+      "content_hash": "78c2651b892531dc4d477f3042d5e6eed07d3c00a2d32026b2163229383da7d7",
       "updated": "2026-07-07",
       "type": "system",
       "status": "active",
@@ -17363,6 +17735,431 @@
       "project_id": null
     },
     {
+      "chunk_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard#ovx-smart-connected-ai-project-standard:0000",
+      "doc_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard",
+      "path": "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+      "heading_path": [
+        "OVX Smart Connected AI Project Standard"
+      ],
+      "chunk_index": 0,
+      "text": "# OVX Smart Connected AI Project Standard",
+      "content_hash": "beee5d0773c1b0c5181ce5ed64bc5437a496148e26dbfef90c9e88106711f1ee",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard#purpose:0001",
+      "doc_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard",
+      "path": "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+      "heading_path": [
+        "OVX Smart Connected AI Project Standard",
+        "Purpose"
+      ],
+      "chunk_index": 1,
+      "text": "## Purpose\nThis standard makes the OVX company vision operational inside Omar Brain.\n\nUse it for OVX-owned projects, client systems built under the OVX philosophy, and any project Omar explicitly wants to align with OVX Smart Connected AI.\n\nIt inherits from [[30_Business/Organizations/OVX Smart Connected AI]].",
+      "content_hash": "f7edd2fe9a98b760e69c05ca17241767424dca97a7ac873c339bd5ed0898b5e2",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard#standard:0002",
+      "doc_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard",
+      "path": "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+      "heading_path": [
+        "OVX Smart Connected AI Project Standard",
+        "Standard"
+      ],
+      "chunk_index": 2,
+      "text": "## Standard\nEvery meaningful OVX project should solve today's problem and strengthen tomorrow's ecosystem.\n\nThe project does not need to become huge. It does need to be designed with awareness of the larger client organism.",
+      "content_hash": "23f4996a926101309438f1a7e7bc513df3c31bdc0718f61b79cf19d4e208f116",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard#architecture-intake-questions:0003",
+      "doc_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard",
+      "path": "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+      "heading_path": [
+        "OVX Smart Connected AI Project Standard",
+        "Architecture Intake Questions"
+      ],
+      "chunk_index": 3,
+      "text": "## Architecture Intake Questions\nBefore approving architecture for an OVX project, answer these questions.",
+      "content_hash": "c2e5bfa1c17d4ed1d310bba7dd40d5856132d28a5cffbf09eba1d26b995f598f",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard#1-problem:0004",
+      "doc_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard",
+      "path": "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+      "heading_path": [
+        "OVX Smart Connected AI Project Standard",
+        "Architecture Intake Questions",
+        "1. Problem"
+      ],
+      "chunk_index": 4,
+      "text": "### 1. Problem\nWhat real problem are we solving now?",
+      "content_hash": "16d12edf691034ba4479344464c80b6c226cf4c442dde7605df5407e0f9640a6",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard#2-existing-reality:0005",
+      "doc_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard",
+      "path": "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+      "heading_path": [
+        "OVX Smart Connected AI Project Standard",
+        "Architecture Intake Questions",
+        "2. Existing Reality"
+      ],
+      "chunk_index": 5,
+      "text": "### 2. Existing Reality\nWhat systems, databases, documents, workflows, people, customers, organizations, products, and source-of-truth boundaries already exist?",
+      "content_hash": "26169f07ad4aaa9b9f98c28135c8b1d68fff6834e8f16920f7ea13a11acd03f0",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard#3-connection:0006",
+      "doc_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard",
+      "path": "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+      "heading_path": [
+        "OVX Smart Connected AI Project Standard",
+        "Architecture Intake Questions",
+        "3. Connection"
+      ],
+      "chunk_index": 6,
+      "text": "### 3. Connection\nWhat should this project understand from the existing ecosystem?",
+      "content_hash": "4fb411c69c146c6055046f54af50aac7b7f3bcf1ce61a270f1cf3c9a0fec48ea",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard#4-contribution:0007",
+      "doc_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard",
+      "path": "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+      "heading_path": [
+        "OVX Smart Connected AI Project Standard",
+        "Architecture Intake Questions",
+        "4. Contribution"
+      ],
+      "chunk_index": 7,
+      "text": "### 4. Contribution\nWhat useful context will this project add back?",
+      "content_hash": "636a627d8fd4f7864855add7d5836ef7c4da9461c485b836c5f853e54f603c68",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard#5-identity:0008",
+      "doc_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard",
+      "path": "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+      "heading_path": [
+        "OVX Smart Connected AI Project Standard",
+        "Architecture Intake Questions",
+        "5. Identity"
+      ],
+      "chunk_index": 8,
+      "text": "### 5. Identity\nHow will people, customers, organizations, accounts, objects, and business entities be consistently recognized where appropriate and authorized?",
+      "content_hash": "941d3a9f2207224941157dc5467fda8702acf4799ba8a100d7703f8355c46a06",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard#6-events:0009",
+      "doc_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard",
+      "path": "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+      "heading_path": [
+        "OVX Smart Connected AI Project Standard",
+        "Architecture Intake Questions",
+        "6. Events"
+      ],
+      "chunk_index": 9,
+      "text": "### 6. Events\nWhich meaningful events should be captured for future analysis, automation, audit, or AI context?",
+      "content_hash": "cce34d0302ea8e09bede93895d8f2429034bb3740073ff989daea35f1f011089",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard#7-knowledge:0010",
+      "doc_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard",
+      "path": "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+      "heading_path": [
+        "OVX Smart Connected AI Project Standard",
+        "Architecture Intake Questions",
+        "7. Knowledge"
+      ],
+      "chunk_index": 10,
+      "text": "### 7. Knowledge\nWhich information belongs in searchable organizational knowledge?",
+      "content_hash": "7e4443de68531b44aac0387f25023e6cb99bd0ed4116b1c8d6b0756602f45325",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard#8-structured-data:0011",
+      "doc_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard",
+      "path": "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+      "heading_path": [
+        "OVX Smart Connected AI Project Standard",
+        "Architecture Intake Questions",
+        "8. Structured Data"
+      ],
+      "chunk_index": 11,
+      "text": "### 8. Structured Data\nWhich information requires databases, analytics, deterministic queries, or reporting instead of RAG?",
+      "content_hash": "65153b131849f3c50f54fb3a76b32876f92094c95d14ba91b923dec4e0fd8482",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard#9-intelligence:0012",
+      "doc_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard",
+      "path": "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+      "heading_path": [
+        "OVX Smart Connected AI Project Standard",
+        "Architecture Intake Questions",
+        "9. Intelligence"
+      ],
+      "chunk_index": 12,
+      "text": "### 9. Intelligence\nWhere can AI create measurable value with the right context?",
+      "content_hash": "86205860dffbbdf8f6e508326fe19b67ac128686630656e1373da7a1000415ed",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard#10-permissions:0013",
+      "doc_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard",
+      "path": "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+      "heading_path": [
+        "OVX Smart Connected AI Project Standard",
+        "Architecture Intake Questions",
+        "10. Permissions"
+      ],
+      "chunk_index": 13,
+      "text": "### 10. Permissions\nWho may know what, retrieve what, change what, and ask AI to act on what?",
+      "content_hash": "b70193ff5c7f1da8e74c7bd7472ec5e91b815b9f32894e4632b05f326dba82a3",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard#11-action:0014",
+      "doc_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard",
+      "path": "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+      "heading_path": [
+        "OVX Smart Connected AI Project Standard",
+        "Architecture Intake Questions",
+        "11. Action"
+      ],
+      "chunk_index": 14,
+      "text": "### 11. Action\nWhat may automation or AI agents actually do, and what requires human approval?",
+      "content_hash": "e7e70bfcd9b1790a7c9cfe24d762af648ed35b127d4ba71c969a49684039aa40",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard#12-future:0015",
+      "doc_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard",
+      "path": "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+      "heading_path": [
+        "OVX Smart Connected AI Project Standard",
+        "Architecture Intake Questions",
+        "12. Future"
+      ],
+      "chunk_index": 15,
+      "text": "### 12. Future\nHow does this work make future OVX systems faster, smarter, safer, or more valuable?",
+      "content_hash": "08fff4f13ade73c887c8eef6fe99ff6279e39d412f17be04026facec664cfc2a",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard#required-design-outputs:0016",
+      "doc_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard",
+      "path": "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+      "heading_path": [
+        "OVX Smart Connected AI Project Standard",
+        "Required Design Outputs"
+      ],
+      "chunk_index": 16,
+      "text": "## Required Design Outputs\nAn OVX-aligned project should document:\n\n- canonical entities and ownership,\n- source-of-truth rules,\n- event candidates,\n- knowledge sources,\n- structured data and analytics needs,\n- identity and permission boundaries,\n- integration boundaries,\n- AI use cases and non-use cases,\n- audit and lineage needs,\n- reusable capabilities,\n- future ecosystem contribution.",
+      "content_hash": "93e2e07f34dd4830051323ed423ad9526895a79f16cc070b9c848515ac9d6fae",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard#ai-rule:0017",
+      "doc_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard",
+      "path": "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+      "heading_path": [
+        "OVX Smart Connected AI Project Standard",
+        "AI Rule"
+      ],
+      "chunk_index": 17,
+      "text": "## AI Rule\nDo not add AI as decoration.\n\nAI should be used only when connected context, evidence, permissions, and action paths create real value. If the best answer requires a structured query, use a structured query. If the best answer requires approved knowledge retrieval, use RAG. If the best answer requires both, design both deliberately.",
+      "content_hash": "3dfa6d960eb5380faf1649e06c4db383956ad9ca9ead9a95881ab3e982d88444",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard#data-rule:0018",
+      "doc_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard",
+      "path": "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+      "heading_path": [
+        "OVX Smart Connected AI Project Standard",
+        "Data Rule"
+      ],
+      "chunk_index": 18,
+      "text": "## Data Rule\nConnected does not mean one giant database.\n\nUse the right pattern for the truth:\n\n- authoritative system,\n- synchronized copy,\n- event stream,\n- federated query,\n- derived analytics store,\n- knowledge index,\n- relationship graph,\n- audit log.\n\nThe client owns the client data. OVX helps make it connected, governed, useful, and intelligent.",
+      "content_hash": "644faa7dbd41185b38a7bbbf20611c2056129ab525ab0633e5025bec49104751",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard#integration-rule:0019",
+      "doc_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard",
+      "path": "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+      "heading_path": [
+        "OVX Smart Connected AI Project Standard",
+        "Integration Rule"
+      ],
+      "chunk_index": 19,
+      "text": "## Integration Rule\nAvoid unique point-to-point integration wherever a reusable API, event, schema, connector, identity primitive, or permission model would serve future OVX work better.",
+      "content_hash": "354de183f51eed6a6f03e7261b0fa6a5a2767f7b09867282c31a3cf3cb280aad",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard#security-rule:0020",
+      "doc_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard",
+      "path": "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+      "heading_path": [
+        "OVX Smart Connected AI Project Standard",
+        "Security Rule"
+      ],
+      "chunk_index": 20,
+      "text": "## Security Rule\nPermissions are part of the intelligence architecture.\n\nEvery project must preserve tenant boundaries, least privilege, data classification, authorization, audit history, AI retrieval permission, AI tool permission, and human approval requirements.",
+      "content_hash": "142146233236f146cdf6823d1d8224e6792530f5a504898f911e70265af79928",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard#done-proof:0021",
+      "doc_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard",
+      "path": "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+      "heading_path": [
+        "OVX Smart Connected AI Project Standard",
+        "Done Proof"
+      ],
+      "chunk_index": 21,
+      "text": "## Done Proof\nAn OVX project is not fully aligned with this standard until its project packet or architecture notes include:\n\n- the immediate problem,\n- the ecosystem connection,\n- the context contribution,\n- the source-of-truth boundary,\n- the permission boundary,\n- the structured-vs-knowledge retrieval boundary,\n- the future reuse or compounding-intelligence value.",
+      "content_hash": "f898020568a4c508c792b3e331d2c2447df512b8c936acdb69217daa2da7da7c",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard#brain-routing:0022",
+      "doc_id": "note://00_System/Project OS/OVX Smart Connected AI Project Standard",
+      "path": "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+      "heading_path": [
+        "OVX Smart Connected AI Project Standard",
+        "Brain Routing"
+      ],
+      "chunk_index": 22,
+      "text": "## Brain Routing\nWhen starting or resuming an OVX project, Omar Brain should load this standard after [[00_System/Project OS/Universal Project Contract]] and before final architecture approval.",
+      "content_hash": "3ed5e5ae75be51c8958494c41d20678f1680885b959ac578282ee8f41de71e33",
+      "updated": "2026-07-07",
+      "type": "standard",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
       "chunk_id": "note://00_System/Project OS/Project Folder Blueprint v2#project-folder-blueprint-v2:0000",
       "doc_id": "note://00_System/Project OS/Project Folder Blueprint v2",
       "path": "00_System/Project OS/Project Folder Blueprint v2.md",
@@ -17824,14 +18621,32 @@
       "project_id": null
     },
     {
-      "chunk_id": "note://00_System/Project OS/Universal Project Contract#no-hidden-project-state:0004",
+      "chunk_id": "note://00_System/Project OS/Universal Project Contract#ovx-project-inheritance:0004",
+      "doc_id": "note://00_System/Project OS/Universal Project Contract",
+      "path": "00_System/Project OS/Universal Project Contract.md",
+      "heading_path": [
+        "Universal Project Contract",
+        "OVX project inheritance"
+      ],
+      "chunk_index": 4,
+      "text": "## OVX project inheritance\nWhen a project belongs to OVX or is built under the OVX Smart Connected AI philosophy, load [[30_Business/Organizations/OVX Smart Connected AI]] and [[00_System/Project OS/OVX Smart Connected AI Project Standard]] before final architecture approval.\n\nOVX-aligned projects must state how they solve the immediate problem, what existing reality they connect to, what useful context they contribute back, which permissions and source-of-truth boundaries apply, and how the work increases the potential value of future OVX projects.",
+      "content_hash": "bb7bea5461c8758eb4226dba1e406034b3d9286dbd6b8c8e989b7ab57cf7b014",
+      "updated": "2026-07-07",
+      "type": "system",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Project OS/Universal Project Contract#no-hidden-project-state:0005",
       "doc_id": "note://00_System/Project OS/Universal Project Contract",
       "path": "00_System/Project OS/Universal Project Contract.md",
       "heading_path": [
         "Universal Project Contract",
         "No hidden project state"
       ],
-      "chunk_index": 4,
+      "chunk_index": 5,
       "text": "## No hidden project state\nImportant decisions, blockers, architecture changes, task completion, and verification evidence must not live only inside chat history.",
       "content_hash": "f5fe6cd61d44f88f46423611e74bd44bd6323ef9fdda684abc4b2796c67ef9c6",
       "updated": "2026-07-07",
@@ -20055,6 +20870,60 @@
       "chunk_index": 11,
       "text": "## 2026-07-07 - Meta Word of Mouth local verification seeded real experience\n- Operation: upgraded `prj-meta-word-of-mouth` from connector-only reference import to local clean-checkout plus safe static/test verification evidence.\n- Local repo state: `D:\\Marketing 777\\Meta Dev Project\\Meta Word of mouth`, branch `main`, clean worktree, HEAD `8c027fabf85fe46fa0395eb459c0289872fef491`.\n- Commands passed: `npm run db:validate`, `npm run test:compat`, `npm run test:meta-architecture`, `npm run test:intelligence-permissions`, `npm run typecheck`, `npm run lint`, `npm run build`.\n- Safety boundary: fixture-mutating database tests intentionally skipped because `.env.local` `DATABASE_URL` resolved to non-local host `aws-1-eu-west-2.pooler.supabase.com`.\n- Added run/evidence: `run-mrb34rdn-eebbc7fd`, `evd-mrb351wz-ee53c349`, `evd-mrb351xk-224ef696`, `evd-mrb351xs-27ac41ce`.\n- Brain cycle: PASS - validator 0/0, runtime consistency 0/0, navigation 0/0, skill checks 0/0, orphan/causal checks 0/0, retrieval 28/28 Hit@K 1.00, reality eval 8/8.\n- Reality coverage: 21.4; brain health: 37.1; runs=2, evidence_notes=7, events=9, edges=20, causal_edges=18.\n- Closed G-003 because v9 experience ledgers now contain observed runs and evidence. Remaining truth boundary: DB-backed tests, live providers, workers, deployment, and browser runtime are still unverified.",
       "content_hash": "3728a8144bd2653482f21c90adba35c0199c2a5833fb9050d722a8822cdc2384",
+      "updated": "2026-07-07",
+      "type": "system",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Runtime State/OPERATION_LOG#2026-07-07-meta-word-of-mouth-production-gate-audit-added:0012",
+      "doc_id": "note://00_System/Runtime State/OPERATION_LOG",
+      "path": "00_System/Runtime State/OPERATION_LOG.md",
+      "heading_path": [
+        "Operation Log",
+        "2026-07-07 - Meta Word of Mouth production-gate audit added"
+      ],
+      "chunk_index": 12,
+      "text": "## 2026-07-07 - Meta Word of Mouth production-gate audit added\n- Operation: ingested Omar's second production-gate audit note and statically verified the high-risk claims against local commit `8c027fabf85fe46fa0395eb459c0289872fef491`.\n- Added run/evidence: `run-mrb3iohg-6d1d9a66`, `evd-mrb3iwud-32fdb1ac`, `evd-mrb3iwud-aba73203`.\n- Updated project packet: risks, execution queue, current state, future path, evidence matrix, scorecard, and manifest now say the project is not production-ready until the expanded P0 gate is fixed and proven.\n- Confirmed by static inspection: stale intelligence recovery is not called by the worker loop; People search/fallback and Inbox tails leak provider identity signals; Leads evidence can bypass `view_intelligence`; outbound Meta send can succeed before local persistence fails; AI feedback can be recorded before send success; same-person intelligence snapshot updates can race; CI does not yet run the critical gate scripts.\n- Boundary: no fixture-mutating DB tests, provider calls, worker runtime, deployment checks, or browser runtime tests were executed in this pass.\n- Validation: PASS - validator 0/0, runtime consistency 0/0, orphan check 0/0, causal integrity 0/0, retrieval 28/28 Hit@K 1.00, reality eval 8/8.\n- Reality coverage: 21.4; brain health: 37.1; runs=3, evidence_notes=9, events=12, edges=25, causal_edges=22, indexed_documents=430, indexed_chunks=3148.",
+      "content_hash": "7691ffb5e27187e83f84721fd2c5942a624b5e69de99168ef8d16d47e6c08ae2",
+      "updated": "2026-07-07",
+      "type": "system",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Runtime State/OPERATION_LOG#2026-07-07-v9-1-project-experience-graph-upgrade:0013",
+      "doc_id": "note://00_System/Runtime State/OPERATION_LOG",
+      "path": "00_System/Runtime State/OPERATION_LOG.md",
+      "heading_path": [
+        "Operation Log",
+        "2026-07-07 - v9.1 project experience graph upgrade"
+      ],
+      "chunk_index": 13,
+      "text": "## 2026-07-07 - v9.1 project experience graph upgrade\n- Operation: upgraded Meta Word of Mouth from a project packet plus run/evidence records into the first reusable project-experience intelligence graph.\n- Baseline confirmed: validator, runtime consistency, causal integrity, and orphan checks were clean before the upgrade; impact queue had 11 pending items; learning candidates included one truncated active claim.\n- Added standard and automation: `Project Experience Operating Standard.md`, `learning-objectify.mjs`, `impact-process.mjs`, `check-learning-quality.mjs`, `check-impact-queue.mjs`, `check-experience-graph.mjs`, `project-experience-plan.mjs`, `project-revision-check.mjs`, `eval-project-experience.mjs`, and `project-experience-eval-cases.json`.\n- First-class learning objects: 6 canonical patterns and 8 failure signatures created for Meta-derived experience, with source runs, source evidence, skill links, domains, provenance, and graph edges.\n- Graph change: connected objects increased from 19 to 45; edges from 25 to 133; causal edges from 22 to 62; events from 12 to 49.\n- Impact processing: 11 pending impacts processed, 0 blocked, 0 remaining pending. Each processed item now records processor, timestamp, attempted actions, affected objects, outcome, event, transaction, and retry count.\n- Candidate quality: active candidates now require source runs and source evidence; malformed duplicate/truncated rows are rejected with reasons. Current candidates: 41 total, 24 active, 17 rejected.\n- Retrieval: existing Brain retrieval remains 28/28 Hit@K 1.00. New Meta project-experience retrieval suite is 20/20 with pass rate 1.00.\n- Transfer planner: `project-experience-plan.mjs` returns relevant patterns, failure signatures, runs, evidence, skills, anti-copy warnings, `why_included`, and boundaries for future project queries.\n- Freshness: `project-revision-check.mjs --all` reports Meta Word of Mouth fresh at `8c027fabf85fe46fa0395eb459c0289872fef491`; dry-run simulated drift correctly plans `project.truth.stale`, impact queueing, and stale manifest marking.\n- Validation: PASS - runtime consistency 0/0, navigation 0/0, skill registry/connectivity 0/0, brain validator 0/0, causal integrity 0/0, learning quality 0 warnings/errors, impact queue 0 warnings/errors, experience graph 0 errors, old retrieval 28/28, project-experience retrieval 20/20, reality eval 8/8.\n- Honest boundary: Brain Health remains 37.1 and Reality Coverage 21.4 because this upgrade improves graph circulation, retrieval, transfer, and governance, but does not add runtime/provider/database/deployment/browser evidence or independent cross-project validation.",
+      "content_hash": "b5bf0fbaf9d974f77462ee7fbca3601885760403dd89942a137135c44c1293d6",
+      "updated": "2026-07-07",
+      "type": "system",
+      "status": "active",
+      "ai_access": "allowed",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://00_System/Runtime State/OPERATION_LOG#2026-07-07-v9-2-ovx-company-doctrine-integrated:0014",
+      "doc_id": "note://00_System/Runtime State/OPERATION_LOG",
+      "path": "00_System/Runtime State/OPERATION_LOG.md",
+      "heading_path": [
+        "Operation Log",
+        "2026-07-07 - v9.2 OVX company doctrine integrated"
+      ],
+      "chunk_index": 14,
+      "text": "## 2026-07-07 - v9.2 OVX company doctrine integrated\n- Operation: converted Omar's OVX Smart Connected AI company vision from an attachment into canonical Brain doctrine, source provenance, project architecture standard, router guidance, and connected-intelligence graph identity.\n- Added business notes: `30_Business/Organizations/OVX Smart Connected AI.md` and `30_Business/Organizations/OVX Smart Connected AI Source 2026-07-07.md`.\n- Added project standard: `00_System/Project OS/OVX Smart Connected AI Project Standard.md` so OVX-aligned projects inherit One Reality, Shared Memory, Compounding Intelligence before architecture approval.\n- Updated routing: Business HQ, Organizations index, Operating Map, Universal Project Contract, and route registry now point OVX/company/software-house work to the company doctrine and project standard.\n- Graph change: registered 5 new objects (`obj-ovx-smart-connected-ai`, source, standard, doctrine concept, and proposed OVX Core), 12 new edges, 3 new events, and source provenance through transaction `btx-20260707-ovx-smart-connected-ai-vision`.\n- Existing OVX project manifests remain contextual, not repo-verified; the standard is linked to `obj-ovx-shop` and `obj-ovx-marketing` as a company-direction inheritance, not as proof those repos already implement it.\n- Validation: PASS - runtime consistency 0/0, navigation 0/0, skill registry/connectivity 0/0, brain validator 0/0, orphan check 0/0, causal integrity 0/0, learning quality 0 warnings/errors, impact queue 0 warnings/errors, experience graph 0 errors, old retrieval 28/28, project-experience retrieval 20/20, reality eval 8/8.\n- Honest boundary: Brain Health remains 37.1 and Reality Coverage 21.4 because this adds strategic doctrine and graph connectivity, not new runtime/provider/database/deployment/browser/client evidence.",
+      "content_hash": "83970e13efc0e5bbc346281942ecbe6a08a313ecc3e2b3365fccff5d008af40b",
       "updated": "2026-07-07",
       "type": "system",
       "status": "active",
@@ -40741,14 +41610,32 @@
       "project_id": null
     },
     {
-      "chunk_id": "note://30_Business/Business HQ#boundary:0003",
+      "chunk_id": "note://30_Business/Business HQ#active-company-doctrine:0003",
+      "doc_id": "note://30_Business/Business HQ",
+      "path": "30_Business/Business HQ.md",
+      "heading_path": [
+        "Business HQ",
+        "Active company doctrine"
+      ],
+      "chunk_index": 3,
+      "text": "## Active company doctrine\n- [[Organizations/OVX Smart Connected AI]] is the canonical OVX company vision: One Reality, Shared Memory, Compounding Intelligence.\n- OVX-aligned software projects should also load [[00_System/Project OS/OVX Smart Connected AI Project Standard]] before architecture approval.",
+      "content_hash": "a5a7cfea9c9057f1a355684419b947efb94426da756ffbfd4a912ed7dc9dbfb3",
+      "updated": "2026-07-07",
+      "type": "area",
+      "status": "active",
+      "ai_access": "restricted",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://30_Business/Business HQ#boundary:0004",
       "doc_id": "note://30_Business/Business HQ",
       "path": "30_Business/Business HQ.md",
       "heading_path": [
         "Business HQ",
         "Boundary"
       ],
-      "chunk_index": 3,
+      "chunk_index": 4,
       "text": "## Boundary\nA finite launch, migration, integration, campaign, or build belongs in `40_Projects` and links back to the relevant organization/product/client.",
       "content_hash": "f6ae5c2bc4e15b329705b16fcf088bbf6fc00dbff10d4c7a51b3bd48fd42144f",
       "updated": "2026-07-07",
@@ -40759,14 +41646,14 @@
       "project_id": null
     },
     {
-      "chunk_id": "note://30_Business/Business HQ#ai-road-signs:0004",
+      "chunk_id": "note://30_Business/Business HQ#ai-road-signs:0005",
       "doc_id": "note://30_Business/Business HQ",
       "path": "30_Business/Business HQ.md",
       "heading_path": [
         "Business HQ",
         "AI Road Signs"
       ],
-      "chunk_index": 4,
+      "chunk_index": 5,
       "text": "## AI Road Signs\n\n**You are here:** ongoing company, product, client, offer, strategy, and operations context.\n\n| When the destination is... | Go to... |\n|---|---|\n| finite launch/build/migration/campaign/integration | [[40_Projects/Projects HQ]] |\n| make a software deliverable production-ready | [[00_System/Production Readiness OS/Production Readiness Operating System]] |\n| source-heavy market/competitor research | [[00_System/Knowledge Graph/Source-Backed Knowledge Protocol]] |\n| reusable capability | [[50_Skills/Skills HQ]] |\n\n**Do not stay here when:** work has a finite outcome and done definition.  \n**Arrival proof:** resolved business entity plus linked decision/project/action.",
       "content_hash": "675d747c5e185452daa64724ef6bad8e4d5c0041ddc1f401a85c6f03372dad78",
       "updated": "2026-07-07",
@@ -40828,6 +41715,439 @@
       "project_id": null
     },
     {
+      "chunk_id": "note://30_Business/Organizations/OVX Smart Connected AI Source 2026-07-07#ovx-smart-connected-ai-source-2026-07-07:0000",
+      "doc_id": "note://30_Business/Organizations/OVX Smart Connected AI Source 2026-07-07",
+      "path": "30_Business/Organizations/OVX Smart Connected AI Source 2026-07-07.md",
+      "heading_path": [
+        "OVX Smart Connected AI Source 2026-07-07"
+      ],
+      "chunk_index": 0,
+      "text": "# OVX Smart Connected AI Source 2026-07-07",
+      "content_hash": "8501180f1d02a6c9dcd0e209fefe6e1b3931e64a99abf074647e8c6525388fe3",
+      "updated": "2026-07-07",
+      "type": "source",
+      "status": "active",
+      "ai_access": "restricted",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://30_Business/Organizations/OVX Smart Connected AI Source 2026-07-07#source-reference:0001",
+      "doc_id": "note://30_Business/Organizations/OVX Smart Connected AI Source 2026-07-07",
+      "path": "30_Business/Organizations/OVX Smart Connected AI Source 2026-07-07.md",
+      "heading_path": [
+        "OVX Smart Connected AI Source 2026-07-07",
+        "Source Reference"
+      ],
+      "chunk_index": 1,
+      "text": "## Source Reference\n- Provided by: Omar Ali\n- Ingestion date: 2026-07-07\n- Attachment path: `C:\\Users\\Omar\\.codex\\attachments\\750b65ec-b282-445b-b168-4dcc6ffbabf4\\pasted-text.txt`\n- Canonical distilled note: [[OVX Smart Connected AI]]\n- Project standard created from source: [[00_System/Project OS/OVX Smart Connected AI Project Standard]]",
+      "content_hash": "2c67ae7e7d51b576e2c07c4f91fc66cb99d8c5fe089ab64879a9c17bc0f2ab7d",
+      "updated": "2026-07-07",
+      "type": "source",
+      "status": "active",
+      "ai_access": "restricted",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://30_Business/Organizations/OVX Smart Connected AI Source 2026-07-07#source-boundary:0002",
+      "doc_id": "note://30_Business/Organizations/OVX Smart Connected AI Source 2026-07-07",
+      "path": "30_Business/Organizations/OVX Smart Connected AI Source 2026-07-07.md",
+      "heading_path": [
+        "OVX Smart Connected AI Source 2026-07-07",
+        "Source Boundary"
+      ],
+      "chunk_index": 2,
+      "text": "## Source Boundary\nThis is a user-declared company vision and operating philosophy for OVX. It is authoritative for Omar's intended company direction, brand language, and design doctrine.\n\nIt is not, by itself, proof that OVX Core exists in production, that client ecosystems are already connected, or that every OVX project currently satisfies the standard. Those claims require project, repository, runtime, client, and operational evidence.",
+      "content_hash": "acdf9452609f34991510fe5d18b0627048726a77d6ec3f524ee5577d68014cc0",
+      "updated": "2026-07-07",
+      "type": "source",
+      "status": "active",
+      "ai_access": "restricted",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://30_Business/Organizations/OVX Smart Connected AI Source 2026-07-07#durable-claims-extracted:0003",
+      "doc_id": "note://30_Business/Organizations/OVX Smart Connected AI Source 2026-07-07",
+      "path": "30_Business/Organizations/OVX Smart Connected AI Source 2026-07-07.md",
+      "heading_path": [
+        "OVX Smart Connected AI Source 2026-07-07",
+        "Durable Claims Extracted"
+      ],
+      "chunk_index": 3,
+      "text": "## Durable Claims Extracted\n- OVX should build connected intelligent ecosystems, not isolated software.\n- Every OVX solution should be powerful alone and more valuable together.\n- A client should not need to restart digitally from zero after joining OVX.\n- The strongest strategic doctrine is: One Reality. Shared Memory. Compounding Intelligence.\n- OVX should be context-engine-first, not merely RAG-first.\n- RAG is useful but not sufficient for business intelligence.\n- Structured truth, analytics, event history, relationship graphs, knowledge retrieval, permissions, and AI context preparation all have different roles.\n- The client's data belongs to the client.\n- Permissions, tenant boundaries, least privilege, classification, audit, and human approval are part of the intelligence architecture.\n- Every meaningful OVX project should ask what it connects to, what it contributes, and how it makes future OVX systems stronger.",
+      "content_hash": "2776023b19b4561e5a784640102a459a61ebb3f96cc70b74f42b0f887732109a",
+      "updated": "2026-07-07",
+      "type": "source",
+      "status": "active",
+      "ai_access": "restricted",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://30_Business/Organizations/OVX Smart Connected AI Source 2026-07-07#explicit-non-claims:0004",
+      "doc_id": "note://30_Business/Organizations/OVX Smart Connected AI Source 2026-07-07",
+      "path": "30_Business/Organizations/OVX Smart Connected AI Source 2026-07-07.md",
+      "heading_path": [
+        "OVX Smart Connected AI Source 2026-07-07",
+        "Explicit Non-Claims"
+      ],
+      "chunk_index": 4,
+      "text": "## Explicit Non-Claims\n- This source does not prove current implementation quality.\n- This source does not prove production readiness.\n- This source does not prove client adoption.\n- This source does not prove that existing OVX projects already follow the doctrine.\n- This source does not authorize mixing client data across tenants or using client-owned data as OVX-owned training material.",
+      "content_hash": "349e5d76c9ce2f8dec9e3d87ca70e0e0d654b2c62727a821e1a36b253533819a",
+      "updated": "2026-07-07",
+      "type": "source",
+      "status": "active",
+      "ai_access": "restricted",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://30_Business/Organizations/OVX Smart Connected AI Source 2026-07-07#promotion-rule:0005",
+      "doc_id": "note://30_Business/Organizations/OVX Smart Connected AI Source 2026-07-07",
+      "path": "30_Business/Organizations/OVX Smart Connected AI Source 2026-07-07.md",
+      "heading_path": [
+        "OVX Smart Connected AI Source 2026-07-07",
+        "Promotion Rule"
+      ],
+      "chunk_index": 5,
+      "text": "## Promotion Rule\nUse this source as canonical strategic direction. Promote project-specific claims only when they are backed by actual project evidence.",
+      "content_hash": "2e450ce7b63404fbf78ebc9bd2de66c963623b368736c92c75bb57899ff598ae",
+      "updated": "2026-07-07",
+      "type": "source",
+      "status": "active",
+      "ai_access": "restricted",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://30_Business/Organizations/OVX Smart Connected AI#ovx-smart-connected-ai:0000",
+      "doc_id": "note://30_Business/Organizations/OVX Smart Connected AI",
+      "path": "30_Business/Organizations/OVX Smart Connected AI.md",
+      "heading_path": [
+        "OVX Smart Connected AI"
+      ],
+      "chunk_index": 0,
+      "text": "# OVX Smart Connected AI",
+      "content_hash": "b2bbb126457952cff04c90e176a4d40bacbb41bc659f767c28f13ad97fa72b01",
+      "updated": "2026-07-07",
+      "type": "organization",
+      "status": "active",
+      "ai_access": "restricted",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://30_Business/Organizations/OVX Smart Connected AI#identity:0001",
+      "doc_id": "note://30_Business/Organizations/OVX Smart Connected AI",
+      "path": "30_Business/Organizations/OVX Smart Connected AI.md",
+      "heading_path": [
+        "OVX Smart Connected AI",
+        "Identity"
+      ],
+      "chunk_index": 1,
+      "text": "## Identity\nOVX is a Smart Connected AI software company.\n\nIt builds custom systems, websites, platforms, mobile apps, internal tools, CRM systems, SaaS products, automations, data platforms, analytics, AI capabilities, agents, and future digital products as parts of one growing client ecosystem.\n\nOVX should not position itself as only a generic software house, only an AI company, or only a SaaS company. The stronger identity is:\n\n> OVX builds connected software that becomes more intelligent together.",
+      "content_hash": "f0b2fdee2061504ddb5abc249b370d7f2db83a20cbc542d7a319d4dafdd93fb8",
+      "updated": "2026-07-07",
+      "type": "organization",
+      "status": "active",
+      "ai_access": "restricted",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://30_Business/Organizations/OVX Smart Connected AI#north-star:0002",
+      "doc_id": "note://30_Business/Organizations/OVX Smart Connected AI",
+      "path": "30_Business/Organizations/OVX Smart Connected AI.md",
+      "heading_path": [
+        "OVX Smart Connected AI",
+        "North Star"
+      ],
+      "chunk_index": 2,
+      "text": "## North Star\nThe question for every OVX project:\n\n> Did we only deliver another application, or did we make the client's entire digital ecosystem more capable?\n\nIf a project only adds screens and features, it may be useful, but it is not yet the full OVX way. The OVX way solves the current problem while strengthening the client's future digital foundation.",
+      "content_hash": "14c27cd459c362aacb2a780f0e6ab3e6855a5ed2b81333cd0aa68ac0d42d396f",
+      "updated": "2026-07-07",
+      "type": "organization",
+      "status": "active",
+      "ai_access": "restricted",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://30_Business/Organizations/OVX Smart Connected AI#company-doctrine:0003",
+      "doc_id": "note://30_Business/Organizations/OVX Smart Connected AI",
+      "path": "30_Business/Organizations/OVX Smart Connected AI.md",
+      "heading_path": [
+        "OVX Smart Connected AI",
+        "Company Doctrine"
+      ],
+      "chunk_index": 3,
+      "text": "## Company Doctrine\nPrimary vision:\n\n> One Reality. Shared Memory. Compounding Intelligence.\n\nCompany promise:\n\n> Every OVX solution is built to solve today's problem and strengthen tomorrow's ecosystem.\n\nProduct philosophy:\n\n> Powerful alone. Smarter together.\n\nStrategic statement:\n\n> Every project adds capability. Every connection adds context. Every useful outcome strengthens future intelligence.\n\nCustomer-facing line:\n\n> Your business is one business. Your software should understand that.",
+      "content_hash": "a569879f58ad55e05e33b3b49cdf858376fe4e6e38f2778a449a71806c71ec18",
+      "updated": "2026-07-07",
+      "type": "organization",
+      "status": "active",
+      "ai_access": "restricted",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://30_Business/Organizations/OVX Smart Connected AI#core-belief:0004",
+      "doc_id": "note://30_Business/Organizations/OVX Smart Connected AI",
+      "path": "30_Business/Organizations/OVX Smart Connected AI.md",
+      "heading_path": [
+        "OVX Smart Connected AI",
+        "Core Belief"
+      ],
+      "chunk_index": 4,
+      "text": "## Core Belief\nThe future of OVX software is not more isolated applications. It is connected intelligence.\n\nMost businesses operate through disconnected websites, CRMs, apps, internal systems, SaaS tools, documents, databases, analytics, and AI assistants. Each one may solve a problem, but each often sees only one fragment of the business.\n\nOVX exists to build differently. A website is not only a website. A CRM is not only a CRM. A mobile app is not only a mobile app. Every digital solution should be treated as part of a larger business organism.",
+      "content_hash": "092ef1e97736a1c84dda6234e53812c0e1d9119a649dfa3b97b461554fd78d8e",
+      "updated": "2026-07-07",
+      "type": "organization",
+      "status": "active",
+      "ai_access": "restricted",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://30_Business/Organizations/OVX Smart Connected AI#ultimate-goal:0005",
+      "doc_id": "note://30_Business/Organizations/OVX Smart Connected AI",
+      "path": "30_Business/Organizations/OVX Smart Connected AI.md",
+      "heading_path": [
+        "OVX Smart Connected AI",
+        "Ultimate Goal"
+      ],
+      "chunk_index": 5,
+      "text": "## Ultimate Goal\nA client should never have to restart digitally from zero after joining OVX.\n\nEvery new project should inherit value from what already exists, contribute new context back to the ecosystem, and make future decisions, AI, automation, and products stronger.\n\nThe objective is compounding digital intelligence, not simply more delivered software.",
+      "content_hash": "c80a704d752c8535476e9b2f6242129c00ccb154f9ee5f38574dee7a57455097",
+      "updated": "2026-07-07",
+      "type": "organization",
+      "status": "active",
+      "ai_access": "restricted",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://30_Business/Organizations/OVX Smart Connected AI#three-pillars:0006",
+      "doc_id": "note://30_Business/Organizations/OVX Smart Connected AI",
+      "path": "30_Business/Organizations/OVX Smart Connected AI.md",
+      "heading_path": [
+        "OVX Smart Connected AI",
+        "Three Pillars"
+      ],
+      "chunk_index": 6,
+      "text": "## Three Pillars",
+      "content_hash": "7f4324dbb2c56cc7128b3f4eadc8ecd7b8b28f30c1f2850c8c30543b68b2edf0",
+      "updated": "2026-07-07",
+      "type": "organization",
+      "status": "active",
+      "ai_access": "restricted",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://30_Business/Organizations/OVX Smart Connected AI#1-one-reality:0007",
+      "doc_id": "note://30_Business/Organizations/OVX Smart Connected AI",
+      "path": "30_Business/Organizations/OVX Smart Connected AI.md",
+      "heading_path": [
+        "OVX Smart Connected AI",
+        "Three Pillars",
+        "1. One Reality"
+      ],
+      "chunk_index": 7,
+      "text": "### 1. One Reality\nA client should not have five contradictory definitions of the same customer, order, project, product, employee, account, or business event.\n\nThis does not require one physical database. It requires a coherent business reality:\n\n- shared entity definitions,\n- stable identifiers where appropriate,\n- clear relationships,\n- source-of-truth rules,\n- business terminology,\n- state boundaries,\n- and explicit authority.\n\nOVX should aim for one canonical business reality even when data is distributed across multiple systems.",
+      "content_hash": "f711c92701ede2ec6e58f7f473142d22537c321af44ae21fba3ac3efaddc1d31",
+      "updated": "2026-07-07",
+      "type": "organization",
+      "status": "active",
+      "ai_access": "restricted",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://30_Business/Organizations/OVX Smart Connected AI#2-shared-memory:0008",
+      "doc_id": "note://30_Business/Organizations/OVX Smart Connected AI",
+      "path": "30_Business/Organizations/OVX Smart Connected AI.md",
+      "heading_path": [
+        "OVX Smart Connected AI",
+        "Three Pillars",
+        "2. Shared Memory"
+      ],
+      "chunk_index": 8,
+      "text": "### 2. Shared Memory\nA business is not only what is true now. It is also what happened over time.\n\nOVX systems should preserve useful memory in four forms:\n\n- factual memory: current operational truth,\n- knowledge memory: documents, policies, procedures, manuals, proposals, reports, and approved internal knowledge,\n- episodic memory: events, timelines, behavior, decisions, outcomes, and sequences,\n- relationship memory: who and what is connected to whom and what.\n\nRAG can be valuable for knowledge memory, but RAG is not the entire brain. Some truth needs structured databases, analytics, event streams, audit trails, or deterministic queries.",
+      "content_hash": "4d5526e698db9c03fa8f5047dcd38a3d8a4a2fc7440c0ee4eab0ba0457652648",
+      "updated": "2026-07-07",
+      "type": "organization",
+      "status": "active",
+      "ai_access": "restricted",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://30_Business/Organizations/OVX Smart Connected AI#3-compounding-intelligence:0009",
+      "doc_id": "note://30_Business/Organizations/OVX Smart Connected AI",
+      "path": "30_Business/Organizations/OVX Smart Connected AI.md",
+      "heading_path": [
+        "OVX Smart Connected AI",
+        "Three Pillars",
+        "3. Compounding Intelligence"
+      ],
+      "chunk_index": 9,
+      "text": "### 3. Compounding Intelligence\nEvery valuable new system can create additional context. Additional context can improve future intelligence.\n\nThe long-term effect should be:\n\n```text\nfirst OVX solution\n  -> useful digital context\n  -> next OVX solution reuses and expands the foundation\n  -> more business reality becomes connected\n  -> shared memory becomes richer\n  -> AI receives better authorized context\n  -> analysis and automation improve\n  -> outcomes create feedback data\n  -> future systems start stronger\n```\n\nIn one sentence:\n\n> Every OVX project should increase the potential value of the next OVX project.",
+      "content_hash": "0f7a2e8e826200201602361914ba42168b4156e34505df74f97d8669273979cb",
+      "updated": "2026-07-07",
+      "type": "organization",
+      "status": "active",
+      "ai_access": "restricted",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://30_Business/Organizations/OVX Smart Connected AI#ovx-core:0010",
+      "doc_id": "note://30_Business/Organizations/OVX Smart Connected AI",
+      "path": "30_Business/Organizations/OVX Smart Connected AI.md",
+      "heading_path": [
+        "OVX Smart Connected AI",
+        "OVX Core"
+      ],
+      "chunk_index": 10,
+      "text": "## OVX Core\nOVX Core is the proposed long-term platform foundation that lets OVX solutions participate in a connected ecosystem without becoming one reckless database.\n\nPossible responsibilities:\n\n- identity and roles,\n- shared business entities,\n- event infrastructure,\n- permission and policy controls,\n- context services,\n- knowledge services,\n- integration services,\n- entity resolution,\n- history and relationship lookup,\n- AI context preparation,\n- audit and lineage.\n\nOVX Core is proposed, not yet proven as an implemented platform. Treat it as a strategic product direction until there is repository, runtime, client, and operational evidence.",
+      "content_hash": "1831e8a1ba1a1cc70dec505395bcf8dd67db8bd7146a64ecbea1c7dc6b148b5c",
+      "updated": "2026-07-07",
+      "type": "organization",
+      "status": "active",
+      "ai_access": "restricted",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://30_Business/Organizations/OVX Smart Connected AI#ai-philosophy:0011",
+      "doc_id": "note://30_Business/Organizations/OVX Smart Connected AI",
+      "path": "30_Business/Organizations/OVX Smart Connected AI.md",
+      "heading_path": [
+        "OVX Smart Connected AI",
+        "AI Philosophy"
+      ],
+      "chunk_index": 11,
+      "text": "## AI Philosophy\nOVX should reject AI theater.\n\nAI belongs where connected context creates real value. A chatbot placed everywhere is not intelligence. Real OVX AI should be:\n\n- context-rich,\n- evidence-aware,\n- permission-aware,\n- action-aware,\n- connected to the right structured and unstructured sources,\n- bounded by human approval where needed,\n- and measured by business value.\n\nThe advantage is not merely using a strong model. The advantage is giving the model the right authorized context at the right time.",
+      "content_hash": "cec98add3c302bd1ba07aef6efbe850658c1885715cc6ba375f57d93a7f4f562",
+      "updated": "2026-07-07",
+      "type": "organization",
+      "status": "active",
+      "ai_access": "restricted",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://30_Business/Organizations/OVX Smart Connected AI#data-philosophy:0012",
+      "doc_id": "note://30_Business/Organizations/OVX Smart Connected AI",
+      "path": "30_Business/Organizations/OVX Smart Connected AI.md",
+      "heading_path": [
+        "OVX Smart Connected AI",
+        "Data Philosophy"
+      ],
+      "chunk_index": 12,
+      "text": "## Data Philosophy\nThe winning asset is not raw data volume.\n\nThe winning asset is connected, trusted, permission-aware, historically rich, AI-usable context.\n\nPoor-quality data creates poor AI. Disconnected data creates confusion. Duplicated data creates contradictory answers. Uncontrolled data creates security risk.\n\nOVX must help clients transform their own data into governed intelligence. The client's data belongs to the client.",
+      "content_hash": "66a21dc09034f37297be20ba2095510fba7b35e56c8097add08ccdc871d479f5",
+      "updated": "2026-07-07",
+      "type": "organization",
+      "status": "active",
+      "ai_access": "restricted",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://30_Business/Organizations/OVX Smart Connected AI#security-philosophy:0013",
+      "doc_id": "note://30_Business/Organizations/OVX Smart Connected AI",
+      "path": "30_Business/Organizations/OVX Smart Connected AI.md",
+      "heading_path": [
+        "OVX Smart Connected AI",
+        "Security Philosophy"
+      ],
+      "chunk_index": 13,
+      "text": "## Security Philosophy\nPermissions are not an add-on to OVX Smart Connected AI. They are part of the intelligence architecture.\n\nEvery layer must preserve:\n\n- identity,\n- tenant boundaries,\n- least privilege,\n- data classification,\n- authorization,\n- purpose,\n- audit history,\n- AI retrieval permissions,\n- AI tool permissions,\n- and human approval requirements.\n\nConnection without governance becomes risk.",
+      "content_hash": "2cdd3d58c69f990ae8f234ff9b580c0c3a825eae05980f1e2ee3eb06e1d76777",
+      "updated": "2026-07-07",
+      "type": "organization",
+      "status": "active",
+      "ai_access": "restricted",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://30_Business/Organizations/OVX Smart Connected AI#what-ovx-must-never-become:0014",
+      "doc_id": "note://30_Business/Organizations/OVX Smart Connected AI",
+      "path": "30_Business/Organizations/OVX Smart Connected AI.md",
+      "heading_path": [
+        "OVX Smart Connected AI",
+        "What OVX Must Never Become"
+      ],
+      "chunk_index": 14,
+      "text": "## What OVX Must Never Become\nOVX must not become:\n\n- an integration hell consultancy that writes unique point-to-point connections for every project,\n- one giant database that swallows every system without authority boundaries,\n- AI theater that adds AI for presentation value,\n- a data prison that creates customer captivity instead of ecosystem value,\n- a universal brain with no permission boundaries.\n\nHealthy ecosystem value means the client stays because everything works better together, not because leaving is impossible.",
+      "content_hash": "62751cb268db956723e226b83d2903db33de074786dc2d390729f076610a6cab",
+      "updated": "2026-07-07",
+      "type": "organization",
+      "status": "active",
+      "ai_access": "restricted",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://30_Business/Organizations/OVX Smart Connected AI#moat:0015",
+      "doc_id": "note://30_Business/Organizations/OVX Smart Connected AI",
+      "path": "30_Business/Organizations/OVX Smart Connected AI.md",
+      "heading_path": [
+        "OVX Smart Connected AI",
+        "Moat"
+      ],
+      "chunk_index": 15,
+      "text": "## Moat\nOVX should not depend on one AI model, one framework, or one feature. Those will change and be copied.\n\nThe deeper moat is the combination of:\n\n- trusted client relationships,\n- reusable ecosystem architecture,\n- integration primitives,\n- canonical business entities,\n- accumulated client-specific history,\n- connected events,\n- business semantics,\n- governed knowledge,\n- permission models,\n- feedback loops,\n- AI context infrastructure,\n- and years of understanding how real systems interact.",
+      "content_hash": "218e159f926addd4c35859338384997c7185b50f8da31a77612ef1066bf8a393",
+      "updated": "2026-07-07",
+      "type": "organization",
+      "status": "active",
+      "ai_access": "restricted",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://30_Business/Organizations/OVX Smart Connected AI#how-omar-brain-should-use-this:0016",
+      "doc_id": "note://30_Business/Organizations/OVX Smart Connected AI",
+      "path": "30_Business/Organizations/OVX Smart Connected AI.md",
+      "heading_path": [
+        "OVX Smart Connected AI",
+        "How Omar Brain Should Use This"
+      ],
+      "chunk_index": 16,
+      "text": "## How Omar Brain Should Use This\nFor OVX-owned projects or client systems built under the OVX philosophy, Omar Brain should load this note before architecture decisions and also load [[00_System/Project OS/OVX Smart Connected AI Project Standard]].\n\nThe Brain should ask whether each meaningful project:\n\n- solves the immediate problem,\n- understands the existing client reality,\n- reuses relevant entities, events, permissions, and capabilities,\n- contributes new context back to the ecosystem,\n- preserves source-of-truth boundaries,\n- separates structured truth from knowledge retrieval,\n- avoids unnecessary isolation,\n- and makes future OVX work faster, smarter, or more valuable.",
+      "content_hash": "534ce25a2ffbc0b428ce405880eb05b24c178a2e0b3e8194de6b88132415ff58",
+      "updated": "2026-07-07",
+      "type": "organization",
+      "status": "active",
+      "ai_access": "restricted",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://30_Business/Organizations/OVX Smart Connected AI#source:0017",
+      "doc_id": "note://30_Business/Organizations/OVX Smart Connected AI",
+      "path": "30_Business/Organizations/OVX Smart Connected AI.md",
+      "heading_path": [
+        "OVX Smart Connected AI",
+        "Source"
+      ],
+      "chunk_index": 17,
+      "text": "## Source\n- Source note: [[OVX Smart Connected AI Source 2026-07-07]]\n- Project standard: [[00_System/Project OS/OVX Smart Connected AI Project Standard]]",
+      "content_hash": "8d995e8cb8af49632e88e0873ca1ed15ef5313b869314c1a9173c00a3a6346a8",
+      "updated": "2026-07-07",
+      "type": "organization",
+      "status": "active",
+      "ai_access": "restricted",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
       "chunk_id": "note://30_Business/Organizations/_Index#business-organizations:0000",
       "doc_id": "note://30_Business/Organizations/_Index",
       "path": "30_Business/Organizations/_Index.md",
@@ -40837,6 +42157,24 @@
       "chunk_index": 0,
       "text": "# Business — Organizations\n\nCanonical home for business organizations.",
       "content_hash": "4021239f86f323c0bdf57264a0b22116e91268c27ccccc5960521ccd0a9e3e3c",
+      "updated": "2026-07-07",
+      "type": "system",
+      "status": "active",
+      "ai_access": "restricted",
+      "memory_class": null,
+      "project_id": null
+    },
+    {
+      "chunk_id": "note://30_Business/Organizations/_Index#active-organizations:0001",
+      "doc_id": "note://30_Business/Organizations/_Index",
+      "path": "30_Business/Organizations/_Index.md",
+      "heading_path": [
+        "Business — Organizations",
+        "Active organizations"
+      ],
+      "chunk_index": 1,
+      "text": "## Active organizations\n- [[OVX Smart Connected AI]] - Omar's company vision and operating philosophy for building connected intelligent ecosystems.",
+      "content_hash": "77129f388b18665dc381bc51edf5a8770736b85422aa6c842fdbd5212db86d11",
       "updated": "2026-07-07",
       "type": "system",
       "status": "active",

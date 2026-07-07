@@ -45,5 +45,10 @@ Software projects add architecture, data model, API contracts, security, test st
 - completion requires evidence,
 - reusable learning escapes the project.
 
+## OVX project inheritance
+When a project belongs to OVX or is built under the OVX Smart Connected AI philosophy, load [[30_Business/Organizations/OVX Smart Connected AI]] and [[00_System/Project OS/OVX Smart Connected AI Project Standard]] before final architecture approval.
+
+OVX-aligned projects must state how they solve the immediate problem, what existing reality they connect to, what useful context they contribute back, which permissions and source-of-truth boundaries apply, and how the work increases the potential value of future OVX projects.
+
 ## No hidden project state
 Important decisions, blockers, architecture changes, task completion, and verification evidence must not live only inside chat history.

@@ -289,6 +289,691 @@
       "summary": "Records static repo verification of the expanded Meta Word of Mouth production-gate blockers, including stale recovery wiring, provider-ID privacy gaps, leads evidence permissions, outbound send ambiguity, and CI/test coverage gaps.",
       "created_at": "2026-07-07T20:23:02.374Z",
       "updated_at": "2026-07-07T20:23:02.374Z"
+    },
+    {
+      "status": "active",
+      "authority": "observed",
+      "verification_state": "contextual",
+      "project_id": "",
+      "created_at": "2026-07-07T21:02:39.974Z",
+      "updated_at": "2026-07-07T21:21:14.555Z",
+      "object_id": "obj-skill-backend-patterns",
+      "object_type": "skill",
+      "title": "Backend Patterns",
+      "canonical_path": "50_Skills/Technical/backend-patterns.md",
+      "summary": "Existing skill for backend architecture, API boundaries, service flows, jobs, and reliability patterns."
+    },
+    {
+      "status": "active",
+      "authority": "observed",
+      "verification_state": "contextual",
+      "project_id": "",
+      "created_at": "2026-07-07T21:02:39.974Z",
+      "updated_at": "2026-07-07T21:21:14.555Z",
+      "object_id": "obj-skill-security-and-hardening",
+      "object_type": "skill",
+      "title": "Security and Hardening",
+      "canonical_path": "50_Skills/Technical/security-and-hardening.md",
+      "summary": "Existing skill for authorization, webhook signatures, sensitive data, secrets, and hardening checks."
+    },
+    {
+      "status": "active",
+      "authority": "observed",
+      "verification_state": "contextual",
+      "project_id": "",
+      "created_at": "2026-07-07T21:02:39.974Z",
+      "updated_at": "2026-07-07T21:21:14.555Z",
+      "object_id": "obj-skill-database-migrations",
+      "object_type": "skill",
+      "title": "Database Migrations",
+      "canonical_path": "50_Skills/Technical/database-migrations.md",
+      "summary": "Existing skill for schema changes, backfills, idempotent migrations, and rollback safety."
+    },
+    {
+      "status": "active",
+      "authority": "observed",
+      "verification_state": "contextual",
+      "project_id": "",
+      "created_at": "2026-07-07T21:02:39.974Z",
+      "updated_at": "2026-07-07T21:21:14.555Z",
+      "object_id": "obj-skill-test-scenarios",
+      "object_type": "skill",
+      "title": "Test Scenarios",
+      "canonical_path": "50_Skills/Execution/test-scenarios.md",
+      "summary": "Existing skill for acceptance, route-level, regression, and edge-case validation scenarios."
+    },
+    {
+      "status": "active",
+      "authority": "observed",
+      "verification_state": "contextual",
+      "project_id": "",
+      "created_at": "2026-07-07T21:02:39.974Z",
+      "updated_at": "2026-07-07T21:21:14.555Z",
+      "object_id": "obj-skill-product-strategy",
+      "object_type": "skill",
+      "title": "Product Strategy",
+      "canonical_path": "50_Skills/Strategy/product-strategy.md",
+      "summary": "Existing skill for keeping business meaning, metrics, and product decisions semantically clear."
+    },
+    {
+      "status": "active",
+      "authority": "observed",
+      "verification_state": "contextual",
+      "project_id": "",
+      "created_at": "2026-07-07T21:02:39.974Z",
+      "updated_at": "2026-07-07T21:21:14.555Z",
+      "object_id": "obj-skill-skill-distillation",
+      "object_type": "skill",
+      "title": "Skill Distillation",
+      "canonical_path": "50_Skills/AI-Work/skill-distillation.md",
+      "summary": "Existing skill for turning repeated project experience into reusable skills without premature promotion."
+    },
+    {
+      "status": "active",
+      "authority": "observed",
+      "verification_state": "contextual",
+      "project_id": "",
+      "created_at": "2026-07-07T21:02:39.974Z",
+      "updated_at": "2026-07-07T21:21:14.555Z",
+      "object_id": "obj-skill-release-notes",
+      "object_type": "skill",
+      "title": "Release Notes",
+      "canonical_path": "50_Skills/Execution/release-notes.md",
+      "summary": "Existing skill for preserving shipped intent, change context, and release history."
+    },
+    {
+      "status": "active",
+      "authority": "observed",
+      "verification_state": "repo-observed",
+      "project_id": "",
+      "created_at": "2026-07-07T21:02:39.974Z",
+      "updated_at": "2026-07-07T21:21:14.555Z",
+      "object_id": "obj-domain-ai-crm",
+      "title": "AI CRM and Customer Intelligence Systems",
+      "summary": "Projects that derive business state, suggestions, or memory from customer conversations using AI.",
+      "object_type": "domain"
+    },
+    {
+      "status": "active",
+      "authority": "observed",
+      "verification_state": "repo-observed",
+      "project_id": "",
+      "created_at": "2026-07-07T21:02:39.974Z",
+      "updated_at": "2026-07-07T21:21:14.555Z",
+      "object_id": "obj-domain-multi-tenant-inbox",
+      "title": "Multi-Tenant Inbox and Shared Conversation Systems",
+      "summary": "Projects that combine workspace authorization, people identities, messages, opportunities, and follow-up state.",
+      "object_type": "domain"
+    },
+    {
+      "status": "active",
+      "authority": "observed",
+      "verification_state": "repo-observed",
+      "project_id": "",
+      "created_at": "2026-07-07T21:02:39.974Z",
+      "updated_at": "2026-07-07T21:21:14.555Z",
+      "object_id": "obj-domain-webhook-integrations",
+      "title": "Webhook and External Provider Integrations",
+      "summary": "Projects that receive or send third-party provider events and must preserve exact provider-contract boundaries.",
+      "object_type": "domain"
+    },
+    {
+      "status": "active",
+      "authority": "observed",
+      "verification_state": "repo-observed",
+      "project_id": "",
+      "created_at": "2026-07-07T21:02:39.974Z",
+      "updated_at": "2026-07-07T21:21:14.555Z",
+      "object_id": "obj-domain-background-workers",
+      "title": "Background Workers and Durable Jobs",
+      "summary": "Projects with asynchronous side effects, leases, stale recovery, idempotency, and retry behavior.",
+      "object_type": "domain"
+    },
+    {
+      "status": "active",
+      "authority": "observed",
+      "verification_state": "repo-observed",
+      "project_id": "",
+      "created_at": "2026-07-07T21:02:39.974Z",
+      "updated_at": "2026-07-07T21:21:14.555Z",
+      "object_id": "obj-domain-legacy-migration",
+      "title": "Legacy Model Migration",
+      "summary": "Projects moving from a temporary or deprecated model into a stronger canonical domain model.",
+      "object_type": "domain"
+    },
+    {
+      "status": "proposed",
+      "authority": "observed",
+      "verification_state": "repo-observed",
+      "project_id": "prj-meta-word-of-mouth",
+      "created_at": "2026-07-07T21:02:39.974Z",
+      "updated_at": "2026-07-07T21:21:14.555Z",
+      "object_id": "obj-pattern-evidence-first-ai",
+      "title": "Evidence-First AI Decisions",
+      "summary": "AI-derived business state should keep exact source evidence, validate model output with a schema, and keep model confidence separate from deterministic business scoring.",
+      "source_runs": [
+        "obj-run-mrb1o0ob-731bc079"
+      ],
+      "source_evidence": [
+        "obj-evd-mrb1oc94-40290714"
+      ],
+      "candidate_ids": [
+        "lc-evidence-first-ai-decisions-persist-exac-5ce17ece"
+      ],
+      "skills": [
+        "obj-skill-backend-patterns",
+        "obj-skill-security-and-hardening",
+        "obj-skill-skill-distillation"
+      ],
+      "domains": [
+        "obj-domain-ai-crm",
+        "obj-domain-multi-tenant-inbox"
+      ],
+      "boundaries": [
+        "Proposed from one reference project; not independently validated as universal.",
+        "Does not prove model quality or production runtime behavior."
+      ],
+      "object_type": "pattern"
+    },
+    {
+      "status": "proposed",
+      "authority": "observed",
+      "verification_state": "repo-observed",
+      "project_id": "prj-meta-word-of-mouth",
+      "created_at": "2026-07-07T21:02:39.974Z",
+      "updated_at": "2026-07-07T21:21:14.555Z",
+      "object_id": "obj-pattern-durable-async-side-effects",
+      "title": "Durable Async Side Effects",
+      "summary": "Slow or external work should be committed/enqueued before execution, claimed idempotently, and monitored with stale lease recovery that is actually invoked.",
+      "source_runs": [
+        "obj-run-mrb1o0ob-731bc079",
+        "obj-run-mrb3iohg-6d1d9a66"
+      ],
+      "source_evidence": [
+        "obj-evd-mrb1oc94-40290714",
+        "obj-evd-mrb3iwud-aba73203"
+      ],
+      "candidate_ids": [
+        "lc-durable-async-side-effects-commit-enqueu-3593276b",
+        "lc-worker-recovery-functions-are-not-produc-8649f8b6"
+      ],
+      "skills": [
+        "obj-skill-backend-patterns",
+        "obj-skill-test-scenarios"
+      ],
+      "domains": [
+        "obj-domain-background-workers",
+        "obj-domain-webhook-integrations"
+      ],
+      "boundaries": [
+        "The positive pattern is repo-observed; the audit also proved a production blocker when recovery is not wired into the live loop."
+      ],
+      "object_type": "pattern"
+    },
+    {
+      "status": "proposed",
+      "authority": "observed",
+      "verification_state": "repo-observed",
+      "project_id": "prj-meta-word-of-mouth",
+      "created_at": "2026-07-07T21:02:39.974Z",
+      "updated_at": "2026-07-07T21:21:14.555Z",
+      "object_id": "obj-pattern-signed-webhook-integrity",
+      "title": "Signed Webhook Integrity",
+      "summary": "Verify exact raw request bytes before parsing provider webhooks and deduplicate at provider-event and domain-message layers.",
+      "source_runs": [
+        "obj-run-mrb1o0ob-731bc079"
+      ],
+      "source_evidence": [
+        "obj-evd-mrb1ocbf-29126148"
+      ],
+      "candidate_ids": [
+        "lc-signed-webhook-integrity-verify-exact-ra-88927d4c"
+      ],
+      "skills": [
+        "obj-skill-security-and-hardening",
+        "obj-skill-backend-patterns"
+      ],
+      "domains": [
+        "obj-domain-webhook-integrations"
+      ],
+      "boundaries": [
+        "Do not copy Meta-specific headers or signature format into Stripe, WhatsApp, or another provider without checking that provider contract."
+      ],
+      "object_type": "pattern"
+    },
+    {
+      "status": "proposed",
+      "authority": "observed",
+      "verification_state": "repo-observed",
+      "project_id": "prj-meta-word-of-mouth",
+      "created_at": "2026-07-07T21:02:39.974Z",
+      "updated_at": "2026-07-07T21:21:14.555Z",
+      "object_id": "obj-pattern-permission-scoped-sensitive-exposure",
+      "title": "Permission-Scoped Sensitive Exposure",
+      "summary": "Sensitive fields must be gated at query, search, evidence loading, and DTO serialization layers rather than only hidden in response formatting.",
+      "source_runs": [
+        "obj-run-mrb1o0ob-731bc079",
+        "obj-run-mrb3iohg-6d1d9a66"
+      ],
+      "source_evidence": [
+        "obj-evd-mrb1ocdf-0f4342d1",
+        "obj-evd-mrb3iwud-aba73203"
+      ],
+      "candidate_ids": [
+        "lc-permission-scoped-dto-exposure-sensitive-43e47143",
+        "lc-privacy-permissions-must-govern-search-f-446540e3"
+      ],
+      "skills": [
+        "obj-skill-security-and-hardening",
+        "obj-skill-backend-patterns",
+        "obj-skill-test-scenarios"
+      ],
+      "domains": [
+        "obj-domain-ai-crm",
+        "obj-domain-multi-tenant-inbox"
+      ],
+      "boundaries": [
+        "Current Meta implementation has confirmed gaps; use as a warning and design target, not as proof the repo already satisfies the pattern everywhere."
+      ],
+      "object_type": "pattern"
+    },
+    {
+      "status": "proposed",
+      "authority": "observed",
+      "verification_state": "repo-observed",
+      "project_id": "prj-meta-word-of-mouth",
+      "created_at": "2026-07-07T21:02:39.974Z",
+      "updated_at": "2026-07-07T21:21:14.555Z",
+      "object_id": "obj-pattern-idempotent-legacy-migration",
+      "title": "Idempotent Legacy Migration",
+      "summary": "Legacy migrations should support dry-run, repeat-safe execution, audit markers, and idempotency tests before old models are retired.",
+      "source_runs": [
+        "obj-run-mrb1o0ob-731bc079"
+      ],
+      "source_evidence": [
+        "obj-evd-mrb1ocdf-0f4342d1"
+      ],
+      "candidate_ids": [
+        "lc-idempotent-legacy-migration-dry-run-repe-2cba6c81"
+      ],
+      "skills": [
+        "obj-skill-database-migrations",
+        "obj-skill-test-scenarios"
+      ],
+      "domains": [
+        "obj-domain-legacy-migration"
+      ],
+      "boundaries": [
+        "The Meta repo still has compatibility debt; this is a candidate pattern, not proof the migration is complete."
+      ],
+      "object_type": "pattern"
+    },
+    {
+      "status": "proposed",
+      "authority": "observed",
+      "verification_state": "repo-observed",
+      "project_id": "prj-meta-word-of-mouth",
+      "created_at": "2026-07-07T21:02:39.974Z",
+      "updated_at": "2026-07-07T21:21:14.555Z",
+      "object_id": "obj-pattern-score-semantic-separation",
+      "title": "Score Semantic Separation",
+      "summary": "AI confidence, commercial opportunity strength, and operational urgency are different concepts and should not collapse into one score.",
+      "source_runs": [
+        "obj-run-mrb1o0ob-731bc079"
+      ],
+      "source_evidence": [
+        "obj-evd-mrb1oc94-40290714"
+      ],
+      "candidate_ids": [
+        "lc-separate-ai-confidence-commercial-streng-96e89af4"
+      ],
+      "skills": [
+        "obj-skill-backend-patterns",
+        "obj-skill-product-strategy"
+      ],
+      "domains": [
+        "obj-domain-ai-crm"
+      ],
+      "boundaries": [
+        "Observed in one AI CRM reference project; validate independently before promoting as a universal product rule."
+      ],
+      "object_type": "pattern"
+    },
+    {
+      "status": "proposed",
+      "authority": "observed",
+      "verification_state": "repo-observed",
+      "project_id": "prj-meta-word-of-mouth",
+      "created_at": "2026-07-07T21:02:39.974Z",
+      "updated_at": "2026-07-07T21:21:14.555Z",
+      "object_id": "obj-failure-external-send-local-persistence",
+      "title": "External Send Succeeded, Local Persistence Failed",
+      "summary": "An external provider call can succeed before local persistence or audit fails; treating the whole operation as failed risks duplicate sends and false state.",
+      "source_runs": [
+        "obj-run-mrb3iohg-6d1d9a66"
+      ],
+      "source_evidence": [
+        "obj-evd-mrb3iwud-aba73203"
+      ],
+      "candidate_ids": [
+        "lc-external-send-succeeded-local-persistenc-f1d297e1"
+      ],
+      "skills": [
+        "obj-skill-backend-patterns",
+        "obj-skill-test-scenarios"
+      ],
+      "domains": [
+        "obj-domain-webhook-integrations",
+        "obj-domain-multi-tenant-inbox"
+      ],
+      "prevention": "Model provider success and local persistence as separate durable facts, with uncertain reconciliation states.",
+      "object_type": "failure-signature"
+    },
+    {
+      "status": "proposed",
+      "authority": "observed",
+      "verification_state": "repo-observed",
+      "project_id": "prj-meta-word-of-mouth",
+      "created_at": "2026-07-07T21:02:39.974Z",
+      "updated_at": "2026-07-07T21:21:14.555Z",
+      "object_id": "obj-failure-provider-id-search-oracle",
+      "title": "Provider-ID Search Oracle",
+      "summary": "A hidden provider identifier can still leak if search predicates match it for users who are not allowed to see provider IDs.",
+      "source_runs": [
+        "obj-run-mrb3iohg-6d1d9a66"
+      ],
+      "source_evidence": [
+        "obj-evd-mrb3iwud-aba73203"
+      ],
+      "candidate_ids": [
+        "lc-provider-id-search-oracle-4355a070"
+      ],
+      "skills": [
+        "obj-skill-security-and-hardening",
+        "obj-skill-backend-patterns",
+        "obj-skill-test-scenarios"
+      ],
+      "domains": [
+        "obj-domain-ai-crm",
+        "obj-domain-multi-tenant-inbox"
+      ],
+      "prevention": "Gate sensitive search predicates with the same permission that governs sensitive output exposure.",
+      "object_type": "failure-signature"
+    },
+    {
+      "status": "proposed",
+      "authority": "observed",
+      "verification_state": "repo-observed",
+      "project_id": "prj-meta-word-of-mouth",
+      "created_at": "2026-07-07T21:02:39.974Z",
+      "updated_at": "2026-07-07T21:21:14.555Z",
+      "object_id": "obj-failure-stale-recovery-dead-runtime-code",
+      "title": "Stale Recovery Dead Runtime Code",
+      "summary": "A stale-job recovery function is not a production protection if the worker loop never invokes it.",
+      "source_runs": [
+        "obj-run-mrb3iohg-6d1d9a66"
+      ],
+      "source_evidence": [
+        "obj-evd-mrb3iwud-aba73203"
+      ],
+      "candidate_ids": [
+        "lc-stale-recovery-dead-runtime-code-7551f1c1",
+        "lc-worker-recovery-functions-are-not-produc-8649f8b6"
+      ],
+      "skills": [
+        "obj-skill-backend-patterns",
+        "obj-skill-test-scenarios"
+      ],
+      "domains": [
+        "obj-domain-background-workers"
+      ],
+      "prevention": "Verify the actual process loop calls recovery on a schedule or startup path, and test stale-lock recovery against a disposable DB.",
+      "object_type": "failure-signature"
+    },
+    {
+      "status": "proposed",
+      "authority": "observed",
+      "verification_state": "repo-observed",
+      "project_id": "prj-meta-word-of-mouth",
+      "created_at": "2026-07-07T21:02:39.974Z",
+      "updated_at": "2026-07-07T21:21:14.555Z",
+      "object_id": "obj-failure-leads-intelligence-permission-bypass",
+      "title": "Leads Evidence Bypasses Intelligence Permission",
+      "summary": "A route can enforce a broad leads permission while loading and serializing AI evidence that should require intelligence-specific permission.",
+      "source_runs": [
+        "obj-run-mrb3iohg-6d1d9a66"
+      ],
+      "source_evidence": [
+        "obj-evd-mrb3iwud-aba73203"
+      ],
+      "candidate_ids": [
+        "lc-leads-evidence-bypasses-intelligence-per-2aafb5aa"
+      ],
+      "skills": [
+        "obj-skill-security-and-hardening",
+        "obj-skill-test-scenarios"
+      ],
+      "domains": [
+        "obj-domain-ai-crm",
+        "obj-domain-multi-tenant-inbox"
+      ],
+      "prevention": "Test route-level permission boundaries, not only DTO helpers.",
+      "object_type": "failure-signature"
+    },
+    {
+      "status": "proposed",
+      "authority": "observed",
+      "verification_state": "repo-observed",
+      "project_id": "prj-meta-word-of-mouth",
+      "created_at": "2026-07-07T21:02:39.974Z",
+      "updated_at": "2026-07-07T21:21:14.555Z",
+      "object_id": "obj-failure-same-person-ai-snapshot-race",
+      "title": "Same-Person AI Snapshot Race",
+      "summary": "Concurrent AI jobs for the same entity can finish out of order and allow older analysis to overwrite newer durable memory.",
+      "source_runs": [
+        "obj-run-mrb3iohg-6d1d9a66"
+      ],
+      "source_evidence": [
+        "obj-evd-mrb3iwud-aba73203"
+      ],
+      "candidate_ids": [
+        "lc-same-person-ai-snapshot-out-of-order-ove-f8365709"
+      ],
+      "skills": [
+        "obj-skill-backend-patterns",
+        "obj-skill-database-migrations",
+        "obj-skill-test-scenarios"
+      ],
+      "domains": [
+        "obj-domain-ai-crm",
+        "obj-domain-background-workers"
+      ],
+      "prevention": "Serialize per entity or use version/updated-at guards inside the transaction.",
+      "object_type": "failure-signature"
+    },
+    {
+      "status": "proposed",
+      "authority": "observed",
+      "verification_state": "repo-observed",
+      "project_id": "prj-meta-word-of-mouth",
+      "created_at": "2026-07-07T21:02:39.974Z",
+      "updated_at": "2026-07-07T21:21:14.555Z",
+      "object_id": "obj-failure-test-privacy-policy-drift",
+      "title": "Test Expectation Drifts From Privacy Policy",
+      "summary": "Tests can encode stale expectations, such as expecting raw provider IDs while the privacy policy now defaults to masking.",
+      "source_runs": [
+        "obj-run-mrb3iohg-6d1d9a66"
+      ],
+      "source_evidence": [
+        "obj-evd-mrb3iwud-aba73203"
+      ],
+      "candidate_ids": [
+        "lc-test-expectation-drifts-from-privacy-pol-22a677ae"
+      ],
+      "skills": [
+        "obj-skill-test-scenarios",
+        "obj-skill-security-and-hardening"
+      ],
+      "domains": [
+        "obj-domain-ai-crm",
+        "obj-domain-multi-tenant-inbox"
+      ],
+      "prevention": "Keep tests tied to canonical privacy policy and update fixtures when masking defaults change.",
+      "object_type": "failure-signature"
+    },
+    {
+      "status": "proposed",
+      "authority": "observed",
+      "verification_state": "repo-observed",
+      "project_id": "prj-meta-word-of-mouth",
+      "created_at": "2026-07-07T21:02:39.974Z",
+      "updated_at": "2026-07-07T21:21:14.555Z",
+      "object_id": "obj-failure-temporary-adapter-production-drift",
+      "title": "Temporary Adapter Production Drift",
+      "summary": "Temporary webhook/OAuth adapters can diverge from the intended owned-server production path and become false readiness evidence.",
+      "source_runs": [
+        "obj-run-mrb1o0ob-731bc079"
+      ],
+      "source_evidence": [
+        "obj-evd-mrb1ocdf-0f4342d1"
+      ],
+      "candidate_ids": [
+        "lc-temporary-adapter-production-drift-dev-w-c4828049"
+      ],
+      "skills": [
+        "obj-skill-backend-patterns",
+        "obj-skill-security-and-hardening"
+      ],
+      "domains": [
+        "obj-domain-webhook-integrations"
+      ],
+      "prevention": "Track adapter boundaries explicitly and require production-path evidence before readiness claims.",
+      "object_type": "failure-signature"
+    },
+    {
+      "status": "proposed",
+      "authority": "observed",
+      "verification_state": "repo-observed",
+      "project_id": "prj-meta-word-of-mouth",
+      "created_at": "2026-07-07T21:02:39.974Z",
+      "updated_at": "2026-07-07T21:21:14.555Z",
+      "object_id": "obj-failure-weak-commit-provenance",
+      "title": "Weak Commit Provenance",
+      "summary": "Repeated low-information commit messages erase intent and reduce future learning value even when code history exists.",
+      "source_runs": [
+        "obj-run-mrb1o0ob-731bc079"
+      ],
+      "source_evidence": [
+        "obj-evd-mrb1oc73-25062d49"
+      ],
+      "candidate_ids": [
+        "lc-weak-commit-provenance-repeated-commit-m-e7ff99ab"
+      ],
+      "skills": [
+        "obj-skill-release-notes",
+        "obj-skill-skill-distillation"
+      ],
+      "domains": [
+        "obj-domain-legacy-migration"
+      ],
+      "prevention": "Use commit and run summaries that state intent, risk, and verification evidence.",
+      "object_type": "failure-signature"
+    },
+    {
+      "object_id": "obj-ovx-company-vision-source-2026-07-07",
+      "object_type": "source",
+      "title": "OVX Smart Connected AI Source 2026-07-07",
+      "aliases": [
+        "OVX company vision source",
+        "OVX vision attachment"
+      ],
+      "canonical_path": "30_Business/Organizations/OVX Smart Connected AI Source 2026-07-07.md",
+      "status": "active",
+      "authority": "observed",
+      "verification_state": "user-provided-source",
+      "summary": "User-provided company vision and operating philosophy for OVX Smart Connected AI, including One Reality, Shared Memory, Compounding Intelligence, client data ownership, context-engine-first AI, and project architecture rules.",
+      "created_at": "2026-07-07T23:16:14+02:00",
+      "updated_at": "2026-07-07T23:16:14+02:00"
+    },
+    {
+      "object_id": "obj-ovx-smart-connected-ai",
+      "object_type": "organization",
+      "title": "OVX Smart Connected AI",
+      "aliases": [
+        "OVX",
+        "OVX Software House",
+        "OVX Smart Connected AI Software Company",
+        "OVX connected software company"
+      ],
+      "canonical_path": "30_Business/Organizations/OVX Smart Connected AI.md",
+      "status": "active",
+      "authority": "canonical",
+      "verification_state": "user-declared-canonical-vision",
+      "summary": "Omar's company vision: a Smart Connected AI software company building custom systems and digital products as connected, governed, increasingly intelligent client ecosystems.",
+      "source_ids": [
+        "obj-ovx-company-vision-source-2026-07-07"
+      ],
+      "created_at": "2026-07-07T23:16:14+02:00",
+      "updated_at": "2026-07-07T23:16:14+02:00"
+    },
+    {
+      "object_id": "obj-ovx-smart-connected-ai-standard",
+      "object_type": "standard",
+      "title": "OVX Smart Connected AI Project Standard",
+      "aliases": [
+        "OVX project standard",
+        "OVX Smart Connected AI Standard",
+        "OVX architecture intake standard"
+      ],
+      "canonical_path": "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+      "status": "active",
+      "authority": "canonical",
+      "verification_state": "user-declared-standard",
+      "summary": "Project intake and architecture standard requiring OVX-aligned work to solve the immediate problem, connect existing reality, contribute useful context, preserve permissions, and strengthen future ecosystem intelligence.",
+      "source_ids": [
+        "obj-ovx-company-vision-source-2026-07-07"
+      ],
+      "created_at": "2026-07-07T23:16:14+02:00",
+      "updated_at": "2026-07-07T23:16:14+02:00"
+    },
+    {
+      "object_id": "obj-ovx-one-reality-shared-memory-compounding-intelligence",
+      "object_type": "concept",
+      "title": "One Reality Shared Memory Compounding Intelligence",
+      "aliases": [
+        "One Reality. Shared Memory. Compounding Intelligence.",
+        "Same Brain Same Data Same Intelligence",
+        "Compounding Digital Intelligence"
+      ],
+      "canonical_path": "30_Business/Organizations/OVX Smart Connected AI.md",
+      "status": "active",
+      "authority": "canonical",
+      "verification_state": "user-declared-company-doctrine",
+      "summary": "The core OVX doctrine: client software should share coherent reality, preserve governed memory, and make future intelligence stronger through compounding context.",
+      "source_ids": [
+        "obj-ovx-company-vision-source-2026-07-07"
+      ],
+      "created_at": "2026-07-07T23:16:14+02:00",
+      "updated_at": "2026-07-07T23:16:14+02:00"
+    },
+    {
+      "object_id": "obj-ovx-core",
+      "object_type": "concept",
+      "title": "OVX Core",
+      "aliases": [
+        "OVX Core Platform",
+        "OVX shared foundation"
+      ],
+      "canonical_path": "30_Business/Organizations/OVX Smart Connected AI.md",
+      "status": "proposed",
+      "authority": "contextual",
+      "verification_state": "user-declared-proposed-direction",
+      "summary": "Proposed long-term shared foundation for OVX ecosystems: identity, entities, events, permissions, context services, knowledge services, integrations, lineage, and AI context preparation.",
+      "source_ids": [
+        "obj-ovx-company-vision-source-2026-07-07"
+      ],
+      "created_at": "2026-07-07T23:16:14+02:00",
+      "updated_at": "2026-07-07T23:16:14+02:00"
     }
   ]
 }

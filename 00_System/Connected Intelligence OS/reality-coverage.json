@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T20:29:09.965Z",
+  "generated_at": "2026-07-07T21:21:15.127Z",
   "score": 21.4,
   "dimensions": {
     "registered_projects": 7,
@@ -8,10 +8,10 @@
     "projects_with_evidence": 1,
     "runs": 3,
     "evidence_notes": 9,
-    "events": 12,
-    "edges": 25,
-    "causal_edges": 22,
-    "learning_candidates": 25,
+    "events": 52,
+    "edges": 145,
+    "causal_edges": 66,
+    "learning_candidates": 41,
     "promoted_candidates": 0
   },
   "components": {

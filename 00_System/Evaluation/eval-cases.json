@@ -308,6 +308,25 @@
         "00_System/Skill OS/Skill Composition and Handoff Protocol.md"
       ],
       "k": 5
+    },
+    {
+      "eval_id": "ovx-company-vision",
+      "query": "What is the OVX Smart Connected AI vision?",
+      "query_class": "business-doctrine",
+      "expected_paths": [
+        "30_Business/Organizations/OVX Smart Connected AI.md",
+        "00_System/Project OS/OVX Smart Connected AI Project Standard.md"
+      ],
+      "k": 5
+    },
+    {
+      "eval_id": "ovx-project-standard",
+      "query": "Which standard should future OVX projects follow?",
+      "query_class": "business-doctrine",
+      "expected_paths": [
+        "00_System/Project OS/OVX Smart Connected AI Project Standard.md"
+      ],
+      "k": 5
     }
   ]
 }

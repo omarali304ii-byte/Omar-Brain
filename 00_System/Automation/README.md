@@ -128,10 +128,28 @@ node .\00_System\Automation\new-evidence.mjs . --project "Meta Word of Mouth" --
 # Compile learning candidates only from observed/verified real run notes
 node .\00_System\Automation\experience-compile.mjs .
 
+# Promote durable project experience into first-class pattern/failure objects and graph edges
+node .\00_System\Automation\learning-objectify.mjs .
+
+# Process impact queue items with auditable processed/blocked outcomes
+node .\00_System\Automation\impact-process.mjs .
+
+# Plan future-project transfer from graph-backed experience
+node .\00_System\Automation\project-experience-plan.mjs . --project "Meta Word of Mouth" --query "I am building a new AI CRM"
+
+# Detect repository revision drift for repo-grounded projects
+node .\00_System\Automation\project-revision-check.mjs . --all
+
 # Honest reality and integrity checks
 node .\00_System\Automation\reality-coverage.mjs .
 node .\00_System\Automation\check-orphan-information.mjs .
 node .\00_System\Automation\check-causal-integrity.mjs .
+node .\00_System\Automation\check-learning-quality.mjs .
+node .\00_System\Automation\check-impact-queue.mjs .
+node .\00_System\Automation\check-experience-graph.mjs .
+
+# Dedicated real-project experience retrieval eval
+node .\00_System\Automation\eval-project-experience.mjs .
 ```
 
 Important: imported project manifests are navigation bootstrap only and use `context-import-needs-repo-check`. They do not count as verified evidence.

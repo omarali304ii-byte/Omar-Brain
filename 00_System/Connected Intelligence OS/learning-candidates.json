@@ -20,7 +20,23 @@
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
       "updated": "2026-07-07",
-      "promotion_rule": "Never auto-promote; require evidence and governance review."
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "source_evidence": [
+        "evd-mrb1oc73-25062d49",
+        "evd-mrb1oc94-40290714",
+        "evd-mrb1ocbf-29126148",
+        "evd-mrb1ocdf-0f4342d1"
+      ],
+      "extraction_provenance": [
+        {
+          "key": "run-mrb1o0ob-731bc079:lesson:465a2fbf",
+          "source_run": "run-mrb1o0ob-731bc079",
+          "section": "Reusable learning candidates",
+          "extracted_at": "2026-07-07"
+        }
+      ],
+      "confidence": "single-project-proposed",
+      "transfer_mode": "candidate-pattern"
     },
     {
       "candidate_id": "lc-durable-async-side-effects-commit-enqueu-3593276b",
@@ -39,7 +55,24 @@
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
       "updated": "2026-07-07",
-      "promotion_rule": "Never auto-promote; require evidence and governance review."
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "source_evidence": [
+        "evd-mrb1oc73-25062d49",
+        "evd-mrb1oc94-40290714",
+        "evd-mrb1ocbf-29126148",
+        "evd-mrb1ocdf-0f4342d1"
+      ],
+      "extraction_provenance": [
+        {
+          "key": "run-mrb1o0ob-731bc079:lesson:162c3def",
+          "source_run": "run-mrb1o0ob-731bc079",
+          "section": "Reusable learning candidates",
+          "extracted_at": "2026-07-07"
+        }
+      ],
+      "canonical_concept_object_id": "obj-pattern-durable-async-side-effects",
+      "confidence": "single-project-proposed",
+      "transfer_mode": "candidate-pattern"
     },
     {
       "candidate_id": "lc-signed-webhook-integrity-verify-exact-ra-88927d4c",
@@ -58,7 +91,24 @@
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
       "updated": "2026-07-07",
-      "promotion_rule": "Never auto-promote; require evidence and governance review."
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "source_evidence": [
+        "evd-mrb1oc73-25062d49",
+        "evd-mrb1oc94-40290714",
+        "evd-mrb1ocbf-29126148",
+        "evd-mrb1ocdf-0f4342d1"
+      ],
+      "extraction_provenance": [
+        {
+          "key": "run-mrb1o0ob-731bc079:lesson:6b3e28aa",
+          "source_run": "run-mrb1o0ob-731bc079",
+          "section": "Reusable learning candidates",
+          "extracted_at": "2026-07-07"
+        }
+      ],
+      "canonical_concept_object_id": "obj-pattern-signed-webhook-integrity",
+      "confidence": "single-project-proposed",
+      "transfer_mode": "candidate-pattern"
     },
     {
       "candidate_id": "lc-permission-scoped-dto-exposure-sensitive-43e47143",
@@ -77,7 +127,23 @@
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
       "updated": "2026-07-07",
-      "promotion_rule": "Never auto-promote; require evidence and governance review."
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "source_evidence": [
+        "evd-mrb1oc73-25062d49",
+        "evd-mrb1oc94-40290714",
+        "evd-mrb1ocbf-29126148",
+        "evd-mrb1ocdf-0f4342d1"
+      ],
+      "extraction_provenance": [
+        {
+          "key": "run-mrb1o0ob-731bc079:lesson:255d9ff0",
+          "source_run": "run-mrb1o0ob-731bc079",
+          "section": "Reusable learning candidates",
+          "extracted_at": "2026-07-07"
+        }
+      ],
+      "confidence": "single-project-proposed",
+      "transfer_mode": "candidate-pattern"
     },
     {
       "candidate_id": "lc-idempotent-legacy-migration-dry-run-repe-2cba6c81",
@@ -96,7 +162,24 @@
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
       "updated": "2026-07-07",
-      "promotion_rule": "Never auto-promote; require evidence and governance review."
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "source_evidence": [
+        "evd-mrb1oc73-25062d49",
+        "evd-mrb1oc94-40290714",
+        "evd-mrb1ocbf-29126148",
+        "evd-mrb1ocdf-0f4342d1"
+      ],
+      "extraction_provenance": [
+        {
+          "key": "run-mrb1o0ob-731bc079:lesson:753682db",
+          "source_run": "run-mrb1o0ob-731bc079",
+          "section": "Reusable learning candidates",
+          "extracted_at": "2026-07-07"
+        }
+      ],
+      "canonical_concept_object_id": "obj-pattern-idempotent-legacy-migration",
+      "confidence": "single-project-proposed",
+      "transfer_mode": "candidate-pattern"
     },
     {
       "candidate_id": "lc-separate-ai-confidence-commercial-streng-96e89af4",
@@ -115,7 +198,24 @@
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
       "updated": "2026-07-07",
-      "promotion_rule": "Never auto-promote; require evidence and governance review."
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "source_evidence": [
+        "evd-mrb1oc73-25062d49",
+        "evd-mrb1oc94-40290714",
+        "evd-mrb1ocbf-29126148",
+        "evd-mrb1ocdf-0f4342d1"
+      ],
+      "extraction_provenance": [
+        {
+          "key": "run-mrb1o0ob-731bc079:lesson:8eae1dac",
+          "source_run": "run-mrb1o0ob-731bc079",
+          "section": "Reusable learning candidates",
+          "extracted_at": "2026-07-07"
+        }
+      ],
+      "canonical_concept_object_id": "obj-pattern-score-semantic-separation",
+      "confidence": "single-project-proposed",
+      "transfer_mode": "candidate-pattern"
     },
     {
       "candidate_id": "lc-manual-regression-without-visible-ci-gat-e797c243",
@@ -134,7 +234,23 @@
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
       "updated": "2026-07-07",
-      "promotion_rule": "Never auto-promote; require evidence and governance review."
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "source_evidence": [
+        "evd-mrb1oc73-25062d49",
+        "evd-mrb1oc94-40290714",
+        "evd-mrb1ocbf-29126148",
+        "evd-mrb1ocdf-0f4342d1"
+      ],
+      "extraction_provenance": [
+        {
+          "key": "run-mrb1o0ob-731bc079:failure-signature:2e2c3cfb",
+          "source_run": "run-mrb1o0ob-731bc079",
+          "section": "Failure signatures",
+          "extracted_at": "2026-07-07"
+        }
+      ],
+      "confidence": "single-project-proposed",
+      "transfer_mode": "warning"
     },
     {
       "candidate_id": "lc-temporary-adapter-production-drift-dev-w-c4828049",
@@ -153,7 +269,23 @@
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
       "updated": "2026-07-07",
-      "promotion_rule": "Never auto-promote; require evidence and governance review."
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "source_evidence": [
+        "evd-mrb1oc73-25062d49",
+        "evd-mrb1oc94-40290714",
+        "evd-mrb1ocbf-29126148",
+        "evd-mrb1ocdf-0f4342d1"
+      ],
+      "extraction_provenance": [
+        {
+          "key": "run-mrb1o0ob-731bc079:failure-signature:d3d46b4d",
+          "source_run": "run-mrb1o0ob-731bc079",
+          "section": "Failure signatures",
+          "extracted_at": "2026-07-07"
+        }
+      ],
+      "confidence": "single-project-proposed",
+      "transfer_mode": "warning"
     },
     {
       "candidate_id": "lc-split-dev-infra-reproducibility-gap-app--81ca0ee6",
@@ -172,7 +304,23 @@
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
       "updated": "2026-07-07",
-      "promotion_rule": "Never auto-promote; require evidence and governance review."
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "source_evidence": [
+        "evd-mrb1oc73-25062d49",
+        "evd-mrb1oc94-40290714",
+        "evd-mrb1ocbf-29126148",
+        "evd-mrb1ocdf-0f4342d1"
+      ],
+      "extraction_provenance": [
+        {
+          "key": "run-mrb1o0ob-731bc079:failure-signature:74a1905f",
+          "source_run": "run-mrb1o0ob-731bc079",
+          "section": "Failure signatures",
+          "extracted_at": "2026-07-07"
+        }
+      ],
+      "confidence": "single-project-proposed",
+      "transfer_mode": "warning"
     },
     {
       "candidate_id": "lc-weak-commit-provenance-repeated-commit-m-e7ff99ab",
@@ -191,7 +339,23 @@
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
       "updated": "2026-07-07",
-      "promotion_rule": "Never auto-promote; require evidence and governance review."
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "source_evidence": [
+        "evd-mrb1oc73-25062d49",
+        "evd-mrb1oc94-40290714",
+        "evd-mrb1ocbf-29126148",
+        "evd-mrb1ocdf-0f4342d1"
+      ],
+      "extraction_provenance": [
+        {
+          "key": "run-mrb1o0ob-731bc079:failure-signature:f004ba8f",
+          "source_run": "run-mrb1o0ob-731bc079",
+          "section": "Failure signatures",
+          "extracted_at": "2026-07-07"
+        }
+      ],
+      "confidence": "single-project-proposed",
+      "transfer_mode": "warning"
     },
     {
       "candidate_id": "lc-legacy-model-lingering-deprecated-model--94737ddf",
@@ -210,7 +374,23 @@
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
       "updated": "2026-07-07",
-      "promotion_rule": "Never auto-promote; require evidence and governance review."
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "source_evidence": [
+        "evd-mrb1oc73-25062d49",
+        "evd-mrb1oc94-40290714",
+        "evd-mrb1ocbf-29126148",
+        "evd-mrb1ocdf-0f4342d1"
+      ],
+      "extraction_provenance": [
+        {
+          "key": "run-mrb1o0ob-731bc079:failure-signature:fd3870be",
+          "source_run": "run-mrb1o0ob-731bc079",
+          "section": "Failure signatures",
+          "extracted_at": "2026-07-07"
+        }
+      ],
+      "confidence": "single-project-proposed",
+      "transfer_mode": "warning"
     },
     {
       "candidate_id": "lc-keep-provider-webhook-tests-split-into-p-4c4a7d77",
@@ -229,7 +409,22 @@
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
       "updated": "2026-07-07",
-      "promotion_rule": "Never auto-promote; require evidence and governance review."
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "source_evidence": [
+        "evd-mrb351wz-ee53c349",
+        "evd-mrb351xk-224ef696",
+        "evd-mrb351xs-27ac41ce"
+      ],
+      "extraction_provenance": [
+        {
+          "key": "run-mrb34rdn-eebbc7fd:lesson:70f153b8",
+          "source_run": "run-mrb34rdn-eebbc7fd",
+          "section": "Reusable learning candidates",
+          "extracted_at": "2026-07-07"
+        }
+      ],
+      "confidence": "single-project-proposed",
+      "transfer_mode": "candidate-pattern"
     },
     {
       "candidate_id": "lc-before-running-fixture-mutating-scripts--479c017d",
@@ -248,7 +443,22 @@
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
       "updated": "2026-07-07",
-      "promotion_rule": "Never auto-promote; require evidence and governance review."
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "source_evidence": [
+        "evd-mrb351wz-ee53c349",
+        "evd-mrb351xk-224ef696",
+        "evd-mrb351xs-27ac41ce"
+      ],
+      "extraction_provenance": [
+        {
+          "key": "run-mrb34rdn-eebbc7fd:lesson:708f9e44",
+          "source_run": "run-mrb34rdn-eebbc7fd",
+          "section": "Reusable learning candidates",
+          "extracted_at": "2026-07-07"
+        }
+      ],
+      "confidence": "single-project-proposed",
+      "transfer_mode": "candidate-pattern"
     },
     {
       "candidate_id": "lc-remote-database-url-blocks-safe-fixture--422ce910",
@@ -267,7 +477,20 @@
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
       "updated": "2026-07-07",
-      "promotion_rule": "Never auto-promote; require evidence and governance review."
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "source_evidence": [
+        "evd-mrb351wz-ee53c349",
+        "evd-mrb351xk-224ef696",
+        "evd-mrb351xs-27ac41ce"
+      ],
+      "extraction_provenance": [
+        {
+          "key": "run-mrb34rdn-eebbc7fd:failure-signature:18a88eda",
+          "source_run": "run-mrb34rdn-eebbc7fd",
+          "section": "Failure signatures",
+          "extracted_at": "2026-07-07"
+        }
+      ]
     },
     {
       "candidate_id": "lc-connector-only-import-needs-local-verifi-beaeb5f4",
@@ -286,7 +509,20 @@
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
       "updated": "2026-07-07",
-      "promotion_rule": "Never auto-promote; require evidence and governance review."
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "source_evidence": [
+        "evd-mrb351wz-ee53c349",
+        "evd-mrb351xk-224ef696",
+        "evd-mrb351xs-27ac41ce"
+      ],
+      "extraction_provenance": [
+        {
+          "key": "run-mrb34rdn-eebbc7fd:failure-signature:046c83ff",
+          "source_run": "run-mrb34rdn-eebbc7fd",
+          "section": "Failure signatures",
+          "extracted_at": "2026-07-07"
+        }
+      ]
     },
     {
       "candidate_id": "lc-treat-successful-external-provider-calls-f6ffe456",
@@ -305,7 +541,21 @@
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
       "updated": "2026-07-07",
-      "promotion_rule": "Never auto-promote; require evidence and governance review."
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "source_evidence": [
+        "evd-mrb3iwud-32fdb1ac",
+        "evd-mrb3iwud-aba73203"
+      ],
+      "extraction_provenance": [
+        {
+          "key": "run-mrb3iohg-6d1d9a66:lesson:b93ad10f",
+          "source_run": "run-mrb3iohg-6d1d9a66",
+          "section": "Reusable learning candidates",
+          "extracted_at": "2026-07-07"
+        }
+      ],
+      "confidence": "single-project-proposed",
+      "transfer_mode": "candidate-pattern"
     },
     {
       "candidate_id": "lc-privacy-permissions-must-govern-search-f-446540e3",
@@ -324,7 +574,22 @@
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
       "updated": "2026-07-07",
-      "promotion_rule": "Never auto-promote; require evidence and governance review."
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "source_evidence": [
+        "evd-mrb3iwud-32fdb1ac",
+        "evd-mrb3iwud-aba73203"
+      ],
+      "extraction_provenance": [
+        {
+          "key": "run-mrb3iohg-6d1d9a66:lesson:66390be6",
+          "source_run": "run-mrb3iohg-6d1d9a66",
+          "section": "Reusable learning candidates",
+          "extracted_at": "2026-07-07"
+        }
+      ],
+      "canonical_concept_object_id": "obj-pattern-permission-scoped-sensitive-exposure",
+      "confidence": "single-project-proposed",
+      "transfer_mode": "candidate-pattern"
     },
     {
       "candidate_id": "lc-worker-recovery-functions-are-not-produc-8649f8b6",
@@ -343,14 +608,29 @@
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
       "updated": "2026-07-07",
-      "promotion_rule": "Never auto-promote; require evidence and governance review."
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "source_evidence": [
+        "evd-mrb3iwud-32fdb1ac",
+        "evd-mrb3iwud-aba73203"
+      ],
+      "extraction_provenance": [
+        {
+          "key": "run-mrb3iohg-6d1d9a66:lesson:3320aee3",
+          "source_run": "run-mrb3iohg-6d1d9a66",
+          "section": "Reusable learning candidates",
+          "extracted_at": "2026-07-07"
+        }
+      ],
+      "canonical_concept_object_id": "obj-failure-stale-recovery-dead-runtime-code",
+      "confidence": "single-project-proposed",
+      "transfer_mode": "candidate-pattern"
     },
     {
       "candidate_id": "lc-route-level-security-tests-are-stronger--aab86cb2",
       "candidate_key": "aab86cb2a5eb56ee29549a0e5252996b4639f8280f7bbbb7fa5c4905348fd994",
       "kind": "lesson",
       "claim": "Route-level security tests are stronger evidence than helper/DTO tests for authori",
-      "status": "proposed",
+      "status": "rejected",
       "source_runs": [
         "run-mrb3iohg-6d1d9a66"
       ],
@@ -362,7 +642,8 @@
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
       "updated": "2026-07-07",
-      "promotion_rule": "Never auto-promote; require evidence and governance review."
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "rejection_reason": "Malformed truncated extraction rejected by candidate quality gate."
     },
     {
       "candidate_id": "lc-external-send-succeeded-local-persistenc-f1d297e1",
@@ -381,7 +662,19 @@
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
       "updated": "2026-07-07",
-      "promotion_rule": "Never auto-promote; require evidence and governance review."
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "source_evidence": [
+        "evd-mrb3iwud-32fdb1ac",
+        "evd-mrb3iwud-aba73203"
+      ],
+      "extraction_provenance": [
+        {
+          "key": "run-mrb3iohg-6d1d9a66:failure-signature:e3db968e",
+          "source_run": "run-mrb3iohg-6d1d9a66",
+          "section": "Failure signatures",
+          "extracted_at": "2026-07-07"
+        }
+      ]
     },
     {
       "candidate_id": "lc-leads-evidence-bypasses-intelligence-per-2aafb5aa",
@@ -400,7 +693,19 @@
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
       "updated": "2026-07-07",
-      "promotion_rule": "Never auto-promote; require evidence and governance review."
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "source_evidence": [
+        "evd-mrb3iwud-32fdb1ac",
+        "evd-mrb3iwud-aba73203"
+      ],
+      "extraction_provenance": [
+        {
+          "key": "run-mrb3iohg-6d1d9a66:failure-signature:b60be164",
+          "source_run": "run-mrb3iohg-6d1d9a66",
+          "section": "Failure signatures",
+          "extracted_at": "2026-07-07"
+        }
+      ]
     },
     {
       "candidate_id": "lc-provider-id-search-oracle-4355a070",
@@ -419,7 +724,19 @@
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
       "updated": "2026-07-07",
-      "promotion_rule": "Never auto-promote; require evidence and governance review."
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "source_evidence": [
+        "evd-mrb3iwud-32fdb1ac",
+        "evd-mrb3iwud-aba73203"
+      ],
+      "extraction_provenance": [
+        {
+          "key": "run-mrb3iohg-6d1d9a66:failure-signature:778b00c2",
+          "source_run": "run-mrb3iohg-6d1d9a66",
+          "section": "Failure signatures",
+          "extracted_at": "2026-07-07"
+        }
+      ]
     },
     {
       "candidate_id": "lc-stale-recovery-dead-runtime-code-7551f1c1",
@@ -438,7 +755,19 @@
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
       "updated": "2026-07-07",
-      "promotion_rule": "Never auto-promote; require evidence and governance review."
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "source_evidence": [
+        "evd-mrb3iwud-32fdb1ac",
+        "evd-mrb3iwud-aba73203"
+      ],
+      "extraction_provenance": [
+        {
+          "key": "run-mrb3iohg-6d1d9a66:failure-signature:8a82b61c",
+          "source_run": "run-mrb3iohg-6d1d9a66",
+          "section": "Failure signatures",
+          "extracted_at": "2026-07-07"
+        }
+      ]
     },
     {
       "candidate_id": "lc-same-person-ai-snapshot-out-of-order-ove-f8365709",
@@ -457,7 +786,19 @@
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
       "updated": "2026-07-07",
-      "promotion_rule": "Never auto-promote; require evidence and governance review."
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "source_evidence": [
+        "evd-mrb3iwud-32fdb1ac",
+        "evd-mrb3iwud-aba73203"
+      ],
+      "extraction_provenance": [
+        {
+          "key": "run-mrb3iohg-6d1d9a66:failure-signature:ef7b4996",
+          "source_run": "run-mrb3iohg-6d1d9a66",
+          "section": "Failure signatures",
+          "extracted_at": "2026-07-07"
+        }
+      ]
     },
     {
       "candidate_id": "lc-test-expectation-drifts-from-privacy-pol-22a677ae",
@@ -476,7 +817,641 @@
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
       "updated": "2026-07-07",
-      "promotion_rule": "Never auto-promote; require evidence and governance review."
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "source_evidence": [
+        "evd-mrb3iwud-32fdb1ac",
+        "evd-mrb3iwud-aba73203"
+      ],
+      "extraction_provenance": [
+        {
+          "key": "run-mrb3iohg-6d1d9a66:failure-signature:993397fb",
+          "source_run": "run-mrb3iohg-6d1d9a66",
+          "section": "Failure signatures",
+          "extracted_at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "candidate_id": "lc-evidence-first-ai-decisions-persist-exact-so-320f3f5d",
+      "candidate_key": "320f3f5dc2abfdc16e61e63b569a1a1618beb7fb833eb2012230ecbe51cdaad8",
+      "kind": "lesson",
+      "claim": "Evidence-first AI decisions: persist exact source evidence, schema-validate AI output, and separate deterministic business scoring from model confidence.",
+      "status": "rejected",
+      "source_runs": [
+        "run-mrb1o0ob-731bc079"
+      ],
+      "source_evidence": [
+        "evd-mrb1oc73-25062d49",
+        "evd-mrb1oc94-40290714",
+        "evd-mrb1ocbf-29126148",
+        "evd-mrb1ocdf-0f4342d1"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "applicability_conditions": [],
+      "non_applicability_conditions": [],
+      "transfer_mode": "candidate-pattern",
+      "confidence": "single-project-proposed",
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "extraction_provenance": [
+        {
+          "key": "run-mrb1o0ob-731bc079:lesson:465a2fbf",
+          "source_run": "run-mrb1o0ob-731bc079",
+          "section": "Reusable learning candidates",
+          "extracted_at": "2026-07-07"
+        }
+      ],
+      "rejection_reason": "Duplicate normalized claim merged into earlier stable candidate ID.",
+      "superseded_by": "lc-evidence-first-ai-decisions-persist-exac-5ce17ece"
+    },
+    {
+      "candidate_id": "lc-durable-async-side-effects-commit-enqueue-be-4a67d92c",
+      "candidate_key": "4a67d92cf0a667ffec17084f9559f637cbe8d6e0e8a5314bc3423bf76d3e1cfa",
+      "kind": "lesson",
+      "claim": "Durable async side effects: commit/enqueue before expensive AI/provider work; claim idempotently; recover stale leases.",
+      "status": "rejected",
+      "source_runs": [
+        "run-mrb1o0ob-731bc079"
+      ],
+      "source_evidence": [
+        "evd-mrb1oc73-25062d49",
+        "evd-mrb1oc94-40290714",
+        "evd-mrb1ocbf-29126148",
+        "evd-mrb1ocdf-0f4342d1"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "applicability_conditions": [],
+      "non_applicability_conditions": [],
+      "transfer_mode": "candidate-pattern",
+      "confidence": "single-project-proposed",
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "extraction_provenance": [
+        {
+          "key": "run-mrb1o0ob-731bc079:lesson:162c3def",
+          "source_run": "run-mrb1o0ob-731bc079",
+          "section": "Reusable learning candidates",
+          "extracted_at": "2026-07-07"
+        }
+      ],
+      "canonical_concept_object_id": "obj-pattern-durable-async-side-effects",
+      "rejection_reason": "Duplicate normalized claim merged into earlier stable candidate ID.",
+      "superseded_by": "lc-durable-async-side-effects-commit-enqueu-3593276b"
+    },
+    {
+      "candidate_id": "lc-signed-webhook-integrity-verify-exact-raw-by-109f8540",
+      "candidate_key": "109f8540f32f59b1a3f961b90453f59516c003b354bf5eb0913cc1a740647e64",
+      "kind": "lesson",
+      "claim": "Signed webhook integrity: verify exact raw bytes before parsing; deduplicate at event/message layers.",
+      "status": "rejected",
+      "source_runs": [
+        "run-mrb1o0ob-731bc079"
+      ],
+      "source_evidence": [
+        "evd-mrb1oc73-25062d49",
+        "evd-mrb1oc94-40290714",
+        "evd-mrb1ocbf-29126148",
+        "evd-mrb1ocdf-0f4342d1"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "applicability_conditions": [],
+      "non_applicability_conditions": [],
+      "transfer_mode": "candidate-pattern",
+      "confidence": "single-project-proposed",
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "extraction_provenance": [
+        {
+          "key": "run-mrb1o0ob-731bc079:lesson:6b3e28aa",
+          "source_run": "run-mrb1o0ob-731bc079",
+          "section": "Reusable learning candidates",
+          "extracted_at": "2026-07-07"
+        }
+      ],
+      "canonical_concept_object_id": "obj-pattern-signed-webhook-integrity",
+      "rejection_reason": "Duplicate normalized claim merged into earlier stable candidate ID.",
+      "superseded_by": "lc-signed-webhook-integrity-verify-exact-ra-88927d4c"
+    },
+    {
+      "candidate_id": "lc-permission-scoped-dto-exposure-sensitive-fie-ca766410",
+      "candidate_key": "ca7664109a21167d32a1aa64540d354a5ab00cf69ec0594ad6cdd7aa2948a294",
+      "kind": "lesson",
+      "claim": "Permission-scoped DTO exposure: sensitive fields default hidden/masked and are loaded/exposed only when permission allows.",
+      "status": "rejected",
+      "source_runs": [
+        "run-mrb1o0ob-731bc079"
+      ],
+      "source_evidence": [
+        "evd-mrb1oc73-25062d49",
+        "evd-mrb1oc94-40290714",
+        "evd-mrb1ocbf-29126148",
+        "evd-mrb1ocdf-0f4342d1"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "applicability_conditions": [],
+      "non_applicability_conditions": [],
+      "transfer_mode": "candidate-pattern",
+      "confidence": "single-project-proposed",
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "extraction_provenance": [
+        {
+          "key": "run-mrb1o0ob-731bc079:lesson:255d9ff0",
+          "source_run": "run-mrb1o0ob-731bc079",
+          "section": "Reusable learning candidates",
+          "extracted_at": "2026-07-07"
+        }
+      ],
+      "rejection_reason": "Duplicate normalized claim merged into earlier stable candidate ID.",
+      "superseded_by": "lc-permission-scoped-dto-exposure-sensitive-43e47143"
+    },
+    {
+      "candidate_id": "lc-idempotent-legacy-migration-dry-run-repeated-f887d60a",
+      "candidate_key": "f887d60a996bc3942efada29e18f35919176981d2e01aab8475d3e57dc54b364",
+      "kind": "lesson",
+      "claim": "Idempotent legacy migration: dry-run + repeated safe execution + audit marker + idempotency tests.",
+      "status": "rejected",
+      "source_runs": [
+        "run-mrb1o0ob-731bc079"
+      ],
+      "source_evidence": [
+        "evd-mrb1oc73-25062d49",
+        "evd-mrb1oc94-40290714",
+        "evd-mrb1ocbf-29126148",
+        "evd-mrb1ocdf-0f4342d1"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "applicability_conditions": [],
+      "non_applicability_conditions": [],
+      "transfer_mode": "candidate-pattern",
+      "confidence": "single-project-proposed",
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "extraction_provenance": [
+        {
+          "key": "run-mrb1o0ob-731bc079:lesson:753682db",
+          "source_run": "run-mrb1o0ob-731bc079",
+          "section": "Reusable learning candidates",
+          "extracted_at": "2026-07-07"
+        }
+      ],
+      "canonical_concept_object_id": "obj-pattern-idempotent-legacy-migration",
+      "rejection_reason": "Duplicate normalized claim merged into earlier stable candidate ID.",
+      "superseded_by": "lc-idempotent-legacy-migration-dry-run-repe-2cba6c81"
+    },
+    {
+      "candidate_id": "lc-separate-ai-confidence-commercial-strength-a-4ad786ed",
+      "candidate_key": "4ad786ed39c119c0271c1442852324b2953b872e6ac0fad160b567c01f0e0963",
+      "kind": "lesson",
+      "claim": "Separate AI confidence, commercial strength and operational urgency as different semantics.",
+      "status": "rejected",
+      "source_runs": [
+        "run-mrb1o0ob-731bc079"
+      ],
+      "source_evidence": [
+        "evd-mrb1oc73-25062d49",
+        "evd-mrb1oc94-40290714",
+        "evd-mrb1ocbf-29126148",
+        "evd-mrb1ocdf-0f4342d1"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "applicability_conditions": [],
+      "non_applicability_conditions": [],
+      "transfer_mode": "candidate-pattern",
+      "confidence": "single-project-proposed",
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "extraction_provenance": [
+        {
+          "key": "run-mrb1o0ob-731bc079:lesson:8eae1dac",
+          "source_run": "run-mrb1o0ob-731bc079",
+          "section": "Reusable learning candidates",
+          "extracted_at": "2026-07-07"
+        }
+      ],
+      "canonical_concept_object_id": "obj-pattern-score-semantic-separation",
+      "rejection_reason": "Duplicate normalized claim merged into earlier stable candidate ID.",
+      "superseded_by": "lc-separate-ai-confidence-commercial-streng-96e89af4"
+    },
+    {
+      "candidate_id": "lc-manual-regression-without-visible-ci-gate-ma-97b3cd32",
+      "candidate_key": "97b3cd32f976ad58f7ae7047bd74829ed49d4ca0e9800fa13889636f218106d8",
+      "kind": "failure-signature",
+      "claim": "`MANUAL_REGRESSION_WITHOUT_VISIBLE_CI_GATE` — many local checks exist but latest commit showed no combined statuses in this inspection.",
+      "status": "rejected",
+      "source_runs": [
+        "run-mrb1o0ob-731bc079"
+      ],
+      "source_evidence": [
+        "evd-mrb1oc73-25062d49",
+        "evd-mrb1oc94-40290714",
+        "evd-mrb1ocbf-29126148",
+        "evd-mrb1ocdf-0f4342d1"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "applicability_conditions": [],
+      "non_applicability_conditions": [],
+      "transfer_mode": "warning",
+      "confidence": "single-project-proposed",
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "extraction_provenance": [
+        {
+          "key": "run-mrb1o0ob-731bc079:failure-signature:2e2c3cfb",
+          "source_run": "run-mrb1o0ob-731bc079",
+          "section": "Failure signatures",
+          "extracted_at": "2026-07-07"
+        }
+      ],
+      "rejection_reason": "Duplicate normalized claim merged into earlier stable candidate ID.",
+      "superseded_by": "lc-manual-regression-without-visible-ci-gat-e797c243"
+    },
+    {
+      "candidate_id": "lc-temporary-adapter-production-drift-dev-webho-763dbe50",
+      "candidate_key": "763dbe507e8af51c34d96f1cd8e3cb12f1ed67cb0f765596fd8246f3cb17e7de",
+      "kind": "failure-signature",
+      "claim": "`TEMPORARY_ADAPTER_PRODUCTION_DRIFT` — dev webhook/OAuth adapters differ from intended owned-server production path.",
+      "status": "rejected",
+      "source_runs": [
+        "run-mrb1o0ob-731bc079"
+      ],
+      "source_evidence": [
+        "evd-mrb1oc73-25062d49",
+        "evd-mrb1oc94-40290714",
+        "evd-mrb1ocbf-29126148",
+        "evd-mrb1ocdf-0f4342d1"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "applicability_conditions": [],
+      "non_applicability_conditions": [],
+      "transfer_mode": "warning",
+      "confidence": "single-project-proposed",
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "extraction_provenance": [
+        {
+          "key": "run-mrb1o0ob-731bc079:failure-signature:d3d46b4d",
+          "source_run": "run-mrb1o0ob-731bc079",
+          "section": "Failure signatures",
+          "extracted_at": "2026-07-07"
+        }
+      ],
+      "rejection_reason": "Duplicate normalized claim merged into earlier stable candidate ID.",
+      "superseded_by": "lc-temporary-adapter-production-drift-dev-w-c4828049"
+    },
+    {
+      "candidate_id": "lc-split-dev-infra-reproducibility-gap-app-dock-bddbc8a7",
+      "candidate_key": "bddbc8a765c91f5148ee7823710a7f3dc788e7b4bd2cc7a81dea895eacb50c85",
+      "kind": "failure-signature",
+      "claim": "`SPLIT_DEV_INFRA_REPRODUCIBILITY_GAP` — app Docker service exists while database/public callbacks depend on external services.",
+      "status": "rejected",
+      "source_runs": [
+        "run-mrb1o0ob-731bc079"
+      ],
+      "source_evidence": [
+        "evd-mrb1oc73-25062d49",
+        "evd-mrb1oc94-40290714",
+        "evd-mrb1ocbf-29126148",
+        "evd-mrb1ocdf-0f4342d1"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "applicability_conditions": [],
+      "non_applicability_conditions": [],
+      "transfer_mode": "warning",
+      "confidence": "single-project-proposed",
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "extraction_provenance": [
+        {
+          "key": "run-mrb1o0ob-731bc079:failure-signature:74a1905f",
+          "source_run": "run-mrb1o0ob-731bc079",
+          "section": "Failure signatures",
+          "extracted_at": "2026-07-07"
+        }
+      ],
+      "rejection_reason": "Duplicate normalized claim merged into earlier stable candidate ID.",
+      "superseded_by": "lc-split-dev-infra-reproducibility-gap-app--81ca0ee6"
+    },
+    {
+      "candidate_id": "lc-weak-commit-provenance-repeated-commit-messa-b7aee763",
+      "candidate_key": "b7aee7634eccc692ca99843500c612ea17f11650e61bd90b8400673976439aec",
+      "kind": "failure-signature",
+      "claim": "`WEAK_COMMIT_PROVENANCE` — repeated `.` commit messages erase intent and reduce future learning value.",
+      "status": "rejected",
+      "source_runs": [
+        "run-mrb1o0ob-731bc079"
+      ],
+      "source_evidence": [
+        "evd-mrb1oc73-25062d49",
+        "evd-mrb1oc94-40290714",
+        "evd-mrb1ocbf-29126148",
+        "evd-mrb1ocdf-0f4342d1"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "applicability_conditions": [],
+      "non_applicability_conditions": [],
+      "transfer_mode": "warning",
+      "confidence": "single-project-proposed",
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "extraction_provenance": [
+        {
+          "key": "run-mrb1o0ob-731bc079:failure-signature:f004ba8f",
+          "source_run": "run-mrb1o0ob-731bc079",
+          "section": "Failure signatures",
+          "extracted_at": "2026-07-07"
+        }
+      ],
+      "rejection_reason": "Duplicate normalized claim merged into earlier stable candidate ID.",
+      "superseded_by": "lc-weak-commit-provenance-repeated-commit-m-e7ff99ab"
+    },
+    {
+      "candidate_id": "lc-legacy-model-lingering-deprecated-model-rema-aed42385",
+      "candidate_key": "aed42385a7d0b1444e1ef3243b3eacb72a91a800e65c2f33409e737425c52a7a",
+      "kind": "failure-signature",
+      "claim": "`LEGACY_MODEL_LINGERING` — deprecated model remains alongside replacement concepts.",
+      "status": "rejected",
+      "source_runs": [
+        "run-mrb1o0ob-731bc079"
+      ],
+      "source_evidence": [
+        "evd-mrb1oc73-25062d49",
+        "evd-mrb1oc94-40290714",
+        "evd-mrb1ocbf-29126148",
+        "evd-mrb1ocdf-0f4342d1"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "applicability_conditions": [],
+      "non_applicability_conditions": [],
+      "transfer_mode": "warning",
+      "confidence": "single-project-proposed",
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "extraction_provenance": [
+        {
+          "key": "run-mrb1o0ob-731bc079:failure-signature:fd3870be",
+          "source_run": "run-mrb1o0ob-731bc079",
+          "section": "Failure signatures",
+          "extracted_at": "2026-07-07"
+        }
+      ],
+      "rejection_reason": "Duplicate normalized claim merged into earlier stable candidate ID.",
+      "superseded_by": "lc-legacy-model-lingering-deprecated-model--94737ddf"
+    },
+    {
+      "candidate_id": "lc-keep-provider-webhook-tests-split-into-pure--228610d9",
+      "candidate_key": "228610d9e1486c32b13556ad9f5260a2df34205816d1a2fb924bc9aca3f15a20",
+      "kind": "lesson",
+      "claim": "Keep provider/webhook tests split into pure crypto/profile checks and DB-backed ingestion checks so agents can safely verify part of the system even when database safety is unknown.",
+      "status": "rejected",
+      "source_runs": [
+        "run-mrb34rdn-eebbc7fd"
+      ],
+      "source_evidence": [
+        "evd-mrb351wz-ee53c349",
+        "evd-mrb351xk-224ef696",
+        "evd-mrb351xs-27ac41ce"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "applicability_conditions": [],
+      "non_applicability_conditions": [],
+      "transfer_mode": "candidate-pattern",
+      "confidence": "single-project-proposed",
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "extraction_provenance": [
+        {
+          "key": "run-mrb34rdn-eebbc7fd:lesson:70f153b8",
+          "source_run": "run-mrb34rdn-eebbc7fd",
+          "section": "Reusable learning candidates",
+          "extracted_at": "2026-07-07"
+        }
+      ],
+      "rejection_reason": "Duplicate normalized claim merged into earlier stable candidate ID.",
+      "superseded_by": "lc-keep-provider-webhook-tests-split-into-p-4c4a7d77"
+    },
+    {
+      "candidate_id": "lc-before-running-fixture-mutating-scripts-insp-cf181613",
+      "candidate_key": "cf1816136ead1ca0f28d665c444f5b2007e30b2159d1b1804cbb883673f378d6",
+      "kind": "lesson",
+      "claim": "Before running fixture-mutating scripts, inspect `DATABASE_URL` host and script cleanup behavior; \"test script\" does not automatically mean safe against a shared database.",
+      "status": "rejected",
+      "source_runs": [
+        "run-mrb34rdn-eebbc7fd"
+      ],
+      "source_evidence": [
+        "evd-mrb351wz-ee53c349",
+        "evd-mrb351xk-224ef696",
+        "evd-mrb351xs-27ac41ce"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "applicability_conditions": [],
+      "non_applicability_conditions": [],
+      "transfer_mode": "candidate-pattern",
+      "confidence": "single-project-proposed",
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "extraction_provenance": [
+        {
+          "key": "run-mrb34rdn-eebbc7fd:lesson:708f9e44",
+          "source_run": "run-mrb34rdn-eebbc7fd",
+          "section": "Reusable learning candidates",
+          "extracted_at": "2026-07-07"
+        }
+      ],
+      "rejection_reason": "Duplicate normalized claim merged into earlier stable candidate ID.",
+      "superseded_by": "lc-before-running-fixture-mutating-scripts--479c017d"
+    },
+    {
+      "candidate_id": "lc-treat-successful-external-provider-calls-and-a4a0aac5",
+      "candidate_key": "a4a0aac54e5a47909cb32543873cf73af1e6b16219f82e537ab33c93afaaa3bb",
+      "kind": "lesson",
+      "claim": "Treat successful external provider calls and successful local persistence as two separate facts; model uncertain outcomes explicitly.",
+      "status": "rejected",
+      "source_runs": [
+        "run-mrb3iohg-6d1d9a66"
+      ],
+      "source_evidence": [
+        "evd-mrb3iwud-32fdb1ac",
+        "evd-mrb3iwud-aba73203"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "applicability_conditions": [],
+      "non_applicability_conditions": [],
+      "transfer_mode": "candidate-pattern",
+      "confidence": "single-project-proposed",
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "extraction_provenance": [
+        {
+          "key": "run-mrb3iohg-6d1d9a66:lesson:b93ad10f",
+          "source_run": "run-mrb3iohg-6d1d9a66",
+          "section": "Reusable learning candidates",
+          "extracted_at": "2026-07-07"
+        }
+      ],
+      "rejection_reason": "Duplicate normalized claim merged into earlier stable candidate ID.",
+      "superseded_by": "lc-treat-successful-external-provider-calls-f6ffe456"
+    },
+    {
+      "candidate_id": "lc-privacy-permissions-must-govern-search-filte-14acd1bb",
+      "candidate_key": "14acd1bb294d53bb618f1517d0b79bf4ae5b713713db2270d007f5f4d75833f6",
+      "kind": "lesson",
+      "claim": "Privacy permissions must govern search/filter predicates and related evidence payloads, not only response fields.",
+      "status": "rejected",
+      "source_runs": [
+        "run-mrb3iohg-6d1d9a66"
+      ],
+      "source_evidence": [
+        "evd-mrb3iwud-32fdb1ac",
+        "evd-mrb3iwud-aba73203"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "applicability_conditions": [],
+      "non_applicability_conditions": [],
+      "transfer_mode": "candidate-pattern",
+      "confidence": "single-project-proposed",
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "extraction_provenance": [
+        {
+          "key": "run-mrb3iohg-6d1d9a66:lesson:66390be6",
+          "source_run": "run-mrb3iohg-6d1d9a66",
+          "section": "Reusable learning candidates",
+          "extracted_at": "2026-07-07"
+        }
+      ],
+      "canonical_concept_object_id": "obj-pattern-permission-scoped-sensitive-exposure",
+      "rejection_reason": "Duplicate normalized claim merged into earlier stable candidate ID.",
+      "superseded_by": "lc-privacy-permissions-must-govern-search-f-446540e3"
+    },
+    {
+      "candidate_id": "lc-worker-recovery-functions-are-not-production-45a4608b",
+      "candidate_key": "45a4608bad376b26e1d8ef7abde8beb20e8856c559f939ecd0a79c68c4d9f18a",
+      "kind": "lesson",
+      "claim": "Worker recovery functions are not production protections until the actual worker loop invokes them.",
+      "status": "rejected",
+      "source_runs": [
+        "run-mrb3iohg-6d1d9a66"
+      ],
+      "source_evidence": [
+        "evd-mrb3iwud-32fdb1ac",
+        "evd-mrb3iwud-aba73203"
+      ],
+      "projects": [
+        "prj-meta-word-of-mouth"
+      ],
+      "validation_count": 1,
+      "independent_project_count": 1,
+      "applicability_conditions": [],
+      "non_applicability_conditions": [],
+      "transfer_mode": "candidate-pattern",
+      "confidence": "single-project-proposed",
+      "authority": "run-derived-candidate",
+      "created": "2026-07-07",
+      "updated": "2026-07-07",
+      "promotion_rule": "Never auto-promote; require evidence and governance review.",
+      "extraction_provenance": [
+        {
+          "key": "run-mrb3iohg-6d1d9a66:lesson:3320aee3",
+          "source_run": "run-mrb3iohg-6d1d9a66",
+          "section": "Reusable learning candidates",
+          "extracted_at": "2026-07-07"
+        }
+      ],
+      "canonical_concept_object_id": "obj-failure-stale-recovery-dead-runtime-code",
+      "rejection_reason": "Duplicate normalized claim merged into earlier stable candidate ID.",
+      "superseded_by": "lc-worker-recovery-functions-are-not-produc-8649f8b6"
     }
   ]
 }

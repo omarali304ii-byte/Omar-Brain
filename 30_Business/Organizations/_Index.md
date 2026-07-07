@@ -9,3 +9,6 @@ ai_access: restricted
 # Business — Organizations
 
 Canonical home for business organizations.
+
+## Active organizations
+- [[OVX Smart Connected AI]] - Omar's company vision and operating philosophy for building connected intelligent ecosystems.

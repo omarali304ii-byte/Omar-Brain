@@ -1,0 +1,2503 @@
+{
+  "generated_at": "2026-07-07T21:21:17.106Z",
+  "dataset_id": "meta-project-experience-v1",
+  "cases": 20,
+  "passed": 20,
+  "pass_rate": 1,
+  "results": [
+    {
+      "eval_id": "meta-exp-001",
+      "pass": true,
+      "query": "Have we seen an external provider call succeed while local persistence failed?",
+      "missing_paths": [],
+      "missing_object_ids": [],
+      "missing_candidate_ids": [],
+      "forbidden_hits": [],
+      "retrieved": [
+        {
+          "id": "obj-failure-external-send-local-persistence",
+          "item_type": "object",
+          "score": 1.259
+        },
+        {
+          "id": "lc-treat-successful-external-provider-calls-f6ffe456",
+          "item_type": "candidate",
+          "score": 0.883
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
+          "score": 0.802
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-production-gate-blocker-audit-intake-and-static-verification-6d1d9a66.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-production-gate-blocker-audit-intake-and-static-verification-6d1d9a66.md",
+          "score": 0.756
+        },
+        {
+          "id": "00_System/Runtime State/OPERATION_LOG.md",
+          "item_type": "path",
+          "path": "00_System/Runtime State/OPERATION_LOG.md",
+          "score": 0.73
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/05_FUTURE_PATH.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/05_FUTURE_PATH.md",
+          "score": 0.695
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/08_EXECUTION_QUEUE.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/08_EXECUTION_QUEUE.md",
+          "score": 0.683
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/07_CURRENT_STATE.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/07_CURRENT_STATE.md",
+          "score": 0.682
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/04_BAD_POINTS_AND_RISKS.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/04_BAD_POINTS_AND_RISKS.md",
+          "score": 0.516
+        },
+        {
+          "id": "obj-run-mrb3iohg-6d1d9a66",
+          "item_type": "object",
+          "score": 0.5
+        },
+        {
+          "id": "obj-domain-webhook-integrations",
+          "item_type": "object",
+          "score": 0.481
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-static-verification-of-production-gate-blockers-aba73203.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-static-verification-of-production-gate-blockers-aba73203.md",
+          "score": 0.477
+        },
+        {
+          "id": "60_Knowledge/Research/Obsidian Multi-Agent Persistent AI Brain - Deep Research.md",
+          "item_type": "path",
+          "path": "60_Knowledge/Research/Obsidian Multi-Agent Persistent AI Brain - Deep Research.md",
+          "score": 0.463
+        },
+        {
+          "id": "obj-failure-test-privacy-policy-drift",
+          "item_type": "object",
+          "score": 0.451
+        },
+        {
+          "id": "00_System/Templates/TPL - Project API Contracts.md",
+          "item_type": "path",
+          "path": "00_System/Templates/TPL - Project API Contracts.md",
+          "score": 0.448
+        },
+        {
+          "id": "00_System/AI/External Index Contract.md",
+          "item_type": "path",
+          "path": "00_System/AI/External Index Contract.md",
+          "score": 0.429
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/02_ARCHITECTURE.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/02_ARCHITECTURE.md",
+          "score": 0.426
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-privacy-permissions-and-operational-gaps-snapshot-0f4342d1.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-privacy-permissions-and-operational-gaps-snapshot-0f4342d1.md",
+          "score": 0.406
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-local-static-verification-and-safe-test-boundary-eebbc7fd.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-local-static-verification-and-safe-test-boundary-eebbc7fd.md",
+          "score": 0.404
+        },
+        {
+          "id": "lc-durable-async-side-effects-commit-enqueu-3593276b",
+          "item_type": "candidate",
+          "score": 0.402
+        }
+      ],
+      "explanation": "Should retrieve the Meta production-gate failure, run, and candidate that separate external side effects from local persistence."
+    },
+    {
+      "eval_id": "meta-exp-002",
+      "pass": true,
+      "query": "What project taught us that stale worker recovery code is useless if the worker loop never calls it?",
+      "missing_paths": [],
+      "missing_object_ids": [],
+      "missing_candidate_ids": [],
+      "forbidden_hits": [],
+      "retrieved": [
+        {
+          "id": "obj-failure-stale-recovery-dead-runtime-code",
+          "item_type": "object",
+          "score": 1.082
+        },
+        {
+          "id": "lc-worker-recovery-functions-are-not-produc-8649f8b6",
+          "item_type": "candidate",
+          "score": 1.02
+        },
+        {
+          "id": "obj-domain-background-workers",
+          "item_type": "object",
+          "score": 0.805
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
+          "score": 0.798
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-static-verification-of-production-gate-blockers-aba73203.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-static-verification-of-production-gate-blockers-aba73203.md",
+          "score": 0.648
+        },
+        {
+          "id": "00_System/Runtime State/OPERATION_LOG.md",
+          "item_type": "path",
+          "path": "00_System/Runtime State/OPERATION_LOG.md",
+          "score": 0.583
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-production-gate-blocker-audit-intake-and-static-verification-6d1d9a66.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-production-gate-blocker-audit-intake-and-static-verification-6d1d9a66.md",
+          "score": 0.558
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/05_FUTURE_PATH.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/05_FUTURE_PATH.md",
+          "score": 0.548
+        },
+        {
+          "id": "obj-evd-mrb3iwud-aba73203",
+          "item_type": "object",
+          "score": 0.52
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/08_EXECUTION_QUEUE.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/08_EXECUTION_QUEUE.md",
+          "score": 0.519
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/11_REFERENCE_SCORECARD.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/11_REFERENCE_SCORECARD.md",
+          "score": 0.43
+        },
+        {
+          "id": "obj-pattern-durable-async-side-effects",
+          "item_type": "object",
+          "score": 0.405
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/04_BAD_POINTS_AND_RISKS.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/04_BAD_POINTS_AND_RISKS.md",
+          "score": 0.402
+        },
+        {
+          "id": "lc-durable-async-side-effects-commit-enqueu-3593276b",
+          "item_type": "candidate",
+          "score": 0.319
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/03_GOOD_POINTS.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/03_GOOD_POINTS.md",
+          "score": 0.315
+        },
+        {
+          "id": "30_Business/Organizations/OVX Smart Connected AI.md",
+          "item_type": "path",
+          "path": "30_Business/Organizations/OVX Smart Connected AI.md",
+          "score": 0.277
+        },
+        {
+          "id": "obj-evd-mrb1oc94-40290714",
+          "item_type": "object",
+          "score": 0.271
+        },
+        {
+          "id": "00_System/AI Runtime/Project Agent Master Prompt.md",
+          "item_type": "path",
+          "path": "00_System/AI Runtime/Project Agent Master Prompt.md",
+          "score": 0.266
+        },
+        {
+          "id": "00_System/AI Runtime/Failure Recovery Loop.md",
+          "item_type": "path",
+          "path": "00_System/AI Runtime/Failure Recovery Loop.md",
+          "score": 0.263
+        },
+        {
+          "id": "00_System/Governance/Truth Hierarchy and Conflict Policy.md",
+          "item_type": "path",
+          "path": "00_System/Governance/Truth Hierarchy and Conflict Policy.md",
+          "score": 0.254
+        }
+      ],
+      "explanation": "Should retrieve the failure signature and async side-effect pattern."
+    },
+    {
+      "eval_id": "meta-exp-003",
+      "pass": true,
+      "query": "How should a new AI CRM preserve evidence behind AI-derived business state?",
+      "missing_paths": [],
+      "missing_object_ids": [],
+      "missing_candidate_ids": [],
+      "forbidden_hits": [],
+      "retrieved": [
+        {
+          "id": "obj-pattern-evidence-first-ai",
+          "item_type": "object",
+          "score": 1.266
+        },
+        {
+          "id": "obj-domain-ai-crm",
+          "item_type": "object",
+          "score": 0.915
+        },
+        {
+          "id": "obj-pattern-score-semantic-separation",
+          "item_type": "object",
+          "score": 0.802
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/06_TRANSFER_CANDIDATES.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/06_TRANSFER_CANDIDATES.md",
+          "score": 0.781
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/03_GOOD_POINTS.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/03_GOOD_POINTS.md",
+          "score": 0.735
+        },
+        {
+          "id": "lc-evidence-first-ai-decisions-persist-exac-5ce17ece",
+          "item_type": "candidate",
+          "score": 0.681
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-github-repository-architecture-extraction-731bc079.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-github-repository-architecture-extraction-731bc079.md",
+          "score": 0.601
+        },
+        {
+          "id": "obj-failure-leads-intelligence-permission-bypass",
+          "item_type": "object",
+          "score": 0.595
+        },
+        {
+          "id": "obj-pattern-permission-scoped-sensitive-exposure",
+          "item_type": "object",
+          "score": 0.526
+        },
+        {
+          "id": "obj-failure-same-person-ai-snapshot-race",
+          "item_type": "object",
+          "score": 0.51
+        },
+        {
+          "id": "obj-failure-provider-id-search-oracle",
+          "item_type": "object",
+          "score": 0.47
+        },
+        {
+          "id": "obj-failure-test-privacy-policy-drift",
+          "item_type": "object",
+          "score": 0.47
+        },
+        {
+          "id": "obj-meta-word-of-mouth",
+          "item_type": "object",
+          "score": 0.441
+        },
+        {
+          "id": "00_System/Connected Intelligence OS/Project Experience Operating Standard.md",
+          "item_type": "path",
+          "path": "00_System/Connected Intelligence OS/Project Experience Operating Standard.md",
+          "score": 0.437
+        },
+        {
+          "id": "lc-separate-ai-confidence-commercial-streng-96e89af4",
+          "item_type": "candidate",
+          "score": 0.411
+        },
+        {
+          "id": "00_System/Knowledge Graph/Source-Backed Knowledge Protocol.md",
+          "item_type": "path",
+          "path": "00_System/Knowledge Graph/Source-Backed Knowledge Protocol.md",
+          "score": 0.405
+        },
+        {
+          "id": "00_System/Governance/Truth Hierarchy and Conflict Policy.md",
+          "item_type": "path",
+          "path": "00_System/Governance/Truth Hierarchy and Conflict Policy.md",
+          "score": 0.403
+        },
+        {
+          "id": "00_System/Automation/README.md",
+          "item_type": "path",
+          "path": "00_System/Automation/README.md",
+          "score": 0.399
+        },
+        {
+          "id": "obj-evd-mrb1oc94-40290714",
+          "item_type": "object",
+          "score": 0.394
+        },
+        {
+          "id": "00_System/Runtime State/OPERATION_LOG.md",
+          "item_type": "path",
+          "path": "00_System/Runtime State/OPERATION_LOG.md",
+          "score": 0.386
+        }
+      ],
+      "explanation": "Should retrieve evidence-first AI as a proposed reference pattern, not a universal law."
+    },
+    {
+      "eval_id": "meta-exp-004",
+      "pass": true,
+      "query": "What should a new webhook project learn from Meta Word of Mouth?",
+      "missing_paths": [],
+      "missing_object_ids": [],
+      "missing_candidate_ids": [],
+      "forbidden_hits": [],
+      "retrieved": [
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-github-repository-architecture-extraction-731bc079.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-github-repository-architecture-extraction-731bc079.md",
+          "score": 1.051
+        },
+        {
+          "id": "obj-evd-mrb1ocbf-29126148",
+          "item_type": "object",
+          "score": 1.014
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-signed-webhook-and-idempotent-ingestion-architecture-29126148.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-signed-webhook-and-idempotent-ingestion-architecture-29126148.md",
+          "score": 0.972
+        },
+        {
+          "id": "lc-signed-webhook-integrity-verify-exact-ra-88927d4c",
+          "item_type": "candidate",
+          "score": 0.759
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
+          "score": 0.579
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/06_TRANSFER_CANDIDATES.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/06_TRANSFER_CANDIDATES.md",
+          "score": 0.567
+        },
+        {
+          "id": "obj-pattern-signed-webhook-integrity",
+          "item_type": "object",
+          "score": 0.55
+        },
+        {
+          "id": "obj-pattern-durable-async-side-effects",
+          "item_type": "object",
+          "score": 0.547
+        },
+        {
+          "id": "obj-pattern-idempotent-legacy-migration",
+          "item_type": "object",
+          "score": 0.53
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/02_ARCHITECTURE.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/02_ARCHITECTURE.md",
+          "score": 0.501
+        },
+        {
+          "id": "lc-idempotent-legacy-migration-dry-run-repe-2cba6c81",
+          "item_type": "candidate",
+          "score": 0.488
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/11_REFERENCE_SCORECARD.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/11_REFERENCE_SCORECARD.md",
+          "score": 0.48
+        },
+        {
+          "id": "lc-durable-async-side-effects-commit-enqueu-3593276b",
+          "item_type": "candidate",
+          "score": 0.466
+        },
+        {
+          "id": "00_System/Automation/README.md",
+          "item_type": "path",
+          "path": "00_System/Automation/README.md",
+          "score": 0.432
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/00_PROJECT_HOME.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/00_PROJECT_HOME.md",
+          "score": 0.41
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/05_FUTURE_PATH.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/05_FUTURE_PATH.md",
+          "score": 0.383
+        },
+        {
+          "id": "obj-meta-word-of-mouth",
+          "item_type": "object",
+          "score": 0.378
+        },
+        {
+          "id": "obj-pattern-evidence-first-ai",
+          "item_type": "object",
+          "score": 0.376
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/09_REPO_MAP.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/09_REPO_MAP.md",
+          "score": 0.365
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/01_CONTEXT.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/01_CONTEXT.md",
+          "score": 0.36
+        }
+      ],
+      "explanation": "Should retrieve signed webhook integrity and idempotent provider-event handling."
+    },
+    {
+      "eval_id": "meta-exp-005",
+      "pass": true,
+      "query": "Why should provider-ID permission affect search predicates, not only output DTOs?",
+      "missing_paths": [],
+      "missing_object_ids": [],
+      "missing_candidate_ids": [],
+      "forbidden_hits": [],
+      "retrieved": [
+        {
+          "id": "obj-failure-provider-id-search-oracle",
+          "item_type": "object",
+          "score": 1.648
+        },
+        {
+          "id": "obj-pattern-permission-scoped-sensitive-exposure",
+          "item_type": "object",
+          "score": 1.339
+        },
+        {
+          "id": "lc-privacy-permissions-must-govern-search-f-446540e3",
+          "item_type": "candidate",
+          "score": 1.257
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-production-gate-blocker-audit-intake-and-static-verification-6d1d9a66.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-production-gate-blocker-audit-intake-and-static-verification-6d1d9a66.md",
+          "score": 1.193
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-static-verification-of-production-gate-blockers-aba73203.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-static-verification-of-production-gate-blockers-aba73203.md",
+          "score": 1.172
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/02_ARCHITECTURE.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/02_ARCHITECTURE.md",
+          "score": 1.165
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/06_TRANSFER_CANDIDATES.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/06_TRANSFER_CANDIDATES.md",
+          "score": 1.164
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-privacy-permissions-and-operational-gaps-snapshot-0f4342d1.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-privacy-permissions-and-operational-gaps-snapshot-0f4342d1.md",
+          "score": 1.054
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/03_GOOD_POINTS.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/03_GOOD_POINTS.md",
+          "score": 1.053
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/09_REPO_MAP.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/09_REPO_MAP.md",
+          "score": 1.041
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
+          "score": 0.962
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/08_EXECUTION_QUEUE.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/08_EXECUTION_QUEUE.md",
+          "score": 0.923
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/05_FUTURE_PATH.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/05_FUTURE_PATH.md",
+          "score": 0.895
+        },
+        {
+          "id": "obj-evd-mrb3iwud-aba73203",
+          "item_type": "object",
+          "score": 0.883
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/04_BAD_POINTS_AND_RISKS.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/04_BAD_POINTS_AND_RISKS.md",
+          "score": 0.836
+        },
+        {
+          "id": "00_System/Runtime State/OPERATION_LOG.md",
+          "item_type": "path",
+          "path": "00_System/Runtime State/OPERATION_LOG.md",
+          "score": 0.795
+        },
+        {
+          "id": "obj-failure-test-privacy-policy-drift",
+          "item_type": "object",
+          "score": 0.78
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-signed-webhook-and-idempotent-ingestion-architecture-29126148.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-signed-webhook-and-idempotent-ingestion-architecture-29126148.md",
+          "score": 0.7
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/11_REFERENCE_SCORECARD.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/11_REFERENCE_SCORECARD.md",
+          "score": 0.591
+        },
+        {
+          "id": "obj-failure-leads-intelligence-permission-bypass",
+          "item_type": "object",
+          "score": 0.583
+        }
+      ],
+      "explanation": "Should retrieve the search-oracle failure and the broader permission-scoped exposure pattern."
+    },
+    {
+      "eval_id": "meta-exp-006",
+      "pass": true,
+      "query": "What project taught us to separate AI confidence, opportunity strength, and urgency?",
+      "missing_paths": [],
+      "missing_object_ids": [],
+      "missing_candidate_ids": [],
+      "forbidden_hits": [],
+      "retrieved": [
+        {
+          "id": "obj-pattern-score-semantic-separation",
+          "item_type": "object",
+          "score": 1.25
+        },
+        {
+          "id": "lc-separate-ai-confidence-commercial-streng-96e89af4",
+          "item_type": "candidate",
+          "score": 1.233
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/06_TRANSFER_CANDIDATES.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/06_TRANSFER_CANDIDATES.md",
+          "score": 0.851
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-github-repository-architecture-extraction-731bc079.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-github-repository-architecture-extraction-731bc079.md",
+          "score": 0.795
+        },
+        {
+          "id": "obj-pattern-evidence-first-ai",
+          "item_type": "object",
+          "score": 0.567
+        },
+        {
+          "id": "00_System/Connected Intelligence OS/Project Experience Operating Standard.md",
+          "item_type": "path",
+          "path": "00_System/Connected Intelligence OS/Project Experience Operating Standard.md",
+          "score": 0.518
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/03_GOOD_POINTS.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/03_GOOD_POINTS.md",
+          "score": 0.511
+        },
+        {
+          "id": "lc-evidence-first-ai-decisions-persist-exac-5ce17ece",
+          "item_type": "candidate",
+          "score": 0.507
+        },
+        {
+          "id": "00_System/Memory OS/Memory Provenance and Confidence Standard.md",
+          "item_type": "path",
+          "path": "00_System/Memory OS/Memory Provenance and Confidence Standard.md",
+          "score": 0.484
+        },
+        {
+          "id": "00_System/Memory OS/Memory OS.md",
+          "item_type": "path",
+          "path": "00_System/Memory OS/Memory OS.md",
+          "score": 0.475
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/04_BAD_POINTS_AND_RISKS.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/04_BAD_POINTS_AND_RISKS.md",
+          "score": 0.473
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-static-verification-of-production-gate-blockers-aba73203.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-static-verification-of-production-gate-blockers-aba73203.md",
+          "score": 0.466
+        },
+        {
+          "id": "00_System/AI/Brain Router Prompt.md",
+          "item_type": "path",
+          "path": "00_System/AI/Brain Router Prompt.md",
+          "score": 0.449
+        },
+        {
+          "id": "50_Skills/Research/prioritize-assumptions.md",
+          "item_type": "path",
+          "path": "50_Skills/Research/prioritize-assumptions.md",
+          "score": 0.437
+        },
+        {
+          "id": "00_System/Memory OS/Semantic Memory Standard.md",
+          "item_type": "path",
+          "path": "00_System/Memory OS/Semantic Memory Standard.md",
+          "score": 0.421
+        },
+        {
+          "id": "00_System/Memory OS/Memory Revalidation Decay and Retention.md",
+          "item_type": "path",
+          "path": "00_System/Memory OS/Memory Revalidation Decay and Retention.md",
+          "score": 0.421
+        },
+        {
+          "id": "00_System/AI/AI Ingestion Pipeline.md",
+          "item_type": "path",
+          "path": "00_System/AI/AI Ingestion Pipeline.md",
+          "score": 0.42
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/01_CONTEXT.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/01_CONTEXT.md",
+          "score": 0.419
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
+          "score": 0.417
+        },
+        {
+          "id": "50_Skills/Research/sentiment-analysis.md",
+          "item_type": "path",
+          "path": "50_Skills/Research/sentiment-analysis.md",
+          "score": 0.413
+        }
+      ],
+      "explanation": "Should retrieve score semantic separation from Meta Word of Mouth."
+    },
+    {
+      "eval_id": "meta-exp-007",
+      "pass": true,
+      "query": "What should future projects not copy from Meta Word of Mouth?",
+      "missing_paths": [],
+      "missing_object_ids": [],
+      "missing_candidate_ids": [],
+      "forbidden_hits": [],
+      "retrieved": [
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/06_TRANSFER_CANDIDATES.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/06_TRANSFER_CANDIDATES.md",
+          "score": 0.913
+        },
+        {
+          "id": "obj-failure-temporary-adapter-production-drift",
+          "item_type": "object",
+          "score": 0.862
+        },
+        {
+          "id": "obj-failure-leads-intelligence-permission-bypass",
+          "item_type": "object",
+          "score": 0.675
+        },
+        {
+          "id": "obj-failure-weak-commit-provenance",
+          "item_type": "object",
+          "score": 0.652
+        },
+        {
+          "id": "obj-failure-stale-recovery-dead-runtime-code",
+          "item_type": "object",
+          "score": 0.611
+        },
+        {
+          "id": "obj-pattern-signed-webhook-integrity",
+          "item_type": "object",
+          "score": 0.61
+        },
+        {
+          "id": "obj-failure-test-privacy-policy-drift",
+          "item_type": "object",
+          "score": 0.61
+        },
+        {
+          "id": "obj-failure-provider-id-search-oracle",
+          "item_type": "object",
+          "score": 0.61
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/05_FUTURE_PATH.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/05_FUTURE_PATH.md",
+          "score": 0.598
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-local-static-verification-and-safe-test-boundary-eebbc7fd.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-local-static-verification-and-safe-test-boundary-eebbc7fd.md",
+          "score": 0.595
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/07_CURRENT_STATE.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/07_CURRENT_STATE.md",
+          "score": 0.578
+        },
+        {
+          "id": "lc-signed-webhook-integrity-verify-exact-ra-88927d4c",
+          "item_type": "candidate",
+          "score": 0.569
+        },
+        {
+          "id": "00_System/Runtime State/OPERATION_LOG.md",
+          "item_type": "path",
+          "path": "00_System/Runtime State/OPERATION_LOG.md",
+          "score": 0.563
+        },
+        {
+          "id": "obj-failure-external-send-local-persistence",
+          "item_type": "object",
+          "score": 0.55
+        },
+        {
+          "id": "obj-failure-same-person-ai-snapshot-race",
+          "item_type": "object",
+          "score": 0.55
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/00_PROJECT_HOME.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/00_PROJECT_HOME.md",
+          "score": 0.538
+        },
+        {
+          "id": "obj-evd-mrb351xs-27ac41ce",
+          "item_type": "object",
+          "score": 0.515
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-database-backed-tests-intentionally-skipped-against-remote-supabase-url-27ac41ce.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-database-backed-tests-intentionally-skipped-against-remote-supabase-url-27ac41ce.md",
+          "score": 0.473
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-production-gate-audit-source-note-32fdb1ac.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-production-gate-audit-source-note-32fdb1ac.md",
+          "score": 0.47
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-github-repository-architecture-extraction-731bc079.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-github-repository-architecture-extraction-731bc079.md",
+          "score": 0.45
+        }
+      ],
+      "explanation": "Should retrieve anti-copy warnings and bounded transfer candidates."
+    },
+    {
+      "eval_id": "meta-exp-008",
+      "pass": true,
+      "query": "Have we previously found a risk where AI suggestion usage was recorded before send success?",
+      "missing_paths": [],
+      "missing_object_ids": [],
+      "missing_candidate_ids": [],
+      "forbidden_hits": [],
+      "retrieved": [
+        {
+          "id": "00_System/Runtime State/OPERATION_LOG.md",
+          "item_type": "path",
+          "path": "00_System/Runtime State/OPERATION_LOG.md",
+          "score": 0.98
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/08_EXECUTION_QUEUE.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/08_EXECUTION_QUEUE.md",
+          "score": 0.933
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/04_BAD_POINTS_AND_RISKS.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/04_BAD_POINTS_AND_RISKS.md",
+          "score": 0.9
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-production-gate-blocker-audit-intake-and-static-verification-6d1d9a66.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-production-gate-blocker-audit-intake-and-static-verification-6d1d9a66.md",
+          "score": 0.792
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/05_FUTURE_PATH.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/05_FUTURE_PATH.md",
+          "score": 0.759
+        },
+        {
+          "id": "obj-failure-external-send-local-persistence",
+          "item_type": "object",
+          "score": 0.547
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-static-verification-of-production-gate-blockers-aba73203.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-static-verification-of-production-gate-blockers-aba73203.md",
+          "score": 0.477
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/11_REFERENCE_SCORECARD.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/11_REFERENCE_SCORECARD.md",
+          "score": 0.43
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
+          "score": 0.424
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/07_CURRENT_STATE.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/07_CURRENT_STATE.md",
+          "score": 0.351
+        },
+        {
+          "id": "lc-treat-successful-external-provider-calls-f6ffe456",
+          "item_type": "candidate",
+          "score": 0.33
+        },
+        {
+          "id": "50_Skills/Growth/churn-prevention.md",
+          "item_type": "path",
+          "path": "50_Skills/Growth/churn-prevention.md",
+          "score": 0.323
+        },
+        {
+          "id": "50_Skills/Growth/sales-enablement.md",
+          "item_type": "path",
+          "path": "50_Skills/Growth/sales-enablement.md",
+          "score": 0.31
+        },
+        {
+          "id": "00_System/Web Development Expert System/Web Project Quality Gate Matrix.md",
+          "item_type": "path",
+          "path": "00_System/Web Development Expert System/Web Project Quality Gate Matrix.md",
+          "score": 0.29
+        },
+        {
+          "id": "30_Business/Organizations/OVX Smart Connected AI.md",
+          "item_type": "path",
+          "path": "30_Business/Organizations/OVX Smart Connected AI.md",
+          "score": 0.29
+        },
+        {
+          "id": "00_System/Memory OS/Episodic Memory Standard.md",
+          "item_type": "path",
+          "path": "00_System/Memory OS/Episodic Memory Standard.md",
+          "score": 0.25
+        },
+        {
+          "id": "00_System/Memory OS/Semantic Memory Standard.md",
+          "item_type": "path",
+          "path": "00_System/Memory OS/Semantic Memory Standard.md",
+          "score": 0.25
+        },
+        {
+          "id": "00_System/Retrieval OS/Retrieval Evaluation Standard.md",
+          "item_type": "path",
+          "path": "00_System/Retrieval OS/Retrieval Evaluation Standard.md",
+          "score": 0.25
+        },
+        {
+          "id": "50_Skills/Marketing/launch-strategy.md",
+          "item_type": "path",
+          "path": "50_Skills/Marketing/launch-strategy.md",
+          "score": 0.25
+        },
+        {
+          "id": "50_Skills/Marketing/page-cro.md",
+          "item_type": "path",
+          "path": "50_Skills/Marketing/page-cro.md",
+          "score": 0.25
+        }
+      ],
+      "explanation": "Should route to the production-gate risk cluster around send success and local effects."
+    },
+    {
+      "eval_id": "meta-exp-009",
+      "pass": true,
+      "query": "What production blockers remain in Meta Word of Mouth?",
+      "missing_paths": [],
+      "missing_object_ids": [],
+      "missing_candidate_ids": [],
+      "forbidden_hits": [],
+      "retrieved": [
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/04_BAD_POINTS_AND_RISKS.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/04_BAD_POINTS_AND_RISKS.md",
+          "score": 0.825
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-production-gate-blocker-audit-intake-and-static-verification-6d1d9a66.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-production-gate-blocker-audit-intake-and-static-verification-6d1d9a66.md",
+          "score": 0.802
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/08_EXECUTION_QUEUE.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/08_EXECUTION_QUEUE.md",
+          "score": 0.753
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-static-verification-of-production-gate-blockers-aba73203.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-static-verification-of-production-gate-blockers-aba73203.md",
+          "score": 0.742
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
+          "score": 0.718
+        },
+        {
+          "id": "obj-failure-temporary-adapter-production-drift",
+          "item_type": "object",
+          "score": 0.713
+        },
+        {
+          "id": "obj-failure-stale-recovery-dead-runtime-code",
+          "item_type": "object",
+          "score": 0.712
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/05_FUTURE_PATH.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/05_FUTURE_PATH.md",
+          "score": 0.709
+        },
+        {
+          "id": "obj-evd-mrb3iwud-aba73203",
+          "item_type": "object",
+          "score": 0.673
+        },
+        {
+          "id": "obj-failure-external-send-local-persistence",
+          "item_type": "object",
+          "score": 0.65
+        },
+        {
+          "id": "obj-failure-provider-id-search-oracle",
+          "item_type": "object",
+          "score": 0.65
+        },
+        {
+          "id": "obj-failure-leads-intelligence-permission-bypass",
+          "item_type": "object",
+          "score": 0.65
+        },
+        {
+          "id": "obj-failure-same-person-ai-snapshot-race",
+          "item_type": "object",
+          "score": 0.65
+        },
+        {
+          "id": "obj-failure-test-privacy-policy-drift",
+          "item_type": "object",
+          "score": 0.65
+        },
+        {
+          "id": "obj-failure-weak-commit-provenance",
+          "item_type": "object",
+          "score": 0.65
+        },
+        {
+          "id": "00_System/Quality System/Quality Gate Matrix.md",
+          "item_type": "path",
+          "path": "00_System/Quality System/Quality Gate Matrix.md",
+          "score": 0.594
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/11_REFERENCE_SCORECARD.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/11_REFERENCE_SCORECARD.md",
+          "score": 0.526
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/07_CURRENT_STATE.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/07_CURRENT_STATE.md",
+          "score": 0.523
+        },
+        {
+          "id": "obj-evd-mrb3iwud-32fdb1ac",
+          "item_type": "object",
+          "score": 0.521
+        },
+        {
+          "id": "obj-run-mrb3iohg-6d1d9a66",
+          "item_type": "object",
+          "score": 0.516
+        }
+      ],
+      "explanation": "Should retrieve the current execution queue and canonical blockers."
+    },
+    {
+      "eval_id": "meta-exp-010",
+      "pass": true,
+      "query": "What evidence proves the Brain believes raw-byte signature verification matters?",
+      "missing_paths": [],
+      "missing_object_ids": [],
+      "missing_candidate_ids": [],
+      "forbidden_hits": [],
+      "retrieved": [
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-github-repository-architecture-extraction-731bc079.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-github-repository-architecture-extraction-731bc079.md",
+          "score": 1.3
+        },
+        {
+          "id": "obj-evd-mrb1ocbf-29126148",
+          "item_type": "object",
+          "score": 1.025
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-signed-webhook-and-idempotent-ingestion-architecture-29126148.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-signed-webhook-and-idempotent-ingestion-architecture-29126148.md",
+          "score": 0.938
+        },
+        {
+          "id": "lc-signed-webhook-integrity-verify-exact-ra-88927d4c",
+          "item_type": "candidate",
+          "score": 0.679
+        },
+        {
+          "id": "obj-pattern-evidence-first-ai",
+          "item_type": "object",
+          "score": 0.638
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/03_GOOD_POINTS.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/03_GOOD_POINTS.md",
+          "score": 0.616
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/06_TRANSFER_CANDIDATES.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/06_TRANSFER_CANDIDATES.md",
+          "score": 0.611
+        },
+        {
+          "id": "lc-evidence-first-ai-decisions-persist-exac-5ce17ece",
+          "item_type": "candidate",
+          "score": 0.609
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/11_REFERENCE_SCORECARD.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/11_REFERENCE_SCORECARD.md",
+          "score": 0.54
+        },
+        {
+          "id": "obj-pattern-signed-webhook-integrity",
+          "item_type": "object",
+          "score": 0.47
+        },
+        {
+          "id": "00_System/Runtime State/OPERATION_LOG.md",
+          "item_type": "path",
+          "path": "00_System/Runtime State/OPERATION_LOG.md",
+          "score": 0.466
+        },
+        {
+          "id": "obj-evd-mrb1oc94-40290714",
+          "item_type": "object",
+          "score": 0.46
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
+          "score": 0.421
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/02_ARCHITECTURE.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/02_ARCHITECTURE.md",
+          "score": 0.408
+        },
+        {
+          "id": "00_System/Knowledge Graph/Source-Backed Knowledge Protocol.md",
+          "item_type": "path",
+          "path": "00_System/Knowledge Graph/Source-Backed Knowledge Protocol.md",
+          "score": 0.405
+        },
+        {
+          "id": "60_Knowledge/Research/Obsidian Multi-Agent Persistent AI Brain - Deep Research.md",
+          "item_type": "path",
+          "path": "60_Knowledge/Research/Obsidian Multi-Agent Persistent AI Brain - Deep Research.md",
+          "score": 0.404
+        },
+        {
+          "id": "00_System/Governance/Truth Hierarchy and Conflict Policy.md",
+          "item_type": "path",
+          "path": "00_System/Governance/Truth Hierarchy and Conflict Policy.md",
+          "score": 0.403
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-evidence-first-ai-and-worker-architecture-40290714.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-evidence-first-ai-and-worker-architecture-40290714.md",
+          "score": 0.399
+        },
+        {
+          "id": "obj-pattern-idempotent-legacy-migration",
+          "item_type": "object",
+          "score": 0.39
+        },
+        {
+          "id": "obj-pattern-durable-async-side-effects",
+          "item_type": "object",
+          "score": 0.387
+        }
+      ],
+      "explanation": "Should retrieve the signed webhook evidence object."
+    },
+    {
+      "eval_id": "meta-exp-011",
+      "pass": true,
+      "query": "Which Meta lessons are proposed but not independently validated?",
+      "missing_paths": [],
+      "missing_object_ids": [],
+      "missing_candidate_ids": [],
+      "forbidden_hits": [],
+      "retrieved": [
+        {
+          "id": "lc-evidence-first-ai-decisions-persist-exac-5ce17ece",
+          "item_type": "candidate",
+          "score": 1.5
+        },
+        {
+          "id": "obj-pattern-evidence-first-ai",
+          "item_type": "object",
+          "score": 1.257
+        },
+        {
+          "id": "obj-pattern-score-semantic-separation",
+          "item_type": "object",
+          "score": 1.019
+        },
+        {
+          "id": "lc-separate-ai-confidence-commercial-streng-96e89af4",
+          "item_type": "candidate",
+          "score": 0.977
+        },
+        {
+          "id": "obj-pattern-idempotent-legacy-migration",
+          "item_type": "object",
+          "score": 0.975
+        },
+        {
+          "id": "obj-failure-provider-id-search-oracle",
+          "item_type": "object",
+          "score": 0.953
+        },
+        {
+          "id": "lc-worker-recovery-functions-are-not-produc-8649f8b6",
+          "item_type": "candidate",
+          "score": 0.936
+        },
+        {
+          "id": "obj-failure-stale-recovery-dead-runtime-code",
+          "item_type": "object",
+          "score": 0.933
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/06_TRANSFER_CANDIDATES.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/06_TRANSFER_CANDIDATES.md",
+          "score": 0.931
+        },
+        {
+          "id": "lc-idempotent-legacy-migration-dry-run-repe-2cba6c81",
+          "item_type": "candidate",
+          "score": 0.93
+        },
+        {
+          "id": "obj-pattern-durable-async-side-effects",
+          "item_type": "object",
+          "score": 0.924
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-static-verification-of-production-gate-blockers-aba73203.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-static-verification-of-production-gate-blockers-aba73203.md",
+          "score": 0.923
+        },
+        {
+          "id": "lc-before-running-fixture-mutating-scripts--479c017d",
+          "item_type": "candidate",
+          "score": 0.907
+        },
+        {
+          "id": "obj-pattern-permission-scoped-sensitive-exposure",
+          "item_type": "object",
+          "score": 0.901
+        },
+        {
+          "id": "obj-failure-leads-intelligence-permission-bypass",
+          "item_type": "object",
+          "score": 0.897
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-production-gate-blocker-audit-intake-and-static-verification-6d1d9a66.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-production-gate-blocker-audit-intake-and-static-verification-6d1d9a66.md",
+          "score": 0.894
+        },
+        {
+          "id": "obj-pattern-signed-webhook-integrity",
+          "item_type": "object",
+          "score": 0.891
+        },
+        {
+          "id": "lc-manual-regression-without-visible-ci-gat-e797c243",
+          "item_type": "candidate",
+          "score": 0.879
+        },
+        {
+          "id": "lc-permission-scoped-dto-exposure-sensitive-43e47143",
+          "item_type": "candidate",
+          "score": 0.873
+        },
+        {
+          "id": "obj-failure-weak-commit-provenance",
+          "item_type": "object",
+          "score": 0.872
+        }
+      ],
+      "explanation": "Should retrieve proposed candidates and preserve the one-project boundary."
+    },
+    {
+      "eval_id": "meta-exp-012",
+      "pass": true,
+      "query": "What project experience is relevant to building another multi-tenant AI inbox?",
+      "missing_paths": [],
+      "missing_object_ids": [],
+      "missing_candidate_ids": [],
+      "forbidden_hits": [],
+      "retrieved": [
+        {
+          "id": "obj-domain-multi-tenant-inbox",
+          "item_type": "object",
+          "score": 1.024
+        },
+        {
+          "id": "obj-pattern-permission-scoped-sensitive-exposure",
+          "item_type": "object",
+          "score": 0.91
+        },
+        {
+          "id": "obj-failure-provider-id-search-oracle",
+          "item_type": "object",
+          "score": 0.91
+        },
+        {
+          "id": "obj-failure-leads-intelligence-permission-bypass",
+          "item_type": "object",
+          "score": 0.91
+        },
+        {
+          "id": "obj-pattern-evidence-first-ai",
+          "item_type": "object",
+          "score": 0.719
+        },
+        {
+          "id": "obj-failure-external-send-local-persistence",
+          "item_type": "object",
+          "score": 0.66
+        },
+        {
+          "id": "obj-failure-test-privacy-policy-drift",
+          "item_type": "object",
+          "score": 0.66
+        },
+        {
+          "id": "00_System/Automation/README.md",
+          "item_type": "path",
+          "path": "00_System/Automation/README.md",
+          "score": 0.444
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-safe-static-verification-commands-passed-224ef696.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-safe-static-verification-commands-passed-224ef696.md",
+          "score": 0.432
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-local-static-verification-and-safe-test-boundary-eebbc7fd.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-local-static-verification-and-safe-test-boundary-eebbc7fd.md",
+          "score": 0.432
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
+          "score": 0.421
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-privacy-permissions-and-operational-gaps-snapshot-0f4342d1.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-privacy-permissions-and-operational-gaps-snapshot-0f4342d1.md",
+          "score": 0.412
+        },
+        {
+          "id": "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+          "item_type": "path",
+          "path": "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+          "score": 0.41
+        },
+        {
+          "id": "obj-ovx-smart-connected-ai-standard",
+          "item_type": "object",
+          "score": 0.397
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-static-verification-of-production-gate-blockers-aba73203.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-static-verification-of-production-gate-blockers-aba73203.md",
+          "score": 0.394
+        },
+        {
+          "id": "obj-pattern-score-semantic-separation",
+          "item_type": "object",
+          "score": 0.391
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-production-gate-blocker-audit-intake-and-static-verification-6d1d9a66.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-production-gate-blocker-audit-intake-and-static-verification-6d1d9a66.md",
+          "score": 0.387
+        },
+        {
+          "id": "00_System/Brain Constitution.md",
+          "item_type": "path",
+          "path": "00_System/Brain Constitution.md",
+          "score": 0.38
+        },
+        {
+          "id": "obj-domain-ai-crm",
+          "item_type": "object",
+          "score": 0.37
+        },
+        {
+          "id": "00_System/Project OS/Universal Project Contract.md",
+          "item_type": "path",
+          "path": "00_System/Project OS/Universal Project Contract.md",
+          "score": 0.365
+        }
+      ],
+      "explanation": "Should retrieve CRM/inbox patterns plus privacy failure warnings."
+    },
+    {
+      "eval_id": "meta-exp-013",
+      "pass": true,
+      "query": "Have we seen same-entity AI memory updates race and overwrite newer state?",
+      "missing_paths": [],
+      "missing_object_ids": [],
+      "missing_candidate_ids": [],
+      "forbidden_hits": [],
+      "retrieved": [
+        {
+          "id": "obj-failure-same-person-ai-snapshot-race",
+          "item_type": "object",
+          "score": 0.936
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/04_BAD_POINTS_AND_RISKS.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/04_BAD_POINTS_AND_RISKS.md",
+          "score": 0.901
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/05_FUTURE_PATH.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/05_FUTURE_PATH.md",
+          "score": 0.81
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-production-gate-audit-source-note-32fdb1ac.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-production-gate-audit-source-note-32fdb1ac.md",
+          "score": 0.803
+        },
+        {
+          "id": "00_System/Runtime State/OPERATION_LOG.md",
+          "item_type": "path",
+          "path": "00_System/Runtime State/OPERATION_LOG.md",
+          "score": 0.74
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/08_EXECUTION_QUEUE.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/08_EXECUTION_QUEUE.md",
+          "score": 0.733
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
+          "score": 0.681
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/07_CURRENT_STATE.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/07_CURRENT_STATE.md",
+          "score": 0.652
+        },
+        {
+          "id": "lc-same-person-ai-snapshot-out-of-order-ove-f8365709",
+          "item_type": "candidate",
+          "score": 0.63
+        },
+        {
+          "id": "obj-domain-ai-crm",
+          "item_type": "object",
+          "score": 0.315
+        },
+        {
+          "id": "00_System/Memory OS/Memory Single-Writer and Conflict Protocol.md",
+          "item_type": "path",
+          "path": "00_System/Memory OS/Memory Single-Writer and Conflict Protocol.md",
+          "score": 0.271
+        },
+        {
+          "id": "60_Knowledge/Research/Obsidian Multi-Agent Persistent AI Brain - Deep Research.md",
+          "item_type": "path",
+          "path": "60_Knowledge/Research/Obsidian Multi-Agent Persistent AI Brain - Deep Research.md",
+          "score": 0.262
+        },
+        {
+          "id": "00_System/Connected Intelligence OS/Connected Intelligence Operating System.md",
+          "item_type": "path",
+          "path": "00_System/Connected Intelligence OS/Connected Intelligence Operating System.md",
+          "score": 0.257
+        },
+        {
+          "id": "obj-domain-multi-tenant-inbox",
+          "item_type": "object",
+          "score": 0.229
+        },
+        {
+          "id": "00_System/Memory OS/Memory Provenance and Confidence Standard.md",
+          "item_type": "path",
+          "path": "00_System/Memory OS/Memory Provenance and Confidence Standard.md",
+          "score": 0.223
+        },
+        {
+          "id": "00_System/Memory OS/Episodic Memory Standard.md",
+          "item_type": "path",
+          "path": "00_System/Memory OS/Episodic Memory Standard.md",
+          "score": 0.221
+        },
+        {
+          "id": "00_System/Brain Constitution.md",
+          "item_type": "path",
+          "path": "00_System/Brain Constitution.md",
+          "score": 0.22
+        },
+        {
+          "id": "00_System/Governance/No Silent Overwrite Policy.md",
+          "item_type": "path",
+          "path": "00_System/Governance/No Silent Overwrite Policy.md",
+          "score": 0.22
+        },
+        {
+          "id": "00_System/Memory OS/Semantic Memory Standard.md",
+          "item_type": "path",
+          "path": "00_System/Memory OS/Semantic Memory Standard.md",
+          "score": 0.22
+        },
+        {
+          "id": "00_System/Learning System/Memory Quality and Revalidation.md",
+          "item_type": "path",
+          "path": "00_System/Learning System/Memory Quality and Revalidation.md",
+          "score": 0.213
+        }
+      ],
+      "explanation": "Should retrieve the same-person AI snapshot race failure signature."
+    },
+    {
+      "eval_id": "meta-exp-014",
+      "pass": true,
+      "query": "What does Omar Brain know about search oracles caused by hidden identifiers?",
+      "missing_paths": [],
+      "missing_object_ids": [],
+      "missing_candidate_ids": [],
+      "forbidden_hits": [],
+      "retrieved": [
+        {
+          "id": "obj-failure-provider-id-search-oracle",
+          "item_type": "object",
+          "score": 1.399
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-static-verification-of-production-gate-blockers-aba73203.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-static-verification-of-production-gate-blockers-aba73203.md",
+          "score": 1.035
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/06_TRANSFER_CANDIDATES.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/06_TRANSFER_CANDIDATES.md",
+          "score": 1.007
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-production-gate-blocker-audit-intake-and-static-verification-6d1d9a66.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-production-gate-blocker-audit-intake-and-static-verification-6d1d9a66.md",
+          "score": 0.998
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/02_ARCHITECTURE.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/02_ARCHITECTURE.md",
+          "score": 0.95
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/03_GOOD_POINTS.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/03_GOOD_POINTS.md",
+          "score": 0.95
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/09_REPO_MAP.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/09_REPO_MAP.md",
+          "score": 0.95
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-privacy-permissions-and-operational-gaps-snapshot-0f4342d1.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-privacy-permissions-and-operational-gaps-snapshot-0f4342d1.md",
+          "score": 0.95
+        },
+        {
+          "id": "00_System/Runtime State/OPERATION_LOG.md",
+          "item_type": "path",
+          "path": "00_System/Runtime State/OPERATION_LOG.md",
+          "score": 0.89
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
+          "score": 0.827
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/05_FUTURE_PATH.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/05_FUTURE_PATH.md",
+          "score": 0.803
+        },
+        {
+          "id": "obj-evd-mrb3iwud-aba73203",
+          "item_type": "object",
+          "score": 0.78
+        },
+        {
+          "id": "obj-failure-test-privacy-policy-drift",
+          "item_type": "object",
+          "score": 0.78
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/08_EXECUTION_QUEUE.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/08_EXECUTION_QUEUE.md",
+          "score": 0.746
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/04_BAD_POINTS_AND_RISKS.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/04_BAD_POINTS_AND_RISKS.md",
+          "score": 0.7
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-signed-webhook-and-idempotent-ingestion-architecture-29126148.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-signed-webhook-and-idempotent-ingestion-architecture-29126148.md",
+          "score": 0.7
+        },
+        {
+          "id": "lc-provider-id-search-oracle-4355a070",
+          "item_type": "candidate",
+          "score": 0.53
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/11_REFERENCE_SCORECARD.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/11_REFERENCE_SCORECARD.md",
+          "score": 0.497
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/07_CURRENT_STATE.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/07_CURRENT_STATE.md",
+          "score": 0.45
+        },
+        {
+          "id": "obj-pattern-permission-scoped-sensitive-exposure",
+          "item_type": "object",
+          "score": 0.442
+        }
+      ],
+      "explanation": "Should retrieve the hidden provider-ID search oracle failure."
+    },
+    {
+      "eval_id": "meta-exp-015",
+      "pass": true,
+      "query": "Which previous project can guide an idempotent migration from a legacy model?",
+      "missing_paths": [],
+      "missing_object_ids": [],
+      "missing_candidate_ids": [],
+      "forbidden_hits": [],
+      "retrieved": [
+        {
+          "id": "obj-pattern-idempotent-legacy-migration",
+          "item_type": "object",
+          "score": 0.841
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-github-repository-architecture-extraction-731bc079.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-github-repository-architecture-extraction-731bc079.md",
+          "score": 0.834
+        },
+        {
+          "id": "lc-idempotent-legacy-migration-dry-run-repe-2cba6c81",
+          "item_type": "candidate",
+          "score": 0.798
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/06_TRANSFER_CANDIDATES.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/06_TRANSFER_CANDIDATES.md",
+          "score": 0.797
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/11_REFERENCE_SCORECARD.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/11_REFERENCE_SCORECARD.md",
+          "score": 0.52
+        },
+        {
+          "id": "obj-domain-legacy-migration",
+          "item_type": "object",
+          "score": 0.51
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
+          "score": 0.508
+        },
+        {
+          "id": "obj-skill-database-migrations",
+          "item_type": "object",
+          "score": 0.452
+        },
+        {
+          "id": "obj-evd-mrb1ocbf-29126148",
+          "item_type": "object",
+          "score": 0.394
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/09_REPO_MAP.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/09_REPO_MAP.md",
+          "score": 0.392
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-signed-webhook-and-idempotent-ingestion-architecture-29126148.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-signed-webhook-and-idempotent-ingestion-architecture-29126148.md",
+          "score": 0.378
+        },
+        {
+          "id": "obj-pattern-durable-async-side-effects",
+          "item_type": "object",
+          "score": 0.37
+        },
+        {
+          "id": "00_System/Runtime Integration/MCP Tool Interoperability Standard.md",
+          "item_type": "path",
+          "path": "00_System/Runtime Integration/MCP Tool Interoperability Standard.md",
+          "score": 0.367
+        },
+        {
+          "id": "00_System/Dynamic Brain/Event Bus and State Transition Contract.md",
+          "item_type": "path",
+          "path": "00_System/Dynamic Brain/Event Bus and State Transition Contract.md",
+          "score": 0.357
+        },
+        {
+          "id": "00_System/Web Development Expert System/Web Rule Registry.md",
+          "item_type": "path",
+          "path": "00_System/Web Development Expert System/Web Rule Registry.md",
+          "score": 0.352
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/02_ARCHITECTURE.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/02_ARCHITECTURE.md",
+          "score": 0.342
+        },
+        {
+          "id": "60_Knowledge/Research/Obsidian Multi-Agent Persistent AI Brain - Deep Research.md",
+          "item_type": "path",
+          "path": "60_Knowledge/Research/Obsidian Multi-Agent Persistent AI Brain - Deep Research.md",
+          "score": 0.341
+        },
+        {
+          "id": "lc-durable-async-side-effects-commit-enqueu-3593276b",
+          "item_type": "candidate",
+          "score": 0.33
+        },
+        {
+          "id": "00_System/Agent OS/Agent Risk and Approval Matrix.md",
+          "item_type": "path",
+          "path": "00_System/Agent OS/Agent Risk and Approval Matrix.md",
+          "score": 0.328
+        },
+        {
+          "id": "00_System/Registries/Tool Registry.md",
+          "item_type": "path",
+          "path": "00_System/Registries/Tool Registry.md",
+          "score": 0.311
+        }
+      ],
+      "explanation": "Should retrieve idempotent legacy migration as a Meta-derived candidate pattern."
+    },
+    {
+      "eval_id": "meta-exp-016",
+      "pass": true,
+      "query": "Why is Meta Word of Mouth a reference source but not a universal template?",
+      "missing_paths": [],
+      "missing_object_ids": [],
+      "missing_candidate_ids": [],
+      "forbidden_hits": [],
+      "retrieved": [
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/00_PROJECT_HOME.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/00_PROJECT_HOME.md",
+          "score": 0.52
+        },
+        {
+          "id": "obj-pattern-evidence-first-ai",
+          "item_type": "object",
+          "score": 0.435
+        },
+        {
+          "id": "40_Projects/Active/_Index.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/_Index.md",
+          "score": 0.417
+        },
+        {
+          "id": "obj-pattern-score-semantic-separation",
+          "item_type": "object",
+          "score": 0.384
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/11_REFERENCE_SCORECARD.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/11_REFERENCE_SCORECARD.md",
+          "score": 0.378
+        },
+        {
+          "id": "obj-meta-word-of-mouth",
+          "item_type": "object",
+          "score": 0.378
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/01_CONTEXT.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/01_CONTEXT.md",
+          "score": 0.36
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/02_ARCHITECTURE.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/02_ARCHITECTURE.md",
+          "score": 0.36
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/05_FUTURE_PATH.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/05_FUTURE_PATH.md",
+          "score": 0.347
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/07_CURRENT_STATE.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/07_CURRENT_STATE.md",
+          "score": 0.347
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/08_EXECUTION_QUEUE.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/08_EXECUTION_QUEUE.md",
+          "score": 0.347
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/09_REPO_MAP.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/09_REPO_MAP.md",
+          "score": 0.347
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
+          "score": 0.347
+        },
+        {
+          "id": "lc-separate-ai-confidence-commercial-streng-96e89af4",
+          "item_type": "candidate",
+          "score": 0.342
+        },
+        {
+          "id": "00_System/Connected Intelligence OS/Reference Project Extraction Protocol.md",
+          "item_type": "path",
+          "path": "00_System/Connected Intelligence OS/Reference Project Extraction Protocol.md",
+          "score": 0.342
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/03_GOOD_POINTS.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/03_GOOD_POINTS.md",
+          "score": 0.336
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/04_BAD_POINTS_AND_RISKS.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/04_BAD_POINTS_AND_RISKS.md",
+          "score": 0.335
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-production-gate-audit-source-note-32fdb1ac.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-production-gate-audit-source-note-32fdb1ac.md",
+          "score": 0.314
+        },
+        {
+          "id": "00_System/Runtime State/OPERATION_LOG.md",
+          "item_type": "path",
+          "path": "00_System/Runtime State/OPERATION_LOG.md",
+          "score": 0.313
+        },
+        {
+          "id": "obj-evd-mrb3iwud-32fdb1ac",
+          "item_type": "object",
+          "score": 0.309
+        }
+      ],
+      "explanation": "Should retrieve reference scorecard and project identity boundaries."
+    },
+    {
+      "eval_id": "meta-exp-017",
+      "pass": true,
+      "query": "What is the difference between repository-verified and runtime-verified knowledge for this project?",
+      "missing_paths": [],
+      "missing_object_ids": [],
+      "missing_candidate_ids": [],
+      "forbidden_hits": [],
+      "retrieved": [
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/07_CURRENT_STATE.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/07_CURRENT_STATE.md",
+          "score": 1.018
+        },
+        {
+          "id": "obj-meta-word-of-mouth",
+          "item_type": "object",
+          "score": 0.973
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/03_GOOD_POINTS.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/03_GOOD_POINTS.md",
+          "score": 0.362
+        },
+        {
+          "id": "00_System/AI Runtime/Project Agent Master Prompt.md",
+          "item_type": "path",
+          "path": "00_System/AI Runtime/Project Agent Master Prompt.md",
+          "score": 0.36
+        },
+        {
+          "id": "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+          "item_type": "path",
+          "path": "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+          "score": 0.36
+        },
+        {
+          "id": "00_System/AI/Brain Router Prompt.md",
+          "item_type": "path",
+          "path": "00_System/AI/Brain Router Prompt.md",
+          "score": 0.35
+        },
+        {
+          "id": "00_System/Brain Constitution.md",
+          "item_type": "path",
+          "path": "00_System/Brain Constitution.md",
+          "score": 0.348
+        },
+        {
+          "id": "00_System/Navigation OS/Intersection Sign Standard.md",
+          "item_type": "path",
+          "path": "00_System/Navigation OS/Intersection Sign Standard.md",
+          "score": 0.342
+        },
+        {
+          "id": "60_Knowledge/Research/Obsidian Multi-Agent Persistent AI Brain - Deep Research.md",
+          "item_type": "path",
+          "path": "60_Knowledge/Research/Obsidian Multi-Agent Persistent AI Brain - Deep Research.md",
+          "score": 0.334
+        },
+        {
+          "id": "00_System/Navigation OS/Road Sign Navigation System.md",
+          "item_type": "path",
+          "path": "00_System/Navigation OS/Road Sign Navigation System.md",
+          "score": 0.327
+        },
+        {
+          "id": "00_System/Retrieval OS/Query Classification and Retrieval Routing.md",
+          "item_type": "path",
+          "path": "00_System/Retrieval OS/Query Classification and Retrieval Routing.md",
+          "score": 0.325
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/00_PROJECT_HOME.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/00_PROJECT_HOME.md",
+          "score": 0.319
+        },
+        {
+          "id": "30_Business/Organizations/OVX Smart Connected AI.md",
+          "item_type": "path",
+          "path": "30_Business/Organizations/OVX Smart Connected AI.md",
+          "score": 0.319
+        },
+        {
+          "id": "00_System/Operating Map.md",
+          "item_type": "path",
+          "path": "00_System/Operating Map.md",
+          "score": 0.307
+        },
+        {
+          "id": "00_System/AI/AI Retrieval and Token Policy.md",
+          "item_type": "path",
+          "path": "00_System/AI/AI Retrieval and Token Policy.md",
+          "score": 0.303
+        },
+        {
+          "id": "30_Business/Organizations/OVX Smart Connected AI Source 2026-07-07.md",
+          "item_type": "path",
+          "path": "30_Business/Organizations/OVX Smart Connected AI Source 2026-07-07.md",
+          "score": 0.302
+        },
+        {
+          "id": "obj-pattern-idempotent-legacy-migration",
+          "item_type": "object",
+          "score": 0.3
+        },
+        {
+          "id": "obj-ovx-core",
+          "item_type": "object",
+          "score": 0.297
+        },
+        {
+          "id": "00_System/Memory OS/Episodic Memory Standard.md",
+          "item_type": "path",
+          "path": "00_System/Memory OS/Episodic Memory Standard.md",
+          "score": 0.285
+        },
+        {
+          "id": "00_System/Metadata Schema.md",
+          "item_type": "path",
+          "path": "00_System/Metadata Schema.md",
+          "score": 0.285
+        }
+      ],
+      "explanation": "Should retrieve current truth boundaries and avoid runtime claims."
+    },
+    {
+      "eval_id": "meta-exp-018",
+      "pass": true,
+      "query": "Which tests were intentionally skipped because the configured database was remote?",
+      "missing_paths": [],
+      "missing_object_ids": [],
+      "missing_candidate_ids": [],
+      "forbidden_hits": [],
+      "retrieved": [
+        {
+          "id": "obj-evd-mrb351xs-27ac41ce",
+          "item_type": "object",
+          "score": 1.15
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-database-backed-tests-intentionally-skipped-against-remote-supabase-url-27ac41ce.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-database-backed-tests-intentionally-skipped-against-remote-supabase-url-27ac41ce.md",
+          "score": 1.098
+        },
+        {
+          "id": "obj-run-mrb34rdn-eebbc7fd",
+          "item_type": "object",
+          "score": 1.032
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-local-static-verification-and-safe-test-boundary-eebbc7fd.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-local-static-verification-and-safe-test-boundary-eebbc7fd.md",
+          "score": 0.944
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
+          "score": 0.895
+        },
+        {
+          "id": "00_System/Runtime State/OPERATION_LOG.md",
+          "item_type": "path",
+          "path": "00_System/Runtime State/OPERATION_LOG.md",
+          "score": 0.793
+        },
+        {
+          "id": "obj-failure-test-privacy-policy-drift",
+          "item_type": "object",
+          "score": 0.75
+        },
+        {
+          "id": "lc-remote-database-url-blocks-safe-fixture--422ce910",
+          "item_type": "candidate",
+          "score": 0.71
+        },
+        {
+          "id": "00_System/Web Development Expert System/Web Rule Registry.md",
+          "item_type": "path",
+          "path": "00_System/Web Development Expert System/Web Rule Registry.md",
+          "score": 0.706
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/11_REFERENCE_SCORECARD.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/11_REFERENCE_SCORECARD.md",
+          "score": 0.691
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/00_PROJECT_HOME.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/00_PROJECT_HOME.md",
+          "score": 0.662
+        },
+        {
+          "id": "lc-before-running-fixture-mutating-scripts--479c017d",
+          "item_type": "candidate",
+          "score": 0.656
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-safe-static-verification-commands-passed-224ef696.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-safe-static-verification-commands-passed-224ef696.md",
+          "score": 0.607
+        },
+        {
+          "id": "00_System/Architecture Standards/Module and File Boundary Standard.md",
+          "item_type": "path",
+          "path": "00_System/Architecture Standards/Module and File Boundary Standard.md",
+          "score": 0.55
+        },
+        {
+          "id": "00_System/Brain Constitution.md",
+          "item_type": "path",
+          "path": "00_System/Brain Constitution.md",
+          "score": 0.55
+        },
+        {
+          "id": "00_System/Web Development Expert System/14_I18N/Arabic RTL and Internationalization Standard.md",
+          "item_type": "path",
+          "path": "00_System/Web Development Expert System/14_I18N/Arabic RTL and Internationalization Standard.md",
+          "score": 0.55
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/07_CURRENT_STATE.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/07_CURRENT_STATE.md",
+          "score": 0.295
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-static-verification-of-production-gate-blockers-aba73203.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-static-verification-of-production-gate-blockers-aba73203.md",
+          "score": 0.283
+        },
+        {
+          "id": "obj-pattern-idempotent-legacy-migration",
+          "item_type": "object",
+          "score": 0.239
+        },
+        {
+          "id": "lc-keep-provider-webhook-tests-split-into-p-4c4a7d77",
+          "item_type": "candidate",
+          "score": 0.233
+        }
+      ],
+      "explanation": "Should retrieve the remote DB boundary and skipped DB-backed test evidence."
+    },
+    {
+      "eval_id": "meta-exp-019",
+      "pass": true,
+      "query": "What future project types should investigate evidence-first AI?",
+      "missing_paths": [],
+      "missing_object_ids": [],
+      "missing_candidate_ids": [],
+      "forbidden_hits": [],
+      "retrieved": [
+        {
+          "id": "obj-pattern-evidence-first-ai",
+          "item_type": "object",
+          "score": 0.759
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/03_GOOD_POINTS.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/03_GOOD_POINTS.md",
+          "score": 0.719
+        },
+        {
+          "id": "lc-evidence-first-ai-decisions-persist-exac-5ce17ece",
+          "item_type": "candidate",
+          "score": 0.612
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/06_TRANSFER_CANDIDATES.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/06_TRANSFER_CANDIDATES.md",
+          "score": 0.596
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-github-repository-architecture-extraction-731bc079.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-github-repository-architecture-extraction-731bc079.md",
+          "score": 0.591
+        },
+        {
+          "id": "obj-meta-word-of-mouth",
+          "item_type": "object",
+          "score": 0.481
+        },
+        {
+          "id": "obj-pattern-score-semantic-separation",
+          "item_type": "object",
+          "score": 0.454
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/11_REFERENCE_SCORECARD.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/11_REFERENCE_SCORECARD.md",
+          "score": 0.425
+        },
+        {
+          "id": "lc-separate-ai-confidence-commercial-streng-96e89af4",
+          "item_type": "candidate",
+          "score": 0.413
+        },
+        {
+          "id": "00_System/Governance/Truth Hierarchy and Conflict Policy.md",
+          "item_type": "path",
+          "path": "00_System/Governance/Truth Hierarchy and Conflict Policy.md",
+          "score": 0.404
+        },
+        {
+          "id": "obj-evd-mrb1oc94-40290714",
+          "item_type": "object",
+          "score": 0.396
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-evidence-first-ai-and-worker-architecture-40290714.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-evidence-first-ai-and-worker-architecture-40290714.md",
+          "score": 0.393
+        },
+        {
+          "id": "00_System/Connected Intelligence OS/Project Experience Operating Standard.md",
+          "item_type": "path",
+          "path": "00_System/Connected Intelligence OS/Project Experience Operating Standard.md",
+          "score": 0.377
+        },
+        {
+          "id": "obj-domain-ai-crm",
+          "item_type": "object",
+          "score": 0.37
+        },
+        {
+          "id": "00_System/Runtime State/OPERATION_LOG.md",
+          "item_type": "path",
+          "path": "00_System/Runtime State/OPERATION_LOG.md",
+          "score": 0.341
+        },
+        {
+          "id": "00_System/Automation/README.md",
+          "item_type": "path",
+          "path": "00_System/Automation/README.md",
+          "score": 0.33
+        },
+        {
+          "id": "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+          "item_type": "path",
+          "path": "00_System/Project OS/OVX Smart Connected AI Project Standard.md",
+          "score": 0.256
+        },
+        {
+          "id": "00_System/Knowledge Graph/Source-Backed Knowledge Protocol.md",
+          "item_type": "path",
+          "path": "00_System/Knowledge Graph/Source-Backed Knowledge Protocol.md",
+          "score": 0.25
+        },
+        {
+          "id": "50_Skills/Research/source-backed-client-discovery.md",
+          "item_type": "path",
+          "path": "50_Skills/Research/source-backed-client-discovery.md",
+          "score": 0.25
+        },
+        {
+          "id": "30_Business/Organizations/OVX Smart Connected AI.md",
+          "item_type": "path",
+          "path": "30_Business/Organizations/OVX Smart Connected AI.md",
+          "score": 0.24
+        }
+      ],
+      "explanation": "Should retrieve the pattern and applicability domain."
+    },
+    {
+      "eval_id": "meta-exp-020",
+      "pass": true,
+      "query": "What anti-copy warnings exist for temporary Supabase adapters?",
+      "missing_paths": [],
+      "missing_object_ids": [],
+      "missing_candidate_ids": [],
+      "forbidden_hits": [],
+      "retrieved": [
+        {
+          "id": "obj-failure-temporary-adapter-production-drift",
+          "item_type": "object",
+          "score": 1.397
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/06_TRANSFER_CANDIDATES.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/06_TRANSFER_CANDIDATES.md",
+          "score": 1.045
+        },
+        {
+          "id": "obj-evd-mrb351xs-27ac41ce",
+          "item_type": "object",
+          "score": 0.946
+        },
+        {
+          "id": "obj-run-mrb34rdn-eebbc7fd",
+          "item_type": "object",
+          "score": 0.946
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-local-static-verification-and-safe-test-boundary-eebbc7fd.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-local-static-verification-and-safe-test-boundary-eebbc7fd.md",
+          "score": 0.942
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/05_FUTURE_PATH.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/05_FUTURE_PATH.md",
+          "score": 0.934
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-database-backed-tests-intentionally-skipped-against-remote-supabase-url-27ac41ce.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-database-backed-tests-intentionally-skipped-against-remote-supabase-url-27ac41ce.md",
+          "score": 0.864
+        },
+        {
+          "id": "00_System/Runtime State/OPERATION_LOG.md",
+          "item_type": "path",
+          "path": "00_System/Runtime State/OPERATION_LOG.md",
+          "score": 0.848
+        },
+        {
+          "id": "obj-evd-mrb1ocdf-0f4342d1",
+          "item_type": "object",
+          "score": 0.814
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-privacy-permissions-and-operational-gaps-snapshot-0f4342d1.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-privacy-permissions-and-operational-gaps-snapshot-0f4342d1.md",
+          "score": 0.8
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/04_BAD_POINTS_AND_RISKS.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/04_BAD_POINTS_AND_RISKS.md",
+          "score": 0.795
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/07_CURRENT_STATE.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/07_CURRENT_STATE.md",
+          "score": 0.743
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/00_PROJECT_HOME.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/00_PROJECT_HOME.md",
+          "score": 0.74
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/01_CONTEXT.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/01_CONTEXT.md",
+          "score": 0.73
+        },
+        {
+          "id": "lc-temporary-adapter-production-drift-dev-w-c4828049",
+          "item_type": "candidate",
+          "score": 0.707
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-github-repository-architecture-extraction-731bc079.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-github-repository-architecture-extraction-731bc079.md",
+          "score": 0.698
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/08_EXECUTION_QUEUE.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/08_EXECUTION_QUEUE.md",
+          "score": 0.688
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
+          "score": 0.681
+        },
+        {
+          "id": "40_Projects/Active/Meta Word of Mouth/09_REPO_MAP.md",
+          "item_type": "path",
+          "path": "40_Projects/Active/Meta Word of Mouth/09_REPO_MAP.md",
+          "score": 0.641
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-signed-webhook-and-idempotent-ingestion-architecture-29126148.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-signed-webhook-and-idempotent-ingestion-architecture-29126148.md",
+          "score": 0.626
+        }
+      ],
+      "explanation": "Should retrieve temporary adapter production drift."
+    }
+  ]
+}

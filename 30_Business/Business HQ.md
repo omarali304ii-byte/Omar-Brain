@@ -19,6 +19,10 @@ Ongoing business entities and operating systems.
 - `Operations`: repeatable business processes.
 - `Offers`: commercial offers/packages.
 
+## Active company doctrine
+- [[Organizations/OVX Smart Connected AI]] is the canonical OVX company vision: One Reality, Shared Memory, Compounding Intelligence.
+- OVX-aligned software projects should also load [[00_System/Project OS/OVX Smart Connected AI Project Standard]] before architecture approval.
+
 ## Boundary
 A finite launch, migration, integration, campaign, or build belongs in `40_Projects` and links back to the relevant organization/product/client.
 

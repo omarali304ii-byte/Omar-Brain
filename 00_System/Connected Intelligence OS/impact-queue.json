@@ -5,7 +5,7 @@
   "items": [
     {
       "impact_id": "imp-mrb1o0og-5cd5ceaa",
-      "status": "pending",
+      "status": "processed",
       "created_at": "2026-07-07T19:31:01.360Z",
       "source_object": "obj-run-mrb1o0ob-731bc079",
       "project_id": "prj-meta-word-of-mouth",
@@ -17,11 +17,55 @@
         "review-current-state",
         "review-execution-queue",
         "compile-experience"
-      ]
+      ],
+      "retry_count": 1,
+      "processor_history": [
+        {
+          "processor": "impact-process.mjs",
+          "timestamp": "2026-07-07T21:02:44.777Z",
+          "source_object": "obj-run-mrb1o0ob-731bc079",
+          "actions_attempted": [
+            "review-current-state",
+            "review-execution-queue",
+            "compile-experience"
+          ],
+          "affected_objects": [
+            "obj-meta-word-of-mouth"
+          ],
+          "changes_made": [],
+          "no_change_reason": "Relevant project truth, evidence matrix, learning candidates, and execution queue were already updated by the recorded run/evidence pass; processor recorded the impact review and left durable truth unchanged.",
+          "resulting_events": [
+            "evt-mrb4xz55-0bb1af56"
+          ],
+          "resulting_transactions": [
+            "txn-mrb4xz56-108cf0a2"
+          ],
+          "errors": [],
+          "retry_count": 0,
+          "blocker": null
+        }
+      ],
+      "processing_started_at": "2026-07-07T21:02:44.777Z",
+      "processed_at": "2026-07-07T21:02:44.777Z",
+      "last_processed_at": "2026-07-07T21:02:44.777Z",
+      "processor": "impact-process.mjs",
+      "outcome": {
+        "result": "processed",
+        "no_change_reason": "Relevant project truth, evidence matrix, learning candidates, and execution queue were already updated by the recorded run/evidence pass; processor recorded the impact review and left durable truth unchanged.",
+        "source_object": "obj-run-mrb1o0ob-731bc079",
+        "actions_attempted": [
+          "review-current-state",
+          "review-execution-queue",
+          "compile-experience"
+        ],
+        "affected_objects": [
+          "obj-meta-word-of-mouth"
+        ]
+      }
     },
     {
       "impact_id": "imp-mrb1oc78-0ad4ea7c",
-      "status": "pending",
+      "status": "processed",
       "created_at": "2026-07-07T19:31:16.292Z",
       "source_object": "obj-evd-mrb1oc73-25062d49",
       "project_id": "prj-meta-word-of-mouth",
@@ -34,11 +78,57 @@
         "review-supported-claims",
         "review-project-truth",
         "review-learning-candidates"
-      ]
+      ],
+      "retry_count": 1,
+      "processor_history": [
+        {
+          "processor": "impact-process.mjs",
+          "timestamp": "2026-07-07T21:02:44.778Z",
+          "source_object": "obj-evd-mrb1oc73-25062d49",
+          "actions_attempted": [
+            "review-supported-claims",
+            "review-project-truth",
+            "review-learning-candidates"
+          ],
+          "affected_objects": [
+            "obj-meta-word-of-mouth",
+            "obj-run-mrb1o0ob-731bc079"
+          ],
+          "changes_made": [],
+          "no_change_reason": "Relevant project truth, evidence matrix, learning candidates, and execution queue were already updated by the recorded run/evidence pass; processor recorded the impact review and left durable truth unchanged.",
+          "resulting_events": [
+            "evt-mrb4xz56-ba7b76b1"
+          ],
+          "resulting_transactions": [
+            "txn-mrb4xz57-dea9c6d0"
+          ],
+          "errors": [],
+          "retry_count": 0,
+          "blocker": null
+        }
+      ],
+      "processing_started_at": "2026-07-07T21:02:44.777Z",
+      "processed_at": "2026-07-07T21:02:44.778Z",
+      "last_processed_at": "2026-07-07T21:02:44.778Z",
+      "processor": "impact-process.mjs",
+      "outcome": {
+        "result": "processed",
+        "no_change_reason": "Relevant project truth, evidence matrix, learning candidates, and execution queue were already updated by the recorded run/evidence pass; processor recorded the impact review and left durable truth unchanged.",
+        "source_object": "obj-evd-mrb1oc73-25062d49",
+        "actions_attempted": [
+          "review-supported-claims",
+          "review-project-truth",
+          "review-learning-candidates"
+        ],
+        "affected_objects": [
+          "obj-meta-word-of-mouth",
+          "obj-run-mrb1o0ob-731bc079"
+        ]
+      }
     },
     {
       "impact_id": "imp-mrb1oc9f-af0ccdc2",
-      "status": "pending",
+      "status": "processed",
       "created_at": "2026-07-07T19:31:16.371Z",
       "source_object": "obj-evd-mrb1oc94-40290714",
       "project_id": "prj-meta-word-of-mouth",
@@ -51,11 +141,57 @@
         "review-supported-claims",
         "review-project-truth",
         "review-learning-candidates"
-      ]
+      ],
+      "retry_count": 1,
+      "processor_history": [
+        {
+          "processor": "impact-process.mjs",
+          "timestamp": "2026-07-07T21:02:44.779Z",
+          "source_object": "obj-evd-mrb1oc94-40290714",
+          "actions_attempted": [
+            "review-supported-claims",
+            "review-project-truth",
+            "review-learning-candidates"
+          ],
+          "affected_objects": [
+            "obj-meta-word-of-mouth",
+            "obj-run-mrb1o0ob-731bc079"
+          ],
+          "changes_made": [],
+          "no_change_reason": "Relevant project truth, evidence matrix, learning candidates, and execution queue were already updated by the recorded run/evidence pass; processor recorded the impact review and left durable truth unchanged.",
+          "resulting_events": [
+            "evt-mrb4xz58-2e1b8694"
+          ],
+          "resulting_transactions": [
+            "txn-mrb4xz58-da7ccfb8"
+          ],
+          "errors": [],
+          "retry_count": 0,
+          "blocker": null
+        }
+      ],
+      "processing_started_at": "2026-07-07T21:02:44.777Z",
+      "processed_at": "2026-07-07T21:02:44.779Z",
+      "last_processed_at": "2026-07-07T21:02:44.779Z",
+      "processor": "impact-process.mjs",
+      "outcome": {
+        "result": "processed",
+        "no_change_reason": "Relevant project truth, evidence matrix, learning candidates, and execution queue were already updated by the recorded run/evidence pass; processor recorded the impact review and left durable truth unchanged.",
+        "source_object": "obj-evd-mrb1oc94-40290714",
+        "actions_attempted": [
+          "review-supported-claims",
+          "review-project-truth",
+          "review-learning-candidates"
+        ],
+        "affected_objects": [
+          "obj-meta-word-of-mouth",
+          "obj-run-mrb1o0ob-731bc079"
+        ]
+      }
     },
     {
       "impact_id": "imp-mrb1ocbk-7183bd08",
-      "status": "pending",
+      "status": "processed",
       "created_at": "2026-07-07T19:31:16.449Z",
       "source_object": "obj-evd-mrb1ocbf-29126148",
       "project_id": "prj-meta-word-of-mouth",
@@ -68,11 +204,57 @@
         "review-supported-claims",
         "review-project-truth",
         "review-learning-candidates"
-      ]
+      ],
+      "retry_count": 1,
+      "processor_history": [
+        {
+          "processor": "impact-process.mjs",
+          "timestamp": "2026-07-07T21:02:44.780Z",
+          "source_object": "obj-evd-mrb1ocbf-29126148",
+          "actions_attempted": [
+            "review-supported-claims",
+            "review-project-truth",
+            "review-learning-candidates"
+          ],
+          "affected_objects": [
+            "obj-meta-word-of-mouth",
+            "obj-run-mrb1o0ob-731bc079"
+          ],
+          "changes_made": [],
+          "no_change_reason": "Relevant project truth, evidence matrix, learning candidates, and execution queue were already updated by the recorded run/evidence pass; processor recorded the impact review and left durable truth unchanged.",
+          "resulting_events": [
+            "evt-mrb4xz58-549c38a0"
+          ],
+          "resulting_transactions": [
+            "txn-mrb4xz59-90548fd0"
+          ],
+          "errors": [],
+          "retry_count": 0,
+          "blocker": null
+        }
+      ],
+      "processing_started_at": "2026-07-07T21:02:44.777Z",
+      "processed_at": "2026-07-07T21:02:44.780Z",
+      "last_processed_at": "2026-07-07T21:02:44.780Z",
+      "processor": "impact-process.mjs",
+      "outcome": {
+        "result": "processed",
+        "no_change_reason": "Relevant project truth, evidence matrix, learning candidates, and execution queue were already updated by the recorded run/evidence pass; processor recorded the impact review and left durable truth unchanged.",
+        "source_object": "obj-evd-mrb1ocbf-29126148",
+        "actions_attempted": [
+          "review-supported-claims",
+          "review-project-truth",
+          "review-learning-candidates"
+        ],
+        "affected_objects": [
+          "obj-meta-word-of-mouth",
+          "obj-run-mrb1o0ob-731bc079"
+        ]
+      }
     },
     {
       "impact_id": "imp-mrb1ocdk-18a16bd1",
-      "status": "pending",
+      "status": "processed",
       "created_at": "2026-07-07T19:31:16.520Z",
       "source_object": "obj-evd-mrb1ocdf-0f4342d1",
       "project_id": "prj-meta-word-of-mouth",
@@ -85,11 +267,57 @@
         "review-supported-claims",
         "review-project-truth",
         "review-learning-candidates"
-      ]
+      ],
+      "retry_count": 1,
+      "processor_history": [
+        {
+          "processor": "impact-process.mjs",
+          "timestamp": "2026-07-07T21:02:44.782Z",
+          "source_object": "obj-evd-mrb1ocdf-0f4342d1",
+          "actions_attempted": [
+            "review-supported-claims",
+            "review-project-truth",
+            "review-learning-candidates"
+          ],
+          "affected_objects": [
+            "obj-meta-word-of-mouth",
+            "obj-run-mrb1o0ob-731bc079"
+          ],
+          "changes_made": [],
+          "no_change_reason": "Relevant project truth, evidence matrix, learning candidates, and execution queue were already updated by the recorded run/evidence pass; processor recorded the impact review and left durable truth unchanged.",
+          "resulting_events": [
+            "evt-mrb4xz5a-7e04c10d"
+          ],
+          "resulting_transactions": [
+            "txn-mrb4xz5a-fd70474c"
+          ],
+          "errors": [],
+          "retry_count": 0,
+          "blocker": null
+        }
+      ],
+      "processing_started_at": "2026-07-07T21:02:44.777Z",
+      "processed_at": "2026-07-07T21:02:44.782Z",
+      "last_processed_at": "2026-07-07T21:02:44.782Z",
+      "processor": "impact-process.mjs",
+      "outcome": {
+        "result": "processed",
+        "no_change_reason": "Relevant project truth, evidence matrix, learning candidates, and execution queue were already updated by the recorded run/evidence pass; processor recorded the impact review and left durable truth unchanged.",
+        "source_object": "obj-evd-mrb1ocdf-0f4342d1",
+        "actions_attempted": [
+          "review-supported-claims",
+          "review-project-truth",
+          "review-learning-candidates"
+        ],
+        "affected_objects": [
+          "obj-meta-word-of-mouth",
+          "obj-run-mrb1o0ob-731bc079"
+        ]
+      }
     },
     {
       "impact_id": "imp-mrb34rdu-d391116c",
-      "status": "pending",
+      "status": "processed",
       "created_at": "2026-07-07T20:12:02.082Z",
       "source_object": "obj-run-mrb34rdn-eebbc7fd",
       "project_id": "prj-meta-word-of-mouth",
@@ -101,11 +329,55 @@
         "review-current-state",
         "review-execution-queue",
         "compile-experience"
-      ]
+      ],
+      "retry_count": 1,
+      "processor_history": [
+        {
+          "processor": "impact-process.mjs",
+          "timestamp": "2026-07-07T21:02:44.783Z",
+          "source_object": "obj-run-mrb34rdn-eebbc7fd",
+          "actions_attempted": [
+            "review-current-state",
+            "review-execution-queue",
+            "compile-experience"
+          ],
+          "affected_objects": [
+            "obj-meta-word-of-mouth"
+          ],
+          "changes_made": [],
+          "no_change_reason": "Relevant project truth, evidence matrix, learning candidates, and execution queue were already updated by the recorded run/evidence pass; processor recorded the impact review and left durable truth unchanged.",
+          "resulting_events": [
+            "evt-mrb4xz5b-6b34a363"
+          ],
+          "resulting_transactions": [
+            "txn-mrb4xz5b-4b1ad7b4"
+          ],
+          "errors": [],
+          "retry_count": 0,
+          "blocker": null
+        }
+      ],
+      "processing_started_at": "2026-07-07T21:02:44.777Z",
+      "processed_at": "2026-07-07T21:02:44.783Z",
+      "last_processed_at": "2026-07-07T21:02:44.783Z",
+      "processor": "impact-process.mjs",
+      "outcome": {
+        "result": "processed",
+        "no_change_reason": "Relevant project truth, evidence matrix, learning candidates, and execution queue were already updated by the recorded run/evidence pass; processor recorded the impact review and left durable truth unchanged.",
+        "source_object": "obj-run-mrb34rdn-eebbc7fd",
+        "actions_attempted": [
+          "review-current-state",
+          "review-execution-queue",
+          "compile-experience"
+        ],
+        "affected_objects": [
+          "obj-meta-word-of-mouth"
+        ]
+      }
     },
     {
       "impact_id": "imp-mrb351xd-08acc5a4",
-      "status": "pending",
+      "status": "processed",
       "created_at": "2026-07-07T20:12:15.745Z",
       "source_object": "obj-evd-mrb351wz-ee53c349",
       "project_id": "prj-meta-word-of-mouth",
@@ -118,11 +390,57 @@
         "review-supported-claims",
         "review-project-truth",
         "review-learning-candidates"
-      ]
+      ],
+      "retry_count": 1,
+      "processor_history": [
+        {
+          "processor": "impact-process.mjs",
+          "timestamp": "2026-07-07T21:02:44.783Z",
+          "source_object": "obj-evd-mrb351wz-ee53c349",
+          "actions_attempted": [
+            "review-supported-claims",
+            "review-project-truth",
+            "review-learning-candidates"
+          ],
+          "affected_objects": [
+            "obj-meta-word-of-mouth",
+            "obj-run-mrb34rdn-eebbc7fd"
+          ],
+          "changes_made": [],
+          "no_change_reason": "Relevant project truth, evidence matrix, learning candidates, and execution queue were already updated by the recorded run/evidence pass; processor recorded the impact review and left durable truth unchanged.",
+          "resulting_events": [
+            "evt-mrb4xz5b-ea2bd564"
+          ],
+          "resulting_transactions": [
+            "txn-mrb4xz5b-5a448c0d"
+          ],
+          "errors": [],
+          "retry_count": 0,
+          "blocker": null
+        }
+      ],
+      "processing_started_at": "2026-07-07T21:02:44.777Z",
+      "processed_at": "2026-07-07T21:02:44.783Z",
+      "last_processed_at": "2026-07-07T21:02:44.783Z",
+      "processor": "impact-process.mjs",
+      "outcome": {
+        "result": "processed",
+        "no_change_reason": "Relevant project truth, evidence matrix, learning candidates, and execution queue were already updated by the recorded run/evidence pass; processor recorded the impact review and left durable truth unchanged.",
+        "source_object": "obj-evd-mrb351wz-ee53c349",
+        "actions_attempted": [
+          "review-supported-claims",
+          "review-project-truth",
+          "review-learning-candidates"
+        ],
+        "affected_objects": [
+          "obj-meta-word-of-mouth",
+          "obj-run-mrb34rdn-eebbc7fd"
+        ]
+      }
     },
     {
       "impact_id": "imp-mrb351xz-7ba7b141",
-      "status": "pending",
+      "status": "processed",
       "created_at": "2026-07-07T20:12:15.767Z",
       "source_object": "obj-evd-mrb351xk-224ef696",
       "project_id": "prj-meta-word-of-mouth",
@@ -135,11 +453,57 @@
         "review-supported-claims",
         "review-project-truth",
         "review-learning-candidates"
-      ]
+      ],
+      "retry_count": 1,
+      "processor_history": [
+        {
+          "processor": "impact-process.mjs",
+          "timestamp": "2026-07-07T21:02:44.783Z",
+          "source_object": "obj-evd-mrb351xk-224ef696",
+          "actions_attempted": [
+            "review-supported-claims",
+            "review-project-truth",
+            "review-learning-candidates"
+          ],
+          "affected_objects": [
+            "obj-meta-word-of-mouth",
+            "obj-run-mrb34rdn-eebbc7fd"
+          ],
+          "changes_made": [],
+          "no_change_reason": "Relevant project truth, evidence matrix, learning candidates, and execution queue were already updated by the recorded run/evidence pass; processor recorded the impact review and left durable truth unchanged.",
+          "resulting_events": [
+            "evt-mrb4xz5b-b68e1027"
+          ],
+          "resulting_transactions": [
+            "txn-mrb4xz5c-cc112ff1"
+          ],
+          "errors": [],
+          "retry_count": 0,
+          "blocker": null
+        }
+      ],
+      "processing_started_at": "2026-07-07T21:02:44.777Z",
+      "processed_at": "2026-07-07T21:02:44.783Z",
+      "last_processed_at": "2026-07-07T21:02:44.783Z",
+      "processor": "impact-process.mjs",
+      "outcome": {
+        "result": "processed",
+        "no_change_reason": "Relevant project truth, evidence matrix, learning candidates, and execution queue were already updated by the recorded run/evidence pass; processor recorded the impact review and left durable truth unchanged.",
+        "source_object": "obj-evd-mrb351xk-224ef696",
+        "actions_attempted": [
+          "review-supported-claims",
+          "review-project-truth",
+          "review-learning-candidates"
+        ],
+        "affected_objects": [
+          "obj-meta-word-of-mouth",
+          "obj-run-mrb34rdn-eebbc7fd"
+        ]
+      }
     },
     {
       "impact_id": "imp-mrb351y7-154e8899",
-      "status": "pending",
+      "status": "processed",
       "created_at": "2026-07-07T20:12:15.775Z",
       "source_object": "obj-evd-mrb351xs-27ac41ce",
       "project_id": "prj-meta-word-of-mouth",
@@ -152,11 +516,57 @@
         "review-supported-claims",
         "review-project-truth",
         "review-learning-candidates"
-      ]
+      ],
+      "retry_count": 1,
+      "processor_history": [
+        {
+          "processor": "impact-process.mjs",
+          "timestamp": "2026-07-07T21:02:44.784Z",
+          "source_object": "obj-evd-mrb351xs-27ac41ce",
+          "actions_attempted": [
+            "review-supported-claims",
+            "review-project-truth",
+            "review-learning-candidates"
+          ],
+          "affected_objects": [
+            "obj-meta-word-of-mouth",
+            "obj-run-mrb34rdn-eebbc7fd"
+          ],
+          "changes_made": [],
+          "no_change_reason": "Relevant project truth, evidence matrix, learning candidates, and execution queue were already updated by the recorded run/evidence pass; processor recorded the impact review and left durable truth unchanged.",
+          "resulting_events": [
+            "evt-mrb4xz5c-74ca61bf"
+          ],
+          "resulting_transactions": [
+            "txn-mrb4xz5c-976041b2"
+          ],
+          "errors": [],
+          "retry_count": 0,
+          "blocker": null
+        }
+      ],
+      "processing_started_at": "2026-07-07T21:02:44.777Z",
+      "processed_at": "2026-07-07T21:02:44.784Z",
+      "last_processed_at": "2026-07-07T21:02:44.784Z",
+      "processor": "impact-process.mjs",
+      "outcome": {
+        "result": "processed",
+        "no_change_reason": "Relevant project truth, evidence matrix, learning candidates, and execution queue were already updated by the recorded run/evidence pass; processor recorded the impact review and left durable truth unchanged.",
+        "source_object": "obj-evd-mrb351xs-27ac41ce",
+        "actions_attempted": [
+          "review-supported-claims",
+          "review-project-truth",
+          "review-learning-candidates"
+        ],
+        "affected_objects": [
+          "obj-meta-word-of-mouth",
+          "obj-run-mrb34rdn-eebbc7fd"
+        ]
+      }
     },
     {
       "impact_id": "imp-mrb3iohl-82171bf8",
-      "status": "pending",
+      "status": "processed",
       "created_at": "2026-07-07T20:22:51.513Z",
       "source_object": "obj-run-mrb3iohg-6d1d9a66",
       "project_id": "prj-meta-word-of-mouth",
@@ -168,11 +578,55 @@
         "review-current-state",
         "review-execution-queue",
         "compile-experience"
-      ]
+      ],
+      "retry_count": 1,
+      "processor_history": [
+        {
+          "processor": "impact-process.mjs",
+          "timestamp": "2026-07-07T21:02:44.784Z",
+          "source_object": "obj-run-mrb3iohg-6d1d9a66",
+          "actions_attempted": [
+            "review-current-state",
+            "review-execution-queue",
+            "compile-experience"
+          ],
+          "affected_objects": [
+            "obj-meta-word-of-mouth"
+          ],
+          "changes_made": [],
+          "no_change_reason": "Relevant project truth, evidence matrix, learning candidates, and execution queue were already updated by the recorded run/evidence pass; processor recorded the impact review and left durable truth unchanged.",
+          "resulting_events": [
+            "evt-mrb4xz5c-00203830"
+          ],
+          "resulting_transactions": [
+            "txn-mrb4xz5d-dbe010b9"
+          ],
+          "errors": [],
+          "retry_count": 0,
+          "blocker": null
+        }
+      ],
+      "processing_started_at": "2026-07-07T21:02:44.777Z",
+      "processed_at": "2026-07-07T21:02:44.784Z",
+      "last_processed_at": "2026-07-07T21:02:44.784Z",
+      "processor": "impact-process.mjs",
+      "outcome": {
+        "result": "processed",
+        "no_change_reason": "Relevant project truth, evidence matrix, learning candidates, and execution queue were already updated by the recorded run/evidence pass; processor recorded the impact review and left durable truth unchanged.",
+        "source_object": "obj-run-mrb3iohg-6d1d9a66",
+        "actions_attempted": [
+          "review-current-state",
+          "review-execution-queue",
+          "compile-experience"
+        ],
+        "affected_objects": [
+          "obj-meta-word-of-mouth"
+        ]
+      }
     },
     {
       "impact_id": "imp-mrb3iwwi-c7a64fda",
-      "status": "pending",
+      "status": "processed",
       "created_at": "2026-07-07T20:23:02.418Z",
       "source_object": "obj-evd-mrb3iwud-aba73203",
       "project_id": "prj-meta-word-of-mouth",
@@ -185,7 +639,68 @@
         "review-supported-claims",
         "review-project-truth",
         "review-learning-candidates"
-      ]
+      ],
+      "retry_count": 1,
+      "processor_history": [
+        {
+          "processor": "impact-process.mjs",
+          "timestamp": "2026-07-07T21:02:44.785Z",
+          "source_object": "obj-evd-mrb3iwud-aba73203",
+          "actions_attempted": [
+            "review-supported-claims",
+            "review-project-truth",
+            "review-learning-candidates"
+          ],
+          "affected_objects": [
+            "obj-meta-word-of-mouth",
+            "obj-run-mrb3iohg-6d1d9a66"
+          ],
+          "changes_made": [],
+          "no_change_reason": "Relevant project truth, evidence matrix, learning candidates, and execution queue were already updated by the recorded run/evidence pass; processor recorded the impact review and left durable truth unchanged.",
+          "resulting_events": [
+            "evt-mrb4xz5d-f7c6fe91"
+          ],
+          "resulting_transactions": [
+            "txn-mrb4xz5d-3c30a4bc"
+          ],
+          "errors": [],
+          "retry_count": 0,
+          "blocker": null
+        }
+      ],
+      "processing_started_at": "2026-07-07T21:02:44.777Z",
+      "processed_at": "2026-07-07T21:02:44.785Z",
+      "last_processed_at": "2026-07-07T21:02:44.785Z",
+      "processor": "impact-process.mjs",
+      "outcome": {
+        "result": "processed",
+        "no_change_reason": "Relevant project truth, evidence matrix, learning candidates, and execution queue were already updated by the recorded run/evidence pass; processor recorded the impact review and left durable truth unchanged.",
+        "source_object": "obj-evd-mrb3iwud-aba73203",
+        "actions_attempted": [
+          "review-supported-claims",
+          "review-project-truth",
+          "review-learning-candidates"
+        ],
+        "affected_objects": [
+          "obj-meta-word-of-mouth",
+          "obj-run-mrb3iohg-6d1d9a66"
+        ]
+      }
     }
-  ]
+  ],
+  "lifecycle_states": [
+    "pending",
+    "processing",
+    "processed",
+    "blocked",
+    "rejected",
+    "superseded"
+  ],
+  "processor_contract": {
+    "processor": "00_System/Automation/impact-process.mjs",
+    "idempotent": true,
+    "restart_safe": true,
+    "duplicate_safe": true,
+    "processed_items_record_processor_timestamp_actions_affected_objects_outcome_events_transactions_errors_retry_count": true
+  }
 }

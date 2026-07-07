@@ -11,14 +11,10 @@
             "id": "21677a221af2d503",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "40_Projects/Active/Meta Word of Mouth/03_GOOD_POINTS.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "03_GOOD_POINTS"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -94,6 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "40_Projects/Active/Meta Word of Mouth/05_FUTURE_PATH.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +100,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for 05_FUTURE_PATH"
             }
           },
           {
@@ -161,6 +158,18 @@
               "icon": "lucide-list",
               "title": "Outline"
             }
+          },
+          {
+            "id": "18721a06d431abb3",
+            "type": "leaf",
+            "state": {
+              "type": "footnotes",
+              "state": {
+                "file": "00_System/Operating Map.md"
+              },
+              "icon": "lucide-file-signature",
+              "title": "Footnotes"
+            }
           }
         ]
       }
@@ -177,14 +186,43 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "markdown-importer:Open format converter": false,
+      "publish:Publish changes...": false
     }
   },
   "active": "21677a221af2d503",
   "lastOpenFiles": [
+    "00_System/Operating Map.md",
+    "START HERE.md",
+    "00_System/Skill OS/Skill Maturity Ladder.md",
+    "50_Skills/Analytics/ab-test-analysis.md",
+    "50_Skills/Analytics/_Index.md",
+    "15_Ideas/Ideas HQ.md",
+    "15_Ideas/Incubator/_Index.md",
+    "40_Projects/Active/Meta Word of Mouth/06_TRANSFER_CANDIDATES.md",
+    "40_Projects/Active/Meta Word of Mouth/03_GOOD_POINTS.md",
     "40_Projects/Active/Meta Word of Mouth/02_ARCHITECTURE.md",
-    "40_Projects/Active/Meta Word of Mouth/01_CONTEXT.md",
     "40_Projects/Active/Meta Word of Mouth/00_PROJECT_HOME.md",
+    "40_Projects/Active/Meta Word of Mouth/05_FUTURE_PATH.md",
+    "40_Projects/Active/Meta Word of Mouth/07_CURRENT_STATE.md",
+    "40_Projects/Active/Meta Word of Mouth/11_REFERENCE_SCORECARD.md",
+    "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
+    "40_Projects/Active/Meta Word of Mouth/08_EXECUTION_QUEUE.md",
+    "40_Projects/Active/Meta Word of Mouth/01_CONTEXT.md",
+    "00_System/Evaluation/last-project-experience-eval.json",
+    "00_System/Automation/check-experience-graph.mjs",
+    "00_System/Automation/check-impact-queue.mjs",
+    "00_System/Connected Intelligence OS/Project Experience Operating Standard.md",
+    "00_System/Evaluation/project-experience-eval-cases.json",
+    "00_System/Automation/eval-project-experience.mjs",
+    "00_System/Automation/project-revision-check.mjs",
+    "00_System/Automation/project-experience-plan.mjs",
+    "00_System/Automation/impact-process.mjs",
+    "00_System/Automation/check-learning-quality.mjs",
+    "00_System/Automation/experience-compile.mjs",
+    "40_Projects/Active/Meta Word of Mouth/09_REPO_MAP.md",
+    "40_Projects/Active/Meta Word of Mouth/04_BAD_POINTS_AND_RISKS.md",
     "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-database-backed-tests-intentionally-skipped-against-remote-supabase-url-27ac41ce.md",
     "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-safe-static-verification-commands-passed-224ef696.md",
     "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-local-clean-checkout-revision-snapshot-ee53c349.md",

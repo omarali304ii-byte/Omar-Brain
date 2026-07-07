@@ -10,9 +10,17 @@ const steps=[
  ['check-orphan-information.mjs',[vault]],
  ['check-causal-integrity.mjs',[vault]],
  ['experience-compile.mjs',[vault]],
+ ['learning-objectify.mjs',[vault]],
+ ['impact-process.mjs',[vault]],
+ ['check-learning-quality.mjs',[vault]],
+ ['check-impact-queue.mjs',[vault]],
+ ['check-experience-graph.mjs',[vault]],
+ ['check-causal-integrity.mjs',[vault]],
+ ['project-revision-check.mjs',[vault,'--all']],
  ['reality-coverage.mjs',[vault]],
  ['build-retrieval-manifest.mjs',[vault]],
  ['eval-retrieval.mjs',[vault]],
+ ['eval-project-experience.mjs',[vault]],
  ['brain-health.mjs',[vault]],
  ['reality-eval.mjs',[vault]]
 ];
