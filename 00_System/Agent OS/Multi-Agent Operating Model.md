@@ -40,3 +40,27 @@ Supervisor
 - every request spawning all specialists,
 - workers writing durable memory directly,
 - agents sharing huge chat transcripts instead of structured handoff state.
+
+## Project Council extension
+For active software projects with repeated specialist work, use the Project Council model:
+
+```text
+Supervisor
+  ├── Project Observer
+  ├── Toolsmith
+  ├── Critic / Verifier
+  ├── Memory Curator
+  └── selected specialists
+      ├── Architecture
+      ├── Data & Truth
+      ├── Integration & Workflow
+      ├── Logic & Performance
+      ├── Product & UX
+      ├── Runtime & Reliability
+      └── Quality Engineer
+```
+
+Specialists inspect and propose. Toolsmith performs integrated implementation. Critic verifies. Project Observer updates current project truth. Memory Curator handles durable reusable learning.
+
+## v14 persistent project cognition
+Project Council specialists are persistent roles. They maintain project-local current cognition, learned triggers, failure patterns, eval registries and exact restart pointers. Specialists update their own cognition; Toolsmith remains the default application implementer; global durable promotion remains Memory Curator governed.

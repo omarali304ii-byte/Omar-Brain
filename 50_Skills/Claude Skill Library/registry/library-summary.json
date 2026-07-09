@@ -1,0 +1,36 @@
+{
+  "updated": "2026-07-09",
+  "skill_count": 559,
+  "archive_sha256": "ccec1af5cbf33bc8c2895356eb57224c1322e76f262219950fd859b4f3afc00e",
+  "origins": {
+    "unspecified": 297,
+    "ECC": 204,
+    "community": 42,
+    "ECC direct-port adaptation": 8,
+    "Health1 Super Speciality Hospitals — contributed by Dr. Keyur Patel": 4,
+    "oh-my-agent-check": 1,
+    "Flox": 1,
+    "ECC-community": 1,
+    "Ronald Skelton - Founder, RapportScore.ai": 1
+  },
+  "categories": {
+    "ai-agentic": 106,
+    "testing-quality": 93,
+    "docs-research": 69,
+    "security": 59,
+    "backend-api": 53,
+    "frontend-ui-ux": 44,
+    "business-product": 37,
+    "devops-cloud": 27,
+    "database-data": 24,
+    "mobile": 22,
+    "architecture-engineering": 19,
+    "general-engineering": 6
+  },
+  "risk_levels": {
+    "low": 282,
+    "medium": 221,
+    "high": 56
+  },
+  "exact_duplicate_groups": 0
+}

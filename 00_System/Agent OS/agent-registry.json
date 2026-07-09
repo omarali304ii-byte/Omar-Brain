@@ -1,7 +1,7 @@
 {
-  "registry_id": "agent-registry-v3",
-  "version": "3.0",
-  "updated": "2026-07-07",
+  "registry_id": "agent-registry-v4",
+  "version": "5.0",
+  "updated": "2026-07-09",
   "default_orchestration": "supervisor-led",
   "selection_rule": "activate the fewest agents necessary; every extra agent must justify specialization, parallelism, risk isolation, or independent verification",
   "single_durable_writer": "memory-curator",
@@ -256,6 +256,274 @@
         "supersession",
         "reindex-trigger"
       ]
+    },
+    {
+      "id": "architecture-agent",
+      "required": false,
+      "activation_when": [
+        "cross-boundary architecture, coupling, ownership, or structural audit required"
+      ],
+      "required_inputs": [
+        "resolved project",
+        "project council when present",
+        "repo/runtime evidence",
+        "task scope"
+      ],
+      "outputs": [
+        "evidence-backed findings",
+        "required proof",
+        "handoff",
+        "learning candidates if any"
+      ],
+      "memory_access": "read; may write own project council cognition; global durable memory propose only",
+      "may_commit_memory": false,
+      "human_approval": [],
+      "stop_condition": "owned task proven or explicit blocker/unknown recorded; own current cognition reconciled; NEXT_START updated",
+      "capabilities": [
+        "system boundaries",
+        "module ownership",
+        "layering",
+        "coupling",
+        "architecture drift",
+        "persistent-project-cognition",
+        "failure-immunity",
+        "exact-restart"
+      ]
+    },
+    {
+      "id": "data-truth-agent",
+      "required": false,
+      "activation_when": [
+        "schema, identity, truth ownership, permissions, privacy, or migration surface touched"
+      ],
+      "required_inputs": [
+        "resolved project",
+        "project council when present",
+        "repo/runtime evidence",
+        "task scope"
+      ],
+      "outputs": [
+        "evidence-backed findings",
+        "required proof",
+        "handoff",
+        "learning candidates if any"
+      ],
+      "memory_access": "read; may write own project council cognition; global durable memory propose only",
+      "may_commit_memory": false,
+      "human_approval": [],
+      "stop_condition": "owned task proven or explicit blocker/unknown recorded; own current cognition reconciled; NEXT_START updated",
+      "capabilities": [
+        "schema",
+        "source-of-truth",
+        "identity",
+        "constraints",
+        "migrations",
+        "tenant data",
+        "privacy",
+        "persistent-project-cognition",
+        "failure-immunity",
+        "exact-restart"
+      ]
+    },
+    {
+      "id": "integration-workflow-agent",
+      "required": false,
+      "activation_when": [
+        "external APIs, webhooks, retries, idempotency, workers, or provider workflows touched"
+      ],
+      "required_inputs": [
+        "resolved project",
+        "project council when present",
+        "repo/runtime evidence",
+        "task scope"
+      ],
+      "outputs": [
+        "evidence-backed findings",
+        "required proof",
+        "handoff",
+        "learning candidates if any"
+      ],
+      "memory_access": "read; may write own project council cognition; global durable memory propose only",
+      "may_commit_memory": false,
+      "human_approval": [],
+      "stop_condition": "owned task proven or explicit blocker/unknown recorded; own current cognition reconciled; NEXT_START updated",
+      "capabilities": [
+        "webhooks",
+        "provider APIs",
+        "retries",
+        "timeouts",
+        "reconciliation",
+        "state machines",
+        "persistent-project-cognition",
+        "failure-immunity",
+        "exact-restart"
+      ]
+    },
+    {
+      "id": "logic-performance-agent",
+      "required": false,
+      "activation_when": [
+        "algorithmic correctness, scaling, query, concurrency, matching/ranking, or performance risk touched"
+      ],
+      "required_inputs": [
+        "resolved project",
+        "project council when present",
+        "repo/runtime evidence",
+        "task scope"
+      ],
+      "outputs": [
+        "evidence-backed findings",
+        "required proof",
+        "handoff",
+        "learning candidates if any"
+      ],
+      "memory_access": "read; may write own project council cognition; global durable memory propose only",
+      "may_commit_memory": false,
+      "human_approval": [],
+      "stop_condition": "owned task proven or explicit blocker/unknown recorded; own current cognition reconciled; NEXT_START updated",
+      "capabilities": [
+        "algorithms",
+        "edge cases",
+        "complexity",
+        "query behavior",
+        "concurrency",
+        "performance",
+        "persistent-project-cognition",
+        "failure-immunity",
+        "exact-restart"
+      ]
+    },
+    {
+      "id": "product-ux-agent",
+      "required": false,
+      "activation_when": [
+        "user workflow, screen, action states, accessibility, mobile, or product behavior touched"
+      ],
+      "required_inputs": [
+        "resolved project",
+        "project council when present",
+        "repo/runtime evidence",
+        "task scope"
+      ],
+      "outputs": [
+        "evidence-backed findings",
+        "required proof",
+        "handoff",
+        "learning candidates if any"
+      ],
+      "memory_access": "read; may write own project council cognition; global durable memory propose only",
+      "may_commit_memory": false,
+      "human_approval": [],
+      "stop_condition": "owned task proven or explicit blocker/unknown recorded; own current cognition reconciled; NEXT_START updated",
+      "capabilities": [
+        "UX",
+        "workflow",
+        "states",
+        "accessibility",
+        "dangerous actions",
+        "mobile",
+        "persistent-project-cognition",
+        "failure-immunity",
+        "exact-restart"
+      ]
+    },
+    {
+      "id": "runtime-reliability-agent",
+      "required": false,
+      "activation_when": [
+        "deployment, CI, workers, environment, logs, observability, backup, or recovery touched"
+      ],
+      "required_inputs": [
+        "resolved project",
+        "project council when present",
+        "repo/runtime evidence",
+        "task scope"
+      ],
+      "outputs": [
+        "evidence-backed findings",
+        "required proof",
+        "handoff",
+        "learning candidates if any"
+      ],
+      "memory_access": "read; may write own project council cognition; global durable memory propose only",
+      "may_commit_memory": false,
+      "human_approval": [],
+      "stop_condition": "owned task proven or explicit blocker/unknown recorded; own current cognition reconciled; NEXT_START updated",
+      "capabilities": [
+        "runtime",
+        "deployment",
+        "CI",
+        "workers",
+        "observability",
+        "backup",
+        "rollback",
+        "persistent-project-cognition",
+        "failure-immunity",
+        "exact-restart"
+      ]
+    },
+    {
+      "id": "quality-engineer-agent",
+      "required": false,
+      "activation_when": [
+        "test/proof strategy required or completion claim needs verification matrix"
+      ],
+      "required_inputs": [
+        "resolved project",
+        "project council when present",
+        "repo/runtime evidence",
+        "task scope"
+      ],
+      "outputs": [
+        "evidence-backed findings",
+        "required proof",
+        "handoff",
+        "learning candidates if any"
+      ],
+      "memory_access": "read; may write own project council cognition; global durable memory propose only",
+      "may_commit_memory": false,
+      "human_approval": [],
+      "stop_condition": "owned task proven or explicit blocker/unknown recorded; own current cognition reconciled; NEXT_START updated",
+      "capabilities": [
+        "tests",
+        "regression",
+        "proof",
+        "quality gate",
+        "release evidence",
+        "persistent-project-cognition",
+        "failure-immunity",
+        "exact-restart"
+      ]
+    },
+    {
+      "id": "project-observer-agent",
+      "required": false,
+      "activation_when": [
+        "meaningful project work changed current truth or agents need resume context"
+      ],
+      "required_inputs": [
+        "resolved project",
+        "project council when present",
+        "repo/runtime evidence",
+        "task scope"
+      ],
+      "outputs": [
+        "evidence-backed findings",
+        "required proof",
+        "handoff",
+        "learning candidates if any"
+      ],
+      "memory_access": "read; project-current write proposal; durable memory propose only",
+      "may_commit_memory": false,
+      "human_approval": [],
+      "stop_condition": "owned surface assessed to evidence threshold or explicit blocker recorded",
+      "capabilities": [
+        "current-truth",
+        "handoff",
+        "evidence index",
+        "findings index",
+        "drift"
+      ]
     }
   ],
   "durable_write_flow": [
@@ -267,5 +535,13 @@
     "curator-commit",
     "reindex",
     "evaluation"
-  ]
+  ],
+  "project_council_os": {
+    "version": "2.0",
+    "entrypoint": "00_System/Project Council OS/Living Agent Learning OS.md",
+    "deterministic_entry": "00_System/Project Council OS/Deterministic Agent Entry Protocol.md",
+    "failure_immunity": "00_System/Project Council OS/Failure Immunity Loop.md",
+    "cognitive_stack": "00_System/Project Council OS/Agent Cognitive Stack Standard.md",
+    "rule": "selected specialists maintain own project-current cognition, exact restart pointers, triggered learned rules and eval registries; global durable learning remains Memory Curator governed"
+  }
 }

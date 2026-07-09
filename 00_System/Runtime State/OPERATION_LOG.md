@@ -135,3 +135,53 @@ Append-only history of meaningful brain operations. Do not rewrite old entries; 
 - Existing OVX project manifests remain contextual, not repo-verified; the standard is linked to `obj-ovx-shop` and `obj-ovx-marketing` as a company-direction inheritance, not as proof those repos already implement it.
 - Validation: PASS - runtime consistency 0/0, navigation 0/0, skill registry/connectivity 0/0, brain validator 0/0, orphan check 0/0, causal integrity 0/0, learning quality 0 warnings/errors, impact queue 0 warnings/errors, experience graph 0 errors, old retrieval 30/30, project-experience retrieval 20/20, reality eval 8/8.
 - Honest boundary: Brain Health remains 37.1 and Reality Coverage 21.4 because this adds strategic doctrine and graph connectivity, not new runtime/provider/database/deployment/browser/client evidence.
+
+## 2026-07-09 — v10 Claude Code native runtime upgrade
+- Operation: harden Omar Brain for Claude Code so startup, routing, search, rule application, execution, and writeback follow Omar's decision structure.
+- Change authority: explicit user request on 2026-07-09.
+- Added native front door: root `CLAUDE.md`.
+- Added conditional rules, lazy skills, four minimal specialists, lifecycle hooks, destructive/write guards, and stop validation gate.
+- Added dedicated `route-claude-code` and `00_System/Claude Code OS/` contracts.
+- Memory boundary: project auto memory disabled; durable semantic/procedural learning remains governed by Memory OS and Memory Curator.
+- Validation: pending final runtime check and full Brain cycle at time of log append.
+
+
+## 2026-07-09 — v10 Claude Code native runtime final validation
+- Result: PASS_CLAUDE_NATIVE_HARDENED.
+- Native Claude runtime check: 0 errors, 0 warnings.
+- Full Brain cycle: exit 0.
+- Core integrity: runtime consistency 0/0; navigation 16 routes 0/0; Brain validator 465 Markdown files 0/0; orphan check 58 objects 0/0; causal integrity 67 events and 159 edges 0/0.
+- Skills: 61 registered, 61 graph nodes, 11 bundles, 0 errors, 0 warnings.
+- Retrieval: 465 documents, 3403 chunks, 30/30 Hit@K 1.00.
+- Project experience retrieval: 20/20, pass rate 1.00.
+- Reality eval: 8/8, pass rate 1.00.
+- Reality/health: Reality Coverage 30; Brain Health 44.6; runs=5; evidence_notes=15; causal_edges=78.
+- Experience writeback: recorded `run-mrdf7hji-6f81de72`, evidence `evd-mrdf7o7q-dd240e5f`, and evidence `evd-mrdf7oae-18d5762e`.
+- Honest boundary: executable controls are validated; additional real Claude sessions against external repos/providers/databases/deployments/browser runtimes remain future evidence, not assumed truth.
+
+
+## 2026-07-09 — v11 persistent agentic batch execution upgrade
+- Operation: upgraded v10 Claude-native Brain into a machine-governed persistent batch execution system.
+- Added: `00_System/Agentic Execution OS/` with plan compiler, state machine, compact context compiler, hash-aware repo intelligence, machine verifier, failure/skip policy, handoff compiler behavior, fresh-context Claude runner, schemas, PowerShell wrappers, and permanent deep self-test.
+- Added Claude integration: `route-agentic-plan`, scoped execution rule, `/agent-loop`, `/plan-install`, `/batch-resume`, session binding, automatic edit ledger updates, file-summary invalidation on hash drift, and active-loop stop gating.
+- Execution law: one active batch; dependency gate; external verification before advancement; repair same batch after failure; no silent required skip; final goal gate required.
+- Token strategy: bounded per-batch capsule instead of replaying whole Brain/conversation; exact paths and unchanged hash-validated intelligence are reused; changed hashes invalidate stale summaries.
+- Deep self-test: PASS — B001 DONE; B002 intentional verification failure; repair retry; B002 DONE on attempt 2; OPEN/RESOLVED failure lifecycle; handoffs present; final loop COMPLETE; context about 2.1k chars under 5k test budget.
+- Claude lifecycle simulation: PASS — route/bind, edit logging, mid-batch stop block, pre-final stop block, post-final release.
+- Dry-run safety: PASS — preview selected next batch and Claude invocation without changing `RUNTIME_STATE.json` SHA-256.
+- Experience writeback: `run-mrdgmnbd-fb1e5ca7`, `evd-mrdgmuai-f8db5c94`, `evd-mrdgmud0-7f529ead`.
+- Regression caught: HOT context reached 1209 chars and produced one runtime warning; compacted HOT restored runtime consistency to 0 errors / 0 warnings.
+- Full cycle after reports/evidence/HOT repair: exit 0; Claude runtime 0/0; Agentic runtime 0/0; runtime consistency 0/0; navigation 17 routes 0/0; validator 481 Markdown 0/0; retrieval 30 cases Hit@K 1.00; project experience 20/20; reality eval 8/8.
+- Final measured state: runs=6, evidence_notes=17, causal_edges=82, Brain Health=44.6, Reality Coverage=30.
+- Honest boundary: real external-project headless Claude runs, live providers, DB runtimes, deployments, and browser flows remain unverified until observed.
+
+
+## 2026-07-09 — v12 lazy Claude skill library integration
+- Operation: integrated Omar's uploaded `skills.zip` as a governed on-demand capability library rather than registering 559 native startup skills.
+- Imported surface: 559 skills; 1,913 preserved payload files; 0 exact duplicate `SKILL.md` groups; source archive SHA-256 `ccec1af5cbf33bc8c2895356eb57224c1322e76f262219950fd859b4f3afc00e`.
+- Added: compact/full catalogs, payload SHA-256 manifest, static risk report, duplicate report, `/skill-find`, external skill router, prompt-time candidate injection, stack-conflict filtering, external library integrity validator, and routing regression suite.
+- Authority boundary: external skills remain `S0_DISCOVERED` and on-demand; Brain governance, active Agent Loop contracts, repository truth, hooks, permissions, and user constraints outrank imported procedures. Bundled scripts/installers/network actions are never auto-executed merely because a skill recommends them.
+- Token strategy: candidate metadata only at prompt time; one primary external skill; at most two support skills; references/examples/assets lazy-loaded.
+- Regression caught and repaired: initial default retrieval indexed external skill payloads and broke existing retrieval evals. External payloads are now excluded from default Brain retrieval and remain discoverable through the dedicated compact catalog.
+- Validation: dedicated external library 0/0; routing regression 6 cases 0/0; Claude runtime 0/0; Brain validator 0/0; full Brain cycle exit 0 after retrieval isolation.
+- Honest boundary: integration quality is proven locally; individual skill correctness and real-project effectiveness still require task-specific evidence and optional promotion through the canonical Skill OS lifecycle.

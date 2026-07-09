@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-07-07T21:21:15.127Z",
-  "score": 21.4,
+  "generated_at": "2026-07-09T12:39:48.432Z",
+  "score": 30,
   "dimensions": {
     "registered_projects": 7,
     "verified_repo_runtime_projects": 1,
-    "projects_with_runs": 1,
-    "projects_with_evidence": 1,
-    "runs": 3,
-    "evidence_notes": 9,
-    "events": 52,
-    "edges": 145,
-    "causal_edges": 66,
+    "projects_with_runs": 2,
+    "projects_with_evidence": 2,
+    "runs": 6,
+    "evidence_notes": 17,
+    "events": 73,
+    "edges": 164,
+    "causal_edges": 82,
     "learning_candidates": 41,
     "promoted_candidates": 0
   },
   "components": {
     "registered_project_presence": 10,
     "verified_repo_runtime_identity": 2.9,
-    "project_run_coverage": 2.9,
-    "project_evidence_coverage": 2.9,
-    "causal_completeness": 1.4,
-    "learning_from_runs": 1.4,
+    "project_run_coverage": 5.7,
+    "project_evidence_coverage": 5.7,
+    "causal_completeness": 2.9,
+    "learning_from_runs": 2.9,
     "promoted_cross_project_learning": 0
   },
-  "interpretation": "architecture-rich, experience-poor"
+  "interpretation": "growing real experience"
 }

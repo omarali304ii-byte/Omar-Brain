@@ -70,7 +70,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -193,11 +194,14 @@
   },
   "active": "21677a221af2d503",
   "lastOpenFiles": [
+    "00_System/Skill OS/Skill Maturity Ladder.md",
+    "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-08-production-hardening-branch-state-7ccdd1c8.md",
+    "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-08-local-static-gates-passed-16c05fc6.md",
+    "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-08-final-production-hardening-local-gate-32dd019a.md",
+    "50_Skills/Analytics/_Index.md",
     "00_System/Operating Map.md",
     "START HERE.md",
-    "00_System/Skill OS/Skill Maturity Ladder.md",
     "50_Skills/Analytics/ab-test-analysis.md",
-    "50_Skills/Analytics/_Index.md",
     "15_Ideas/Ideas HQ.md",
     "15_Ideas/Incubator/_Index.md",
     "40_Projects/Active/Meta Word of Mouth/06_TRANSFER_CANDIDATES.md",
@@ -225,7 +229,6 @@
     "40_Projects/Active/Meta Word of Mouth/04_BAD_POINTS_AND_RISKS.md",
     "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-database-backed-tests-intentionally-skipped-against-remote-supabase-url-27ac41ce.md",
     "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-safe-static-verification-commands-passed-224ef696.md",
-    "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-local-clean-checkout-revision-snapshot-ee53c349.md",
-    "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-local-static-verification-and-safe-test-boundary-eebbc7fd.md"
+    "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-local-clean-checkout-revision-snapshot-ee53c349.md"
   ]
 }

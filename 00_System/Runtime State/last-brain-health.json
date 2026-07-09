@@ -1,30 +1,30 @@
 {
-  "generated_at": "2026-07-07T21:21:17.213Z",
-  "score": 37.1,
+  "generated_at": "2026-07-09T12:39:51.846Z",
+  "score": 44.6,
   "interpretation": "connected brain accumulating real experience",
   "components": {
-    "reality_coverage": 4.3,
-    "causal_completeness": 2.1,
+    "reality_coverage": 6,
+    "causal_completeness": 4.3,
     "project_truth_freshness": 2.1,
     "retrieval_quality": 10,
     "routing_correctness": 10,
-    "learning_effectiveness": 1.4,
-    "evidence_coverage": 1.4,
-    "contradiction_freshness_health": 0.7,
+    "learning_effectiveness": 2.9,
+    "evidence_coverage": 2.9,
+    "contradiction_freshness_health": 1.4,
     "structural_integrity": 5
   },
   "dimensions": {
     "registered_project_manifests": 7,
     "full_project_packets": 1,
-    "real_runs": 3,
-    "evidence_notes": 9,
-    "causal_edges": 66,
-    "events": 52,
+    "real_runs": 6,
+    "evidence_notes": 17,
+    "causal_edges": 82,
+    "events": 73,
     "episodes": 0,
     "pending_memory_proposals": 0,
     "missing_required_metadata": 0,
     "stale_active_projects": 0,
     "retrieval_hit_at_k": 1,
-    "reality_coverage_score": 21.4
+    "reality_coverage_score": 30
   }
 }

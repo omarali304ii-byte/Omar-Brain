@@ -2,10 +2,14 @@
 import {spawnSync} from 'node:child_process'; import path from 'node:path';
 const vault=path.resolve(process.argv[2]||process.cwd()); const base=path.join(vault,'00_System','Automation');
 const steps=[
+ ['check-claude-code-runtime.mjs',[vault]],
+ ['check-agentic-execution-runtime.mjs',[vault]],
  ['check-runtime-consistency.mjs',[vault]],
  ['check-navigation-connectivity.mjs',[vault]],
  ['check-skill-registry.mjs',[vault]],
  ['check-skill-connectivity.mjs',[vault]],
+ ['check-external-skill-library.mjs',[vault]],
+ ['check-external-skill-routing.mjs',[vault]],
  ['brain-validator.mjs',[vault]],
  ['check-orphan-information.mjs',[vault]],
  ['check-causal-integrity.mjs',[vault]],

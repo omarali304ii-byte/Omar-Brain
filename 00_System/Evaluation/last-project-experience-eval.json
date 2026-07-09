@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T21:21:17.106Z",
+  "generated_at": "2026-07-09T12:39:51.663Z",
   "dataset_id": "meta-project-experience-v1",
   "cases": 20,
   "passed": 20,
@@ -77,6 +77,12 @@
           "score": 0.481
         },
         {
+          "id": "00_System/Dynamic Brain/Omar Brain v11 Agentic Execution Upgrade Report.md",
+          "item_type": "path",
+          "path": "00_System/Dynamic Brain/Omar Brain v11 Agentic Execution Upgrade Report.md",
+          "score": 0.478
+        },
+        {
           "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-static-verification-of-production-gate-blockers-aba73203.md",
           "item_type": "path",
           "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-static-verification-of-production-gate-blockers-aba73203.md",
@@ -100,6 +106,11 @@
           "score": 0.448
         },
         {
+          "id": "obj-run-mrbva97p-32dd019a",
+          "item_type": "object",
+          "score": 0.444
+        },
+        {
           "id": "00_System/AI/External Index Contract.md",
           "item_type": "path",
           "path": "00_System/AI/External Index Contract.md",
@@ -112,21 +123,10 @@
           "score": 0.426
         },
         {
-          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-privacy-permissions-and-operational-gaps-snapshot-0f4342d1.md",
+          "id": "00_System/Dynamic Brain/Omar Brain v11 Agentic Execution Validation Report.md",
           "item_type": "path",
-          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-privacy-permissions-and-operational-gaps-snapshot-0f4342d1.md",
-          "score": 0.406
-        },
-        {
-          "id": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-local-static-verification-and-safe-test-boundary-eebbc7fd.md",
-          "item_type": "path",
-          "path": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-07-local-static-verification-and-safe-test-boundary-eebbc7fd.md",
-          "score": 0.404
-        },
-        {
-          "id": "lc-durable-async-side-effects-commit-enqueu-3593276b",
-          "item_type": "candidate",
-          "score": 0.402
+          "path": "00_System/Dynamic Brain/Omar Brain v11 Agentic Execution Validation Report.md",
+          "score": 0.421
         }
       ],
       "explanation": "Should retrieve the Meta production-gate failure, run, and candidate that separate external side effects from local persistence."
@@ -214,6 +214,18 @@
           "score": 0.402
         },
         {
+          "id": ".claude/skills/production-harden/SKILL.md",
+          "item_type": "path",
+          "path": ".claude/skills/production-harden/SKILL.md",
+          "score": 0.396
+        },
+        {
+          "id": "CLAUDE.md",
+          "item_type": "path",
+          "path": "CLAUDE.md",
+          "score": 0.322
+        },
+        {
           "id": "lc-durable-async-side-effects-commit-enqueu-3593276b",
           "item_type": "candidate",
           "score": 0.319
@@ -225,6 +237,12 @@
           "score": 0.315
         },
         {
+          "id": "00_System/Governance/CP-2026-07-09 Persistent Agentic Batch Execution OS.md",
+          "item_type": "path",
+          "path": "00_System/Governance/CP-2026-07-09 Persistent Agentic Batch Execution OS.md",
+          "score": 0.288
+        },
+        {
           "id": "30_Business/Organizations/OVX Smart Connected AI.md",
           "item_type": "path",
           "path": "30_Business/Organizations/OVX Smart Connected AI.md",
@@ -234,24 +252,6 @@
           "id": "obj-evd-mrb1oc94-40290714",
           "item_type": "object",
           "score": 0.271
-        },
-        {
-          "id": "00_System/AI Runtime/Project Agent Master Prompt.md",
-          "item_type": "path",
-          "path": "00_System/AI Runtime/Project Agent Master Prompt.md",
-          "score": 0.266
-        },
-        {
-          "id": "00_System/AI Runtime/Failure Recovery Loop.md",
-          "item_type": "path",
-          "path": "00_System/AI Runtime/Failure Recovery Loop.md",
-          "score": 0.263
-        },
-        {
-          "id": "00_System/Governance/Truth Hierarchy and Conflict Policy.md",
-          "item_type": "path",
-          "path": "00_System/Governance/Truth Hierarchy and Conflict Policy.md",
-          "score": 0.254
         }
       ],
       "explanation": "Should retrieve the failure signature and async side-effect pattern."
@@ -595,6 +595,12 @@
           "score": 0.836
         },
         {
+          "id": "00_System/Claude Code OS/Claude Code Routing and Search Contract.md",
+          "item_type": "path",
+          "path": "00_System/Claude Code OS/Claude Code Routing and Search Contract.md",
+          "score": 0.806
+        },
+        {
           "id": "00_System/Runtime State/OPERATION_LOG.md",
           "item_type": "path",
           "path": "00_System/Runtime State/OPERATION_LOG.md",
@@ -612,15 +618,9 @@
           "score": 0.7
         },
         {
-          "id": "40_Projects/Active/Meta Word of Mouth/11_REFERENCE_SCORECARD.md",
-          "item_type": "path",
-          "path": "40_Projects/Active/Meta Word of Mouth/11_REFERENCE_SCORECARD.md",
-          "score": 0.591
-        },
-        {
-          "id": "obj-failure-leads-intelligence-permission-bypass",
+          "id": "obj-run-mrbva97p-32dd019a",
           "item_type": "object",
-          "score": 0.583
+          "score": 0.643
         }
       ],
       "explanation": "Should retrieve the search-oracle failure and the broader permission-scoped exposure pattern."
@@ -674,6 +674,12 @@
           "score": 0.511
         },
         {
+          "id": ".claude/skills/brain-writeback/SKILL.md",
+          "item_type": "path",
+          "path": ".claude/skills/brain-writeback/SKILL.md",
+          "score": 0.507
+        },
+        {
           "id": "lc-evidence-first-ai-decisions-persist-exac-5ce17ece",
           "item_type": "candidate",
           "score": 0.507
@@ -701,6 +707,12 @@
           "item_type": "path",
           "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-static-verification-of-production-gate-blockers-aba73203.md",
           "score": 0.466
+        },
+        {
+          "id": "00_System/Agentic Execution OS/Quick Start - Install and Run a Plan.md",
+          "item_type": "path",
+          "path": "00_System/Agentic Execution OS/Quick Start - Install and Run a Plan.md",
+          "score": 0.456
         },
         {
           "id": "00_System/AI/Brain Router Prompt.md",
@@ -737,18 +749,6 @@
           "item_type": "path",
           "path": "40_Projects/Active/Meta Word of Mouth/01_CONTEXT.md",
           "score": 0.419
-        },
-        {
-          "id": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
-          "item_type": "path",
-          "path": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
-          "score": 0.417
-        },
-        {
-          "id": "50_Skills/Research/sentiment-analysis.md",
-          "item_type": "path",
-          "path": "50_Skills/Research/sentiment-analysis.md",
-          "score": 0.413
         }
       ],
       "explanation": "Should retrieve score semantic separation from Meta Word of Mouth."
@@ -937,6 +937,16 @@
           "score": 0.424
         },
         {
+          "id": "obj-evd-mrbvakli-8a0130f0",
+          "item_type": "object",
+          "score": 0.386
+        },
+        {
+          "id": "obj-run-mrbva97p-32dd019a",
+          "item_type": "object",
+          "score": 0.386
+        },
+        {
           "id": "40_Projects/Active/Meta Word of Mouth/07_CURRENT_STATE.md",
           "item_type": "path",
           "path": "40_Projects/Active/Meta Word of Mouth/07_CURRENT_STATE.md",
@@ -960,6 +970,18 @@
           "score": 0.31
         },
         {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-08-disposable-postgres-migration-and-db-tests-passed-8a0130f0.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-08-disposable-postgres-migration-and-db-tests-passed-8a0130f0.md",
+          "score": 0.306
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-08-final-production-hardening-local-gate-32dd019a.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-08-final-production-hardening-local-gate-32dd019a.md",
+          "score": 0.306
+        },
+        {
           "id": "00_System/Web Development Expert System/Web Project Quality Gate Matrix.md",
           "item_type": "path",
           "path": "00_System/Web Development Expert System/Web Project Quality Gate Matrix.md",
@@ -975,30 +997,6 @@
           "id": "00_System/Memory OS/Episodic Memory Standard.md",
           "item_type": "path",
           "path": "00_System/Memory OS/Episodic Memory Standard.md",
-          "score": 0.25
-        },
-        {
-          "id": "00_System/Memory OS/Semantic Memory Standard.md",
-          "item_type": "path",
-          "path": "00_System/Memory OS/Semantic Memory Standard.md",
-          "score": 0.25
-        },
-        {
-          "id": "00_System/Retrieval OS/Retrieval Evaluation Standard.md",
-          "item_type": "path",
-          "path": "00_System/Retrieval OS/Retrieval Evaluation Standard.md",
-          "score": 0.25
-        },
-        {
-          "id": "50_Skills/Marketing/launch-strategy.md",
-          "item_type": "path",
-          "path": "50_Skills/Marketing/launch-strategy.md",
-          "score": 0.25
-        },
-        {
-          "id": "50_Skills/Marketing/page-cro.md",
-          "item_type": "path",
-          "path": "50_Skills/Marketing/page-cro.md",
           "score": 0.25
         }
       ],
@@ -1107,6 +1105,11 @@
           "score": 0.526
         },
         {
+          "id": "obj-run-mrbva97p-32dd019a",
+          "item_type": "object",
+          "score": 0.526
+        },
+        {
           "id": "40_Projects/Active/Meta Word of Mouth/07_CURRENT_STATE.md",
           "item_type": "path",
           "path": "40_Projects/Active/Meta Word of Mouth/07_CURRENT_STATE.md",
@@ -1116,11 +1119,6 @@
           "id": "obj-evd-mrb3iwud-32fdb1ac",
           "item_type": "object",
           "score": 0.521
-        },
-        {
-          "id": "obj-run-mrb3iohg-6d1d9a66",
-          "item_type": "object",
-          "score": 0.516
         }
       ],
       "explanation": "Should retrieve the current execution queue and canonical blockers."
@@ -1531,6 +1529,11 @@
           "score": 0.733
         },
         {
+          "id": "obj-run-mrbva97p-32dd019a",
+          "item_type": "object",
+          "score": 0.687
+        },
+        {
           "id": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
           "item_type": "path",
           "path": "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
@@ -1546,6 +1549,12 @@
           "id": "lc-same-person-ai-snapshot-out-of-order-ove-f8365709",
           "item_type": "candidate",
           "score": 0.63
+        },
+        {
+          "id": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-08-final-production-hardening-local-gate-32dd019a.md",
+          "item_type": "path",
+          "path": "40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/2026-07-08-final-production-hardening-local-gate-32dd019a.md",
+          "score": 0.606
         },
         {
           "id": "obj-domain-ai-crm",
@@ -1598,18 +1607,6 @@
           "item_type": "path",
           "path": "00_System/Governance/No Silent Overwrite Policy.md",
           "score": 0.22
-        },
-        {
-          "id": "00_System/Memory OS/Semantic Memory Standard.md",
-          "item_type": "path",
-          "path": "00_System/Memory OS/Semantic Memory Standard.md",
-          "score": 0.22
-        },
-        {
-          "id": "00_System/Learning System/Memory Quality and Revalidation.md",
-          "item_type": "path",
-          "path": "00_System/Learning System/Memory Quality and Revalidation.md",
-          "score": 0.213
         }
       ],
       "explanation": "Should retrieve the same-person AI snapshot race failure signature."
@@ -1689,6 +1686,12 @@
           "score": 0.803
         },
         {
+          "id": "00_System/Claude Code OS/Claude Code Routing and Search Contract.md",
+          "item_type": "path",
+          "path": "00_System/Claude Code OS/Claude Code Routing and Search Contract.md",
+          "score": 0.793
+        },
+        {
           "id": "obj-evd-mrb3iwud-aba73203",
           "item_type": "object",
           "score": 0.78
@@ -1717,6 +1720,11 @@
           "score": 0.7
         },
         {
+          "id": "obj-run-mrbva97p-32dd019a",
+          "item_type": "object",
+          "score": 0.53
+        },
+        {
           "id": "lc-provider-id-search-oracle-4355a070",
           "item_type": "candidate",
           "score": 0.53
@@ -1726,17 +1734,6 @@
           "item_type": "path",
           "path": "40_Projects/Active/Meta Word of Mouth/11_REFERENCE_SCORECARD.md",
           "score": 0.497
-        },
-        {
-          "id": "40_Projects/Active/Meta Word of Mouth/07_CURRENT_STATE.md",
-          "item_type": "path",
-          "path": "40_Projects/Active/Meta Word of Mouth/07_CURRENT_STATE.md",
-          "score": 0.45
-        },
-        {
-          "id": "obj-pattern-permission-scoped-sensitive-exposure",
-          "item_type": "object",
-          "score": 0.442
         }
       ],
       "explanation": "Should retrieve the hidden provider-ID search oracle failure."
@@ -2056,6 +2053,12 @@
           "score": 0.334
         },
         {
+          "id": "50_Skills/Claude Skill Library/Claude Skill Library.md",
+          "item_type": "path",
+          "path": "50_Skills/Claude Skill Library/Claude Skill Library.md",
+          "score": 0.332
+        },
+        {
           "id": "00_System/Navigation OS/Road Sign Navigation System.md",
           "item_type": "path",
           "path": "00_System/Navigation OS/Road Sign Navigation System.md",
@@ -2108,16 +2111,9 @@
           "score": 0.297
         },
         {
-          "id": "00_System/Memory OS/Episodic Memory Standard.md",
-          "item_type": "path",
-          "path": "00_System/Memory OS/Episodic Memory Standard.md",
-          "score": 0.285
-        },
-        {
-          "id": "00_System/Metadata Schema.md",
-          "item_type": "path",
-          "path": "00_System/Metadata Schema.md",
-          "score": 0.285
+          "id": "obj-evd-mrdgmud0-7f529ead",
+          "item_type": "object",
+          "score": 0.289
         }
       ],
       "explanation": "Should retrieve current truth boundaries and avoid runtime claims."
@@ -2199,6 +2195,12 @@
           "score": 0.656
         },
         {
+          "id": ".claude/rules/40-software-truth.md",
+          "item_type": "path",
+          "path": ".claude/rules/40-software-truth.md",
+          "score": 0.641
+        },
+        {
           "id": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-safe-static-verification-commands-passed-224ef696.md",
           "item_type": "path",
           "path": "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-safe-static-verification-commands-passed-224ef696.md",
@@ -2238,11 +2240,6 @@
           "id": "obj-pattern-idempotent-legacy-migration",
           "item_type": "object",
           "score": 0.239
-        },
-        {
-          "id": "lc-keep-provider-webhook-tests-split-into-p-4c4a7d77",
-          "item_type": "candidate",
-          "score": 0.233
         }
       ],
       "explanation": "Should retrieve the remote DB boundary and skipped DB-backed test evidence."

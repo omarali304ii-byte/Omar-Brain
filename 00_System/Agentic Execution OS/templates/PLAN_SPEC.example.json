@@ -1,0 +1,111 @@
+{
+  "plan_version": "1.0",
+  "project": {
+    "project_id": "prj-example",
+    "title": "Example Project",
+    "repo_path": "D:\\path\\to\\repo"
+  },
+  "final_goal": {
+    "goal_id": "goal-example-v1",
+    "objective": "Deliver the verified final outcome.",
+    "success_criteria": [
+      "All required batches are done",
+      "Final smoke check passes"
+    ],
+    "verification": [
+      {
+        "id": "final-smoke",
+        "command": "npm test",
+        "cwd": "repo",
+        "required": true,
+        "timeout_ms": 120000
+      }
+    ]
+  },
+  "policy": {
+    "context_char_budget": 12000,
+    "max_batch_attempts": 3,
+    "fresh_context_per_batch": true,
+    "required_batches_skippable": false
+  },
+  "batches": [
+    {
+      "id": "B001",
+      "title": "Foundation",
+      "objective": "Build and verify the foundation.",
+      "depends_on": [],
+      "required": true,
+      "skippable": false,
+      "read_first": [
+        "package.json"
+      ],
+      "relevant_files": [],
+      "scope": {
+        "allowed": [
+          "src/**",
+          "package.json"
+        ],
+        "forbidden": [
+          ".env*",
+          "secrets/**"
+        ]
+      },
+      "acceptance_criteria": [
+        {
+          "id": "ac-foundation",
+          "text": "Foundation check passes",
+          "proof_refs": [
+            "check:test"
+          ]
+        }
+      ],
+      "verification": [
+        {
+          "id": "test",
+          "command": "npm test",
+          "cwd": "repo",
+          "required": true,
+          "timeout_ms": 120000
+        }
+      ],
+      "required_artifacts": []
+    },
+    {
+      "id": "B002",
+      "title": "Integration",
+      "objective": "Integrate on top of the verified foundation.",
+      "depends_on": [
+        "B001"
+      ],
+      "required": true,
+      "skippable": false,
+      "read_first": [],
+      "relevant_files": [],
+      "scope": {
+        "allowed": [
+          "src/**"
+        ],
+        "forbidden": []
+      },
+      "acceptance_criteria": [
+        {
+          "id": "ac-integration",
+          "text": "Integration check passes",
+          "proof_refs": [
+            "check:test"
+          ]
+        }
+      ],
+      "verification": [
+        {
+          "id": "test",
+          "command": "npm test",
+          "cwd": "repo",
+          "required": true,
+          "timeout_ms": 120000
+        }
+      ],
+      "required_artifacts": []
+    }
+  ]
+}

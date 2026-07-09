@@ -1,7 +1,7 @@
 {
   "registry_id": "omar-brain-learning-candidates-v1",
   "version": "1.0",
-  "updated": "2026-07-07",
+  "updated": "2026-07-09",
   "candidates": [
     {
       "candidate_id": "lc-evidence-first-ai-decisions-persist-exac-5ce17ece",
@@ -476,7 +476,7 @@
       "independent_project_count": 1,
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
-      "updated": "2026-07-07",
+      "updated": "2026-07-09",
       "promotion_rule": "Never auto-promote; require evidence and governance review.",
       "source_evidence": [
         "evd-mrb351wz-ee53c349",
@@ -508,7 +508,7 @@
       "independent_project_count": 1,
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
-      "updated": "2026-07-07",
+      "updated": "2026-07-09",
       "promotion_rule": "Never auto-promote; require evidence and governance review.",
       "source_evidence": [
         "evd-mrb351wz-ee53c349",
@@ -661,7 +661,7 @@
       "independent_project_count": 1,
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
-      "updated": "2026-07-07",
+      "updated": "2026-07-09",
       "promotion_rule": "Never auto-promote; require evidence and governance review.",
       "source_evidence": [
         "evd-mrb3iwud-32fdb1ac",
@@ -692,7 +692,7 @@
       "independent_project_count": 1,
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
-      "updated": "2026-07-07",
+      "updated": "2026-07-09",
       "promotion_rule": "Never auto-promote; require evidence and governance review.",
       "source_evidence": [
         "evd-mrb3iwud-32fdb1ac",
@@ -723,7 +723,7 @@
       "independent_project_count": 1,
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
-      "updated": "2026-07-07",
+      "updated": "2026-07-09",
       "promotion_rule": "Never auto-promote; require evidence and governance review.",
       "source_evidence": [
         "evd-mrb3iwud-32fdb1ac",
@@ -754,7 +754,7 @@
       "independent_project_count": 1,
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
-      "updated": "2026-07-07",
+      "updated": "2026-07-09",
       "promotion_rule": "Never auto-promote; require evidence and governance review.",
       "source_evidence": [
         "evd-mrb3iwud-32fdb1ac",
@@ -785,7 +785,7 @@
       "independent_project_count": 1,
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
-      "updated": "2026-07-07",
+      "updated": "2026-07-09",
       "promotion_rule": "Never auto-promote; require evidence and governance review.",
       "source_evidence": [
         "evd-mrb3iwud-32fdb1ac",
@@ -816,7 +816,7 @@
       "independent_project_count": 1,
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
-      "updated": "2026-07-07",
+      "updated": "2026-07-09",
       "promotion_rule": "Never auto-promote; require evidence and governance review.",
       "source_evidence": [
         "evd-mrb3iwud-32fdb1ac",
@@ -857,7 +857,7 @@
       "confidence": "single-project-proposed",
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
-      "updated": "2026-07-07",
+      "updated": "2026-07-09",
       "promotion_rule": "Never auto-promote; require evidence and governance review.",
       "extraction_provenance": [
         {
@@ -896,7 +896,7 @@
       "confidence": "single-project-proposed",
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
-      "updated": "2026-07-07",
+      "updated": "2026-07-09",
       "promotion_rule": "Never auto-promote; require evidence and governance review.",
       "extraction_provenance": [
         {
@@ -936,7 +936,7 @@
       "confidence": "single-project-proposed",
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
-      "updated": "2026-07-07",
+      "updated": "2026-07-09",
       "promotion_rule": "Never auto-promote; require evidence and governance review.",
       "extraction_provenance": [
         {
@@ -976,7 +976,7 @@
       "confidence": "single-project-proposed",
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
-      "updated": "2026-07-07",
+      "updated": "2026-07-09",
       "promotion_rule": "Never auto-promote; require evidence and governance review.",
       "extraction_provenance": [
         {
@@ -1015,7 +1015,7 @@
       "confidence": "single-project-proposed",
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
-      "updated": "2026-07-07",
+      "updated": "2026-07-09",
       "promotion_rule": "Never auto-promote; require evidence and governance review.",
       "extraction_provenance": [
         {
@@ -1055,7 +1055,7 @@
       "confidence": "single-project-proposed",
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
-      "updated": "2026-07-07",
+      "updated": "2026-07-09",
       "promotion_rule": "Never auto-promote; require evidence and governance review.",
       "extraction_provenance": [
         {
@@ -1095,7 +1095,7 @@
       "confidence": "single-project-proposed",
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
-      "updated": "2026-07-07",
+      "updated": "2026-07-09",
       "promotion_rule": "Never auto-promote; require evidence and governance review.",
       "extraction_provenance": [
         {
@@ -1134,7 +1134,7 @@
       "confidence": "single-project-proposed",
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
-      "updated": "2026-07-07",
+      "updated": "2026-07-09",
       "promotion_rule": "Never auto-promote; require evidence and governance review.",
       "extraction_provenance": [
         {
@@ -1173,7 +1173,7 @@
       "confidence": "single-project-proposed",
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
-      "updated": "2026-07-07",
+      "updated": "2026-07-09",
       "promotion_rule": "Never auto-promote; require evidence and governance review.",
       "extraction_provenance": [
         {
@@ -1212,7 +1212,7 @@
       "confidence": "single-project-proposed",
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
-      "updated": "2026-07-07",
+      "updated": "2026-07-09",
       "promotion_rule": "Never auto-promote; require evidence and governance review.",
       "extraction_provenance": [
         {
@@ -1251,7 +1251,7 @@
       "confidence": "single-project-proposed",
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
-      "updated": "2026-07-07",
+      "updated": "2026-07-09",
       "promotion_rule": "Never auto-promote; require evidence and governance review.",
       "extraction_provenance": [
         {
@@ -1289,7 +1289,7 @@
       "confidence": "single-project-proposed",
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
-      "updated": "2026-07-07",
+      "updated": "2026-07-09",
       "promotion_rule": "Never auto-promote; require evidence and governance review.",
       "extraction_provenance": [
         {
@@ -1327,7 +1327,7 @@
       "confidence": "single-project-proposed",
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
-      "updated": "2026-07-07",
+      "updated": "2026-07-09",
       "promotion_rule": "Never auto-promote; require evidence and governance review.",
       "extraction_provenance": [
         {
@@ -1364,7 +1364,7 @@
       "confidence": "single-project-proposed",
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
-      "updated": "2026-07-07",
+      "updated": "2026-07-09",
       "promotion_rule": "Never auto-promote; require evidence and governance review.",
       "extraction_provenance": [
         {
@@ -1401,7 +1401,7 @@
       "confidence": "single-project-proposed",
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
-      "updated": "2026-07-07",
+      "updated": "2026-07-09",
       "promotion_rule": "Never auto-promote; require evidence and governance review.",
       "extraction_provenance": [
         {
@@ -1439,7 +1439,7 @@
       "confidence": "single-project-proposed",
       "authority": "run-derived-candidate",
       "created": "2026-07-07",
-      "updated": "2026-07-07",
+      "updated": "2026-07-09",
       "promotion_rule": "Never auto-promote; require evidence and governance review.",
       "extraction_provenance": [
         {

@@ -1,7 +1,7 @@
 {
   "registry_id": "omar-brain-route-registry-v1",
-  "version": "1.2",
-  "updated": "2026-07-07",
+  "version": "5.0",
+  "updated": "2026-07-09",
   "entrypoint": "00_System/Operating Map.md",
   "fallback": {
     "unresolved": "01_Inbox/Inbox.md",
@@ -154,6 +154,46 @@
       "arrival_proof": "project_id + outcome + done definition + first verified batch"
     },
     {
+      "route_id": "route-agentic-plan",
+      "intent": "install, run, continue, resume or verify a multi-batch plan until a final goal",
+      "triggers": [
+        "agent loop",
+        "batch plan",
+        "run all batches",
+        "continue batches",
+        "final goal",
+        "execute plan",
+        "finish the plan",
+        "resume batch",
+        "plan inside brain"
+      ],
+      "entrypoint": "00_System/Agentic Execution OS/Agentic Execution Operating System.md",
+      "read_first": [
+        "00_System/Agentic Execution OS/Batch State Machine and Gates.md",
+        "00_System/Agentic Execution OS/Token Economy and Context Capsule Policy.md"
+      ],
+      "next_signs": [
+        {
+          "when": "human plan is not compiled",
+          "go_to": ".claude/skills/plan-install/SKILL.md"
+        },
+        {
+          "when": "Agent Loop exists",
+          "go_to": "Agent Loop/RUNTIME_STATE.json then Runtime/CURRENT_CONTEXT.md"
+        },
+        {
+          "when": "batch fails",
+          "go_to": "Reports/<batch>-verification.json and Failure Recovery Loop"
+        },
+        {
+          "when": "all required batches done",
+          "go_to": "final goal gate"
+        }
+      ],
+      "destination": "verified final goal or explicit governed blocker",
+      "arrival_proof": "all required batches DONE + final checks PASS, or exact blocker with next action"
+    },
+    {
       "route_id": "route-project-resume",
       "intent": "continue, finish, fix or inspect an existing project",
       "triggers": [
@@ -185,6 +225,57 @@
       ],
       "destination": "verified project outcome",
       "arrival_proof": "acceptance criteria + evidence pack + current-state update"
+    },
+    {
+      "route_id": "route-project-council",
+      "intent": "use specialist project agents to inspect, document, fix, or continue an active project through its local Project Council",
+      "triggers": [
+        "project council",
+        "team of agents",
+        "agents work on project",
+        "observe project",
+        "document project work",
+        "architecture agent",
+        "data agent",
+        "ui agent",
+        "devops agent",
+        "agent team"
+      ],
+      "entrypoint": "00_System/Project Council OS/Living Agent Learning OS.md",
+      "read_first": [
+        "00_System/Project Council OS/Deterministic Agent Entry Protocol.md",
+        "00_System/Project Council OS/Dynamic Project Agent Loop.md",
+        "00_System/Project Council OS/Failure Immunity Loop.md",
+        "00_System/AI Runtime/Project Resolver Protocol.md"
+      ],
+      "next_signs": [
+        {
+          "when": "project has 20_Agent_Council and a specialist is named",
+          "go_to": "selected agent NEXT_START.md, then 00_START_HERE.md"
+        },
+        {
+          "when": "project has 20_Agent_Council but no agent is named",
+          "go_to": "project council control state and activation matrix"
+        },
+        {
+          "when": "project lacks council but needs one",
+          "go_to": "00_System/Project Council OS/runtime/scaffold-project-council.mjs"
+        },
+        {
+          "when": "meaningful problem or near miss is found",
+          "go_to": "00_System/Project Council OS/Failure Immunity Loop.md"
+        },
+        {
+          "when": "implementation requested",
+          "go_to": "Supervisor -> Toolsmith after specialist findings"
+        },
+        {
+          "when": "completion claim",
+          "go_to": "Quality Engineer -> Critic Verifier -> Project Observer -> exact NEXT_START"
+        }
+      ],
+      "destination": "restart-safe project work advanced with current specialist cognition, evidence, failure immunity updates and exact next action",
+      "arrival_proof": "selected agents + current revision/freshness + findings/proof + cognition writeback + NEXT_START or explicit blocker"
     },
     {
       "route_id": "route-project-production",
@@ -424,6 +515,49 @@
       ],
       "destination": "validated governed system change",
       "arrival_proof": "change record + zero validation errors + eval result"
+    },
+    {
+      "route_id": "route-claude-code",
+      "intent": "use, configure, harden, debug, or operate Omar Brain through Claude Code",
+      "triggers": [
+        "claude code",
+        "open claude",
+        "use claude",
+        "claude agent",
+        "claude rules",
+        "claude hooks",
+        "claude skills",
+        "claude memory",
+        "work like me",
+        "think like me"
+      ],
+      "entrypoint": "00_System/Claude Code OS/Claude Code Native Runtime.md",
+      "read_first": [
+        "CLAUDE.md",
+        "00_System/Claude Code OS/Omar Thinking Execution Policy.md",
+        "00_System/Claude Code OS/Claude Code Routing and Search Contract.md",
+        "00_System/Claude Code OS/Claude Code Guardrail Matrix.md"
+      ],
+      "next_signs": [
+        {
+          "when": "task is an existing project outcome",
+          "go_to": "00_System/AI Runtime/Project Agent Master Prompt.md"
+        },
+        {
+          "when": "task is production hardening",
+          "go_to": "00_System/Production Readiness OS/Production Readiness Operating System.md"
+        },
+        {
+          "when": "durable learning must be written",
+          "go_to": "00_System/Memory OS/Memory OS.md"
+        },
+        {
+          "when": "Claude-native control plane changes",
+          "go_to": "00_System/Governance/System Change Control.md"
+        }
+      ],
+      "destination": "Claude Code is operating through the correct Brain route with minimum authoritative context and executable guardrails",
+      "arrival_proof": "root contract loaded + route packet + resolved target + applicable rule/skill set + explicit verification evidence"
     },
     {
       "route_id": "route-ingest-information",

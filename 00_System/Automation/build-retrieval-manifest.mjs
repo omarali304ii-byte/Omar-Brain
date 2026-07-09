@@ -41,6 +41,8 @@ function sections(body) {
 const docs=[]; const chunks=[];
 for (const file of walk(vault).filter(f=>f.endsWith('.md'))) {
   const rel=path.relative(vault,file).replaceAll('\\','/');
+  // External skill payloads are intentionally lazy-routed through their compact catalog; excluding them prevents 559 imported skills from polluting default project/memory retrieval.
+  if (rel.startsWith('50_Skills/Claude Skill Library/skills/')) continue;
   const raw=fs.readFileSync(file,'utf8'); const {data,body}=frontmatter(raw);
   if (data.ai_access === 'denied') continue;
   const docId=`note://${rel.replace(/\.md$/,'')}`; const contentHash=hash(raw);

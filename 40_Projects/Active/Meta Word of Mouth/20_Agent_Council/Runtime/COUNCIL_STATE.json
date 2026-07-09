@@ -1,0 +1,29 @@
+{
+  "project_id": "prj-meta-word-of-mouth",
+  "council_status": "active",
+  "version": "2.0",
+  "last_updated": "2026-07-09",
+  "last_brain_verified_revision": "8c027fabf85fe46fa0395eb459c0289872fef491",
+  "current_phase": "production-gate-hardening",
+  "primary_mission": "close P0 production gate before production-ready claim",
+  "selected_default_agents": [
+    "Supervisor",
+    "Project Observer",
+    "Toolsmith",
+    "Critic Verifier",
+    "Memory Curator"
+  ],
+  "specialists_available": [
+    "Architecture",
+    "Data and Truth",
+    "Integration and Workflow",
+    "Logic and Performance",
+    "Product and UX",
+    "Runtime and Reliability",
+    "Quality Engineer"
+  ],
+  "current_truth_rule": "current files are overwritten/updated to reflect present state; history goes to Runs/Evidence",
+  "learning_os": "living-agent-learning-os",
+  "restart_contract": "every active agent has NEXT_START.md",
+  "immunity_contract": "meaningful failures assessed for pattern + triggered rule + eval"
+}

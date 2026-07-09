@@ -1,0 +1,2661 @@
+{
+  "updated": "2026-07-09",
+  "counts": {
+    "low": 282,
+    "medium": 221,
+    "high": 56
+  },
+  "skills": [
+    {
+      "skill_id": "external-address-sanitizer",
+      "name": "address-sanitizer",
+      "risk_level": "medium",
+      "risk_flags": [
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/address-sanitizer/SKILL.md"
+    },
+    {
+      "skill_id": "external-aflpp",
+      "name": "aflpp",
+      "risk_level": "high",
+      "risk_flags": [
+        "external_network_action",
+        "offensive_security_capability",
+        "privileged_execution"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/aflpp/SKILL.md"
+    },
+    {
+      "skill_id": "external-agent-payment-x402",
+      "name": "agent-payment-x402",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "external_network_action",
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/agent-payment-x402/SKILL.md"
+    },
+    {
+      "skill_id": "external-agent-self-evaluation",
+      "name": "agent-self-evaluation",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files",
+        "external_network_action"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/agent-self-evaluation/SKILL.md"
+    },
+    {
+      "skill_id": "external-agentic-actions-auditor",
+      "name": "agentic-actions-auditor",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "external_network_action",
+        "privileged_execution"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/agentic-actions-auditor/SKILL.md"
+    },
+    {
+      "skill_id": "external-agentic-os",
+      "name": "agentic-os",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/agentic-os/SKILL.md"
+    },
+    {
+      "skill_id": "external-ai-regression-testing",
+      "name": "ai-regression-testing",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/ai-regression-testing/SKILL.md"
+    },
+    {
+      "skill_id": "external-algorand-vulnerability-scanner",
+      "name": "algorand-vulnerability-scanner",
+      "risk_level": "medium",
+      "risk_flags": [
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/algorand-vulnerability-scanner/SKILL.md"
+    },
+    {
+      "skill_id": "external-algorithmic-art",
+      "name": "algorithmic-art",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/algorithmic-art/SKILL.md"
+    },
+    {
+      "skill_id": "external-anti-reversing-techniques",
+      "name": "anti-reversing-techniques",
+      "risk_level": "medium",
+      "risk_flags": [
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/anti-reversing-techniques/SKILL.md"
+    },
+    {
+      "skill_id": "external-api-design",
+      "name": "api-design",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/api-design/SKILL.md"
+    },
+    {
+      "skill_id": "external-api-design-principles",
+      "name": "api-design-principles",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/api-design-principles/SKILL.md"
+    },
+    {
+      "skill_id": "external-architecture-decision-records",
+      "name": "architecture-decision-records",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/architecture-decision-records/SKILL.md"
+    },
+    {
+      "skill_id": "external-artifacts-builder",
+      "name": "artifacts-builder",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/artifacts-builder/SKILL.md"
+    },
+    {
+      "skill_id": "external-atheris",
+      "name": "atheris",
+      "risk_level": "high",
+      "risk_flags": [
+        "destructive_commands",
+        "external_network_action",
+        "network_install_or_pipe",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/atheris/SKILL.md"
+    },
+    {
+      "skill_id": "external-attack-tree-construction",
+      "name": "attack-tree-construction",
+      "risk_level": "medium",
+      "risk_flags": [
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/attack-tree-construction/SKILL.md"
+    },
+    {
+      "skill_id": "external-audit-augmentation",
+      "name": "audit-augmentation",
+      "risk_level": "medium",
+      "risk_flags": [
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/audit-augmentation/SKILL.md"
+    },
+    {
+      "skill_id": "external-audit-context-building",
+      "name": "audit-context-building",
+      "risk_level": "medium",
+      "risk_flags": [
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/audit-context-building/SKILL.md"
+    },
+    {
+      "skill_id": "external-auth-implementation-patterns",
+      "name": "auth-implementation-patterns",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/auth-implementation-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-autonomous-agent-harness",
+      "name": "autonomous-agent-harness",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "external_network_action"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/autonomous-agent-harness/SKILL.md"
+    },
+    {
+      "skill_id": "external-backend-patterns",
+      "name": "backend-patterns",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/backend-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-bats-testing-patterns",
+      "name": "bats-testing-patterns",
+      "risk_level": "high",
+      "risk_flags": [
+        "destructive_commands"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/bats-testing-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-benchmark-methodology",
+      "name": "benchmark-methodology",
+      "risk_level": "medium",
+      "risk_flags": [
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/benchmark-methodology/SKILL.md"
+    },
+    {
+      "skill_id": "external-brand-landingpage",
+      "name": "brand-landingpage",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/brand-landingpage/SKILL.md"
+    },
+    {
+      "skill_id": "external-browser-qa",
+      "name": "browser-qa",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/browser-qa/SKILL.md"
+    },
+    {
+      "skill_id": "external-bun-runtime",
+      "name": "bun-runtime",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/bun-runtime/SKILL.md"
+    },
+    {
+      "skill_id": "external-burpsuite-project-parser",
+      "name": "burpsuite-project-parser",
+      "risk_level": "high",
+      "risk_flags": [
+        "bundled_executable_files",
+        "credential_or_secret_access",
+        "external_network_action",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/burpsuite-project-parser/SKILL.md"
+    },
+    {
+      "skill_id": "external-c-review",
+      "name": "c-review",
+      "risk_level": "medium",
+      "risk_flags": [
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/c-review/SKILL.md"
+    },
+    {
+      "skill_id": "external-cairo-vulnerability-scanner",
+      "name": "cairo-vulnerability-scanner",
+      "risk_level": "medium",
+      "risk_flags": [
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/cairo-vulnerability-scanner/SKILL.md"
+    },
+    {
+      "skill_id": "external-cargo-fuzz",
+      "name": "cargo-fuzz",
+      "risk_level": "medium",
+      "risk_flags": [
+        "external_network_action",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/cargo-fuzz/SKILL.md"
+    },
+    {
+      "skill_id": "external-chrome-mcp-troubleshooting",
+      "name": "chrome-mcp-troubleshooting",
+      "risk_level": "high",
+      "risk_flags": [
+        "destructive_commands"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/chrome-mcp-troubleshooting/SKILL.md"
+    },
+    {
+      "skill_id": "external-cisco-ios-patterns",
+      "name": "cisco-ios-patterns",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/cisco-ios-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-ck",
+      "name": "ck",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/ck/SKILL.md"
+    },
+    {
+      "skill_id": "external-claude-api",
+      "name": "claude-api",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "external_network_action"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/claude-api/SKILL.md"
+    },
+    {
+      "skill_id": "external-clickhouse-io",
+      "name": "clickhouse-io",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/clickhouse-io/SKILL.md"
+    },
+    {
+      "skill_id": "external-code-maturity-assessor",
+      "name": "code-maturity-assessor",
+      "risk_level": "medium",
+      "risk_flags": [
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/code-maturity-assessor/SKILL.md"
+    },
+    {
+      "skill_id": "external-code-review-excellence",
+      "name": "code-review-excellence",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "external_network_action",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/code-review-excellence/SKILL.md"
+    },
+    {
+      "skill_id": "external-codebase-onboarding",
+      "name": "codebase-onboarding",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/codebase-onboarding/SKILL.md"
+    },
+    {
+      "skill_id": "external-codehealth-mcp",
+      "name": "codehealth-mcp",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/codehealth-mcp/SKILL.md"
+    },
+    {
+      "skill_id": "external-coding-standards",
+      "name": "coding-standards",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/coding-standards/SKILL.md"
+    },
+    {
+      "skill_id": "external-competitive-landscape",
+      "name": "competitive-landscape",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/competitive-landscape/SKILL.md"
+    },
+    {
+      "skill_id": "external-configure-ecc",
+      "name": "configure-ecc",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "destructive_commands",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/configure-ecc/SKILL.md"
+    },
+    {
+      "skill_id": "external-connect",
+      "name": "connect",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/connect/SKILL.md"
+    },
+    {
+      "skill_id": "external-connect-apps",
+      "name": "connect-apps",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/connect-apps/SKILL.md"
+    },
+    {
+      "skill_id": "external-constant-time-analysis",
+      "name": "constant-time-analysis",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/constant-time-analysis/SKILL.md"
+    },
+    {
+      "skill_id": "external-constant-time-testing",
+      "name": "constant-time-testing",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/constant-time-testing/SKILL.md"
+    },
+    {
+      "skill_id": "external-continuous-learning",
+      "name": "continuous-learning",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/continuous-learning/SKILL.md"
+    },
+    {
+      "skill_id": "external-continuous-learning-v2",
+      "name": "continuous-learning-v2",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/continuous-learning-v2/SKILL.md"
+    },
+    {
+      "skill_id": "external-coverage-analysis",
+      "name": "coverage-analysis",
+      "risk_level": "medium",
+      "risk_flags": [
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/coverage-analysis/SKILL.md"
+    },
+    {
+      "skill_id": "external-cpp-testing",
+      "name": "cpp-testing",
+      "risk_level": "medium",
+      "risk_flags": [
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/cpp-testing/SKILL.md"
+    },
+    {
+      "skill_id": "external-crypto-protocol-diagram",
+      "name": "crypto-protocol-diagram",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files",
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/crypto-protocol-diagram/SKILL.md"
+    },
+    {
+      "skill_id": "external-customer-billing-ops",
+      "name": "customer-billing-ops",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/customer-billing-ops/SKILL.md"
+    },
+    {
+      "skill_id": "external-dart-flutter-patterns",
+      "name": "dart-flutter-patterns",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/dart-flutter-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-data-quality-frameworks",
+      "name": "data-quality-frameworks",
+      "risk_level": "medium",
+      "risk_flags": [
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/data-quality-frameworks/SKILL.md"
+    },
+    {
+      "skill_id": "external-data-scraper-agent",
+      "name": "data-scraper-agent",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "external_network_action",
+        "network_install_or_pipe",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/data-scraper-agent/SKILL.md"
+    },
+    {
+      "skill_id": "external-debug-buttercup",
+      "name": "debug-buttercup",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/debug-buttercup/SKILL.md"
+    },
+    {
+      "skill_id": "external-defi-amm-security",
+      "name": "defi-amm-security",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "network_install_or_pipe",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/defi-amm-security/SKILL.md"
+    },
+    {
+      "skill_id": "external-delivery-gate",
+      "name": "delivery-gate",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/delivery-gate/SKILL.md"
+    },
+    {
+      "skill_id": "external-deployment-patterns",
+      "name": "deployment-patterns",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "external_network_action",
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/deployment-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-deployment-pipeline-design",
+      "name": "deployment-pipeline-design",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/deployment-pipeline-design/SKILL.md"
+    },
+    {
+      "skill_id": "external-devcontainer-setup",
+      "name": "devcontainer-setup",
+      "risk_level": "high",
+      "risk_flags": [
+        "bundled_executable_files",
+        "credential_or_secret_access",
+        "destructive_commands"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/devcontainer-setup/SKILL.md"
+    },
+    {
+      "skill_id": "external-developer-growth-analysis",
+      "name": "developer-growth-analysis",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/developer-growth-analysis/SKILL.md"
+    },
+    {
+      "skill_id": "external-diagramming-code",
+      "name": "diagramming-code",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files",
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/diagramming-code/SKILL.md"
+    },
+    {
+      "skill_id": "external-differential-review",
+      "name": "differential-review",
+      "risk_level": "medium",
+      "risk_flags": [
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/differential-review/SKILL.md"
+    },
+    {
+      "skill_id": "external-django-celery",
+      "name": "django-celery",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/django-celery/SKILL.md"
+    },
+    {
+      "skill_id": "external-django-patterns",
+      "name": "django-patterns",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/django-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-django-security",
+      "name": "django-security",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "external_network_action",
+        "network_install_or_pipe",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/django-security/SKILL.md"
+    },
+    {
+      "skill_id": "external-django-tdd",
+      "name": "django-tdd",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/django-tdd/SKILL.md"
+    },
+    {
+      "skill_id": "external-django-verification",
+      "name": "django-verification",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/django-verification/SKILL.md"
+    },
+    {
+      "skill_id": "external-dmux-workflows",
+      "name": "dmux-workflows",
+      "risk_level": "medium",
+      "risk_flags": [
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/dmux-workflows/SKILL.md"
+    },
+    {
+      "skill_id": "external-docker-patterns",
+      "name": "docker-patterns",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "destructive_commands",
+        "external_network_action"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/docker-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-documentation-lookup",
+      "name": "documentation-lookup",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/documentation-lookup/SKILL.md"
+    },
+    {
+      "skill_id": "external-docx",
+      "name": "docx",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files",
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/docx/SKILL.md"
+    },
+    {
+      "skill_id": "external-dynamic-workflow-mode",
+      "name": "dynamic-workflow-mode",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/dynamic-workflow-mode/SKILL.md"
+    },
+    {
+      "skill_id": "external-e2e-testing",
+      "name": "e2e-testing",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/e2e-testing/SKILL.md"
+    },
+    {
+      "skill_id": "external-ecc-tools-cost-audit",
+      "name": "ecc-tools-cost-audit",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "external_network_action"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/ecc-tools-cost-audit/SKILL.md"
+    },
+    {
+      "skill_id": "external-email-ops",
+      "name": "email-ops",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/email-ops/SKILL.md"
+    },
+    {
+      "skill_id": "external-enterprise-agent-ops",
+      "name": "enterprise-agent-ops",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/enterprise-agent-ops/SKILL.md"
+    },
+    {
+      "skill_id": "external-entry-point-analyzer",
+      "name": "entry-point-analyzer",
+      "risk_level": "medium",
+      "risk_flags": [
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/entry-point-analyzer/SKILL.md"
+    },
+    {
+      "skill_id": "external-eval-harness",
+      "name": "eval-harness",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/eval-harness/SKILL.md"
+    },
+    {
+      "skill_id": "external-exa-search",
+      "name": "exa-search",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/exa-search/SKILL.md"
+    },
+    {
+      "skill_id": "external-fal-ai-media",
+      "name": "fal-ai-media",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/fal-ai-media/SKILL.md"
+    },
+    {
+      "skill_id": "external-fastapi-patterns",
+      "name": "fastapi-patterns",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/fastapi-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-fastapi-templates",
+      "name": "fastapi-templates",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/fastapi-templates/SKILL.md"
+    },
+    {
+      "skill_id": "external-file-conversion",
+      "name": "file-conversion",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files",
+        "credential_or_secret_access",
+        "external_network_action"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/file-conversion/SKILL.md"
+    },
+    {
+      "skill_id": "external-finishing-a-development-branch",
+      "name": "finishing-a-development-branch",
+      "risk_level": "high",
+      "risk_flags": [
+        "destructive_commands"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/finishing-a-development-branch/SKILL.md"
+    },
+    {
+      "skill_id": "external-firebase-apk-scanner",
+      "name": "firebase-apk-scanner",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "external_network_action"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/firebase-apk-scanner/SKILL.md"
+    },
+    {
+      "skill_id": "external-flox-environments",
+      "name": "flox-environments",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "external_network_action",
+        "network_install_or_pipe",
+        "privileged_execution"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/flox-environments/SKILL.md"
+    },
+    {
+      "skill_id": "external-flutter-dart-code-review",
+      "name": "flutter-dart-code-review",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/flutter-dart-code-review/SKILL.md"
+    },
+    {
+      "skill_id": "external-fp-check",
+      "name": "fp-check",
+      "risk_level": "medium",
+      "risk_flags": [
+        "external_network_action",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/fp-check/SKILL.md"
+    },
+    {
+      "skill_id": "external-frontend-a11y",
+      "name": "frontend-a11y",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/frontend-a11y/SKILL.md"
+    },
+    {
+      "skill_id": "external-frontend-patterns",
+      "name": "frontend-patterns",
+      "risk_level": "medium",
+      "risk_flags": [
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/frontend-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-frontend-slides",
+      "name": "frontend-slides",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/frontend-slides/SKILL.md"
+    },
+    {
+      "skill_id": "external-fuzzing-dictionary",
+      "name": "fuzzing-dictionary",
+      "risk_level": "medium",
+      "risk_flags": [
+        "external_network_action",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/fuzzing-dictionary/SKILL.md"
+    },
+    {
+      "skill_id": "external-fuzzing-obstacles",
+      "name": "fuzzing-obstacles",
+      "risk_level": "medium",
+      "risk_flags": [
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/fuzzing-obstacles/SKILL.md"
+    },
+    {
+      "skill_id": "external-gateguard",
+      "name": "gateguard",
+      "risk_level": "high",
+      "risk_flags": [
+        "destructive_commands",
+        "external_network_action",
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/gateguard/SKILL.md"
+    },
+    {
+      "skill_id": "external-generating-python-installer",
+      "name": "generating-python-installer",
+      "risk_level": "medium",
+      "risk_flags": [
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/generating-python-installer/SKILL.md"
+    },
+    {
+      "skill_id": "external-genotoxic",
+      "name": "genotoxic",
+      "risk_level": "medium",
+      "risk_flags": [
+        "network_install_or_pipe",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/genotoxic/SKILL.md"
+    },
+    {
+      "skill_id": "external-git-advanced-workflows",
+      "name": "git-advanced-workflows",
+      "risk_level": "high",
+      "risk_flags": [
+        "destructive_commands"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/git-advanced-workflows/SKILL.md"
+    },
+    {
+      "skill_id": "external-git-workflow",
+      "name": "git-workflow",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "destructive_commands"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/git-workflow/SKILL.md"
+    },
+    {
+      "skill_id": "external-github-actions-templates",
+      "name": "github-actions-templates",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "external_network_action",
+        "network_install_or_pipe",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/github-actions-templates/SKILL.md"
+    },
+    {
+      "skill_id": "external-github-ops",
+      "name": "github-ops",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/github-ops/SKILL.md"
+    },
+    {
+      "skill_id": "external-gitlab-ci-patterns",
+      "name": "gitlab-ci-patterns",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/gitlab-ci-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-gitops-workflow",
+      "name": "gitops-workflow",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "external_network_action",
+        "privileged_execution"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/gitops-workflow/SKILL.md"
+    },
+    {
+      "skill_id": "external-golang-testing",
+      "name": "golang-testing",
+      "risk_level": "medium",
+      "risk_flags": [
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/golang-testing/SKILL.md"
+    },
+    {
+      "skill_id": "external-graph-evolution",
+      "name": "graph-evolution",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files",
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/graph-evolution/SKILL.md"
+    },
+    {
+      "skill_id": "external-guidelines-advisor",
+      "name": "guidelines-advisor",
+      "risk_level": "medium",
+      "risk_flags": [
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/guidelines-advisor/SKILL.md"
+    },
+    {
+      "skill_id": "external-harness-writing",
+      "name": "harness-writing",
+      "risk_level": "medium",
+      "risk_flags": [
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/harness-writing/SKILL.md"
+    },
+    {
+      "skill_id": "external-helm-chart-scaffolding",
+      "name": "helm-chart-scaffolding",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/helm-chart-scaffolding/SKILL.md"
+    },
+    {
+      "skill_id": "external-hermes-imports",
+      "name": "hermes-imports",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/hermes-imports/SKILL.md"
+    },
+    {
+      "skill_id": "external-hermes-tweet",
+      "name": "hermes-tweet",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/hermes-tweet/SKILL.md"
+    },
+    {
+      "skill_id": "external-hexagonal-architecture",
+      "name": "hexagonal-architecture",
+      "risk_level": "medium",
+      "risk_flags": [
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/hexagonal-architecture/SKILL.md"
+    },
+    {
+      "skill_id": "external-hipaa-compliance",
+      "name": "hipaa-compliance",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/hipaa-compliance/SKILL.md"
+    },
+    {
+      "skill_id": "external-homelab-pihole-dns",
+      "name": "homelab-pihole-dns",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "external_network_action",
+        "privileged_execution"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/homelab-pihole-dns/SKILL.md"
+    },
+    {
+      "skill_id": "external-homelab-vlan-segmentation",
+      "name": "homelab-vlan-segmentation",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/homelab-vlan-segmentation/SKILL.md"
+    },
+    {
+      "skill_id": "external-homelab-wireguard-vpn",
+      "name": "homelab-wireguard-vpn",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "external_network_action",
+        "privileged_execution"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/homelab-wireguard-vpn/SKILL.md"
+    },
+    {
+      "skill_id": "external-hookify-rules",
+      "name": "hookify-rules",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "destructive_commands",
+        "privileged_execution"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/hookify-rules/SKILL.md"
+    },
+    {
+      "skill_id": "external-insecure-defaults",
+      "name": "insecure-defaults",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/insecure-defaults/SKILL.md"
+    },
+    {
+      "skill_id": "external-intent-driven-development",
+      "name": "intent-driven-development",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/intent-driven-development/SKILL.md"
+    },
+    {
+      "skill_id": "external-interpreting-culture-index",
+      "name": "interpreting-culture-index",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files",
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/interpreting-culture-index/SKILL.md"
+    },
+    {
+      "skill_id": "external-ios-icon-gen",
+      "name": "ios-icon-gen",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/ios-icon-gen/SKILL.md"
+    },
+    {
+      "skill_id": "external-istio-traffic-management",
+      "name": "istio-traffic-management",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/istio-traffic-management/SKILL.md"
+    },
+    {
+      "skill_id": "external-ito-basket-compare",
+      "name": "ito-basket-compare",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/ito-basket-compare/SKILL.md"
+    },
+    {
+      "skill_id": "external-ito-data-atlas-agent",
+      "name": "ito-data-atlas-agent",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/ito-data-atlas-agent/SKILL.md"
+    },
+    {
+      "skill_id": "external-ito-market-intelligence",
+      "name": "ito-market-intelligence",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/ito-market-intelligence/SKILL.md"
+    },
+    {
+      "skill_id": "external-ito-trade-planner",
+      "name": "ito-trade-planner",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/ito-trade-planner/SKILL.md"
+    },
+    {
+      "skill_id": "external-javascript-testing-patterns",
+      "name": "javascript-testing-patterns",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "destructive_commands"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/javascript-testing-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-jira-integration",
+      "name": "jira-integration",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "external_network_action"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/jira-integration/SKILL.md"
+    },
+    {
+      "skill_id": "external-k8s-manifest-generator",
+      "name": "k8s-manifest-generator",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/k8s-manifest-generator/SKILL.md"
+    },
+    {
+      "skill_id": "external-k8s-security-policies",
+      "name": "k8s-security-policies",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/k8s-security-policies/SKILL.md"
+    },
+    {
+      "skill_id": "external-knowledge-ops",
+      "name": "knowledge-ops",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/knowledge-ops/SKILL.md"
+    },
+    {
+      "skill_id": "external-kotlin-exposed-patterns",
+      "name": "kotlin-exposed-patterns",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/kotlin-exposed-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-kotlin-ktor-patterns",
+      "name": "kotlin-ktor-patterns",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/kotlin-ktor-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-kotlin-testing",
+      "name": "kotlin-testing",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/kotlin-testing/SKILL.md"
+    },
+    {
+      "skill_id": "external-kubernetes-patterns",
+      "name": "kubernetes-patterns",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/kubernetes-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-langchain-architecture",
+      "name": "langchain-architecture",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/langchain-architecture/SKILL.md"
+    },
+    {
+      "skill_id": "external-langsmith-fetch",
+      "name": "langsmith-fetch",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/langsmith-fetch/SKILL.md"
+    },
+    {
+      "skill_id": "external-laravel-patterns",
+      "name": "laravel-patterns",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/laravel-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-laravel-plugin-discovery",
+      "name": "laravel-plugin-discovery",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/laravel-plugin-discovery/SKILL.md"
+    },
+    {
+      "skill_id": "external-laravel-security",
+      "name": "laravel-security",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "external_network_action",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/laravel-security/SKILL.md"
+    },
+    {
+      "skill_id": "external-laravel-tdd",
+      "name": "laravel-tdd",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/laravel-tdd/SKILL.md"
+    },
+    {
+      "skill_id": "external-laravel-verification",
+      "name": "laravel-verification",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/laravel-verification/SKILL.md"
+    },
+    {
+      "skill_id": "external-latency-critical-systems",
+      "name": "latency-critical-systems",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/latency-critical-systems/SKILL.md"
+    },
+    {
+      "skill_id": "external-lead-intelligence",
+      "name": "lead-intelligence",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/lead-intelligence/SKILL.md"
+    },
+    {
+      "skill_id": "external-let-fate-decide",
+      "name": "let-fate-decide",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files",
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/let-fate-decide/SKILL.md"
+    },
+    {
+      "skill_id": "external-libafl",
+      "name": "libafl",
+      "risk_level": "high",
+      "risk_flags": [
+        "external_network_action",
+        "network_install_or_pipe",
+        "offensive_security_capability",
+        "privileged_execution"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/libafl/SKILL.md"
+    },
+    {
+      "skill_id": "external-libfuzzer",
+      "name": "libfuzzer",
+      "risk_level": "medium",
+      "risk_flags": [
+        "external_network_action",
+        "network_install_or_pipe",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/libfuzzer/SKILL.md"
+    },
+    {
+      "skill_id": "external-linkerd-patterns",
+      "name": "linkerd-patterns",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "external_network_action",
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/linkerd-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-llm-trading-agent-security",
+      "name": "llm-trading-agent-security",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/llm-trading-agent-security/SKILL.md"
+    },
+    {
+      "skill_id": "external-mailtrap-email-integration",
+      "name": "mailtrap-email-integration",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/mailtrap-email-integration/SKILL.md"
+    },
+    {
+      "skill_id": "external-manim-video",
+      "name": "manim-video",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/manim-video/SKILL.md"
+    },
+    {
+      "skill_id": "external-marketing-campaign",
+      "name": "marketing-campaign",
+      "risk_level": "medium",
+      "risk_flags": [
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/marketing-campaign/SKILL.md"
+    },
+    {
+      "skill_id": "external-mcp-builder",
+      "name": "mcp-builder",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/mcp-builder/SKILL.md"
+    },
+    {
+      "skill_id": "external-memory-forensics",
+      "name": "memory-forensics",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "offensive_security_capability",
+        "privileged_execution"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/memory-forensics/SKILL.md"
+    },
+    {
+      "skill_id": "external-mermaid-to-proverif",
+      "name": "mermaid-to-proverif",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/mermaid-to-proverif/SKILL.md"
+    },
+    {
+      "skill_id": "external-mle-workflow",
+      "name": "mle-workflow",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/mle-workflow/SKILL.md"
+    },
+    {
+      "skill_id": "external-modern-python",
+      "name": "modern-python",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/modern-python/SKILL.md"
+    },
+    {
+      "skill_id": "external-monorepo-management",
+      "name": "monorepo-management",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "destructive_commands"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/monorepo-management/SKILL.md"
+    },
+    {
+      "skill_id": "external-multi-reviewer-patterns",
+      "name": "multi-reviewer-patterns",
+      "risk_level": "medium",
+      "risk_flags": [
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/multi-reviewer-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-mysql-patterns",
+      "name": "mysql-patterns",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/mysql-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-nestjs-patterns",
+      "name": "nestjs-patterns",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/nestjs-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-netmiko-ssh-automation",
+      "name": "netmiko-ssh-automation",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/netmiko-ssh-automation/SKILL.md"
+    },
+    {
+      "skill_id": "external-network-config-validation",
+      "name": "network-config-validation",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/network-config-validation/SKILL.md"
+    },
+    {
+      "skill_id": "external-nextjs-app-router-patterns",
+      "name": "nextjs-app-router-patterns",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/nextjs-app-router-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-nodejs-backend-patterns",
+      "name": "nodejs-backend-patterns",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/nodejs-backend-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-nutrient-document-processing",
+      "name": "nutrient-document-processing",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "external_network_action"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/nutrient-document-processing/SKILL.md"
+    },
+    {
+      "skill_id": "external-nuxt4-patterns",
+      "name": "nuxt4-patterns",
+      "risk_level": "medium",
+      "risk_flags": [
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/nuxt4-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-openclaw-persona-forge",
+      "name": "openclaw-persona-forge",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/openclaw-persona-forge/SKILL.md"
+    },
+    {
+      "skill_id": "external-opensource-pipeline",
+      "name": "opensource-pipeline",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/opensource-pipeline/SKILL.md"
+    },
+    {
+      "skill_id": "external-orch-pipeline",
+      "name": "orch-pipeline",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/orch-pipeline/SKILL.md"
+    },
+    {
+      "skill_id": "external-ossfuzz",
+      "name": "ossfuzz",
+      "risk_level": "medium",
+      "risk_flags": [
+        "external_network_action",
+        "network_install_or_pipe",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/ossfuzz/SKILL.md"
+    },
+    {
+      "skill_id": "external-parallel-feature-development",
+      "name": "parallel-feature-development",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/parallel-feature-development/SKILL.md"
+    },
+    {
+      "skill_id": "external-paypal-integration",
+      "name": "paypal-integration",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "external_network_action"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/paypal-integration/SKILL.md"
+    },
+    {
+      "skill_id": "external-pci-compliance",
+      "name": "pci-compliance",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/pci-compliance/SKILL.md"
+    },
+    {
+      "skill_id": "external-pdf",
+      "name": "pdf",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files",
+        "credential_or_secret_access",
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/pdf/SKILL.md"
+    },
+    {
+      "skill_id": "external-perl-security",
+      "name": "perl-security",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "destructive_commands",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/perl-security/SKILL.md"
+    },
+    {
+      "skill_id": "external-perl-testing",
+      "name": "perl-testing",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/perl-testing/SKILL.md"
+    },
+    {
+      "skill_id": "external-plan-orchestrate",
+      "name": "plan-orchestrate",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/plan-orchestrate/SKILL.md"
+    },
+    {
+      "skill_id": "external-plankton-code-quality",
+      "name": "plankton-code-quality",
+      "risk_level": "medium",
+      "risk_flags": [
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/plankton-code-quality/SKILL.md"
+    },
+    {
+      "skill_id": "external-postgresql",
+      "name": "postgresql-table-design",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/postgresql/SKILL.md"
+    },
+    {
+      "skill_id": "external-pptx",
+      "name": "pptx",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files",
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/pptx/SKILL.md"
+    },
+    {
+      "skill_id": "external-prediction-market-risk-review",
+      "name": "prediction-market-risk-review",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/prediction-market-risk-review/SKILL.md"
+    },
+    {
+      "skill_id": "external-prisma-patterns",
+      "name": "prisma-patterns",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/prisma-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-production-audit",
+      "name": "production-audit",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "external_network_action",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/production-audit/SKILL.md"
+    },
+    {
+      "skill_id": "external-prompt-engineering-patterns",
+      "name": "prompt-engineering-patterns",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/prompt-engineering-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-prompt-optimizer",
+      "name": "prompt-optimizer",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/prompt-optimizer/SKILL.md"
+    },
+    {
+      "skill_id": "external-protect-mcp-setup",
+      "name": "protect-mcp-setup",
+      "risk_level": "high",
+      "risk_flags": [
+        "destructive_commands"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/protect-mcp-setup/SKILL.md"
+    },
+    {
+      "skill_id": "external-protocol-reverse-engineering",
+      "name": "protocol-reverse-engineering",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/protocol-reverse-engineering/SKILL.md"
+    },
+    {
+      "skill_id": "external-python-anti-patterns",
+      "name": "python-anti-patterns",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/python-anti-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-python-background-jobs",
+      "name": "python-background-jobs",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/python-background-jobs/SKILL.md"
+    },
+    {
+      "skill_id": "external-python-code-style",
+      "name": "python-code-style",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/python-code-style/SKILL.md"
+    },
+    {
+      "skill_id": "external-python-configuration",
+      "name": "python-configuration",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/python-configuration/SKILL.md"
+    },
+    {
+      "skill_id": "external-python-observability",
+      "name": "python-observability",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/python-observability/SKILL.md"
+    },
+    {
+      "skill_id": "external-python-patterns",
+      "name": "python-patterns",
+      "risk_level": "medium",
+      "risk_flags": [
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/python-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-python-resilience",
+      "name": "python-resilience",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "external_network_action"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/python-resilience/SKILL.md"
+    },
+    {
+      "skill_id": "external-python-testing",
+      "name": "python-testing",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/python-testing/SKILL.md"
+    },
+    {
+      "skill_id": "external-python-testing-patterns",
+      "name": "python-testing-patterns",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/python-testing-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-quarkus-patterns",
+      "name": "quarkus-patterns",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/quarkus-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-quarkus-security",
+      "name": "quarkus-security",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/quarkus-security/SKILL.md"
+    },
+    {
+      "skill_id": "external-quarkus-tdd",
+      "name": "quarkus-tdd",
+      "risk_level": "medium",
+      "risk_flags": [
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/quarkus-tdd/SKILL.md"
+    },
+    {
+      "skill_id": "external-quarkus-verification",
+      "name": "quarkus-verification",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "external_network_action",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/quarkus-verification/SKILL.md"
+    },
+    {
+      "skill_id": "external-react-native-architecture",
+      "name": "react-native-architecture",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/react-native-architecture/SKILL.md"
+    },
+    {
+      "skill_id": "external-react-native-patterns",
+      "name": "react-native-patterns",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/react-native-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-react-state-management",
+      "name": "react-state-management",
+      "risk_level": "medium",
+      "risk_flags": [
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/react-state-management/SKILL.md"
+    },
+    {
+      "skill_id": "external-redis-patterns",
+      "name": "redis-patterns",
+      "risk_level": "medium",
+      "risk_flags": [
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/redis-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-rules-distill",
+      "name": "rules-distill",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/rules-distill/SKILL.md"
+    },
+    {
+      "skill_id": "external-rust-patterns",
+      "name": "rust-patterns",
+      "risk_level": "medium",
+      "risk_flags": [
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/rust-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-rust-review",
+      "name": "rust-review",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/rust-review/SKILL.md"
+    },
+    {
+      "skill_id": "external-ruzzy",
+      "name": "ruzzy",
+      "risk_level": "medium",
+      "risk_flags": [
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/ruzzy/SKILL.md"
+    },
+    {
+      "skill_id": "external-safety-guard",
+      "name": "safety-guard",
+      "risk_level": "high",
+      "risk_flags": [
+        "destructive_commands",
+        "privileged_execution"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/safety-guard/SKILL.md"
+    },
+    {
+      "skill_id": "external-santa-method",
+      "name": "santa-method",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/santa-method/SKILL.md"
+    },
+    {
+      "skill_id": "external-sarif-parsing",
+      "name": "sarif-parsing",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files",
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/sarif-parsing/SKILL.md"
+    },
+    {
+      "skill_id": "external-sast-configuration",
+      "name": "sast-configuration",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/sast-configuration/SKILL.md"
+    },
+    {
+      "skill_id": "external-scan",
+      "name": "scan",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/scan/SKILL.md"
+    },
+    {
+      "skill_id": "external-scientific-db-pubmed-database",
+      "name": "pubmed-database",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/scientific-db-pubmed-database/SKILL.md"
+    },
+    {
+      "skill_id": "external-scientific-db-uspto-database",
+      "name": "uspto-database",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/scientific-db-uspto-database/SKILL.md"
+    },
+    {
+      "skill_id": "external-scientific-pkg-gget",
+      "name": "gget",
+      "risk_level": "medium",
+      "risk_flags": [
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/scientific-pkg-gget/SKILL.md"
+    },
+    {
+      "skill_id": "external-second-opinion",
+      "name": "second-opinion",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/second-opinion/SKILL.md"
+    },
+    {
+      "skill_id": "external-secrets-management",
+      "name": "secrets-management",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "external_network_action"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/secrets-management/SKILL.md"
+    },
+    {
+      "skill_id": "external-secure-workflow-guide",
+      "name": "secure-workflow-guide",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/secure-workflow-guide/SKILL.md"
+    },
+    {
+      "skill_id": "external-security-bounty-hunter",
+      "name": "security-bounty-hunter",
+      "risk_level": "medium",
+      "risk_flags": [
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/security-bounty-hunter/SKILL.md"
+    },
+    {
+      "skill_id": "external-security-review",
+      "name": "security-review",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/security-review/SKILL.md"
+    },
+    {
+      "skill_id": "external-security-scan",
+      "name": "security-scan",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "network_install_or_pipe",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/security-scan/SKILL.md"
+    },
+    {
+      "skill_id": "external-semgrep",
+      "name": "semgrep",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/semgrep/SKILL.md"
+    },
+    {
+      "skill_id": "external-sharp-edges",
+      "name": "sharp-edges",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/sharp-edges/SKILL.md"
+    },
+    {
+      "skill_id": "external-signed-audit-trails-recipe",
+      "name": "signed-audit-trails-recipe",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "destructive_commands",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/signed-audit-trails-recipe/SKILL.md"
+    },
+    {
+      "skill_id": "external-skill-comply",
+      "name": "skill-comply",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/skill-comply/SKILL.md"
+    },
+    {
+      "skill_id": "external-skill-creator",
+      "name": "skill-creator",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/skill-creator/SKILL.md"
+    },
+    {
+      "skill_id": "external-skill-scout",
+      "name": "skill-scout",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/skill-scout/SKILL.md"
+    },
+    {
+      "skill_id": "external-skill-stocktake",
+      "name": "skill-stocktake",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/skill-stocktake/SKILL.md"
+    },
+    {
+      "skill_id": "external-slack-gif-creator",
+      "name": "slack-gif-creator",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files",
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/slack-gif-creator/SKILL.md"
+    },
+    {
+      "skill_id": "external-social-publisher",
+      "name": "social-publisher",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "external_network_action",
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/social-publisher/SKILL.md"
+    },
+    {
+      "skill_id": "external-social-publishing",
+      "name": "social-publishing",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/social-publishing/SKILL.md"
+    },
+    {
+      "skill_id": "external-spec-to-code-compliance",
+      "name": "spec-to-code-compliance",
+      "risk_level": "medium",
+      "risk_flags": [
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/spec-to-code-compliance/SKILL.md"
+    },
+    {
+      "skill_id": "external-springboot-security",
+      "name": "springboot-security",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/springboot-security/SKILL.md"
+    },
+    {
+      "skill_id": "external-springboot-verification",
+      "name": "springboot-verification",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/springboot-verification/SKILL.md"
+    },
+    {
+      "skill_id": "external-strategic-compact",
+      "name": "strategic-compact",
+      "risk_level": "medium",
+      "risk_flags": [
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/strategic-compact/SKILL.md"
+    },
+    {
+      "skill_id": "external-stripe-integration",
+      "name": "stripe-integration",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/stripe-integration/SKILL.md"
+    },
+    {
+      "skill_id": "external-subagent-driven-development",
+      "name": "subagent-driven-development",
+      "risk_level": "high",
+      "risk_flags": [
+        "bundled_executable_files",
+        "destructive_commands"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/subagent-driven-development/SKILL.md"
+    },
+    {
+      "skill_id": "external-substrate-vulnerability-scanner",
+      "name": "substrate-vulnerability-scanner",
+      "risk_level": "medium",
+      "risk_flags": [
+        "privileged_execution"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/substrate-vulnerability-scanner/SKILL.md"
+    },
+    {
+      "skill_id": "external-systematic-debugging",
+      "name": "systematic-debugging",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files",
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/systematic-debugging/SKILL.md"
+    },
+    {
+      "skill_id": "external-task-coordination-strategies",
+      "name": "task-coordination-strategies",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/task-coordination-strategies/SKILL.md"
+    },
+    {
+      "skill_id": "external-tdd-workflow",
+      "name": "tdd-workflow",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "external_network_action",
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/tdd-workflow/SKILL.md"
+    },
+    {
+      "skill_id": "external-team-composition-patterns",
+      "name": "team-composition-patterns",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/team-composition-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-terminal-ops",
+      "name": "terminal-ops",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/terminal-ops/SKILL.md"
+    },
+    {
+      "skill_id": "external-testing-handbook-generator",
+      "name": "testing-handbook-generator",
+      "risk_level": "medium",
+      "risk_flags": [
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/testing-handbook-generator/SKILL.md"
+    },
+    {
+      "skill_id": "external-tinystruct-patterns",
+      "name": "tinystruct-patterns",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/tinystruct-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-token-integration-analyzer",
+      "name": "token-integration-analyzer",
+      "risk_level": "medium",
+      "risk_flags": [
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/token-integration-analyzer/SKILL.md"
+    },
+    {
+      "skill_id": "external-trailmark",
+      "name": "trailmark",
+      "risk_level": "medium",
+      "risk_flags": [
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/trailmark/SKILL.md"
+    },
+    {
+      "skill_id": "external-trailmark-structural",
+      "name": "trailmark-structural",
+      "risk_level": "medium",
+      "risk_flags": [
+        "network_install_or_pipe",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/trailmark-structural/SKILL.md"
+    },
+    {
+      "skill_id": "external-trailmark-summary",
+      "name": "trailmark-summary",
+      "risk_level": "medium",
+      "risk_flags": [
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/trailmark-summary/SKILL.md"
+    },
+    {
+      "skill_id": "external-turborepo-caching",
+      "name": "turborepo-caching",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "destructive_commands"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/turborepo-caching/SKILL.md"
+    },
+    {
+      "skill_id": "external-typescript-advanced-types",
+      "name": "typescript-advanced-types",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/typescript-advanced-types/SKILL.md"
+    },
+    {
+      "skill_id": "external-ui-demo",
+      "name": "ui-demo",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/ui-demo/SKILL.md"
+    },
+    {
+      "skill_id": "external-ui-to-vue",
+      "name": "ui-to-vue",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/ui-to-vue/SKILL.md"
+    },
+    {
+      "skill_id": "external-uncloud",
+      "name": "uncloud",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/uncloud/SKILL.md"
+    },
+    {
+      "skill_id": "external-unified-notifications-ops",
+      "name": "unified-notifications-ops",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "external_network_action"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/unified-notifications-ops/SKILL.md"
+    },
+    {
+      "skill_id": "external-uv-package-manager",
+      "name": "uv-package-manager",
+      "risk_level": "medium",
+      "risk_flags": [
+        "external_network_action",
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/uv-package-manager/SKILL.md"
+    },
+    {
+      "skill_id": "external-vector-forge",
+      "name": "vector-forge",
+      "risk_level": "medium",
+      "risk_flags": [
+        "network_install_or_pipe",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/vector-forge/SKILL.md"
+    },
+    {
+      "skill_id": "external-verification-loop",
+      "name": "verification-loop",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/verification-loop/SKILL.md"
+    },
+    {
+      "skill_id": "external-video-downloader",
+      "name": "youtube-downloader",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/video-downloader/SKILL.md"
+    },
+    {
+      "skill_id": "external-video-editing",
+      "name": "video-editing",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/video-editing/SKILL.md"
+    },
+    {
+      "skill_id": "external-videodb",
+      "name": "videodb",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files",
+        "credential_or_secret_access",
+        "external_network_action",
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/videodb/SKILL.md"
+    },
+    {
+      "skill_id": "external-visa-doc-translate",
+      "name": "visa-doc-translate",
+      "risk_level": "medium",
+      "risk_flags": [
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/visa-doc-translate/SKILL.md"
+    },
+    {
+      "skill_id": "external-vite-patterns",
+      "name": "vite-patterns",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/vite-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-vue-patterns",
+      "name": "vue-patterns",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/vue-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-web-artifacts-builder",
+      "name": "web-artifacts-builder",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/web-artifacts-builder/SKILL.md"
+    },
+    {
+      "skill_id": "external-web3-testing",
+      "name": "web3-testing",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/web3-testing/SKILL.md"
+    },
+    {
+      "skill_id": "external-webapp-testing",
+      "name": "webapp-testing",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/webapp-testing/SKILL.md"
+    },
+    {
+      "skill_id": "external-windows-desktop-e2e",
+      "name": "windows-desktop-e2e",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "network_install_or_pipe"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/windows-desktop-e2e/SKILL.md"
+    },
+    {
+      "skill_id": "external-workflow-orchestration-patterns",
+      "name": "workflow-orchestration-patterns",
+      "risk_level": "medium",
+      "risk_flags": [
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/workflow-orchestration-patterns/SKILL.md"
+    },
+    {
+      "skill_id": "external-workspace-surface-audit",
+      "name": "workspace-surface-audit",
+      "risk_level": "medium",
+      "risk_flags": [
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/workspace-surface-audit/SKILL.md"
+    },
+    {
+      "skill_id": "external-wycheproof",
+      "name": "wycheproof",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "external_network_action",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/wycheproof/SKILL.md"
+    },
+    {
+      "skill_id": "external-x-api",
+      "name": "x-api",
+      "risk_level": "high",
+      "risk_flags": [
+        "credential_or_secret_access",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/x-api/SKILL.md"
+    },
+    {
+      "skill_id": "external-xlsx",
+      "name": "xlsx",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/xlsx/SKILL.md"
+    },
+    {
+      "skill_id": "external-yara-rule-authoring",
+      "name": "yara-rule-authoring",
+      "risk_level": "high",
+      "risk_flags": [
+        "bundled_executable_files",
+        "credential_or_secret_access",
+        "external_network_action",
+        "network_install_or_pipe",
+        "offensive_security_capability"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/yara-rule-authoring/SKILL.md"
+    },
+    {
+      "skill_id": "external-zeroize-audit",
+      "name": "zeroize-audit",
+      "risk_level": "medium",
+      "risk_flags": [
+        "bundled_executable_files",
+        "credential_or_secret_access"
+      ],
+      "path": "50_Skills/Claude Skill Library/skills/zeroize-audit/SKILL.md"
+    }
+  ]
+}

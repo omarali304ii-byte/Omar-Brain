@@ -63,6 +63,8 @@ const files = walk(vault);
 for (const file of files) {
   if (!file.endsWith('.md')) continue;
   const rel = path.relative(vault, file).replaceAll('\\','/');
+  // Imported external skill payloads preserve upstream bytes/frontmatter and are governed by check-external-skill-library.mjs + payload SHA-256 manifest, not canonical Brain-note metadata rules.
+  if (rel.startsWith('50_Skills/Claude Skill Library/skills/')) continue;
   const text = fs.readFileSync(file, 'utf8');
   const fm = parseFrontmatter(text);
   const isIndex = path.basename(file).startsWith('_Index');
@@ -152,7 +154,8 @@ for (const file of files) {
 const allowedRepeatedProjectStems = new Set(['01 context','02 requirements','03 architecture','04 data model','05 api contracts','06 security','07 test strategy','08 roadmap','09 current state','10 execution queue','11 repo map','12 runbook','14 agent contract','15 memory scope','00 web profile','01 applicability matrix','02 threat model','03 frontend contract','04 backend contract','05 http api contract','06 data integrity plan','07 accessibility plan','08 performance budget','09 seo discoverability','10 observability slo','11 web test matrix','12 release gates','13 browser support','14 supply chain']);
 for (const [stem, rels] of stems) {
   const repeatedProjectPacket = allowedRepeatedProjectStems.has(stem) && rels.every(r => r.startsWith('40_Projects/'));
-  if (rels.length > 1 && !rels.every(r => r.startsWith('00_System/Templates/')) && !repeatedProjectPacket) {
+  const repeatedClaudeSkillEntrypoint = stem === 'skill' && rels.every(r => /^\.claude\/skills\/[^/]+\/SKILL\.md$/.test(r));
+  if (rels.length > 1 && !rels.every(r => r.startsWith('00_System/Templates/')) && !repeatedProjectPacket && !repeatedClaudeSkillEntrypoint) {
     warnings.push(`Suspicious duplicate filename '${stem}': ${rels.join(' | ')}`);
   }
 }

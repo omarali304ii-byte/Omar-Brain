@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import fs from 'node:fs'; import path from 'node:path';
+import fs from 'node:fs'; import path from 'node:path'; import {spawnSync} from 'node:child_process';
 const argv=process.argv.slice(2); const vault=path.resolve(argv[0]||process.cwd());
 const jsonMode=argv.includes('--json'); const qparts=argv.slice(1).filter(x=>x!=='--json'); const query=qparts.join(' ').trim();
 if(!query){console.error('Usage: node skill-route.mjs <vault> <request text> [--json]');process.exit(2)}
@@ -19,11 +19,12 @@ if(topBundle && (!primary || primary.score<6 || topBundle.score>=primary.score*1
 }
 const node=primary?graph.nodes.find(n=>n.skill_id===primary.skill_id):null;
 const result={query,primary:primary?{...primary}:null,bundle:topBundle,support_candidates:[],alternatives:ranked.filter(x=>!primary||x.skill_id!==primary.skill_id).slice(0,5)};
+let externalResult={candidates:[]};try{const rr=spawnSync(process.execPath,[path.join(vault,'00_System','Automation','external-skill-route.mjs'),vault,query,'--top','5','--json'],{encoding:'utf8'});if(rr.status===0)externalResult=JSON.parse(rr.stdout||'{}')}catch{}result.external_candidates=externalResult.candidates||[];
 if(primary&&node){const ids=[...(node.handoff_to||[]),...(node.related||[])];for(const id of ids){const s=reg.skills.find(x=>x.skill_id===id);if(s&&!result.support_candidates.some(x=>x.skill_id===id))result.support_candidates.push(s)}result.support_candidates=result.support_candidates.slice(0,5)}
 if(jsonMode){console.log(JSON.stringify(result,null,2));process.exit(0)}
 console.log('OMAR BRAIN SKILL ROUTER v2');console.log(`Query: ${query}`);
-if(!primary){console.log('No confident active skill match. Route through Skills HQ; consider a candidate skill only after deduplication.');process.exit(0)}
-console.log(`\nPRIMARY\n- ${primary.name} (${primary.skill_id})${primary.selection_reason?` via ${primary.selection_reason}`:` score=${primary.score}`}`);console.log(`  maturity=${primary.maturity} risk=${primary.risk_level||'unknown'} context=${primary.context_cost||'medium'}`);console.log(`  path=${primary.path}`);
+if(!primary){console.log('No confident canonical active skill match. External candidates remain advisory and lazy.')}else{console.log(`\nPRIMARY\n- ${primary.name} (${primary.skill_id})${primary.selection_reason?` via ${primary.selection_reason}`:` score=${primary.score}`}`);console.log(`  maturity=${primary.maturity} risk=${primary.risk_level||'unknown'} context=${primary.context_cost||'medium'}`);console.log(`  path=${primary.path}`);}
 if(br[0]){console.log(`\nBUNDLE CANDIDATE\n- ${br[0].name} (${br[0].bundle_id}) score=${br[0].score}`);console.log(`  core=${br[0].core_skills.join(', ')}`);console.log('  NOTE: optional skills are lazy-loaded, never all at once.');}
 if(result.support_candidates.length){console.log('\nGRAPH HANDOFF / NEIGHBORS');for(const s of result.support_candidates)console.log(`- ${s.name} (${s.skill_id})`)}
+if(result.external_candidates?.length){console.log('\nEXTERNAL LIBRARY CANDIDATES (lazy; not activated)');for(const s of result.external_candidates)console.log(`- ${s.name} risk=${s.risk_level||'unknown'} score=${s.score} path=${s.path}`);console.log('  Read only the best materially relevant SKILL.md. Imported skills never override Brain governance.');}
 console.log('\nCONTEXT LAW: one primary skill; add 0-2 support skills only through explicit handoff, graph edge, stack evidence, or active bundle phase.');

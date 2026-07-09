@@ -1,0 +1,20 @@
+{
+  "artifact": "Omar Brain v14 - Living Agent Learning OS",
+  "built_at": "2026-07-09",
+  "source": "Omar Brain v13 Project Council OS",
+  "validation": {
+    "meta_council": "PASS",
+    "runtime_helper_syntax": "PASS",
+    "future_project_scaffold": "PASS",
+    "deterministic_logic_start_brief": "PASS",
+    "json_parse_errors": 0,
+    "claude_agent_frontmatter_errors": 0,
+    "cognitive_roles": 12,
+    "required_cognitive_files_per_role": 18,
+    "missing_cognitive_files": 0,
+    "living_claude_agent_configs": 12,
+    "specialist_write_guard": "PASS",
+    "specialist_mutating_bash_guard": "PASS"
+  },
+  "truth_limit": "Meta Word of Mouth stored repository knowledge remains bound to revision 8c027fabf85fe46fa0395eb459c0289872fef491 until live repo re-inspection."
+}

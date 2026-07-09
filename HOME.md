@@ -2,7 +2,7 @@
 type: system
 status: active
 created: 2026-07-07
-updated: 2026-07-07
+updated: 2026-07-09
 topics: [home, dashboard]
 ai_access: allowed
 ---
@@ -16,6 +16,21 @@ ai_access: allowed
 - [[00_System/Runtime State/GAP_REGISTER]] — open system gaps
 - `00_System/Runtime State/brain-state.json` — machine-readable global state
 - [[00_System/Runtime State/OPERATION_LOG]] — append-only operation history
+
+
+## Claude Code native runtime
+- [[00_System/Claude Code OS/Claude Code Native Runtime]] — deterministic front door and lifecycle
+- [[00_System/Claude Code OS/Omar Thinking Execution Policy]] — Omar decision structure
+- [[00_System/Claude Code OS/Claude Code Routing and Search Contract]] — route/search ladder
+- [[00_System/Claude Code OS/Claude Code Guardrail Matrix]] — executable guards and stop gate
+- `CLAUDE.md` — compact root contract loaded by Claude Code
+
+
+## Persistent Agentic Execution
+- [[00_System/Agentic Execution OS/Agentic Execution Operating System]] — batch-by-batch state machine
+- [[00_System/Agentic Execution OS/Token Economy and Context Capsule Policy]] — bounded context and hash-aware reuse
+- [[00_System/Agentic Execution OS/Claude Fresh Context Runner]] — one fresh Claude context per batch
+- [[00_System/Agentic Execution OS/Quick Start - Install and Run a Plan]] — Windows workflow
 
 ## Navigation and production
 - [[00_System/Navigation OS/Road Sign Navigation System]] — road-sign routing graph
@@ -59,7 +74,7 @@ ai_access: allowed
 - [[Web Project Quality Gate Matrix]]
 
 
-## Dynamic Brain v6
+## Dynamic Brain v11
 - [[Memory OS]] — semantic, episodic, procedural memory
 - [[Retrieval OS]] — hybrid retrieval and token-efficient context
 - [[Multi-Agent Operating Model]] — supervisor + specialists
@@ -79,6 +94,7 @@ node .\00_System\Automation\brain-route.mjs . "make project production ready"
 | When the destination is... | Go to... |
 |---|---|
 | choose the exact AI route | [[00_System/Navigation OS/Road Sign Navigation System]] |
+| a multi-batch final-goal plan | [[00_System/Agentic Execution OS/Agentic Execution Operating System]] |
 | a finite project outcome | [[40_Projects/Projects HQ]] |
 | production hardening | [[00_System/Production Readiness OS/Production Readiness Operating System]] |
 | source-heavy research | [[00_System/Knowledge Graph/Source-Backed Knowledge Protocol]] |

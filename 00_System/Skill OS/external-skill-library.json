@@ -1,0 +1,17 @@
+{
+  "library_id": "external-claude-skill-library-v1",
+  "status": "active-on-demand",
+  "updated": "2026-07-09",
+  "skill_count": 559,
+  "library_root": "50_Skills/Claude Skill Library/skills",
+  "catalog": "50_Skills/Claude Skill Library/registry/skill-catalog.json",
+  "compact_catalog": "50_Skills/Claude Skill Library/registry/skill-catalog.min.json",
+  "policy": "00_System/Skill OS/External Claude Skill Library Standard.md",
+  "router": "00_System/Automation/external-skill-route.mjs",
+  "maturity": "S0_DISCOVERED",
+  "activation": "lazy",
+  "max_active_external_skills": 3,
+  "source_archive_sha256": "ccec1af5cbf33bc8c2895356eb57224c1322e76f262219950fd859b4f3afc00e",
+  "payload_manifest": "50_Skills/Claude Skill Library/registry/payload-manifest.json",
+  "payload_file_count": 1913
+}

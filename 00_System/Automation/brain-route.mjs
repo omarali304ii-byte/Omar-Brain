@@ -30,6 +30,7 @@ for (const route of registry.routes) {
   if (route.route_id === 'route-project-resume' && /(continue|finish|fix|check|resume)/.test(q) && /project|website|app|repo/.test(q)) score += 6;
   if (route.route_id === 'route-research' && /(research|source|pdf|report|study)/.test(q)) score += 5;
   if (route.route_id === 'route-system' && /(brain|vault|system)/.test(q) && /(upgrade|audit|architecture)/.test(q)) score += 8;
+  if (route.route_id === 'route-claude-code' && /(claude code|claude agent|claude hooks|claude skills|think like me|work like me)/.test(q)) score += 18;
   weights.set(route.route_id, {route, score, matches});
 }
 const ranked = [...weights.values()].sort((a,b)=>b.score-a.score);

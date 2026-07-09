@@ -1,0 +1,10 @@
+{
+  "agent": "Quality Engineer",
+  "status": "ready",
+  "last_verified_revision": "8c027fabf85fe46fa0395eb459c0289872fef491",
+  "freshness": "partial",
+  "active_finding_ids": [
+    "MWOM-QUAL-001"
+  ],
+  "next_start": "Agents/Quality Engineer/NEXT_START.md"
+}

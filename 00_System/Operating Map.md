@@ -2,10 +2,10 @@
 type: system
 status: active
 created: 2026-07-07
-updated: 2026-07-07
+updated: 2026-07-09
 topics: [operating-map, startup, routing, source-of-truth]
 ai_access: allowed
-version: 6.0
+version: 11.0
 ---
 # Omar Brain Operating Map
 
@@ -21,6 +21,40 @@ This is the mandatory first map for AI work that depends on Omar's memory, proje
 - Production hardening control plane: `00_System/Production Readiness OS/`.
 - Project truth: each resolved canonical project packet under `40_Projects/`.
 - Real software truth: the actual repository, migrations, tests, runtime evidence, and production state. The brain supports repo work; it never replaces repo inspection.
+
+
+## Claude Code native front door
+When Claude Code opens at the vault root, `CLAUDE.md` is the first native contract. The runtime then adds current state and prompt-specific routing through `.claude/` hooks.
+
+Native sequence:
+```text
+CLAUDE.md
+  -> SessionStart live snapshot
+  -> UserPromptSubmit route/project/search packet
+  -> scoped rules + lazy skill
+  -> execute under Brain authority
+  -> tool guards
+  -> validator-backed stop gate for control-plane edits
+```
+
+Read [[00_System/Claude Code OS/Claude Code Native Runtime]]. Claude Code auto memory is disabled in this vault; durable learning stays in governed Memory OS.
+
+## Persistent Agentic Batch Execution
+When a project has an active `Agent Loop`, use [[00_System/Agentic Execution OS/Agentic Execution Operating System]] before ordinary queue execution. The active batch capsule becomes the smallest authoritative working packet.
+
+Native path:
+```text
+resolved project
+  -> Agent Loop/RUNTIME_STATE.json
+  -> Runtime/CURRENT_CONTEXT.md
+  -> execute current batch
+  -> machine verifier
+  -> evidence + handoff
+  -> fresh context for next batch
+  -> final goal gate
+```
+
+The Brain persists exact state, repo/file intelligence, edit events, failures, reports, and handoffs so later contexts do not rediscover the whole project.
 
 ## Universal startup protocol
 1. Read this file.
@@ -108,7 +142,9 @@ A task is not complete because text or code was produced. Completion requires th
 
 | When the destination is... | Go to... |
 |---|---|
+| Claude Code native operation | [[00_System/Claude Code OS/Claude Code Native Runtime]] |
 | choose exact route | [[00_System/Navigation OS/Road Sign Navigation System]] |
+| run/continue a multi-batch final-goal plan | [[00_System/Agentic Execution OS/Agentic Execution Operating System]] |
 | continue/finish project | [[00_System/AI Runtime/Project Agent Master Prompt]] |
 | make project production-ready | [[00_System/Production Readiness OS/Production Readiness Operating System]] |
 | source-heavy research | [[00_System/Knowledge Graph/Source-Backed Knowledge Protocol]] |
@@ -139,3 +175,23 @@ Before durable writes or real-project learning, use:
 - [[Query Planning Protocol]]
 
 Reality rule: imported project context helps navigation but never substitutes for repository/runtime evidence.
+
+## Project Council control plane
+When an active project has `20_Agent_Council/`, use it as the local specialist-agent operating surface after resolving the project and before broad standards.
+
+Council route:
+```text
+resolved project
+  -> current project packet
+  -> 20_Agent_Council/00_COUNCIL_HOME.md
+  -> selected specialist folders
+  -> real repository/runtime inspection
+  -> evidence-backed update
+```
+
+See [[00_System/Project Council OS/Project Council Operating System]].
+
+## Living Project Council v14
+For active project specialist work, route through `Project Council OS/Living Agent Learning OS.md`.
+
+The first specialist read is now the role's `NEXT_START.md`, followed by its owned cognitive stack. Meaningful failures enter the Failure Immunity Loop. Every active role leaves an exact restart pointer before stopping.

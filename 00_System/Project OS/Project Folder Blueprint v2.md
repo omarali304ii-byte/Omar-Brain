@@ -53,3 +53,27 @@ version: 3.0
 - a project-specific override requires an ADR,
 - production artifacts are mandatory control surfaces for software projects; they begin `NOT_ASSESSED`, not `READY`,
 - no ad-hoc folder invention without a demonstrated need.
+
+## Project Council addition
+Medium/large active software projects may include:
+
+```text
+├── 20_Agent_Council/                 # local specialist-agent operating surface
+│   ├── 00_COUNCIL_HOME.md
+│   ├── 01_OPERATING_LOOP.md
+│   ├── 02_AGENT_ROSTER.md
+│   ├── 03_ACTIVATION_MATRIX.md
+│   ├── 05_CURRENT_PROJECT_TRUTH.md
+│   ├── 07_ACTIVE_WORK_BOARD.md
+│   ├── 09_AGENT_FINDINGS_INDEX.md
+│   ├── Agents/
+│   ├── Control/
+│   ├── Runtime/
+│   ├── Runs/
+│   └── Evidence/
+```
+
+Use it when the project needs repeated specialist observation, audit, fixing, and documentation. Keep current files current; preserve long history only in Runs/Evidence.
+
+## v14 Living Project Council
+Software or long-running projects that benefit from specialist continuity may include `20_Agent_Council/` scaffolded by Project Council OS v2. Each role receives the full cognitive stack and runtime restart state. The council is current truth, not a project diary.

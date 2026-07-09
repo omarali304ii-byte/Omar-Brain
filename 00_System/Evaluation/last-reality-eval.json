@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T21:21:17.284Z",
+  "generated_at": "2026-07-09T12:39:51.928Z",
   "suite_id": "connected-reality-v2",
   "cases": 8,
   "passed": 8,
@@ -144,16 +144,16 @@
       "eval_id": "reality-empty-experience-cannot-score-high",
       "pass": true,
       "details": {
-        "score": 21.4,
-        "runs": 3,
-        "evidence": 9
+        "score": 30,
+        "runs": 6,
+        "evidence": 17
       }
     },
     {
       "eval_id": "reality-health-not-100-with-empty-experience",
       "pass": true,
       "details": {
-        "score": 37.1,
+        "score": 44.6,
         "interpretation": "connected brain accumulating real experience"
       }
     },

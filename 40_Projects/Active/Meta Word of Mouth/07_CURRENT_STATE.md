@@ -56,3 +56,8 @@ Local checkout verification on 2026-07-07:
 
 ## Truth boundary
 Any future AI must re-resolve current branch/revision and inspect changed files before treating this note as current code truth. Database-backed test claims require a confirmed disposable/local database; live Meta/OpenAI/deployment claims require separate runtime evidence. Do not call this project production-ready while the expanded production gate in `04_BAD_POINTS_AND_RISKS.md` remains open.
+
+## Project Council State
+A local Project Council has been added under `20_Agent_Council/` to coordinate Architecture, Data & Truth, Integration & Workflow, Logic & Performance, Product & UX, Runtime & Reliability, Quality Engineer, Project Observer, Toolsmith, Critic, and Memory Curator work.
+
+Current project-agent mission: close the P0 production gate with evidence before any production-ready claim.

@@ -43,3 +43,11 @@ This project is a **reference source, not a universal template**. Future project
 - Run: `run-mrb34rdn-eebbc7fd` - local static verification and safe database-test boundary
 - Evidence area: `40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/`
 - Run area: `40_Projects/Experience/prj-meta-word-of-mouth/80_Runs/`
+
+## Project Council
+Local specialist-agent operating surface: `20_Agent_Council/`.
+
+When using agents on this project, read `20_Agent_Council/00_COUNCIL_HOME.md` after the current state and execution queue. The council stores current agent rules, active findings, evidence requirements, and handoffs; long history stays in runs/evidence.
+
+## Living Agent Council v14
+`20_Agent_Council/` is now a persistent project-native team memory. Each role has a current domain model, owned surface map, learned rules, failure patterns, eval registry, unknowns and exact restart pointer. Agents should resume from their own `NEXT_START.md`, not rediscover the project from scratch.

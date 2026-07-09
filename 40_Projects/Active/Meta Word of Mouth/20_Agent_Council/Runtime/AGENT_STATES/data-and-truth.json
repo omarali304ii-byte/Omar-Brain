@@ -1,0 +1,12 @@
+{
+  "agent": "Data and Truth",
+  "status": "ready",
+  "last_verified_revision": "8c027fabf85fe46fa0395eb459c0289872fef491",
+  "freshness": "partial",
+  "active_finding_ids": [
+    "MWOM-DATA-001",
+    "MWOM-DATA-002",
+    "MWOM-DATA-003"
+  ],
+  "next_start": "Agents/Data and Truth/NEXT_START.md"
+}

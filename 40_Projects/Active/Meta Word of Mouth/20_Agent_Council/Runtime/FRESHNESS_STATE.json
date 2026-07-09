@@ -1,0 +1,22 @@
+{
+  "project_id": "prj-meta-word-of-mouth",
+  "stored_verified_revision": "8c027fabf85fe46fa0395eb459c0289872fef491",
+  "current_repo_revision": null,
+  "overall_status": "partial",
+  "last_reconciled_at": "2026-07-09",
+  "rule": "file modified time is not freshness; verify owned reality",
+  "agent_freshness": {
+    "Architecture": "partial",
+    "Data and Truth": "partial",
+    "Integration and Workflow": "partial",
+    "Logic and Performance": "partial",
+    "Product and UX": "partial",
+    "Runtime and Reliability": "partial",
+    "Quality Engineer": "partial",
+    "Supervisor": "partial",
+    "Project Observer": "partial",
+    "Toolsmith": "partial",
+    "Critic Verifier": "partial",
+    "Memory Curator": "partial"
+  }
+}

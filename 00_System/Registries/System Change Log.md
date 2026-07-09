@@ -58,3 +58,15 @@ ai_access: allowed
 - added real run/evidence capture and experience compiler,
 - added reality coverage and reality evals so empty experience can never score 100,
 - preserved v8 Skill Graph; no skill-count inflation was used as the upgrade strategy.
+
+## 2026-07-09 — v10 Claude Code native runtime hardening
+- added root `CLAUDE.md` as Claude Code's compact native front door,
+- added scoped `.claude/rules/` for Omar thinking, project execution, system change, durable memory, software truth, and completion discipline,
+- added six lazy Claude skills for startup, Omar decision kernel, project execution, production hardening, writeback, and Brain audit,
+- added four minimal native specialists: repo scout, architecture critic, independent critic verifier, and memory curator,
+- added SessionStart live state injection and UserPromptSubmit route/project/search injection,
+- added destructive shell and canonical write guards, session-local change tracking, and validator-backed Stop gate,
+- disabled Claude Code auto memory in this vault to prevent shadow-memory divergence,
+- added `route-claude-code`, Claude Code OS docs, and `check-claude-code-runtime.mjs`,
+- integrated Claude native runtime validation into the full `brain-cycle.mjs`,
+- change authority: Omar's explicit 2026-07-09 hardening request; final acceptance contingent on executed validation.

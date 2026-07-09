@@ -37,11 +37,23 @@ This v8 marketplace contains **61 active skills**. Imported is not mastered; eve
 | Strategy | [[50_Skills/Strategy/_Index|Strategy Skills]] | 3 |
 | Technical | [[50_Skills/Technical/_Index|Technical Skills]] | 12 |
 
+## External Claude Skill Library
+
+Omar Brain also contains **559 imported on-demand Claude skills** at `50_Skills/Claude Skill Library/`. They are **not** part of the 61-skill canonical active marketplace and are not preloaded.
+
+Use:
+
+- `/skill-find`, or
+- `node "00_System/Automation/external-skill-route.mjs" "." "<task request>"`
+
+External skills begin at `S0_DISCOVERED`, stay subordinate to Brain governance and repository truth, and require inspection before use. Maximum active external set: one primary plus at most two support skills.
+
 ## AI Road Signs
 
 | Need | Go to |
 |---|---|
-| choose a primary skill | `00_System/Automation/skill-route.mjs` |
+| choose a primary canonical skill | `00_System/Automation/skill-route.mjs` |
+| search 559 external skills lazily | `/skill-find` or `external-skill-route.mjs` |
 | inspect project stack and suggest technical skills | `00_System/Automation/skill-stack.mjs` |
 | see capability connections | `00_System/Skill OS/skill-graph.json` |
 | use a common multi-skill journey | `00_System/Skill OS/skill-bundles.json` |

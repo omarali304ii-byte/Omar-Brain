@@ -37,7 +37,8 @@ const routes = {
   research: ['00_System/Knowledge Graph/Source-Backed Knowledge Protocol.md','60_Knowledge/Knowledge HQ.md'],
   personal: ['10_Life/Life HQ.md'],
   skill: ['50_Skills/Skills HQ.md','00_System/Learning System/Lesson and Pattern Promotion Ladder.md'],
-  system: ['00_System/Brain Constitution.md','00_System/System Manifest.md','00_System/Governance/System Change Control.md']
+  system: ['00_System/Brain Constitution.md','00_System/System Manifest.md','00_System/Governance/System Change Control.md'],
+  claude: ['CLAUDE.md','00_System/Claude Code OS/Claude Code Native Runtime.md','00_System/Claude Code OS/Omar Thinking Execution Policy.md']
 };
 
 if (!routes[mode]) {

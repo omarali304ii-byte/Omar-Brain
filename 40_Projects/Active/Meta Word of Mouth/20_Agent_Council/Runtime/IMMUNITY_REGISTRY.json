@@ -1,0 +1,59 @@
+{
+  "version": "1.0",
+  "project_id": "prj-meta-word-of-mouth",
+  "patterns": [
+    {
+      "pattern_id": "INT-FP-001",
+      "status": "active",
+      "owner": "Integration and Workflow",
+      "eval_ids": [
+        "INT-EVAL-001"
+      ]
+    },
+    {
+      "pattern_id": "DATA-FP-001",
+      "status": "active",
+      "owner": "Data and Truth",
+      "eval_ids": [
+        "DATA-EVAL-001"
+      ]
+    },
+    {
+      "pattern_id": "DATA-FP-002",
+      "status": "active",
+      "owner": "Data and Truth / Logic and Performance",
+      "eval_ids": [
+        "DATA-EVAL-003",
+        "LOGIC-EVAL-001"
+      ]
+    },
+    {
+      "pattern_id": "RUN-FP-001",
+      "status": "active",
+      "owner": "Runtime and Reliability",
+      "eval_ids": [
+        "RUN-EVAL-001"
+      ]
+    },
+    {
+      "pattern_id": "UX-FP-001",
+      "status": "active",
+      "owner": "Product and UX",
+      "eval_ids": [
+        "UX-EVAL-001"
+      ]
+    },
+    {
+      "pattern_id": "QUAL-FP-001",
+      "status": "active",
+      "owner": "Quality Engineer",
+      "eval_ids": [
+        "QUAL-EVAL-001",
+        "QUAL-EVAL-002",
+        "QUAL-EVAL-003",
+        "QUAL-EVAL-004"
+      ]
+    }
+  ],
+  "claim": "registry tracks practical recurrence hardening; it does not guarantee impossibility of recurrence"
+}

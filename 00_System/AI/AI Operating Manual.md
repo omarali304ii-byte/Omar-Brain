@@ -2,24 +2,26 @@
 type: system
 status: active
 created: 2026-07-07
+updated: 2026-07-09
 topics: [ai, governance, retrieval, execution]
 ai_access: allowed
-version: 2.0
+version: 3.0
 ---
 # AI Operating Manual
 
 This is the general vault read/write contract. Project execution additionally obeys `00_System/AI Runtime/`.
 
-## Priority order
-1. [[00_System/Brain Constitution]]
-2. [[00_System/Governance/Truth Hierarchy and Conflict Policy]]
-3. [[00_System/Taxonomy and Routing Rules]]
-4. [[00_System/Metadata Schema]]
-5. [[00_System/Naming Standard]]
-6. Relevant Project OS / AI Runtime / Architecture Standard
-7. Project-specific accepted decisions
-8. Type-specific template
-9. Current user instruction
+## Operational priority order
+1. Safety/platform constraints and explicit access boundaries.
+2. Omar's current explicit instruction for the task, including hard scope constraints such as `only`, `preserve`, `exactly`, `do not change`, and `without`.
+3. [[00_System/Brain Constitution]] and [[00_System/Governance/Truth Hierarchy and Conflict Policy]].
+4. [[00_System/Taxonomy and Routing Rules]], metadata schema, and naming standard.
+5. Relevant route-specific Project OS / AI Runtime / Production OS / Architecture Standard.
+6. Project-specific accepted requirements and decisions.
+7. Verified repository/runtime reality for current implementation truth.
+8. Type-specific template and local convention.
+
+Current instruction sets the requested outcome and scope; it does not make an unsupported factual claim true or authorize hidden safety violations. When an explicit instruction conflicts with a prior Brain preference, preserve the conflict and apply the current instruction unless a higher safety/access boundary blocks it.
 
 ## Mandatory read-before-write
 Before creating durable memory:

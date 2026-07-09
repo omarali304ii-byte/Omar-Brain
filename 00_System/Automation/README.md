@@ -2,6 +2,7 @@
 type: system
 status: active
 created: 2026-07-07
+updated: 2026-07-09
 topics: [automation, validation, scaffold]
 ai_access: allowed
 ---
@@ -153,3 +154,14 @@ node .\00_System\Automation\eval-project-experience.mjs .
 ```
 
 Important: imported project manifests are navigation bootstrap only and use `context-import-needs-repo-check`. They do not count as verified evidence.
+
+## Claude Code v10 runtime
+
+```powershell
+# Verify native CLAUDE.md, scoped rules/skills/agents, hook syntax, route injection,
+# destructive command guard, overwrite guard, and shadow-memory boundary
+node .\00_System\Automation\check-claude-code-runtime.mjs .
+```
+
+The full Brain cycle runs this check first. Claude Code auto memory is intentionally disabled for this vault; durable learning uses governed Brain writeback.
+
