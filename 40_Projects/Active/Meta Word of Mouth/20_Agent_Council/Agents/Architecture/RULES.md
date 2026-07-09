@@ -4,6 +4,9 @@
 - Outbound provider send state must not be hidden inside generic message status only.
 - Do not split modules for aesthetics; split only where ownership or failure boundary requires it.
 - Preserve the strong ingest -> enqueue -> worker architecture unless repo evidence proves drift.
+- Routes must delegate to owned service/workflow boundaries, not duplicate orchestration logic.
+- New subsystem boundaries must preserve route/service/repository layer separation.
+
 ## v14 operating rules
 - Verify current revision before treating stored claims as current.
 - Apply learned-rule triggers before broad exploration.

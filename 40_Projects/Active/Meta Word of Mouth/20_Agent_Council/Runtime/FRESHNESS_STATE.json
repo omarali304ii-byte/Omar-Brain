@@ -1,12 +1,12 @@
 {
   "project_id": "prj-meta-word-of-mouth",
-  "stored_verified_revision": "8c027fabf85fe46fa0395eb459c0289872fef491",
-  "current_repo_revision": null,
-  "overall_status": "partial",
+  "stored_verified_revision": "bd8a7a6286e3df35b1c69439eb583061bc264aa7",
+  "current_repo_revision": "bd8a7a6286e3df35b1c69439eb583061bc264aa7",
+  "overall_status": "current",
   "last_reconciled_at": "2026-07-09",
   "rule": "file modified time is not freshness; verify owned reality",
   "agent_freshness": {
-    "Architecture": "partial",
+    "Architecture": "current",
     "Data and Truth": "partial",
     "Integration and Workflow": "partial",
     "Logic and Performance": "partial",
