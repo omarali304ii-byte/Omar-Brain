@@ -6,7 +6,7 @@ last_verified_revision: bd8a7a6286e3df35b1c69439eb583061bc264aa7
 summary: Architecture correction pass completed at bd8a7a6. 2 active findings (ARCH-001, ARCH-003),
   1 dormant watch trigger (ARCH-WATCH-001), 3 stale P0 findings reclassified as
   likely-fixed-pending-owner-proof, council truth contradictions resolved.
-next_action: follow NEXT_START.md -> finalize MWOM-ARCH-001 acceptance contract
+next_action: follow NEXT_START.md -> submit MWOM-ARCH-001 acceptance contract to Supervisor for review
 required_context:
   - DOMAIN_MODEL.md
   - OWNED_SURFACE_MAP.md
@@ -22,9 +22,11 @@ from: Architecture
 to: Supervisor
 finding_ids: [MWOM-ARCH-001]
 claim: Architecture acceptance contract for single outbound messaging orchestration
-  ownership is ready. Route must delegate to sendConversationMessage.
+  ownership is ready for Supervisor review. Route must delegate to sendConversationMessage.
+  Boundary, sub-risks, and proof requirements are documented in CURRENT_FINDINGS.md.
   Toolsmith is default implementer per Project Council law.
-required_action: approve/prioritize MWOM-ARCH-001 implementation batch
+required_action: review and approve/prioritize MWOM-ARCH-001 implementation batch
+acceptance_contract_state: ready-for-supervisor-review
 ```
 
 ### Toolsmith

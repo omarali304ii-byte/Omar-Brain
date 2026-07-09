@@ -26,18 +26,19 @@ open_unknowns:
   - AI Brain prompt utilization in AI suggestions
 
 first_action: >
-  Review the MWOM-ARCH-001 acceptance contract and current handoff status.
-  If Toolsmith has not implemented the approved boundary, do NOT edit application code.
-  Architecture defines boundary + acceptance contract; Supervisor approves;
-  Toolsmith implements; Architecture verifies structure after implementation.
-  If implementation exists, verify: route no longer imports meta-send-client or
-  meta-send-token, route delegates to single canonical messaging workflow,
+  Submit MWOM-ARCH-001 acceptance contract (state: ready-for-supervisor-review)
+  to Supervisor for review and approval. Contract boundary, sub-risks, and proof
+  requirements are documented in CURRENT_FINDINGS.md and HANDOFF.md.
+  Do NOT edit application code. Architecture defines boundary + acceptance contract;
+  Supervisor approves; Toolsmith implements; Architecture verifies structure after.
+  If implementation already exists, verify: route no longer imports meta-send-client
+  or meta-send-token, route delegates to single canonical messaging workflow,
   reconciliation semantics preserved, AI feedback attribution correct.
   Do not change ARCH-EVAL-007 to passed without verified implementation and tests.
 
 do_not_repeat:
   - broad repository rediscovery before checking NEXT_START and OWNED_SURFACE_MAP
-  - claiming CI execution without evidence (no GitHub Actions workflow exists)
+  - claiming CI execution without verifying actual run/status evidence (workflow exists but execution unproven)
   - calling partial inspection "full live-project inspection"
   - closing cross-agent findings from static Architecture inspection alone
   - assigning application implementation to Architecture
@@ -65,7 +66,7 @@ correction_scope:
   - council truth contradictions resolved
   - 3 stale P0 findings reclassified as likely-fixed-pending-owner-proof
   - AI Brain layer model corrected (knowledge-specific repo abstraction, direct Prisma in profile/prompt)
-  - CI evidence language corrected (no GitHub Actions workflow found)
+  - CI evidence language corrected (workflow confirmed to exist; execution unproven)
   - full inspection overclaim removed
   - provider adapter drift reclassified as partially-resolved
   - Architecture ownership boundary restored

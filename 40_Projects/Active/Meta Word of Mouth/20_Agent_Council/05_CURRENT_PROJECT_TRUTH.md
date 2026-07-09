@@ -2,7 +2,7 @@
 type: current-truth
 status: active
 created: 2026-07-09
-updated: 2026-07-09
+updated: 2026-07-10
 ai_access: allowed
 project_id: prj-meta-word-of-mouth
 verification_state: repo-verified-static
@@ -11,76 +11,71 @@ repo_revision: bd8a7a6286e3df35b1c69439eb583061bc264aa7
 # Current Project Truth
 
 ## Current verified basis
-Brain currently knows this project from bounded Architecture scope inspection and static verification at revision `bd8a7a6286e3df35b1c69439eb583061bc264aa7`. Scope: Architecture-owned surfaces, AI Brain subsystem, intelligence worker changes, messaging/reconciliation boundary, schema-impacting drift, and architecture-sensitive tests. Frontend components, Instagram publishing workflow, CI/CD deployment config, and non-architecture test details were not inspected.
-
-Before any new coding claim, re-inspect the actual repository branch/revision.
+Brain currently knows this project from Architecture scope inspection, Data & Truth full data truth reconciliation, and Integration & Workflow full integration-surface audit at revision `bd8a7a6286e3df35b1c69439eb583061bc264aa7`.
 
 ## Verified current architecture truth
 - Meta webhook ingestion verifies raw-byte signature per profile (Social/WhatsApp) before parsing.
-- Webhook handling is designed to ingest/store/enqueue and avoid direct OpenAI calls.
-- Intelligence worker uses bounded context, strict AI JSON validation (json_schema strict mode),
-  evidence-linked persistence, source-order tiebreaking for concurrency, and downstream opportunity refresh.
-- Stale intelligence lock recovery is wired into worker startup + periodic ticks (resolved at 9a6b2f2).
-- Intelligence snapshot updates use FOR UPDATE locking on job, person, and snapshot rows,
-  plus deterministic source-order comparison to reject stale concurrent updates.
-- Outbound messaging has explicit three-outcome model (SENT/FAILED/RECONCILIATION_REQUIRED)
-  with reconciliation worker for stale SENDING recovery and human reconciliation flow.
+- Intelligence worker uses bounded context, strict AI JSON validation (json_schema strict mode), evidence-linked persistence, source-order tiebreaking for concurrency, and downstream opportunity refresh.
+- Intelligence snapshot updates use FOR UPDATE locking on job, person, and snapshot rows plus deterministic source-order comparison (observedAt → createdAt → messageId) to reject stale concurrent updates. **Verified fixed by Data & Truth** (MWOM-DATA-003 closed).
+- Stale intelligence lock recovery is wired into worker startup + periodic ticks.
+- Outbound messaging has explicit three-outcome model (SENT/FAILED/RECONCILIATION_REQUIRED) with reconciliation worker for stale SENDING recovery and human reconciliation flow.
 - Outbound send route currently duplicates the dedicated sendConversationMessage workflow (MWOM-ARCH-001).
-- AI Brain is a coherent bounded subsystem. Routes are thin (auth + validation + domain delegation).
-  Domain modules (brain-profile, prompt-versions, domains) access Prisma directly; knowledge access
-  uses a dedicated repository abstraction (KnowledgeRepository -> pgvector). Not all modules share
-  a single repository layer.
-- AI Brain prompt lifecycle: DRAFT -> PUBLISHED -> SUPERSEDED with FOR UPDATE locking.
-- AI Brain test lab endpoint is a deliberate placeholder, permission-gated, returning controlled response.
-- `src/services/ai-brain.service.ts` is a frontend HTTP client wrapper, not a backend application service.
-- Multi-tenant workspace/permission discipline exists with AI Brain permissions added (view/manage/test_ai_brain).
-- Leads routes conditionally gate intelligence evidence behind view_intelligence permission at query time.
-- 37 test scripts are defined in package.json. No GitHub Actions CI workflow file exists on disk.
-  Test execution evidence is per-script and must be stated explicitly; do not infer CI execution
-  from script existence.
+- AI Brain is a coherent bounded subsystem with DB-enforced one-published-prompt-per-brain partial unique index and FOR UPDATE locking on prompt publication.
+- Multi-tenant workspace/permission discipline exists with AI Brain permissions added.
+- Leads routes conditionally gate intelligence evidence behind view_intelligence permission at both query and DTO layers. **Verified fixed by Data & Truth** (MWOM-DATA-001 closed).
+- Provider-ID privacy is centralized via `resolveProviderIdDisplay()`. All 6 API routes consistently call `canExposeProviderId()` and pass to DTO mappers. People search only exposes providerCustomerId in queries when permitted. **Verified fixed by Data & Truth** (MWOM-DATA-002 closed).
 
 ## Current project status
 ```text
 Feature maturity: strong MVP/advanced internal platform
-Static verification: Architecture-owned surfaces verified by code inspection at bd8a7a6
-CI execution: not proven (no GitHub Actions workflow found)
+Static verification: Architecture + Data & Truth surfaces verified by code inspection at bd8a7a6
+CI workflow: exists (`.github/workflows/verify.yml`, 34+ steps); execution status at bd8a7a6 not verified
 Runtime verification: not proven
 Production readiness: blocked
 Primary work: close verified active P0/P1 blockers + resolve MWOM-ARCH-001
+P0 Data findings: all three (MWOM-DATA-001/002/003) closed from static verification; Quality Engineer evals pending
 ```
 
-## Current active blockers
-Confirmed active at bd8a7a6 by Architecture code inspection:
-- P0: Meta outbound send uncertainty model (MWOM-INT-001) — active, requires Integration verification
+## Current active blockers (P0/P1)
+- P0: Meta outbound send uncertainty model (MWOM-INT-001) — confirmed active with controls; Integration verified at bd8a7a6; transport exceptions collapsed to FAILED cannot distinguish "Meta accepted" from "never reached Meta"; Toolsmith implementation needed
 - P0: Stale intelligence recovery code exists but production deployment unverified (MWOM-RUN-001)
-- P0: Provider-ID privacy inconsistent (MWOM-DATA-002) — active, requires Data & Truth verification
+- P1: All Meta fetch() calls lack timeout configuration (MWOM-INT-002) — new finding; Integration verified at bd8a7a6
 - P1: CI/test suite does not prove all production gate blockers (MWOM-QUAL-001)
 - P1: Local reproducibility/deployment/observability proof incomplete (MWOM-RUN-002)
+- P1: Outbound send route duplicates workflow (MWOM-ARCH-001) — Integration provider-semantics acceptance contract defined
 
-## Likely fixed — pending owner revalidation
-Code at bd8a7a6 appears to gate intelligence evidence, but owning agents must confirm:
+## Data & Truth findings
+**Closed at bd8a7a6** (static confirmation, Quality Engineer execution pending):
+- MWOM-DATA-001: Leads evidence gated behind view_intelligence
+- MWOM-DATA-002: Provider-ID privacy centralized
+- MWOM-DATA-003: Snapshot concurrency materially fixed
 
-- **MWOM-DATA-001** (old P0): Leads routes conditionally include evidence only when `hasPermission("view_intelligence")` is true, at both query time (Prisma include) and DTO level. Architecture cannot close this alone — Data & Truth and Quality Engineer must revalidate.
-  - Evidence: `app/api/leads/route.ts:48` (`evidence: exposeIntelligence ? {...} : false`), `app/api/leads/[id]/route.ts:31` (same pattern)
-  - Status: likely-fixed-pending-data-logic-quality-proof
+**Open (lower severity):**
+- MWOM-DATA-004 (P3): Conservative ordering fallback for pre-migration snapshots (self-healing)
+- MWOM-DATA-005 (P2): pgvector extension runtime prerequisite not enforced
 
-- **MWOM-UX-001** (old P0): AI suggestion feedback route rejects USED_AS_IS / EDITED_BEFORE_SEND with 409 ("recorded only after a successful message send"). Server-side feedback recording occurs only after successful send in the inbox messages route. Architecture cannot close UX/Quality claims from static inspection.
-  - Evidence: `app/api/ai/suggestions/[id]/feedback/route.ts:39-49` (explicit rejection), `app/api/inbox/conversations/[id]/messages/route.ts:394-403` (post-send recording)
-  - Status: likely-fixed-pending-product-and-quality-proof
+## Integration & Workflow findings
+**Active at bd8a7a6:**
+- MWOM-INT-001 (P0): Transport exception (fetch() catch) collapsed to META_SEND_FAILED → local FAILED. Cannot distinguish "Meta never received" (safe to retry) from "Meta accepted but response lost" (dangerous to retry). Controls exist (RECONCILIATION_REQUIRED, stale SENDING recovery, no auto-retry) but gap remains at the error-classification layer. Integration verified at bd8a7a6.
+- MWOM-INT-002 (P1): All Meta API fetch() calls lack timeout configuration. Only backstop is 5-minute stale SENDING recovery for outbound sends. Other Meta calls (inbox sync, publishing, OAuth) have no bound. Integration verified at bd8a7a6.
 
-- **MWOM-DATA-003** (old P0): Intelligence snapshot updates use FOR UPDATE locking on job, person, and snapshot within a single transaction. Source-order comparison rejects stale concurrent updates. Deterministic tiebreaking (observedAt -> createdAt -> messageId). Concurrency protections are materially stronger than the original race model describes.
-  - Evidence: `src/lib/intelligence/customer-intelligence.ts:571-710` ($transaction with FOR UPDATE, source-order gate)
-  - Status: likely-fixed-pending-data-logic-quality-proof
+**Integration referenced (not owned):**
+- MWOM-ARCH-001 (P1): Provider-semantics acceptance contract defined by Integration. Route must delegate to sendConversationMessage while preserving three-outcome model, error mapping, reconciliation marking, and AI feedback recording.
 
-## Partially resolved
-- Provider adapter drift: Code-level multi-profile Meta config is reconciled. Deployed production adapter topology remains unknown. Status: partially-resolved, pending Runtime & Reliability deployment verification.
+**Integration cataloged (proven at bd8a7a6):**
+- 9 cross-boundary workflows documented (webhook ingestion, 2 send paths, reconciliation, intelligence processing, AI suggestions, Instagram publishing, inbox sync, OAuth connection)
+- 4 external systems registered (Meta, OpenAI, Supabase, local media)
+- Retry taxonomy covers all failure classes across 6 operation types
+- Idempotency registry covers 6 deduplication mechanisms
+- 6 cross-agent handoffs created (Architecture, Toolsmith, Runtime, Quality, Data, Logic)
 
 ## Runtime unknown
 - Production deployment topology (workers, reconciliation, scheduler)
-- Whether outbound-send-reconciliation-worker is deployed and running in production
+- Whether outbound-send-reconciliation-worker is deployed and running
 - AI Brain knowledge ingestion pipeline implementation
-- AI Brain prompt utilization in AI suggestions (whether published prompts are injected)
+- AI Brain prompt utilization in AI suggestions
+- pgvector availability on production database
+- Migration-applied state on production database
 
 ## Documentation rule
-This file must stay current. When blockers are fixed and proven, update the summary
-and link evidence instead of leaving old risk text as active truth.
+This file must stay current. When blockers are fixed and proven, update the summary and link evidence.

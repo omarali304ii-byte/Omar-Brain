@@ -62,8 +62,8 @@ implementation_owner:
   Toolsmith (after Supervisor approval). Architecture defines boundary and acceptance contract.
 
 recommended_action:
-  Architecture: finalize acceptance contract -> handoff to Supervisor/Toolsmith.
-  Toolsmith: refactor route POST to delegate to sendConversationMessage.
+  Architecture: submit acceptance contract to Supervisor for review (state: ready-for-supervisor-review).
+  Toolsmith: refactor route POST to delegate to sendConversationMessage (after Supervisor approval).
   Integration & Workflow: verify Meta provider semantics preserved.
   Quality Engineer: regression matrix.
 

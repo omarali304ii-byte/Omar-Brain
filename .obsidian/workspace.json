@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "22a498c258ba21a3",
+        "id": "f5c6ce48b50a6778",
         "type": "tabs",
         "children": [
           {
-            "id": "21677a221af2d503",
+            "id": "287ab40b0cb2292a",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -70,8 +70,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -192,8 +191,19 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "21677a221af2d503",
+  "active": "287ab40b0cb2292a",
   "lastOpenFiles": [
+    "40_Projects/Active/Meta Word of Mouth/08_EXECUTION_QUEUE.md",
+    "40_Projects/Active/Meta Word of Mouth/20_Agent_Council/Agents/Integration and Workflow/RETRY_IDEMPOTENCY_MODEL.md",
+    "40_Projects/Active/Meta Word of Mouth/20_Agent_Council/Agents/Integration and Workflow/EXTERNAL_SYSTEM_REGISTRY.md",
+    "40_Projects/Active/Meta Word of Mouth/20_Agent_Council/Agents/Integration and Workflow/WORKFLOW_CATALOG.md",
+    "40_Projects/Active/Meta Word of Mouth/06_TRANSFER_CANDIDATES.md",
+    "40_Projects/Active/Meta Word of Mouth/05_FUTURE_PATH.md",
+    "40_Projects/Active/Meta Word of Mouth/04_BAD_POINTS_AND_RISKS.md",
+    "40_Projects/Active/Meta Word of Mouth/03_GOOD_POINTS.md",
+    "40_Projects/Active/Meta Word of Mouth/02_ARCHITECTURE.md",
+    "40_Projects/Active/Meta Word of Mouth/01_CONTEXT.md",
+    "40_Projects/Active/Meta Word of Mouth/00_PROJECT_HOME.md",
     "00_System/Skill OS/Skill Maturity Ladder.md",
     "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-08-production-hardening-branch-state-7ccdd1c8.md",
     "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-08-local-static-gates-passed-16c05fc6.md",
@@ -204,16 +214,9 @@
     "50_Skills/Analytics/ab-test-analysis.md",
     "15_Ideas/Ideas HQ.md",
     "15_Ideas/Incubator/_Index.md",
-    "40_Projects/Active/Meta Word of Mouth/06_TRANSFER_CANDIDATES.md",
-    "40_Projects/Active/Meta Word of Mouth/03_GOOD_POINTS.md",
-    "40_Projects/Active/Meta Word of Mouth/02_ARCHITECTURE.md",
-    "40_Projects/Active/Meta Word of Mouth/00_PROJECT_HOME.md",
-    "40_Projects/Active/Meta Word of Mouth/05_FUTURE_PATH.md",
     "40_Projects/Active/Meta Word of Mouth/07_CURRENT_STATE.md",
     "40_Projects/Active/Meta Word of Mouth/11_REFERENCE_SCORECARD.md",
     "40_Projects/Active/Meta Word of Mouth/10_EVIDENCE_MATRIX.md",
-    "40_Projects/Active/Meta Word of Mouth/08_EXECUTION_QUEUE.md",
-    "40_Projects/Active/Meta Word of Mouth/01_CONTEXT.md",
     "00_System/Evaluation/last-project-experience-eval.json",
     "00_System/Automation/check-experience-graph.mjs",
     "00_System/Automation/check-impact-queue.mjs",
@@ -225,10 +228,6 @@
     "00_System/Automation/impact-process.mjs",
     "00_System/Automation/check-learning-quality.mjs",
     "00_System/Automation/experience-compile.mjs",
-    "40_Projects/Active/Meta Word of Mouth/09_REPO_MAP.md",
-    "40_Projects/Active/Meta Word of Mouth/04_BAD_POINTS_AND_RISKS.md",
-    "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-database-backed-tests-intentionally-skipped-against-remote-supabase-url-27ac41ce.md",
-    "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-safe-static-verification-commands-passed-224ef696.md",
-    "40_Projects/Experience/prj-meta-word-of-mouth/70_Evidence/2026-07-07-local-clean-checkout-revision-snapshot-ee53c349.md"
+    "40_Projects/Active/Meta Word of Mouth/09_REPO_MAP.md"
   ]
 }

@@ -3,11 +3,11 @@
   "stored_verified_revision": "bd8a7a6286e3df35b1c69439eb583061bc264aa7",
   "current_repo_revision": "bd8a7a6286e3df35b1c69439eb583061bc264aa7",
   "overall_status": "current",
-  "last_reconciled_at": "2026-07-09",
+  "last_reconciled_at": "2026-07-10",
   "rule": "file modified time is not freshness; verify owned reality",
   "agent_freshness": {
     "Architecture": "current",
-    "Data and Truth": "partial",
+    "Data and Truth": "current",
     "Integration and Workflow": "partial",
     "Logic and Performance": "partial",
     "Product and UX": "partial",

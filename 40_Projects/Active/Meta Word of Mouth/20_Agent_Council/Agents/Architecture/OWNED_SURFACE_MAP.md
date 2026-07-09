@@ -78,7 +78,8 @@ completeness: verified_from_bounded_architecture_inspection
 | `scripts/test-ai-suggestion-feedback.ts` | AI suggestion feedback recording tests |
 | `scripts/test-lead-permissions.ts` | Lead route permission tests |
 | `scripts/test-lead-provider-id-permissions.ts` | Lead provider-ID privacy tests |
-| `package.json` (test:* scripts) | 37 test script definitions; no GitHub Actions CI workflow found |
+| `package.json` (test:* scripts) | 37 test script definitions |
+| `.github/workflows/verify.yml` | GitHub Actions Verify pipeline (34+ steps, pgvector PostgreSQL); execution status not verified |
 
 ## Route architecture-sensitive routes
 | Path | Risk |

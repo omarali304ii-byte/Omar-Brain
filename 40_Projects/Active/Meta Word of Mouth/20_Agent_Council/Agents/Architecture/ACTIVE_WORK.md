@@ -5,7 +5,8 @@ status: active
 active_finding_ids:
   - MWOM-ARCH-001
   - MWOM-ARCH-003
-current_objective: finalize MWOM-ARCH-001 target boundary and implementation acceptance contract
+current_objective: submit MWOM-ARCH-001 acceptance contract to Supervisor for review
+acceptance_contract_state: ready-for-supervisor-review
 last_verified_revision: bd8a7a6286e3df35b1c69439eb583061bc264aa7
 
 architecture_deliverables:
@@ -25,8 +26,9 @@ verifying_agents:
   - Architecture — route no longer imports provider adapters, single workflow ownership
 
 next_deliverable: >
-  Architecture: finalize acceptance contract for MWOM-ARCH-001.
-  Submit implementation handoff to Supervisor/Toolsmith.
+  Submit MWOM-ARCH-001 acceptance contract to Supervisor for review.
+  Contract is documented in CURRENT_FINDINGS.md (desired boundary, sub-risks, proof requirements)
+  and HANDOFF.md (verifying agents, per-agent proof list).
   Do not edit application code.
 
 next_handoff:

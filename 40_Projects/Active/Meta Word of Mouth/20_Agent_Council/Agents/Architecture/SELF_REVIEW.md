@@ -17,7 +17,7 @@ stale P0 finding reconciliation, CI evidence audit. NOT a full project inspectio
 - [x] Permissions with new AI Brain permissions inspected
 - [x] Schema changes (3 migrations, major expansion) inspected
 - [x] Stale P0 findings (MWOM-DATA-001, UX-001, DATA-003) reconciled against live code
-- [x] CI evidence audited (no GitHub Actions workflow found; 37 test scripts in package.json)
+- [x] CI evidence audited (workflow `.github/workflows/verify.yml` exists with 34+ steps; execution status not verified)
 - [x] Multi-profile Meta adapter configuration verified
 - [x] Source ordering (deterministic concurrency tiebreak) verified
 
@@ -46,13 +46,13 @@ stale P0 finding reconciliation, CI evidence audit. NOT a full project inspectio
 - ARCH-EVAL-006: passed-static (DRAFT/PUBLISHED/SUPERSEDED lifecycle + FOR UPDATE)
 - ARCH-EVAL-007: failed (route bypasses sendConversationMessage — MWOM-ARCH-001)
 - Deployed runtime behavior is not proven from static evidence alone
-- No GitHub Actions CI workflow exists; CI execution evidence is absent
+- GitHub Actions CI workflow exists (`.github/workflows/verify.yml`, 34+ steps); execution status at bd8a7a6 not verified
 
 ## Potential blind spots
 - AI Brain signal prompt injection may have no runtime effect on AI suggestions yet (not traced)
 - Reconciliation worker requires runtime deployment verification
 - pgvector extension requires PostgreSQL infrastructure
-- 37 test scripts exist but none have documented CI execution — local run evidence only
+- 37 test scripts exist and are referenced in the GitHub Actions workflow; CI execution status not verified
 
 ## Self-check before completion
 - [x] Did I start from NEXT_START rather than rediscovering the whole project?

@@ -1,12 +1,24 @@
 {
   "agent": "Data and Truth",
   "status": "ready",
-  "last_verified_revision": "8c027fabf85fe46fa0395eb459c0289872fef491",
-  "freshness": "partial",
+  "last_verified_revision": "bd8a7a6286e3df35b1c69439eb583061bc264aa7",
+  "last_verified_at": "2026-07-10",
+  "freshness": "current_for_verified_scope",
   "active_finding_ids": [
+    "MWOM-DATA-004",
+    "MWOM-DATA-005"
+  ],
+  "closed_finding_ids": [
     "MWOM-DATA-001",
     "MWOM-DATA-002",
     "MWOM-DATA-003"
   ],
-  "next_start": "Agents/Data and Truth/NEXT_START.md"
+  "next_start": "Agents/Data and Truth/NEXT_START.md",
+  "pending_handoffs": [
+    "Quality Engineer: DATA-EVAL-001/002/003 execution",
+    "Runtime & Reliability: MWOM-DATA-005 pgvector docs",
+    "Logic & Performance: DATA-EVAL-003 concurrency test",
+    "Architecture: MWOM-DATA-004 low-risk note"
+  ],
+  "verification_scope": "full static schema + migration + code surface inspection at bd8a7a6"
 }

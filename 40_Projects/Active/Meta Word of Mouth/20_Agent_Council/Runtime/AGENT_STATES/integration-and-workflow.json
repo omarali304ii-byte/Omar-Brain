@@ -1,10 +1,27 @@
 {
   "agent": "Integration and Workflow",
-  "status": "ready",
-  "last_verified_revision": "8c027fabf85fe46fa0395eb459c0289872fef491",
-  "freshness": "partial",
-  "active_finding_ids": [
-    "MWOM-INT-001"
+  "status": "active",
+  "last_verified_revision": "bd8a7a6286e3df35b1c69439eb583061bc264aa7",
+  "verified_at": "2026-07-10",
+  "freshness": "current_for_verified_scope",
+  "verification_scope": "full-integration-surface",
+  "active_finding_ids": ["MWOM-INT-001", "MWOM-INT-002"],
+  "next_start": "Agents/Integration and Workflow/NEXT_START.md",
+  "cognitive_stack": [
+    "DOMAIN_MODEL.md",
+    "WORKFLOW_CATALOG.md",
+    "EXTERNAL_SYSTEM_REGISTRY.md",
+    "RETRY_IDEMPOTENCY_MODEL.md",
+    "CURRENT_FINDINGS.md",
+    "HANDOFF.md",
+    "EVAL_REGISTRY.md"
   ],
-  "next_start": "Agents/Integration and Workflow/NEXT_START.md"
+  "handoffs_pending": [
+    "Architecture: MWOM-ARCH-001 provider-semantics contract",
+    "Toolsmith: MWOM-INT-001 transport classification",
+    "Runtime & Reliability: worker deployment verification",
+    "Quality Engineer: INT-EVAL-001 design, test gaps",
+    "Data & Truth: audit log dedup, send idempotency",
+    "Logic & Performance: webhook throughput, sync latency"
+  ]
 }
