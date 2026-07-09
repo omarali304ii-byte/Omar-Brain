@@ -1,18 +1,23 @@
 # Architecture Self Review
 
 ## Inspection scope
-- [x] Full live-project architecture inspection at revision bd8a7a6
+Scope: Architecture-owned surfaces, AI Brain subsystem, intelligence worker changes,
+messaging/reconciliation boundary, schema-impacting drift, architecture-sensitive tests,
+stale P0 finding reconciliation, CI evidence audit. NOT a full project inspection.
+
 - [x] Git drift analysis from stored Brain revision (8c027fa -> bd8a7a6)
-- [x] All 7 new AI Brain routes inspected
+- [x] All 7 AI Brain routes inspected (confirmed thin: auth + validation + delegation)
 - [x] AI Brain domain modules (brain-profile, prompt-versions, domains, repositories) inspected
 - [x] Messaging send/reconciliation architecture inspected
 - [x] Intelligence worker with stale recovery wiring inspected
 - [x] Inbox messages route (send orchestration hotspot) inspected
 - [x] Leads routes inspected for intelligence evidence gating
+- [x] AI suggestion feedback route inspected for pre-send usage rejection
+- [x] Intelligence snapshot concurrency mechanisms inspected (FOR UPDATE locking, source-order)
 - [x] Permissions with new AI Brain permissions inspected
 - [x] Schema changes (3 migrations, major expansion) inspected
-- [x] CI pipeline test coverage verified
-- [x] 8 architecture-sensitive test scripts inspected
+- [x] Stale P0 findings (MWOM-DATA-001, UX-001, DATA-003) reconciled against live code
+- [x] CI evidence audited (no GitHub Actions workflow found; 37 test scripts in package.json)
 - [x] Multi-profile Meta adapter configuration verified
 - [x] Source ordering (deterministic concurrency tiebreak) verified
 
@@ -28,20 +33,26 @@
 - [ ] Non-architecture test implementation details
 
 ## What remains unknown
-- Runtime production deployment topology
+- Runtime production deployment topology (workers, reconciliation, scheduler)
 - Whether reconciliation worker is deployed in production
 - AI Brain knowledge ingestion implementation status
+- Deployed provider adapter topology (code topology is reconciled; deployment unknown)
 
 ## Conclusions based on static evidence
-- All architecture invariants verified by static code inspection
-- ARCH-EVAL-003, 004, 005, 006 passed with static + CI test evidence
-- ARCH-EVAL-007 failed due to route bypassing dedicated send workflow
+- Architecture invariants verified for owned surfaces by static code inspection at bd8a7a6
+- ARCH-EVAL-003: passed-static (all AI Brain routes thin; no Prisma in routes; no AI in routes)
+- ARCH-EVAL-004: passed-static (code wiring verified; production execution unproven)
+- ARCH-EVAL-005: passed-static (reconciliation lifecycle structure exists; production unproven)
+- ARCH-EVAL-006: passed-static (DRAFT/PUBLISHED/SUPERSEDED lifecycle + FOR UPDATE)
+- ARCH-EVAL-007: failed (route bypasses sendConversationMessage — MWOM-ARCH-001)
 - Deployed runtime behavior is not proven from static evidence alone
+- No GitHub Actions CI workflow exists; CI execution evidence is absent
 
 ## Potential blind spots
-- AI Brain may have no runtime effect on AI suggestions yet (prompt injection not traced)
+- AI Brain signal prompt injection may have no runtime effect on AI suggestions yet (not traced)
 - Reconciliation worker requires runtime deployment verification
 - pgvector extension requires PostgreSQL infrastructure
+- 37 test scripts exist but none have documented CI execution — local run evidence only
 
 ## Self-check before completion
 - [x] Did I start from NEXT_START rather than rediscovering the whole project?

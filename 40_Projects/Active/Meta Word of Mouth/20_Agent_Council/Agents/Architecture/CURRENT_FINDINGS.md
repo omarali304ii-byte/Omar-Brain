@@ -2,7 +2,7 @@
 
 ```yaml
 last_verified_revision: bd8a7a6286e3df35b1c69439eb583061bc264aa7
-freshness: current
+freshness: current_for_verified_scope
 rule: re-inspect current repo before closing or adding live claims
 ```
 
@@ -20,74 +20,58 @@ affected_surfaces:
   - src/lib/messaging/send-message.ts
 current_revision: bd8a7a6286e3df35b1c69439eb583061bc264aa7
 evidence:
-  - Route POST handler (line 298-448) creates SENDING message, calls sendMetaTextMessage directly,
-    then does transaction-based finalization or reconciliation marking
-  - sendConversationMessage (send-message.ts, line 59-202) provides identical orchestration
-    with cleaner outcome model (SENT/FAILED/RECONCILIATION_REQUIRED)
-  - Route also handles AI feedback recording inline (line 394-404)
-  - Route is 450 lines, containing transport + provider + persistence + reconciliation + AI feedback
+  Route POST handler (lines 189-450):
+  - Imports sendMetaTextMessage directly from meta-send-client (line 10)
+  - Imports resolveMetaSendToken directly (line 11)
+  - Creates SENDING message (lines 297-311)
+  - Calls sendMetaTextMessage directly (lines 313-355)
+  - Handles transaction-based finalization inline (lines 357-449)
+  - Records AI suggestion feedback inline after send (lines 394-404)
+  - Marks RECONCILIATION_REQUIRED inline (lines 407-449)
+
+  sendConversationMessage (send-message.ts, lines 59-202) provides the same orchestration
+  with a cleaner outcome model (SENT/FAILED/RECONCILIATION_REQUIRED) and injectable deps.
+
 architecture_problem:
   Duplicated send orchestration. The route implements the same logic that the dedicated
-  send-message.ts module already encapsulates. Route contains cross-domain coordination
-  that belongs in a service layer.
+  send-message.ts module already encapsulates. Route directly imports Meta provider adapters.
+
+sub_risks (supersedes MWOM-ARCH-002):
+  - Route directly owns provider interaction (imports meta-send-client, meta-send-token)
+  - Route directly owns reconciliation marking (inline try/catch for RECONCILIATION_REQUIRED)
+  - Route directly coordinates AI feedback after send (recordServerSideAIFeedback inline)
+  - Route is 450 lines covering transport + provider + persistence + reconciliation + AI feedback
+
 root_cause:
   The route was hardened in-place during production gate work. The dedicated
   sendConversationMessage function was added later as a standalone workflow,
   but the route was never refactored to delegate to it.
-why_it_matters:
-  - Two sources of truth for send behavior diverge over time
-  - Route directly couples to Meta adapter (hard to test)
-  - Route owns reconciliation policy (should be in messaging boundary)
-  - Any change to send behavior requires reading 450 lines of route code
-blast_radius:
-  - All outbound message sends go through this route
-  - Reconciliation logic is split between route and send-reconciliation.ts
-  - AI feedback recording is inlined in route (should be after-send concern)
+
 current_behavior:
-  Route creates message in SENDING, calls sendMetaTextMessage, then:
+  Route creates message in SENDING, calls sendMetaTextMessage directly, then:
   - On success: multi-table transaction (message -> SENT, conversation -> WAITING_CUSTOMER, audit)
   - On local failure: marks RECONCILIATION_REQUIRED
   - Records AI suggestion feedback after successful send
+
 desired_boundary:
-  Route delegates to sendConversationMessage (or a service that wraps it),
-  route becomes transport + validation + delegation.
+  Route delegates to sendConversationMessage (or a service wrapping it).
+  Route becomes transport + validation + delegation.
   AI feedback recording moves to post-send hook or service layer.
+
+implementation_owner:
+  Toolsmith (after Supervisor approval). Architecture defines boundary and acceptance contract.
+
 recommended_action:
-  Refactor route POST to delegate to sendConversationMessage.
-  Move AI feedback to a post-send concern (not in route handler).
-  Verify with existing send-integrity and route-security tests.
+  Architecture: finalize acceptance contract -> handoff to Supervisor/Toolsmith.
+  Toolsmith: refactor route POST to delegate to sendConversationMessage.
+  Integration & Workflow: verify Meta provider semantics preserved.
+  Quality Engineer: regression matrix.
+
 proof_required:
   - send-integrity tests pass with delegated workflow
   - route-security tests pass (permission boundaries unchanged)
   - reconciliation tests still pass
-handoffs:
-  - Integration & Workflow: verify Meta send behavior is preserved
-  - Quality Engineer: define regression matrix for refactored route
-```
-
-### MWOM-ARCH-002 — Inbox messages route owns cross-domain orchestration
-```yaml
-finding_id: MWOM-ARCH-002
-title: Route owns AI feedback + reconciliation marking
-severity: P2
-status: active
-owner: Architecture
-affected_surfaces:
-  - app/api/inbox/conversations/[id]/messages/route.ts (POST)
-current_revision: bd8a7a6286e3df35b1c69439eb583061bc264aa7
-evidence:
-  - Route POST handler records AI suggestion feedback inline (lines 394-404)
-  - Route POST handler marks RECONCILIATION_REQUIRED with inline try/catch (lines 417-448)
-  - Route imports and uses classifyStoredSuggestionUsage, recordAISuggestionFeedback directly
-architecture_problem:
-  Cross-domain concerns (AI feedback, reconciliation) are embedded in the route handler
-  instead of being delegated to their respective domain boundaries.
-why_it_matters:
-  Route grows with each cross-cutting concern. AI feedback recording failure should
-  not be conflated with send success/failure.
-recommended_action:
-  Separate AI feedback from send route. Record feedback after verified send,
-  not as part of the send handler's success path.
+  - route no longer imports meta-send-client or meta-send-token directly
 ```
 
 ### MWOM-ARCH-003 — intelligence module is at size pressure threshold
@@ -110,43 +94,103 @@ evidence:
 architecture_problem:
   Module may reach size where change isolation becomes difficult.
   Currently internal boundaries are sufficient; no emergency.
-why_it_matters:
-  Pre-emptive boundary planning avoids future emergency refactors.
 recommended_action:
   Monitor. If OpenAI integration gains significant complexity or if
   a second AI provider is added, extract AI concerns into a separate module.
-  Current structure is functional and well-organized.
 ```
 
-### MWOM-ARCH-004 — AI Brain test lab is a placeholder
+## Superseded
+
+### MWOM-ARCH-002 — Inbox messages route owns cross-domain orchestration
 ```yaml
-finding_id: MWOM-ARCH-004
-title: AI Brain test lab has no runtime execution
-severity: P3
-status: active
-owner: Architecture
-affected_surfaces:
-  - app/api/ai-brain/test/route.ts
-  - scripts/test-ai-brain-prompt-versioning.ts (may provide partial coverage)
-current_revision: bd8a7a6286e3df35b1c69439eb583061bc264aa7
-evidence:
-  - Route returns { available: false, message: "AI Brain Test Lab execution is not active in Batch 1." }
-  - No actual AI call or test logic in the route
-architecture_problem:
-  Test lab is an architectural capability with no runtime implementation.
-  It's correctly gated behind test_ai_brain permission and returns a controlled response.
-  Not a production risk - this is a planned capability placeholder.
-why_it_matters:
-  Low. Placeholder is well-structured. When activated, must ensure:
-  - AI calls do not leak into route handler
-  - Test results are persisted properly
-  - test_ai_brain permission is correctly enforced
+finding_id: MWOM-ARCH-002
+title: Route owns AI feedback + reconciliation marking (sub-risk of ARCH-001)
+severity: P2
+status: superseded
+reason: Cross-domain orchestration (AI feedback inline, reconciliation inline) is a
+  sub-risk of MWOM-ARCH-001. No independent remediation path exists. Resolves when
+  route delegates to sendConversationMessage and AI feedback becomes post-send concern.
 ```
 
-## Fixed pending proof
-None at current revision. All old claims have been reconciled.
+## Fixed — pending owner revalidation (cross-agent)
+
+### MWOM-DATA-001 — Leads routes intelligence evidence gating
+```yaml
+finding_id: MWOM-DATA-001
+owner: Data & Truth
+architecture_observation:
+  Current leads routes conditionally include evidence only when
+  hasPermission("view_intelligence") is true, at both Prisma include level
+  and DTO level. Code appears to gate evidence correctly.
+status_from_architecture_view: likely-fixed-pending-data-and-quality-proof
+code_evidence:
+  - app/api/leads/route.ts:48 — evidence: exposeIntelligence ? {...} : false
+  - app/api/leads/[id]/route.ts:31 — same pattern
+  - mapOpportunityDto receives exposeIntelligence flag for DTO-level masking
+required_proof:
+  - route-level permission regression tests
+  - DTO masking verification
+  - Data & Truth owner confirmation
+```
+
+### MWOM-UX-001 — AI suggestion usage before send success
+```yaml
+finding_id: MWOM-UX-001
+owner: Product & UX
+architecture_observation:
+  - Feedback route (app/api/ai/suggestions/[id]/feedback/route.ts:39-49) explicitly
+    rejects USED_AS_IS and EDITED_BEFORE_SEND with 409 ("recorded only after a
+    successful message send")
+  - Server-side feedback recording (recordServerSideAIFeedback in inbox messages
+    route:394-403) occurs only after verified successful provider send
+  - Standalone feedback route cannot attribute pre-send usage
+status_from_architecture_view: likely-fixed-pending-product-and-quality-proof
+required_proof:
+  - send-success attribution test
+  - Product & UX owner confirmation
+  - Quality Engineer regression verification
+```
+
+### MWOM-DATA-003 — Same-person intelligence concurrency race
+```yaml
+finding_id: MWOM-DATA-003
+owner: Data & Truth / Logic & Performance
+architecture_observation:
+  - storeIntelligenceResult uses single $transaction with FOR UPDATE on job,
+    person, and person_intelligence_snapshots rows
+  - Deterministic source-order comparison (observedAt -> createdAt -> messageId)
+    rejects stale concurrent updates
+  - Newer snapshot detection merges summary only, preserving fresher analysis
+  - Concurrency protections are materially stronger than original race claim
+status_from_architecture_view: likely-fixed-pending-data-logic-quality-proof
+code_evidence:
+  - src/lib/intelligence/customer-intelligence.ts:571-710
+  - src/lib/intelligence/source-order.ts
+required_proof:
+  - concurrency regression test
+  - Logic & Performance closure confirmation
+  - Data & Truth schema/invariant verification
+```
+
+## Moved to watch (dormant)
+
+### MWOM-ARCH-WATCH-001 — AI Brain test lab (deferred capability trigger)
+```yaml
+finding_id: MWOM-ARCH-WATCH-001
+title: AI Brain test lab deferred capability trigger
+status: dormant
+former_id: MWOM-ARCH-004
+reason: Endpoint is a deliberate Batch 1 placeholder, permission-gated (test_ai_brain),
+  returning controlled response ({ available: false }). Not a production risk or
+  architectural defect.
+trigger: AI Brain test execution becomes active
+architecture_checks_on_activation:
+  - no AI execution inside route
+  - owned service/workflow boundary for test execution
+  - persistence ownership (test results)
+  - test_ai_brain permission enforcement
+```
 
 ## Closed
-Previous architecture baseline concern about stale intelligence recovery not being wired:
-resolved at 9a6b2f2 (worker now calls recoverStaleIntelligenceJobs at startup + periodic).
-Previous concern about provider adapter drift: resolved through multi-profile Meta config.
+- Previous architecture baseline concern about stale intelligence recovery not being wired:
+  resolved at 9a6b2f2 (worker now calls recoverStaleIntelligenceJobs at startup + periodic).

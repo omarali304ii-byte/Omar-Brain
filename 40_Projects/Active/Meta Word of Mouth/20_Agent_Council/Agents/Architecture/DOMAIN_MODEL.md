@@ -4,8 +4,10 @@
 ```yaml
 last_verified_revision: bd8a7a6286e3df35b1c69439eb583061bc264aa7
 last_verified_at: 2026-07-09
-verification_scope: full live-repo architecture inspection and Brain reconciliation
-freshness: current
+verification_scope: bounded-architecture — Architecture-owned surfaces, AI Brain subsystem,
+  intelligence worker changes, messaging/reconciliation boundary, schema-impacting drift,
+  architecture-sensitive tests, stale P0 finding reconciliation, CI evidence audit
+freshness: current_for_verified_scope
 ```
 
 ## Architecture Map
@@ -56,13 +58,14 @@ AI Brain Subsystem
     * constants.ts — embedding config, default domains, limits
     * brain-errors.ts — typed error hierarchy (BrainError)
     * route-errors.ts — BrainError -> HTTP mapping
-  -> repository abstraction:
-    * knowledge.repository.ts — KnowledgeRepository interface
-    * pgvector-knowledge.repository.ts — PostgreSQL/pgvector implementation
+  -> brain-profile.ts and prompt-versions.ts access Prisma directly; knowledge access
+     uses a dedicated repository abstraction (KnowledgeRepository -> pgvector)
+  -> repository abstraction is knowledge-specific, not subsystem-wide
   -> persistence: pgvector extension, KnowledgeChunk with 1536-dim embeddings
   -> permissions: view_ai_brain, manage_ai_brain, test_ai_brain (OWNER+ADMIN)
   -> schema: AiBrain, AiBrainPromptVersion, KnowledgeDomain, KnowledgeSource,
      KnowledgeSourceVersion, KnowledgeChunk
+  -> src/services/ai-brain.service.ts is a frontend HTTP client wrapper (apiClient)
 
 Opportunity/Leads
   -> evidence-linked signals -> opportunity scoring
@@ -84,21 +87,26 @@ Workspace/Tenant
 - Intelligence is fully async, evidence-linked, with schema-validated AI output
 - Stale intelligence lock recovery is now wired into worker startup + periodic ticks
 - Outbound messaging has explicit three-outcome uncertainty model with reconciliation lifecycle
-- AI Brain is a coherent new bounded subsystem with proper layer separation
-- AI Brain has repository interface abstraction (not direct pgvector coupling in domain logic)
+- AI Brain is a coherent bounded subsystem with thin routes and clear server module grouping
+- AI Brain knowledge access uses repository abstraction; profile/prompt modules use Prisma directly
 - AI Brain prompt lifecycle has DRAFT/PUBLISHED/SUPERSEDED with locking
 - Meta profiles are separated (Social vs WhatsApp) with multi-profile OAuth
+- Intelligence snapshot updates have FOR UPDATE locking + deterministic source-order tiebreaking
 
 ## Current structural risks
 - MWOM-ARCH-001: Outbound send route duplicates send-message.ts workflow —
-  route directly orchestrates Meta send + local persistence + reconciliation,
-  duplicating the dedicated sendConversationMessage function
-- MWOM-ARCH-002: Inbox messages route owns cross-domain orchestration
-  (send + AI feedback + reconciliation marking in same handler)
+  route directly imports and calls Meta provider adapters + handles local
+  persistence + reconciliation + AI feedback inline, bypassing the dedicated
+  sendConversationMessage function. Sub-risk ARCH-002 (cross-domain orchestration)
+  is superseded — resolves when ARCH-001 is resolved.
 - customer-intelligence.ts remains at 865 lines; not yet urgent to split but
   change pressure will accumulate
-- MWOM-ARCH-004: AI Brain test lab endpoint is a placeholder (no runtime execution)
+- MWOM-ARCH-WATCH-001: AI Brain test lab endpoint is a deliberate Batch 1 placeholder,
+  permission-gated, returning controlled response. Reclassified as dormant future
+  activation trigger.
 - pgvector dependency is a runtime infrastructure requirement (not auto-provisioned)
+- Provider adapter drift: code-level multi-profile topology reconciled; deployed
+  production adapter topology remains unknown
 
 ## Model maintenance rule
 When owned reality changes, rewrite this present-tense model and link evidence.

@@ -5,7 +5,10 @@
 - Do not split modules for aesthetics; split only where ownership or failure boundary requires it.
 - Preserve the strong ingest -> enqueue -> worker architecture unless repo evidence proves drift.
 - Routes must delegate to owned service/workflow boundaries, not duplicate orchestration logic.
-- New subsystem boundaries must preserve route/service/repository layer separation.
+- New subsystem boundaries must preserve route/module separation. Routes never access Prisma.
+  Repository abstraction is required where swappable persistence matters; profile/lifecycle
+  modules may use Prisma directly if no swappable boundary is needed.
+- AI Brain: routes thin, knowledge -> repository, profile/prompt -> Prisma directly.
 
 ## v14 operating rules
 - Verify current revision before treating stored claims as current.

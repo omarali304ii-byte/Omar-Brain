@@ -28,15 +28,18 @@ last_proven_revision: bd8a7a6286e3df35b1c69439eb583061bc264aa7
 evidence: MWOM-ARCH-001 demonstrates violation in inbox messages route
 ```
 
-## ARCH-MWOM-003 — New subsystems must preserve route/service/repository separation
+## ARCH-MWOM-003 — New subsystems must preserve route/module separation with explicit persistence ownership
 ```yaml
 id: ARCH-MWOM-003
 status: project-local
 trigger: new bounded subsystem is added (AI Brain, new provider, new intelligence domain)
-rule: route -> domain module (or service) -> repository interface -> persistence implementation.
-  Routes never directly access concrete repositories or Prisma for the subsystem.
+rule: route -> domain module. Routes never directly access Prisma for the subsystem.
+  Repository abstraction is required for boundaries where swappable persistence matters
+  (knowledge/vector), but profile/prompt lifecycle modules may use Prisma directly
+  when no swappable persistence boundary is needed.
 boundary: Fast reads for auth/validation context are permitted
 evidence_required: Static boundary inspection
 last_proven_revision: bd8a7a6286e3df35b1c69439eb583061bc264aa7
-evidence: AI Brain follows this pattern correctly
+evidence: AI Brain routes are thin (no Prisma); knowledge access uses repository abstraction;
+  brain-profile.ts and prompt-versions.ts use Prisma directly for lifecycle persistence.
 ```

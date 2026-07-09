@@ -4,25 +4,46 @@
 status: active
 active_finding_ids:
   - MWOM-ARCH-001
-  - MWOM-ARCH-002
   - MWOM-ARCH-003
-  - MWOM-ARCH-004
-current_objective: resolve MWOM-ARCH-001 (route duplicated send workflow)
+current_objective: finalize MWOM-ARCH-001 target boundary and implementation acceptance contract
 last_verified_revision: bd8a7a6286e3df35b1c69439eb583061bc264aa7
-current_revision: bd8a7a6286e3df35b1c69439eb583061bc264aa7
-dependencies:
-  - Integration & Workflow: must confirm Meta send behavior preserved after route refactor
-  - Quality Engineer: must design regression matrix for refactored route
-next_proof:
-  - Refactor inbox messages POST route to delegate to sendConversationMessage
-  - Verify send-integrity tests pass
-  - Verify route-security tests pass
-  - Verify reconciliation tests pass
+
+architecture_deliverables:
+  - route responsibility contract (transport + validation + delegation only)
+  - owned messaging workflow contract (single canonical send orchestration)
+  - preserved behavior list (send integrity, reconciliation lifecycle, AI feedback attribution)
+  - reconciliation invariant list
+  - proof requirements for each verifying agent
+
+implementation_owner:
+  - Supervisor (prioritization/approval)
+  - Toolsmith (integrated application edit)
+
+verifying_agents:
+  - Integration & Workflow — Meta provider semantics preserved
+  - Quality Engineer — regression matrix, all send/reconciliation/security tests pass
+  - Architecture — route no longer imports provider adapters, single workflow ownership
+
+next_deliverable: >
+  Architecture: finalize acceptance contract for MWOM-ARCH-001.
+  Submit implementation handoff to Supervisor/Toolsmith.
+  Do not edit application code.
+
 next_handoff:
-  - Integration & Workflow: MWOM-ARCH-001, verify Meta provider semantics preserved
-  - Quality Engineer: define regression matrix for send route refactor
-```
+  - Supervisor: MWOM-ARCH-001 acceptance contract for approval
+  - Toolsmith: MWOM-ARCH-001 implementation (after Supervisor approval)
+  - Data & Truth: MWOM-DATA-001, MWOM-DATA-003 revalidation
+  - Product & UX: MWOM-UX-001 revalidation
+  - Integration & Workflow: MWOM-ARCH-001 post-implementation semantics verification
+  - Quality Engineer: MWOM-ARCH-001 regression matrix definition
+  - Runtime & Reliability: production worker/deployment topology verification
+  - Critic Verifier: final closure challenge after implementation + verification
+
+cross_agent_handoffs_created:
+  - Data & Truth: MWOM-DATA-001, MWOM-DATA-003 revalidation requests
+  - Product & UX: MWOM-UX-001 revalidation request
+  - Runtime & Reliability: provider adapter topology + production worker verification request
 
 ## Priority rule
 Select the highest-severity owned current finding whose dependencies are satisfied by Supervisor.
-Current priority: MWOM-ARCH-001 (P1) > MWOM-ARCH-002 (P2) > MWOM-ARCH-003 (P3) = MWOM-ARCH-004 (P3)
+Current priority: MWOM-ARCH-001 (P1) > MWOM-ARCH-003 (P3, monitor only)

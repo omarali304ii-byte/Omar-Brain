@@ -1,11 +1,19 @@
 # Architecture Eval Registry
 
-| Eval ID | Trigger/Rule | Scenario | Command/Procedure | Status | Last proven revision | Evidence |
-|---|---|---|---|---|---|---|
-| ARCH-EVAL-001 | ARCH-MWOM-001 | Webhook ingestion does not invoke OpenAI directly | inspect architecture test / targeted boundary test | designed | — | meta architecture test verifies webhook signature only; no OpenAI import in webhook code path |
-| ARCH-EVAL-002 | ARCH-MWOM-002 | Inbox messages POST route delegates to owned send workflow, does not import Meta adapter directly | inspect route imports and call chain | designed | — | MWOM-ARCH-001 documents current violation; evidence needed after refactor |
-| ARCH-EVAL-003 | ARCH-MWOM-003 | AI Brain routes remain thin (auth + validation + domain invocation only) | inspect all 7 AI Brain route files for direct Prisma usage or business logic | passed | bd8a7a6286e3df35b1c69439eb583061bc264aa7 | All AI Brain routes delegate to lib/brain/* modules; no Prisma imports in routes |
-| ARCH-EVAL-004 | — | Intelligence stale lock recovery is wired into worker runtime | inspect worker script + run stale lock recovery test | passed | bd8a7a6286e3df35b1c69439eb583061bc264aa7 | Worker calls recoverStaleIntelligenceJobs at startup + periodic; test-intelligence-stale-lock-recovery passes in CI |
-| ARCH-EVAL-005 | — | Outbound send has explicit reconciliation lifecycle | inspect send-reconciliation.ts + reconciliation worker + test coverage | passed | bd8a7a6286e3df35b1c69439eb583061bc264aa7 | Three-outcome model (SENT/FAILED/RECONCILIATION_REQUIRED), reconciliation worker, test-send-reconciliation covers all states |
-| ARCH-EVAL-006 | — | AI Brain prompt lifecycle separates drafts from published | inspect prompt-versions.ts for DRAFT/PUBLISHED/SUPERSEDED flow | passed | bd8a7a6286e3df35b1c69439eb583061bc264aa7 | savePromptDraft creates DRAFT, publishPromptVersion sets PUBLISHED + SUPERSEDED previous, FOR UPDATE locking |
-| ARCH-EVAL-007 | — | No duplicate canonical provider adapter ownership | inspect meta-send-client for single ownership; check routes for bypass | failed | bd8a7a6286e3df35b1c69439eb583061bc264aa7 | MWOM-ARCH-001: inbox messages route directly calls sendMetaTextMessage, bypassing sendConversationMessage |
+## Eval status vocabulary
+- `designed` — eval criteria documented, not yet executed
+- `passed-static` — passed by code inspection at stated revision
+- `passed-local` — passed by local test execution at stated revision
+- `passed-ci` — passed in CI (requires workflow + execution evidence)
+- `failed` — failing by current evidence
+
+| Eval ID | Trigger/Rule | Scenario | Procedure | Status | Last proven revision | Evidence | Not proven |
+|---|---|---|---|---|---|---|---|
+| ARCH-EVAL-001 | ARCH-MWOM-001 | Webhook ingestion does not invoke OpenAI directly | Static boundary inspection | passed-static | bd8a7a6 | meta architecture test verifies webhook signature only; no OpenAI import in webhook code path | production webhook runtime behavior |
+| ARCH-EVAL-002 | ARCH-MWOM-002 | Inbox messages POST route delegates to owned send workflow, does not import Meta adapter directly | Inspect route imports | designed | — | MWOM-ARCH-001 documents current violation | — |
+| ARCH-EVAL-003 | ARCH-MWOM-003 | AI Brain routes remain thin — no Prisma, no business logic | Inspect all AI Brain route files | passed-static | bd8a7a6 | All AI Brain routes delegate to lib/brain/*; no Prisma imports in routes; no AI calls in routes | — |
+| ARCH-EVAL-004 | — | Intelligence stale lock recovery is wired into worker runtime | Inspect worker script code wiring | passed-static | bd8a7a6 | Worker calls recoverStaleIntelligenceJobs at startup + periodic; code wiring confirmed | production worker deployment; production scheduler/runtime |
+| ARCH-EVAL-005 | — | Outbound send has explicit reconciliation lifecycle structure | Inspect send-reconciliation, reconciliation worker, message status model | passed-static | bd8a7a6 | Three-outcome model (SENT/FAILED/RECONCILIATION_REQUIRED); reconciliation worker; message status model | production reconciliation runtime |
+| ARCH-EVAL-006 | — | AI Brain prompt lifecycle separates drafts from published | Inspect prompt-versions.ts | passed-static | bd8a7a6 | savePromptDraft -> DRAFT; publishPromptVersion -> PUBLISHED + SUPERSEDED previous; FOR UPDATE locking | — |
+| ARCH-EVAL-007 | — | No duplicate canonical provider adapter ownership | Inspect route imports for provider adapter bypass | failed | bd8a7a6 | MWOM-ARCH-001: inbox messages route directly imports and calls sendMetaTextMessage + resolveMetaSendToken, bypassing sendConversationMessage | — |
+| ARCH-EVAL-008 | — | Intelligence snapshot updates are concurrency-safe | Inspect storeIntelligenceResult for FOR UPDATE locking and source-order gate | passed-static | bd8a7a6 | FOR UPDATE on job + person + snapshot; deterministic source-order tiebreak; newer-snapshot rejection | production concurrency stress testing |

@@ -3,7 +3,7 @@
   "council_status": "active",
   "version": "2.0",
   "last_updated": "2026-07-09",
-  "last_brain_verified_revision": "8c027fabf85fe46fa0395eb459c0289872fef491",
+  "last_brain_verified_revision": "bd8a7a6286e3df35b1c69439eb583061bc264aa7",
   "current_phase": "production-gate-hardening",
   "primary_mission": "close P0 production gate before production-ready claim",
   "selected_default_agents": [

@@ -2,40 +2,75 @@
 
 ```yaml
 status: active_work_defined
+
 last_verified_revision: bd8a7a6286e3df35b1c69439eb583061bc264aa7
 last_verified_at: 2026-07-09
+
 first_files_to_open:
   - app/api/inbox/conversations/[id]/messages/route.ts (lines 189-450)
-  - src/lib/messaging/send-message.ts (lines 59-202)
+  - src/lib/messaging/send-message.ts
   - src/lib/messaging/finalize-send.ts
+  - HANDOFF.md (for current cross-agent handoff status)
+
 active_finding_ids:
   - MWOM-ARCH-001
-  - MWOM-ARCH-002
-  - MWOM-ARCH-003
-  - MWOM-ARCH-004
+  - MWOM-ARCH-003 (monitor only)
+
+deferred_trigger:
+  - MWOM-ARCH-WATCH-001 — AI Brain test lab becomes active
+
 open_unknowns:
-  - production deployment topology (workers, reconciliation)
+  - production deployment topology (workers, reconciliation, scheduler)
+  - deployed provider adapter topology
   - AI Brain knowledge ingestion pipeline implementation
   - AI Brain prompt utilization in AI suggestions
+
 first_action: >
-  Resolve MWOM-ARCH-001: Refactor POST /api/inbox/conversations/[id]/messages
-  to delegate to sendConversationMessage from src/lib/messaging/send-message.ts.
-  The route must become transport + validation + delegation.
-  AI feedback recording should move out of the route to a post-send concern.
-  Verify all existing send-integrity, send-reconciliation, and route-security tests pass.
-  Then update ARCH-EVAL-007 to passed.
+  Review the MWOM-ARCH-001 acceptance contract and current handoff status.
+  If Toolsmith has not implemented the approved boundary, do NOT edit application code.
+  Architecture defines boundary + acceptance contract; Supervisor approves;
+  Toolsmith implements; Architecture verifies structure after implementation.
+  If implementation exists, verify: route no longer imports meta-send-client or
+  meta-send-token, route delegates to single canonical messaging workflow,
+  reconciliation semantics preserved, AI feedback attribution correct.
+  Do not change ARCH-EVAL-007 to passed without verified implementation and tests.
+
 do_not_repeat:
-  - broad repository exploration before checking NEXT_START and OWNED_SURFACE_MAP
-  - treating stored revision-bound claims as current without recheck
-  - reinspecting AI Brain subsystem unless its boundary changes (ARCH-EVAL-003 passed)
-  - re-verifying intelligence stale recovery (ARCH-EVAL-004 passed)
+  - broad repository rediscovery before checking NEXT_START and OWNED_SURFACE_MAP
+  - claiming CI execution without evidence (no GitHub Actions workflow exists)
+  - calling partial inspection "full live-project inspection"
+  - closing cross-agent findings from static Architecture inspection alone
+  - assigning application implementation to Architecture
+  - treating configured provider topology as deployed provider topology
+  - claiming fixed findings as fully resolved without owner revalidation
+
 proof_needed_next:
-  - Route delegates to sendConversationMessage (ARCH-EVAL-002, 007)
-  - All send-integrity tests pass
-  - All send-reconciliation tests pass
-  - All route-security tests pass
+  - MWOM-ARCH-001 implementation diff from Toolsmith
+  - Integration & Workflow semantics verification
+  - Quality Engineer regression evidence
+  - Architecture boundary reinspection (route imports cleared)
+  - ARCH-EVAL-007 updated only after verified implementation
+
 handoffs_waiting:
-  - Integration & Workflow: MWOM-ARCH-001 verification after refactor
-  - Quality Engineer: regression matrix after refactor
-  - Critic Verifier: final challenge after refactor
+  - Toolsmith: MWOM-ARCH-001 implementation
+  - Data & Truth: MWOM-DATA-001 + MWOM-DATA-003 revalidation
+  - Product & UX: MWOM-UX-001 revalidation
+  - Integration & Workflow: post-implementation provider semantics
+  - Quality Engineer: regression matrix + proof
+  - Runtime & Reliability: production deployment topology
+  - Critic Verifier: final closure challenge
+
+correction_pass_completed: 2026-07-09
+correction_scope:
+  - council truth contradictions resolved
+  - 3 stale P0 findings reclassified as likely-fixed-pending-owner-proof
+  - AI Brain layer model corrected (knowledge-specific repo abstraction, direct Prisma in profile/prompt)
+  - CI evidence language corrected (no GitHub Actions workflow found)
+  - full inspection overclaim removed
+  - provider adapter drift reclassified as partially-resolved
+  - Architecture ownership boundary restored
+  - MWOM-ARCH-004 reclassified as dormant (MWOM-ARCH-WATCH-001)
+  - MWOM-ARCH-002 superseded (sub-risk of ARCH-001)
+  - eval statuses reflect proof type (passed-static vs passed-ci)
+  - cross-agent handoffs created for stale P0 revalidation
 ```

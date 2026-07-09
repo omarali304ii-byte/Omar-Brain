@@ -2,8 +2,8 @@
 
 ```yaml
 last_verified_revision: bd8a7a6286e3df35b1c69439eb583061bc264aa7
-freshness: current
-completeness: verified_from_full_architecture_inspection
+freshness: current_for_verified_scope
+completeness: verified_from_bounded_architecture_inspection
 ```
 
 ## Ingress boundary
@@ -69,10 +69,16 @@ completeness: verified_from_full_architecture_inspection
 | `scripts/test-message-send-integrity.ts` | Send workflow outcome integrity |
 | `scripts/test-send-reconciliation.ts` | Reconciliation lifecycle tests |
 | `scripts/test-intelligence-stale-lock-recovery.ts` | Stale lock recovery boundary proof |
+| `scripts/test-intelligence-ordering-concurrency.ts` | Concurrency ordering deterministic tests |
+| `scripts/test-intelligence-memory-concurrency.ts` | Memory merge concurrency tests |
 | `scripts/test-ai-brain-isolation.ts` | AI Brain workspace isolation proof |
 | `scripts/test-ai-brain-permissions.ts` | AI Brain permission boundary |
 | `scripts/test-ai-brain-prompt-versioning.ts` | Prompt version lifecycle proof |
-| `.github/workflows/verify.yml` | CI pipeline with 30+ test steps |
+| `scripts/test-ai-suggestion-usage.ts` | AI suggestion usage classification tests |
+| `scripts/test-ai-suggestion-feedback.ts` | AI suggestion feedback recording tests |
+| `scripts/test-lead-permissions.ts` | Lead route permission tests |
+| `scripts/test-lead-provider-id-permissions.ts` | Lead provider-ID privacy tests |
+| `package.json` (test:* scripts) | 37 test script definitions; no GitHub Actions CI workflow found |
 
 ## Route architecture-sensitive routes
 | Path | Risk |
